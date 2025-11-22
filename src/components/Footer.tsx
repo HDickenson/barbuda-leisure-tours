@@ -6,6 +6,7 @@ import { faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-
 import { faFacebookF, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import styles from './Footer.module.css';
 import WaveDivider from './WaveDivider';
+import OceanWaveDivider from './OceanWaveDivider';
 
 // Wave-brush paths from WordPress
 const waveBrushPaths = [
@@ -32,6 +33,15 @@ export default function Footer() {
         rotate={false}
         paths={waveBrushPaths}
       />
+
+      {/* Ocean Wave Background */}
+      <div className={styles.oceanWaveBackground}>
+        <OceanWaveDivider
+          fillColor="#006994"
+          height="400px"
+          position="top"
+        />
+      </div>
 
       {/* Underwater coral/seaweed silhouette at bottom */}
       <div className={styles.underwaterDecoration}>

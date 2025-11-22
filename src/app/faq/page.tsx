@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ContactForm from '@/components/ContactForm';
+import InnerPageHero from '@/components/InnerPageHero';
 
 // FAQ Item Type Definition
 interface FAQItem {
@@ -288,7 +289,7 @@ function FAQCategory({
 }) {
   return (
     <div className="mb-12">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-blue-500">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-turquoise">
         {category}
       </h2>
       <div className="space-y-0">
@@ -338,29 +339,12 @@ export default function FAQPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section
-        className="relative h-96 md:h-[500px] w-full flex items-center justify-center"
-        style={{
-          backgroundImage:
-            'url(https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureToursSection-2-2.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black opacity-40"></div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 text-center px-4 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-lg md:text-xl text-white drop-shadow-md">
-            Everything you need to know about Barbuda Leisure Day Tours
-          </p>
-        </div>
-      </section>
+      <InnerPageHero
+        title="Frequently Asked Questions"
+        subtitle="Everything you need to know about Barbuda Leisure Day Tours"
+        backgroundImage="https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureToursSection-2-2.jpg"
+        showWave={false}
+      />
 
       {/* FAQ Content Section */}
       <section className="py-16 md:py-24 bg-gray-50">

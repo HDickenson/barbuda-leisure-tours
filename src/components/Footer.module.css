@@ -7,6 +7,17 @@
   overflow: hidden;
 }
 
+/* Ocean Wave Background - positioned behind content */
+.oceanWaveBackground {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+}
+
 /* Underwater coral/seaweed decoration at bottom */
 .underwaterDecoration {
   position: absolute;
