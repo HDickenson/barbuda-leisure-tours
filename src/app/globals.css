@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-lexend), Arial, Helvetica, sans-serif;
+}
+
+/* Wave divider shapes */
+.wave-divider {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .wave-divider svg {
+    height: 120px;
+  }
+}
+
+.wave-divider-top {
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.wave-divider-bottom {
+  bottom: 0;
+}
+
+/* Button hover effects with box-shadows */
+.btn-hover {
+  transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Pink button hover */
+.btn-pink {
+  transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: rgb(240, 165, 200) !important;
+  box-shadow: 0 4px 12px rgba(245, 182, 211, 0.4);
+}
+
+/* Turquoise button hover */
+.btn-turquoise {
+  transition: all 0.3s ease;
+}
+
+.btn-turquoise:hover {
+  background-color: rgb(35, 150, 175) !important;
+  box-shadow: 0 4px 12px rgba(48, 187, 216, 0.4);
+}
+
+/* Hero button hover effect */
+.hero-button {
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Premier section button hover effect */
+.premier-button {
+  transition: all 0.3s ease;
+}
+
+.premier-button:hover {
+  background-color: rgb(35, 150, 175) !important;
+  box-shadow: 0 4px 12px rgba(48, 187, 216, 0.4);
+}
+
+/* Tour card button hover */
+.tour-card a {
+  transition: all 0.3s ease;
+}
+
+.tour-card a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}

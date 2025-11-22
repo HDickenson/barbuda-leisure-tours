@@ -1,0 +1,84 @@
+/* Hero Carousel Component Styles */
+
+.container {
+  position: relative;
+}
+
+.carousel {
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+
+.slideBackground {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.textBox {
+  background-color: rgba(23, 162, 184, 0.85);
+  border-radius: var(--border-radius-lg);
+  padding: 2.5rem 3.125rem;
+  max-width: 31.25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mainHeading {
+  font-family: var(--font-leckerli);
+  font-size: 3rem;
+  font-weight: var(--font-weight-regular);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 0.625rem;
+  line-height: 1.2;
+  text-shadow: none;
+}
+
+.subHeading {
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-regular);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  text-shadow: none;
+}
+
+.ctaButton {
+  display: inline-block;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #30bbd8;
+  background-color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+}
+
+.ctaButton:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

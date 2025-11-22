@@ -1,0 +1,8 @@
+<html>
+<head><title>404 Not Found</title><meta name="traceparent" content="00-9a2963bf99bdc5d90000001763824604-9a2963bf99bdc5d9-01"></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+<script defer src="/.cloud/rum/otel-rum-exporter.js?v=1.0.1"></script>
+</body>
+</html>

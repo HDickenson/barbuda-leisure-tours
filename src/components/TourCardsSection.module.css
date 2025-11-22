@@ -1,0 +1,126 @@
+/* Tour Cards Section - Matching WordPress Elementor style */
+
+.section {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(48, 187, 216);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+/* Popular badge */
+.popularBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  background-color: rgb(48, 187, 216);
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Card content below image */
+.cardContent {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.cardTitle {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(84, 89, 95);
+  text-align: center;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.learnMore {
+  display: inline-block;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(48, 187, 216);
+  padding: 12px 28px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.learnMore:hover {
+  background-color: rgb(38, 167, 196);
+  transform: scale(1.02);
+}

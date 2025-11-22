@@ -1,0 +1,46 @@
+/* Generic Section Component Styles */
+
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.heading {
+  font-size: 2.25rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.buttonsContainer {
+  margin-top: var(--spacing-xl);
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.button {
+  padding: var(--spacing-xs) var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  font-weight: var(--font-weight-semibold);
+  transition: opacity var(--transition-base);
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.9;
+}

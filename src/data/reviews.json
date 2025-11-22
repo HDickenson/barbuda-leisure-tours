@@ -1,0 +1,97 @@
+{
+  "title": "Reviews",
+  "slug": "reviews",
+  "sections": [
+    {
+      "id": "ef16983",
+      "columns": []
+    },
+    {
+      "id": "2c288f8",
+      "columns": []
+    },
+    {
+      "id": "12c5d87",
+      "columns": [
+        {
+          "id": "7ef39cf",
+          "widgets": [
+            {
+              "id": "00b0ffe",
+              "type": "heading",
+              "content": {
+                "title": "Jessica R.",
+                "htmlTag": "h5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "a3f4c20",
+          "widgets": [
+            {
+              "id": "75f7e5f",
+              "type": "heading",
+              "content": {
+                "title": "Daniel S.",
+                "htmlTag": "h5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e866001",
+          "widgets": [
+            {
+              "id": "a303d16",
+              "type": "heading",
+              "content": {
+                "title": "Sophia T.",
+                "htmlTag": "h5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "64b2dad",
+          "widgets": [
+            {
+              "id": "03d99d7",
+              "type": "heading",
+              "content": {
+                "title": "James P.",
+                "htmlTag": "h5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c02fcc8",
+          "widgets": [
+            {
+              "id": "0ab712b",
+              "type": "heading",
+              "content": {
+                "title": "Emily W.",
+                "htmlTag": "h5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "605312c",
+          "widgets": [
+            {
+              "id": "76f6b58",
+              "type": "heading",
+              "content": {
+                "title": "Michael L.",
+                "htmlTag": "h5"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

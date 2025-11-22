@@ -1,0 +1,294 @@
+/* Footer Styles - Matching WordPress */
+
+.footer {
+  position: relative;
+  background: linear-gradient(181deg, rgb(48, 187, 216) 10%, rgb(0, 29, 70) 84%);
+  color: white;
+  overflow: hidden;
+}
+
+/* Underwater coral/seaweed decoration at bottom */
+.underwaterDecoration {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  height: 180px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.underwaterDecoration svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 120px 20px 100px;
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+  }
+}
+
+/* Left Column */
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .leftColumn {
+    align-items: flex-start;
+  }
+}
+
+/* Logo Wrapper */
+.logoWrapper {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .logoWrapper {
+    text-align: left;
+  }
+}
+
+/* Text Logo - matching WordPress style */
+.logoText {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.logoBlack {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+
+.logoPink {
+  font-family: "Dancing Script", cursive, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: rgb(245, 182, 211);
+  font-style: italic;
+}
+
+.logoSubtext {
+  font-family: "Dancing Script", cursive, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(245, 182, 211);
+  font-style: italic;
+  display: block;
+  width: 100%;
+  margin-top: -0.25rem;
+}
+
+.tagline {
+  font-family: "Dancing Script", cursive, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(245, 182, 211);
+  margin: 0.5rem 0 0 0;
+}
+
+/* Contact Items */
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.contactIcon {
+  color: rgb(245, 182, 211);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contactIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contactText {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contactLink {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: rgb(245, 182, 211);
+}
+
+/* Divider line */
+.divider {
+  width: 100%;
+  max-width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 100%);
+  margin: 0.5rem 0;
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 182, 211);
+  border-radius: 50%;
+  color: rgb(0, 29, 70);
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.socialIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Right Column - Links */
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .rightColumn {
+    align-items: flex-start;
+    padding-left: 2rem;
+  }
+}
+
+.linksTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(245, 182, 211);
+  margin: 0 0 1.5rem 0;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.linksList li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bullet {
+  color: rgb(245, 182, 211);
+  font-size: 10px;
+}
+
+.navLink {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: rgb(245, 182, 211);
+}
+
+/* Bottom Pink Strip */
+.bottomStrip {
+  position: relative;
+  width: 100%;
+  background-color: rgb(245, 182, 211);
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.bottomContent {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 14px;
+  color: rgb(71, 2, 2);
+}
+
+@media (min-width: 768px) {
+  .bottomContent {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.bottomText {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bottomText {
+    text-align: left;
+  }
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.bottomLink {
+  color: rgb(71, 2, 2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.bottomLink:hover {
+  color: rgb(0, 0, 0);
+}

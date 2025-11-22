@@ -1,0 +1,926 @@
+{
+  "title": "Our Tours",
+  "slug": "our-tours",
+  "sections": [
+    {
+      "id": "9b580c5",
+      "columns": []
+    },
+    {
+      "id": "7baf7a8f",
+      "columns": [
+        {
+          "id": "ac827c5",
+          "widgets": [
+            {
+              "id": "5cc45b57",
+              "type": "ha-card",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7.jpg",
+                  "id": 321,
+                  "size": "",
+                  "alt": "",
+                  "source": "library"
+                },
+                "thumbnail_size": "medium",
+                "badge_text": "Popular",
+                "title": "Discover Barbuda by Air",
+                "description": "Perfect for those wanting a full-day experience of the island’s rich heritage and natural wonders, this package offers an incredible journey that begins with a scenic 15-minute flight from Antigua to Barbuda.",
+                "align": "left",
+                "align_tablet": "center",
+                "align_mobile": "center",
+                "button_text": "Learn More",
+                "button_link": {
+                  "url": "https://www.barbudaleisure.com/product/discover-barbuda-by-air/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "button_fullwidth": "yes",
+                "image_width": {
+                  "unit": "%",
+                  "size": 50,
+                  "sizes": []
+                },
+                "image_css_filters_hover_css_filter": "custom",
+                "image_css_filters_hover_brightness": {
+                  "unit": "px",
+                  "size": 112,
+                  "sizes": []
+                },
+                "image_css_filters_hover_saturate": {
+                  "unit": "px",
+                  "size": 110,
+                  "sizes": []
+                },
+                "image_background_hover_transition": {
+                  "unit": "px",
+                  "size": 0.8,
+                  "sizes": []
+                },
+                "badge_offset_toggle": "yes",
+                "badge_offset_x_tablet": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "badge_offset_y_tablet": {
+                  "unit": "px",
+                  "size": -11,
+                  "sizes": []
+                },
+                "badge_typography_typography": "custom",
+                "badge_typography_font_family": "Open Sans",
+                "badge_typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "badge_typography_font_size_tablet": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "badge_typography_font_size_mobile": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "badge_typography_font_weight": "600",
+                "badge_typography_text_transform": "uppercase",
+                "badge_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "content_padding_tablet": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "15",
+                  "bottom": "15",
+                  "left": "15",
+                  "isLinked": true
+                },
+                "title_spacing": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "%",
+                  "size": 48,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 30,
+                  "sizes": []
+                },
+                "_element_custom_width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_flex_align_self_mobile": "center",
+                "__globals__": {
+                  "badge_typography_typography": "",
+                  "title_color": "globals/colors?id=text",
+                  "title_typography_typography": "",
+                  "description_typography_typography": "globals/typography?id=4a32cce",
+                  "button_color": "globals/colors?id=db2d10d",
+                  "button_bg_color": "globals/colors?id=ee9d8c2",
+                  "button_hover_bg_color": "globals/colors?id=e26b2e0",
+                  "button_hover_color": "globals/colors?id=db2d10d",
+                  "_background_color": "globals/colors?id=db2d10d"
+                },
+                "_title": "Discover Barbuda by Air",
+                "image_position": "left",
+                "image_position_tablet": "left",
+                "image_width_tablet": {
+                  "unit": "%",
+                  "size": 64,
+                  "sizes": []
+                },
+                "image_height": {
+                  "unit": "px",
+                  "size": 420,
+                  "sizes": []
+                },
+                "image_padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "badge_padding": {
+                  "unit": "px",
+                  "top": "-1",
+                  "right": "-1",
+                  "bottom": "-1",
+                  "left": "-1",
+                  "isLinked": true
+                },
+                "_element_width_tablet": "inherit",
+                "_background_background": "classic",
+                "_ha_css_filters_css_filter": "custom",
+                "title_color": "#7A7A7A",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Lexend Deca",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "title_typography_font_weight": "600",
+                "title_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.75,
+                  "sizes": []
+                },
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Open Sans",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "description_typography_font_size_tablet": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "description_typography_font_size_mobile": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "description_typography_font_weight": "600",
+                "description_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Roboto",
+                "button_typography_font_weight": "500",
+                "button_typography_text_decoration": "none",
+                "button_box_shadow_box_shadow_type": "yes",
+                "button_color": "#FFFFFF",
+                "button_bg_color": "#30BBD8",
+                "button_hover_color": "#FFFFFF",
+                "button_hover_bg_color": "#F5B6D3",
+                "_background_color": "#FFFFFF",
+                "ha_cmc_text": "Happy Addons"
+              }
+            },
+            {
+              "id": "3bfa03a8",
+              "type": "ha-card",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2.jpg",
+                  "id": 389,
+                  "size": "",
+                  "alt": "Discover Barbuda by Sea",
+                  "source": "library"
+                },
+                "thumbnail_size": "medium",
+                "badge_text": "Popular",
+                "title": "Discover Barbuda by Sea",
+                "description": "Set sail to Barbuda on our exclusive day tour, designed for those looking to uncover the island’s hidden beauty and cultural treasures!",
+                "align": "left",
+                "align_tablet": "center",
+                "align_mobile": "center",
+                "button_text": "Learn More",
+                "button_link": {
+                  "url": "https://www.barbudaleisure.com/product/discover-barbuda-by-sea/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "button_fullwidth": "yes",
+                "image_width": {
+                  "unit": "%",
+                  "size": 50,
+                  "sizes": []
+                },
+                "image_css_filters_hover_css_filter": "custom",
+                "image_css_filters_hover_brightness": {
+                  "unit": "px",
+                  "size": 112,
+                  "sizes": []
+                },
+                "image_css_filters_hover_saturate": {
+                  "unit": "px",
+                  "size": 110,
+                  "sizes": []
+                },
+                "image_background_hover_transition": {
+                  "unit": "px",
+                  "size": 0.8,
+                  "sizes": []
+                },
+                "badge_offset_toggle": "yes",
+                "badge_offset_x_tablet": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "badge_offset_y_tablet": {
+                  "unit": "px",
+                  "size": -11,
+                  "sizes": []
+                },
+                "badge_typography_typography": "custom",
+                "badge_typography_font_family": "Open Sans",
+                "badge_typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "badge_typography_font_size_tablet": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "badge_typography_font_size_mobile": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "badge_typography_font_weight": "600",
+                "badge_typography_text_transform": "uppercase",
+                "badge_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "content_padding_tablet": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "15",
+                  "bottom": "15",
+                  "left": "15",
+                  "isLinked": true
+                },
+                "title_spacing": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "%",
+                  "size": 48,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 30,
+                  "sizes": []
+                },
+                "_element_custom_width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_flex_align_self_mobile": "center",
+                "__globals__": {
+                  "badge_typography_typography": "",
+                  "title_color": "globals/colors?id=text",
+                  "title_typography_typography": "",
+                  "description_typography_typography": "globals/typography?id=4a32cce",
+                  "button_color": "globals/colors?id=db2d10d",
+                  "button_bg_color": "globals/colors?id=ee9d8c2",
+                  "button_hover_bg_color": "globals/colors?id=e26b2e0",
+                  "button_hover_color": "globals/colors?id=db2d10d",
+                  "_background_color": "globals/colors?id=db2d10d"
+                },
+                "_title": "Discover Barbuda by Sea",
+                "image_position": "left",
+                "image_position_tablet": "left",
+                "image_width_tablet": {
+                  "unit": "%",
+                  "size": 64,
+                  "sizes": []
+                },
+                "image_height": {
+                  "unit": "px",
+                  "size": 420,
+                  "sizes": []
+                },
+                "image_padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "badge_padding": {
+                  "unit": "px",
+                  "top": "-1",
+                  "right": "-1",
+                  "bottom": "-1",
+                  "left": "-1",
+                  "isLinked": true
+                },
+                "_element_width_tablet": "inherit",
+                "_background_background": "classic",
+                "_ha_css_filters_css_filter": "custom",
+                "title_color": "#7A7A7A",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Lexend Deca",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "title_typography_font_weight": "600",
+                "title_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.75,
+                  "sizes": []
+                },
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Open Sans",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "description_typography_font_size_tablet": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "description_typography_font_size_mobile": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "description_typography_font_weight": "600",
+                "description_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Roboto",
+                "button_typography_font_weight": "500",
+                "button_typography_text_decoration": "none",
+                "button_box_shadow_box_shadow_type": "yes",
+                "button_color": "#FFFFFF",
+                "button_bg_color": "#30BBD8",
+                "button_hover_color": "#FFFFFF",
+                "button_hover_bg_color": "#F5B6D3",
+                "_background_color": "#FFFFFF",
+                "ha_cmc_text": "Happy Addons"
+              }
+            },
+            {
+              "id": "e1e8fb",
+              "type": "ha-card",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15.jpg",
+                  "id": 445,
+                  "size": "",
+                  "alt": "",
+                  "source": "library"
+                },
+                "thumbnail_size": "medium",
+                "badge_text": "",
+                "title": "Private Charter by Air",
+                "description": "Experience the ultimate luxury and freedom of a private charter from Antigua to Barbuda.",
+                "align": "left",
+                "align_tablet": "center",
+                "align_mobile": "center",
+                "button_text": "Learn More",
+                "button_link": {
+                  "url": "https://www.barbudaleisure.com/product/private-charter-by-air/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "button_fullwidth": "yes",
+                "image_width": {
+                  "unit": "%",
+                  "size": 50,
+                  "sizes": []
+                },
+                "image_css_filters_hover_css_filter": "custom",
+                "image_css_filters_hover_brightness": {
+                  "unit": "px",
+                  "size": 112,
+                  "sizes": []
+                },
+                "image_css_filters_hover_saturate": {
+                  "unit": "px",
+                  "size": 110,
+                  "sizes": []
+                },
+                "image_background_hover_transition": {
+                  "unit": "px",
+                  "size": 0.8,
+                  "sizes": []
+                },
+                "badge_offset_toggle": "yes",
+                "badge_offset_x_tablet": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "badge_offset_y_tablet": {
+                  "unit": "px",
+                  "size": -11,
+                  "sizes": []
+                },
+                "badge_typography_typography": "custom",
+                "badge_typography_font_family": "Open Sans",
+                "badge_typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "badge_typography_font_size_tablet": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "badge_typography_font_size_mobile": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "badge_typography_font_weight": "600",
+                "badge_typography_text_transform": "uppercase",
+                "badge_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "content_padding_tablet": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "15",
+                  "bottom": "15",
+                  "left": "15",
+                  "isLinked": true
+                },
+                "title_spacing": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "%",
+                  "size": 48,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 30,
+                  "sizes": []
+                },
+                "_element_custom_width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_flex_align_self_mobile": "center",
+                "__globals__": {
+                  "badge_typography_typography": "",
+                  "title_color": "globals/colors?id=text",
+                  "title_typography_typography": "",
+                  "description_typography_typography": "globals/typography?id=4a32cce",
+                  "button_color": "globals/colors?id=db2d10d",
+                  "button_bg_color": "globals/colors?id=ee9d8c2",
+                  "button_hover_bg_color": "globals/colors?id=e26b2e0",
+                  "button_hover_color": "globals/colors?id=db2d10d",
+                  "_background_color": "globals/colors?id=db2d10d"
+                },
+                "_title": "Private Charter by Air",
+                "image_position": "left",
+                "image_position_tablet": "left",
+                "image_width_tablet": {
+                  "unit": "%",
+                  "size": 64,
+                  "sizes": []
+                },
+                "image_height": {
+                  "unit": "px",
+                  "size": 420,
+                  "sizes": []
+                },
+                "image_padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "badge_padding": {
+                  "unit": "px",
+                  "top": "-1",
+                  "right": "-1",
+                  "bottom": "-1",
+                  "left": "-1",
+                  "isLinked": true
+                },
+                "_element_width_tablet": "inherit",
+                "_background_background": "classic",
+                "_ha_css_filters_css_filter": "custom",
+                "title_color": "#7A7A7A",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Lexend Deca",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "title_typography_font_weight": "600",
+                "title_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.75,
+                  "sizes": []
+                },
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Open Sans",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "description_typography_font_size_tablet": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "description_typography_font_size_mobile": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "description_typography_font_weight": "600",
+                "description_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Roboto",
+                "button_typography_font_weight": "500",
+                "button_typography_text_decoration": "none",
+                "button_box_shadow_box_shadow_type": "yes",
+                "button_color": "#FFFFFF",
+                "button_bg_color": "#30BBD8",
+                "button_hover_color": "#FFFFFF",
+                "button_hover_bg_color": "#F5B6D3",
+                "_background_color": "#FFFFFF",
+                "ha_cmc_text": "Happy Addons"
+              }
+            },
+            {
+              "id": "6c232e74",
+              "type": "ha-card",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-scaled.jpg",
+                  "id": 596,
+                  "size": "",
+                  "alt": "",
+                  "source": "library"
+                },
+                "thumbnail_size": "medium",
+                "badge_text": "",
+                "title": "Private Charter by Sea",
+                "description": "Experience the ultimate luxury and freedom of a private charter from Antigua to Barbuda.",
+                "align": "left",
+                "align_tablet": "center",
+                "align_mobile": "center",
+                "button_text": "Learn More",
+                "button_link": {
+                  "url": "https://www.barbudaleisure.com/product/private-charter-by-sea/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "button_fullwidth": "yes",
+                "image_width": {
+                  "unit": "%",
+                  "size": 50,
+                  "sizes": []
+                },
+                "image_css_filters_hover_css_filter": "custom",
+                "image_css_filters_hover_brightness": {
+                  "unit": "px",
+                  "size": 112,
+                  "sizes": []
+                },
+                "image_css_filters_hover_saturate": {
+                  "unit": "px",
+                  "size": 110,
+                  "sizes": []
+                },
+                "image_background_hover_transition": {
+                  "unit": "px",
+                  "size": 0.8,
+                  "sizes": []
+                },
+                "badge_offset_toggle": "yes",
+                "badge_offset_x_tablet": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "badge_offset_y_tablet": {
+                  "unit": "px",
+                  "size": -11,
+                  "sizes": []
+                },
+                "badge_typography_typography": "custom",
+                "badge_typography_font_family": "Open Sans",
+                "badge_typography_font_size": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "badge_typography_font_size_tablet": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "badge_typography_font_size_mobile": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "badge_typography_font_weight": "600",
+                "badge_typography_text_transform": "uppercase",
+                "badge_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "content_padding_tablet": {
+                  "unit": "px",
+                  "top": "15",
+                  "right": "15",
+                  "bottom": "15",
+                  "left": "15",
+                  "isLinked": true
+                },
+                "title_spacing": {
+                  "unit": "px",
+                  "size": 30,
+                  "sizes": []
+                },
+                "_element_width": "initial",
+                "_element_custom_width": {
+                  "unit": "%",
+                  "size": 48,
+                  "sizes": []
+                },
+                "_element_custom_width_tablet": {
+                  "unit": "%",
+                  "size": 30,
+                  "sizes": []
+                },
+                "_element_custom_width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_flex_align_self_mobile": "center",
+                "__globals__": {
+                  "badge_typography_typography": "",
+                  "title_color": "globals/colors?id=text",
+                  "title_typography_typography": "",
+                  "description_typography_typography": "globals/typography?id=4a32cce",
+                  "button_color": "globals/colors?id=db2d10d",
+                  "button_bg_color": "globals/colors?id=ee9d8c2",
+                  "button_hover_bg_color": "globals/colors?id=e26b2e0",
+                  "button_hover_color": "globals/colors?id=db2d10d",
+                  "_background_color": "globals/colors?id=db2d10d"
+                },
+                "_title": "Private Charter",
+                "image_position": "left",
+                "image_position_tablet": "left",
+                "image_width_tablet": {
+                  "unit": "%",
+                  "size": 64,
+                  "sizes": []
+                },
+                "image_height": {
+                  "unit": "px",
+                  "size": 420,
+                  "sizes": []
+                },
+                "image_padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "badge_padding": {
+                  "unit": "px",
+                  "top": "-1",
+                  "right": "-1",
+                  "bottom": "-1",
+                  "left": "-1",
+                  "isLinked": true
+                },
+                "_element_width_tablet": "inherit",
+                "_background_background": "classic",
+                "_ha_css_filters_css_filter": "custom",
+                "title_color": "#7A7A7A",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Lexend Deca",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "title_typography_font_weight": "600",
+                "title_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.75,
+                  "sizes": []
+                },
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Open Sans",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 14,
+                  "sizes": []
+                },
+                "description_typography_font_size_tablet": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "description_typography_font_size_mobile": {
+                  "unit": "em",
+                  "size": "",
+                  "sizes": []
+                },
+                "description_typography_font_weight": "600",
+                "description_typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "button_typography_typography": "custom",
+                "button_typography_font_family": "Roboto",
+                "button_typography_font_weight": "500",
+                "button_typography_text_decoration": "none",
+                "button_box_shadow_box_shadow_type": "yes",
+                "button_color": "#FFFFFF",
+                "button_bg_color": "#30BBD8",
+                "button_hover_color": "#FFFFFF",
+                "button_hover_bg_color": "#F5B6D3",
+                "_background_color": "#FFFFFF",
+                "ha_cmc_text": "Happy Addons"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7cdff4a",
+      "columns": []
+    },
+    {
+      "id": "7dd812b",
+      "columns": [
+        {
+          "id": "af4a2ee",
+          "widgets": [
+            {
+              "id": "f0ea257",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-2.jpg",
+                  "alt": "",
+                  "id": 394
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "02444cb",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-8.jpg",
+                  "alt": "",
+                  "id": 395
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "81ec78e",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-6-2.jpg",
+                  "alt": "",
+                  "id": 393
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "3ddd1d8",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7.jpg",
+                  "alt": "",
+                  "id": 321
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "aa39736",
+          "widgets": [
+            {
+              "id": "e625f76",
+              "type": "heading",
+              "content": {
+                "title": "Thank You for Considering Us",
+                "htmlTag": "h2"
+              }
+            },
+            {
+              "id": "9427fe5",
+              "type": "text-editor",
+              "content": {
+                "editor": "<p>We look forward to making your trip a memorable one!</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

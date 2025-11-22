@@ -1,0 +1,95 @@
+/* Tour Detail Section Component Styles */
+
+.section {
+  padding: 1.5625rem;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .flexContainer {
+    flex-direction: row;
+  }
+
+  .flexContainerReverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .imageContainer {
+    width: 50%;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 50%;
+  }
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: rgb(122, 122, 122);
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+
+.description {
+  font-family: var(--font-primary);
+  font-size: 0.9375rem;
+  line-height: 2;
+  color: rgb(102, 102, 102);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.9375rem 1.75rem;
+  background-color: #30bbd8;
+  color: white;
+  border-radius: var(--border-radius-lg);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-semibold);
+  transition: var(--transition-base);
+}
+
+.button:hover {
+  opacity: 0.9;
+}

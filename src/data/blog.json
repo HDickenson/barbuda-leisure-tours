@@ -1,0 +1,25 @@
+{
+  "sectionHeading": "Latest Updates",
+  "backgroundColor": "transparent",
+  "padding": "80px 20px",
+  "posts": [
+    {
+      "id": "pristine-beaches",
+      "title": "Barbuda's Pristine Beaches: A Slice of Paradise",
+      "excerpt": "Barbuda's Pristine Beaches: A Slice of Paradise If you're dreaming of secluded, untouched shores with endless stretches of powdery sand and crystal-clear waters, Barbuda is the ultimate destination.",
+      "image": "/images/Allesandra-300x200.jpg",
+      "imageAlt": "Beautiful beach in Barbuda",
+      "link": "/our-blog/barbudas-pristine-beaches",
+      "date": "2024-11-16"
+    },
+    {
+      "id": "discover-barbuda",
+      "title": "Discover the Enchanting Island of Barbuda with Barbuda Leisure Day Tours",
+      "excerpt": "Discover the Enchanting Island of Barbuda with Barbuda Leisure Day Tours. Experience the untouched beauty and rich culture of this Caribbean paradise with our expertly guided tours.",
+      "image": "/images/Pink-Beach-North-scaled.jpg",
+      "imageAlt": "Barbuda island tour experience",
+      "link": "/our-blog/discover-enchanting-barbuda",
+      "date": "2024-11-16"
+    }
+  ]
+}

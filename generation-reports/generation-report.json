@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2025-11-19T21:29:20.646Z",
+  "version": "1.0.0",
+  "extraction": {
+    "path": "C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\extractors\\output\\comprehensive\\comprehensive-extraction.json",
+    "summary": {
+      "carouselSlides": 9,
+      "waveDividers": 5,
+      "sections": 4,
+      "images": 6
+    }
+  },
+  "generation": {
+    "files": [
+      {
+        "path": "C:/Users/harol/projects/Barbuda/barbuda-local/src/app/page.tsx",
+        "type": "page",
+        "linesOfCode": 534
+      }
+    ],
+    "dependencies": [],
+    "determinismHash": "b385ea831d68b51ec6980f128334969f7edfff19e5d305d1f8b810f2607fc565"
+  },
+  "validation": {
+    "coverage": null,
+    "typescript": null,
+    "visual": null
+  },
+  "dependencies": {
+    "required": [],
+    "added": [],
+    "skipped": [],
+    "installDuration": 0
+  },
+  "metrics": {
+    "totalDuration": 17,
+    "phases": {
+      "validation": 3,
+      "templateLoading": 0,
+      "codeGeneration": 5,
+      "dependencyInstall": 0,
+      "typeScriptValidation": 0
+    }
+  },
+  "issues": [
+    {
+      "severity": "info",
+      "component": "sections",
+      "message": "Section 1 has no images",
+      "fallback": "Use placeholder image URLs"
+    },
+    {
+      "severity": "info",
+      "component": "sections",
+      "message": "Section 2 has no images",
+      "fallback": "Use placeholder image URLs"
+    }
+  ]
+}

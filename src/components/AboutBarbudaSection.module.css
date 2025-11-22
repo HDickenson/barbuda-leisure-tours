@@ -1,0 +1,108 @@
+/* About Barbuda Section Component Styles */
+
+.section {
+  padding: var(--spacing-lg);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Card styles */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImage {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.cardTitle {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  color: rgb(51, 51, 51);
+  margin-bottom: var(--spacing-sm);
+}
+
+.cardDescription {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgb(102, 102, 102);
+}
+
+/* Content below cards */
+.contentSection {
+  margin-top: var(--spacing-2xl);
+  text-align: left;
+}
+
+.subHeading {
+  font-family: var(--font-primary);
+  font-size: 1.375rem;
+  font-weight: var(--font-weight-semibold);
+  color: rgb(51, 51, 51);
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.heading {
+  font-family: var(--font-primary);
+  font-size: 1.375rem;
+  font-weight: var(--font-weight-semibold);
+  color: rgb(51, 51, 51);
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.paragraph {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: 2;
+  color: rgb(85, 85, 85);
+  margin-bottom: var(--spacing-xs);
+  max-width: 50rem;
+  text-align: left;
+}
+
+/* Buttons container */
+.buttonsContainer {
+  margin-top: var(--spacing-lg);
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.button {
+  display: inline-block;
+  padding: 1.0625rem 1.75rem;
+  border-radius: var(--border-radius-lg);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.button:hover {
+  opacity: 0.9;
+}

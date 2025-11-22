@@ -1,0 +1,31 @@
+{
+  "sectionHeading": "Our Hottest Tours",
+  "tours": [
+    {
+      "id": "sea-tour",
+      "title": "Discover Barbuda by Sea",
+      "image": "/images/BarbudaLeisureTours-3-2-300x300.jpg",
+      "link": "/our-tours",
+      "popular": true
+    },
+    {
+      "id": "air-tour",
+      "title": "Discover Barbuda by Air",
+      "image": "/images/BarbudaLeisureTours-7-300x300.jpg",
+      "link": "/our-tours",
+      "popular": true
+    },
+    {
+      "id": "private-air",
+      "title": "Private Charter by Air",
+      "image": "/images/BarbudaLeisureTours-15-300x300.jpg",
+      "link": "/our-tours"
+    },
+    {
+      "id": "private-sea",
+      "title": "Private Charter by Sea",
+      "image": "/images/Allesandra-300x200.jpg",
+      "link": "/our-tours"
+    }
+  ]
+}
