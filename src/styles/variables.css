@@ -52,6 +52,9 @@
   --font-primary: "Lexend Deca", sans-serif;
   --font-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
+  /* Font Weight */
+  --font-weight-regular: 400;
+
   /* Font Sizes */
   --font-size-xs: 0.813rem;      /* 13px */
   --font-size-sm: 0.875rem;      /* 14px */

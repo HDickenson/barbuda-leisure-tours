@@ -377,7 +377,7 @@ export default function FAQPage() {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-12 bg-blue-50 border-y border-gray-200">
+      <section className="py-12 bg-[#E6F5FA] border-y border-gray-200">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Still Have Questions?
@@ -390,7 +390,7 @@ export default function FAQPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="tel:+1-268-460-3000"
-              className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+              className="inline-flex items-center justify-center bg-turquoise text-white px-8 py-3 rounded-lg hover:bg-turquoise-hover transition-colors font-semibold"
             >
               <svg
                 className="w-5 h-5 mr-2"
@@ -442,7 +442,7 @@ export default function FAQPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Operating Hours */}
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-4">24/7</div>
+              <div className="text-4xl font-bold text-turquoise mb-4">24/7</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Booking Available</h3>
               <p className="text-gray-700">
                 Book your tour anytime online or contact us for immediate assistance
@@ -451,7 +451,7 @@ export default function FAQPage() {
 
             {/* Fastest Booking */}
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-4">24 Hours</div>
+              <div className="text-4xl font-bold text-turquoise mb-4">24 Hours</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Confirmation</h3>
               <p className="text-gray-700">
                 Get confirmation of your tour booking within 24 hours of submission
