@@ -27,17 +27,18 @@ export default function Footer() {
       {/* Top Wave Divider */}
       <WaveDivider
         viewBox="0 0 283.5 27.8"
-        fillColor="rgb(255, 255, 255)"
+        fillColor="rgb(0, 29, 70)"
         height="120px"
         position="top"
         rotate={false}
         paths={waveBrushPaths}
+        width="100%"
       />
 
       {/* Ocean Wave Background */}
       <div className={styles.oceanWaveBackground}>
         <OceanWaveDivider
-          fillColor="#006994"
+          fillColor="rgba(0, 40, 80, 0.4)"
           height="400px"
           position="top"
         />
@@ -81,7 +82,7 @@ export default function Footer() {
           {/* Address */}
           <div className={styles.contactItem}>
             <span className={styles.contactIcon}>
-              <FontAwesomeIcon icon={faLocationDot} />
+              <FontAwesomeIcon icon={faLocationDot} className="fa-fw" />
             </span>
             <span className={styles.contactText}>
               P.O. Box W595, Woods Centre<br />
@@ -94,7 +95,7 @@ export default function Footer() {
           {/* Phone */}
           <div className={styles.contactItem}>
             <span className={styles.contactIcon}>
-              <FontAwesomeIcon icon={faPhone} />
+              <FontAwesomeIcon icon={faPhone} className="fa-fw" />
             </span>
             <a href="tel:+2687282538" className={styles.contactLink}>
               +268-728-BLDT (2538)
@@ -106,7 +107,7 @@ export default function Footer() {
           {/* Email */}
           <div className={styles.contactItem}>
             <span className={styles.contactIcon}>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope} className="fa-fw" />
             </span>
             <a href="mailto:bookings@barbudaleisure.com" className={styles.contactLink}>
               bookings@barbudaleisure.com
@@ -116,13 +117,13 @@ export default function Footer() {
           {/* Social Icons */}
           <div className={styles.socialIcons}>
             <a href="https://www.facebook.com/BarbudaLeisureDayTours" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              <FontAwesomeIcon icon={faFacebookF} />
+              <FontAwesomeIcon icon={faFacebookF} className="fa-lg" />
             </a>
             <a href="https://www.instagram.com/barbudaleisuredaytours/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              <FontAwesomeIcon icon={faInstagram} />
+              <FontAwesomeIcon icon={faInstagram} className="fa-lg" />
             </a>
             <a href="https://x.com/BarbudaLeisure" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              <FontAwesomeIcon icon={faXTwitter} />
+              <FontAwesomeIcon icon={faXTwitter} className="fa-lg" />
             </a>
           </div>
         </div>

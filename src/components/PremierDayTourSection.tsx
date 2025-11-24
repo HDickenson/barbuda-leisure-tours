@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import styles from './PremierDayTourSection.module.css';
 
 interface PremierDayTourSectionProps {
@@ -24,6 +26,7 @@ export default function PremierDayTourSection({
           <p className={styles.description}>{description}</p>
           <Link href={buttonHref} className={styles.button}>
             {buttonText}
+            <FontAwesomeIcon icon={faArrowRight} className={styles.buttonIcon} />
           </Link>
         </div>
       </div>

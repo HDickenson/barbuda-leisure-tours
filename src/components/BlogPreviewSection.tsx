@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import styles from './BlogPreviewSection.module.css';
 
 interface BlogPost {
@@ -65,6 +67,16 @@ export default function BlogPreviewSection({
               <p className={styles.excerpt}>
                 {post.excerpt}
               </p>
+
+              {post.link && (
+                <a
+                  href={post.link}
+                  className={styles.readMore}
+                >
+                  Read More
+                  <FontAwesomeIcon icon={faArrowRight} className={styles.buttonIcon} />
+                </a>
+              )}
             </article>
           ))}
         </div>

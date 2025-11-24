@@ -2,7 +2,6 @@
 
 .footer {
   position: relative;
-  background: linear-gradient(181deg, rgb(48, 187, 216) 10%, rgb(0, 29, 70) 84%);
   color: white;
   overflow: hidden;
 }
@@ -10,12 +9,13 @@
 /* Ocean Wave Background - positioned behind content */
 .oceanWaveBackground {
   position: absolute;
-  top: 80px;
+  top: 0;
   left: 0;
   right: 0;
   pointer-events: none;
   z-index: 0;
   opacity: 0.4;
+  mix-blend-mode: multiply;
 }
 
 /* Underwater coral/seaweed decoration at bottom */
@@ -37,7 +37,6 @@
 }
 
 .container {
-  max-width: 1140px;
   margin: 0 auto;
   padding: 120px 20px 100px;
   position: relative;
@@ -90,14 +89,14 @@
 
 .logoBlack {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 600;
   color: white;
 }
 
 .logoPink {
   font-family: "Dancing Script", cursive, sans-serif;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 400;
   color: rgb(245, 182, 211);
   font-style: italic;
@@ -105,7 +104,7 @@
 
 .logoSubtext {
   font-family: "Dancing Script", cursive, sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   color: rgb(245, 182, 211);
   font-style: italic;
@@ -116,7 +115,7 @@
 
 .tagline {
   font-family: "Dancing Script", cursive, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
   color: rgb(245, 182, 211);
   margin: 0.5rem 0 0 0;
@@ -145,6 +144,7 @@
   color: white;
   font-size: 16px;
   line-height: 1.6;
+  text-align: left;
 }
 
 .contactLink {
@@ -152,6 +152,7 @@
   font-size: 16px;
   text-decoration: none;
   transition: color 0.3s ease;
+  text-align: left;
 }
 
 .contactLink:hover {
@@ -182,7 +183,7 @@
   justify-content: center;
   background-color: rgb(245, 182, 211);
   border-radius: 50%;
-  color: rgb(0, 29, 70);
+  color: white;
   transition: all 0.3s ease;
 }
 
@@ -238,8 +239,8 @@
 }
 
 .navLink {
-  color: white;
-  font-size: 18px;
+  color: rgb(245, 182, 211);
+  font-size: 16px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -252,7 +253,7 @@
 .bottomStrip {
   position: relative;
   width: 100%;
-  background-color: rgb(245, 182, 211);
+  background-color: rgb(0, 29, 70);
   padding: 1rem 0;
   z-index: 10;
 }
@@ -266,7 +267,7 @@
   align-items: center;
   gap: 0.75rem;
   font-size: 14px;
-  color: rgb(71, 2, 2);
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -279,6 +280,7 @@
 
 .bottomText {
   text-align: center;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -294,7 +296,7 @@
 }
 
 .bottomLink {
-  color: rgb(71, 2, 2);
+  color: white;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;

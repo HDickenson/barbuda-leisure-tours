@@ -75,6 +75,10 @@
   box-shadow: 0 8px 25px rgba(48, 187, 216, 0.4);
 }
 
+.buttonIcon {
+  margin-left: 10px;
+}
+
 @media (max-width: 992px) {
   .section {
     padding: 70px 20px;

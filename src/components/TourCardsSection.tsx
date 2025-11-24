@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import styles from './TourCardsSection.module.css';
 
 interface TourCard {
@@ -10,6 +12,10 @@ interface TourCard {
   image: string;
   link: string;
   popular?: boolean;
+  button?: {
+    backgroundColor?: string;
+    textColor?: string;
+  };
 }
 
 interface TourCardsSectionProps {
@@ -44,8 +50,16 @@ export default function TourCardsSection({
               </div>
               <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>{card.title}</h3>
-                <Link href={card.link} className={styles.learnMore}>
+                <Link
+                  href={card.link}
+                  className={styles.learnMore}
+                  style={{
+                    backgroundColor: card.button?.backgroundColor,
+                    color: card.button?.textColor,
+                  }}
+                >
                   Learn More
+                  <FontAwesomeIcon icon={faArrowRight} className={styles.buttonIcon} />
                 </Link>
               </div>
             </div>

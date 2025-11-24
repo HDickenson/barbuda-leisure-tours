@@ -14,6 +14,9 @@ module.exports = {
           'primary-hover': 'var(--color-primary-hover)',
           secondary: 'var(--color-secondary)',
           'secondary-hover': 'var(--color-secondary-hover)',
+          'dark-red': '#470202', // Extracted from live site
+          'pink': '#F5B6D3',     // Extracted from live site
+          'cyan': '#30BBD8',     // Extracted from live site
         },
         // Turquoise (primary button color)
         turquoise: {

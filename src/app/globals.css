@@ -5,6 +5,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-leckerli: "Leckerli One", cursive;
+  --border-radius-lg: 12px;
+  --color-cta: #30bbd8;
+  --font-lexend: "Lexend Deca", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,10 +19,32 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-lexend), Arial, Helvetica, sans-serif;
+  /* background: linear-gradient(181deg, rgb(48, 187, 216) 10%, rgb(0, 29, 70) 84%); */
+  background-color: #ffffff;
+  color: #333333; /* Extracted color */
+  font-family: var(--font-open-sans), Arial, Helvetica, sans-serif; /* Default to Open Sans per extraction */
 }
+
+h1 {
+  font-family: var(--font-leckerli), cursive;
+  color: #ffffff; /* Extracted color */
+}
+
+h2 {
+  font-family: var(--font-lexend), sans-serif;
+  color: #ffffff; /* Extracted color */
+}
+
+h3 {
+  font-family: var(--font-open-sans), sans-serif;
+  color: #ffffff; /* Extracted color */
+}
+
+p {
+  font-family: var(--font-open-sans), sans-serif;
+  color: #470202; /* Extracted color */
+}
+
 
 /* Wave divider shapes */
 .wave-divider {

@@ -755,12 +755,12 @@ const tourCards = toursData.tours;
 // Why Choose Us features data - icons match WordPress
 const whyChooseUsFeatures = [
   {
-    icon: 'crown' as const,
+    icon: 'handshake' as const,
     title: "Seamless, Top-Tier Service",
     description: "We've partnered with the best in the tourism industry."
   },
   {
-    icon: 'network' as const,
+    icon: 'users' as const,
     title: "Convenient Travel Options",
     description: "Air, sea, private boat, or helicopter – we handle every detail."
   },
@@ -770,7 +770,7 @@ const whyChooseUsFeatures = [
     description: "Collaborations with Antigua and Barbuda's best hotels and resorts."
   },
   {
-    icon: 'sunrise' as const,
+    icon: 'clock' as const,
     title: "Flexible Tour Options",
     description: "Relaxing beach days, cultural explorations, or adventure."
   }
@@ -781,12 +781,16 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Hero Section with bottom wave divider */}
       <div className="relative">
-        <HeroCarousel {...pageData.hero} />
+        <HeroCarousel
+          slides={pageData.hero.slides}
+          minHeight={pageData.hero.minHeight}
+          backgroundOverlayColor={pageData.hero.backgroundOverlayColor}
+        />
         {pageData.waveDividers[0] && (
           <WaveDivider
             {...pageData.waveDividers[0]}
             position="bottom"
-            height="200px"
+            height="150px"
           />
         )}
       </div>
@@ -803,7 +807,14 @@ export default function Home() {
         )}
         <TourCardsSection
           heading={toursData.sectionHeading}
-          cards={tourCards}
+          cards={tourCards.map((card, index) => ({
+            ...card,
+            button: {
+              backgroundColor:
+                pageData.sections[0].content.buttons[index]?.backgroundColor,
+              textColor: pageData.sections[0].content.buttons[index]?.color,
+            },
+          }))}
         />
         {/* Bottom wave - white, rotated 180deg (Elementor: position=bottom, negative=false) */}
         {pageData.waveDividers[2] && (
@@ -828,9 +839,9 @@ export default function Home() {
         )}
         <WhyChooseUsSection
           heading="Why Choose Us?"
-          intro="We understand that your time is valuable. That's why we've partnered with the best in the tourism industry to deliver quality service."
+          intro="We understand that your time in Antigua and Barbuda is precious, which is why we’ve partnered with the best in the tourism industry to offer seamless, top-tier service."
           features={whyChooseUsFeatures}
-          backgroundColor="rgb(245, 182, 211)"
+          backgroundColor="rgba(245, 182, 211, 0.42)"
         />
         {/* Bottom wave - white wave at bottom of pink section */}
         {pageData.waveDividers[1] && (
