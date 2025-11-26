@@ -1,5 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Leckerli_One, Lexend, Lexend_Deca, Open_Sans, Roboto, Roboto_Slab, Lato, IBM_Plex_Sans } from "next/font/google";
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
 import "./globals.css";
 import "../styles/variables.css";
 import "../styles/components.css";
@@ -65,6 +68,12 @@ const ibmPlexSans = IBM_Plex_Sans({
 export const metadata: Metadata = {
   title: "Barbuda Leisure Day Tours",
   description: "Experience the beauty of Barbuda with our exclusive day tours",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({

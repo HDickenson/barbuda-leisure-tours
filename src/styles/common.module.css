@@ -1,6 +1,6 @@
 /* Common typography styles */
 .headingPrimary {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 32px;
   font-weight: 600;
   color: rgb(48, 187, 216);
@@ -8,14 +8,14 @@
 }
 
 .headingSecondary {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: rgb(71, 2, 2);
 }
 
 .bodyText {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 16px;
   color: rgb(122, 122, 122);
 }
@@ -29,7 +29,7 @@
   border-radius: 3px;
   cursor: pointer;
   font-weight: 600;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   transition: opacity 0.2s, background-color 0.3s;
 }
 
@@ -74,12 +74,12 @@
   font-size: 16px;
   border: 2px solid rgb(230, 245, 250);
   border-radius: 4px;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
 }
 
 .formLabel {
   display: block;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: rgb(71, 2, 2);

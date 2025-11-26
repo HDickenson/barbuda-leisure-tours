@@ -1,4 +1,6 @@
 import WaveDivider from './WaveDivider';
+import heroWave from './heroWavePaths';
+import styles from './InnerPageHero.module.css';
 
 interface InnerPageHeroProps {
   title: string;
@@ -21,21 +23,27 @@ export default function InnerPageHero({
   subtitle,
   backgroundImage,
   height = 'h-96 md:h-[500px]',
-  parallax = true,
+  parallax = false,
   overlayOpacity = 40,
   showWave = true,
   waveFillColor = '#FFFFFF',
 }: InnerPageHeroProps) {
   return (
-    <section
-      className={`relative ${height} w-full flex items-center justify-center`}
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        ...(parallax && { backgroundAttachment: 'fixed' }),
-      }}
-    >
+    <section className={`relative ${height} w-full flex items-center justify-center overflow-hidden`}>
+      {/* Background */}
+      <div
+        className={`${styles.bg} absolute inset-0`}
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+          backgroundAttachment: 'scroll',
+          // Avoid background-attachment: fixed by default (can produce inconsistent
+          // rendering in headless/browser captures). Use parallax opt-in if needed.
+          ...(parallax ? { backgroundAttachment: 'fixed' } : {})
+        }}
+        aria-hidden
+      />
       {/* Overlay */}
       <div
         className="absolute inset-0 bg-black"
@@ -44,22 +52,24 @@ export default function InnerPageHero({
 
       {/* Wave Divider */}
       {showWave && (
+        // Use the shared hero wave paths (same as front page small brush wave)
         <WaveDivider
-          pathD="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,133.3C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          viewBox="0 0 1440 320"
+          {...heroWave}
+          paths={heroWave.paths}
+          viewBox={heroWave.viewBox}
           fillColor={waveFillColor}
           position="bottom"
-          height="100px"
+          height="120px"
         />
       )}
 
       {/* Hero Content */}
-      <div className="relative z-10 text-center px-4 max-w-3xl">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+      <div className={`relative z-10 text-center px-4 max-w-3xl ${styles.contentWrap}`}>
+        <h1 className="font-['Leckerli_One'] text-[50px] md:text-[80px] font-light text-white leading-tight md:leading-[80px] mb-4 drop-shadow-sm">
           {title}
         </h1>
         {subtitle && (
-          <p className="text-lg md:text-xl text-white drop-shadow-md">
+          <p className="font-['Lexend_Deca'] text-lg md:text-xl text-white drop-shadow-sm">
             {subtitle}
           </p>
         )}

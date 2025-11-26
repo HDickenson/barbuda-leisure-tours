@@ -11,7 +11,7 @@
 }
 
 .heading {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 32px;
   font-weight: 600;
   color: rgb(48, 187, 216);
@@ -77,7 +77,7 @@
 
 .readMore {
   display: inline-block;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: white;

@@ -5,10 +5,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-leckerli: "Leckerli One", cursive;
+    /* Default fallback CSS variables for fonts. These act as safe fallbacks when next/font doesn't load
+      (e.g., in deterministic Playwright runs) — next/font will override these when present. */
+    --font-leckerli: 'Leckerli One', 'Leckerli One Fallback', cursive;
+    --font-lexend: 'Lexend', 'Lexend Deca', sans-serif;
+    --font-lexend-deca: 'Lexend Deca', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-roboto-slab: 'Roboto Slab', serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-ibm-plex: 'IBM Plex Sans', sans-serif;
   --border-radius-lg: 12px;
   --color-cta: #30bbd8;
-  --font-lexend: "Lexend Deca", sans-serif;
+  /* --font-lexend: "Lexend Deca", sans-serif; Removed to avoid conflict with next/font */
+  --color-navy: rgb(0, 29, 70);
+  --color-pink: rgb(245, 182, 211);
+  --color-cyan: #30bbd8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,31 +30,53 @@
   }
 }
 
+/* Desktop-first design: minimum width of 1260px */
+html {
+  min-width: 1260px;
+}
+
 body {
-  /* background: linear-gradient(181deg, rgb(48, 187, 216) 10%, rgb(0, 29, 70) 84%); */
   background-color: #ffffff;
-  color: #333333; /* Extracted color */
-  font-family: var(--font-open-sans), Arial, Helvetica, sans-serif; /* Default to Open Sans per extraction */
+  color: rgb(51, 51, 51); /* Extracted color */
+  font-family: var(--font-lexend), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; /* Extracted font stack */
+  font-size: 16px;
+  line-height: 24px;
+  min-width: 1260px;
 }
 
 h1 {
   font-family: var(--font-leckerli), cursive;
-  color: #ffffff; /* Extracted color */
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
 }
 
 h2 {
-  font-family: var(--font-lexend), sans-serif;
-  color: #ffffff; /* Extracted color */
+  font-family: var(--font-lexend), sans-serif; /* Extracted font */
+  color: #ffffff;
+  font-size: 20.8px;
+  font-weight: 600;
+  line-height: 41.6px;
+  letter-spacing: -0.75px;
 }
 
 h3 {
-  font-family: var(--font-open-sans), sans-serif;
-  color: #ffffff; /* Extracted color */
+  font-family: var(--font-open-sans), sans-serif; /* Extracted font */
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.75px;
 }
 
 p {
-  font-family: var(--font-open-sans), sans-serif;
-  color: #470202; /* Extracted color */
+  font-family: var(--font-open-sans), sans-serif; /* Extracted font */
+  color: rgb(71, 2, 2); /* Extracted color */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.75px;
 }
 
 

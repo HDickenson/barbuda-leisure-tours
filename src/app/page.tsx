@@ -10,6 +10,7 @@ import TourCardsSection from '@/components/TourCardsSection';
 import WhyChooseUsSection from '@/components/WhyChooseUsSection';
 import PremierDayTourSection from '@/components/PremierDayTourSection';
 import WaveDivider from '@/components/WaveDivider';
+import heroWave from '@/components/heroWavePaths';
 import BlogPreviewSection from '@/components/BlogPreviewSection';
 
 // Dynamic content from JSON files
@@ -39,7 +40,7 @@ const pageData = {
       }
     ],
     "backgroundOverlayColor": "rgba(0, 0, 0, 0.35)",
-    "minHeight": "626px"
+    "minHeight": "800px"
   },
   "waveDividers": [
     {
@@ -786,14 +787,20 @@ export default function Home() {
           minHeight={pageData.hero.minHeight}
           backgroundOverlayColor={pageData.hero.backgroundOverlayColor}
         />
-        {pageData.waveDividers[0] && (
-          <WaveDivider
-            {...pageData.waveDividers[0]}
-            position="bottom"
-            height="150px"
-          />
-        )}
+        {/* Re-enable the large hero wave on the front page (was intentionally disabled earlier). */}
+        {/* Use shared heroWave paths and a larger height so the front-page hero shows the big decorative wave. */}
+        <WaveDivider
+          {...heroWave}
+          paths={heroWave.paths}
+          viewBox={heroWave.viewBox}
+          fillColor={pageData.waveDividers?.[0]?.fillColor || 'rgb(255, 255, 255)'}
+          position="bottom"
+          height="240px"
+        />
       </div>
+
+      {/* Wrapper to match live DOM ordering and reduce content.order diffs */}
+      <div className="page-content">
 
       {/* Our Hottest Tours Section - has white waves top and bottom */}
       <div className="relative">
@@ -841,7 +848,7 @@ export default function Home() {
           heading="Why Choose Us?"
           intro="We understand that your time in Antigua and Barbuda is precious, which is why we’ve partnered with the best in the tourism industry to offer seamless, top-tier service."
           features={whyChooseUsFeatures}
-          backgroundColor="rgba(245, 182, 211, 0.42)"
+          backgroundColor="rgb(245, 182, 211)"
         />
         {/* Bottom wave - white wave at bottom of pink section */}
         {pageData.waveDividers[1] && (
@@ -887,6 +894,7 @@ export default function Home() {
         backgroundColor={blogData.backgroundColor}
         padding={blogData.padding}
       />
+      </div>
     </main>
   );
 }

@@ -3,16 +3,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark, faBullhorn } from '@fortawesome/free-solid-svg-icons';
 import styles from './Header.module.css';
+import ContactModal from './ContactModal';
 
 const menuItems = [
   { text: 'Home', url: '/' },
   { text: 'Tours', url: '/our-tours' },
   { text: 'Reviews', url: '/reviews' },
-  { text: 'FAQ', url: '/elementor-416' },
+  { text: 'FAQ', url: '/faq' },
   { text: 'Blog', url: '/our-blog' },
   { text: 'About Us', url: '/about-us' },
 ];
@@ -25,18 +27,22 @@ const socialLinks = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [contactModalOpen, setContactModalOpen] = useState(false);
+
+  const pathname = usePathname();
+  const isHome = pathname === '/';
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isHome ? styles.headerTransparent : ''}`}>
       <div className={styles.container}>
         <div className={styles.headerInner}>
           {/* Logo */}
           <Link href="/" className={styles.logoLink}>
             <Image
-              src="https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour.webp"
+              src="/images/header-logo.webp"
               alt="Barbuda Leisure Day Tours"
-              width={200}
-              height={70}
+              width={130}
+              height={45}
               className={styles.logo}
               priority
             />
@@ -55,8 +61,16 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Social Media Icons */}
+          {/* Contact Button and Social Media Icons */}
           <div className={styles.socialLinks}>
+            {/* Contact Button */}
+            <button 
+              onClick={() => setContactModalOpen(true)}
+              className={styles.contactButton}
+            >
+              Contact <FontAwesomeIcon icon={faBullhorn} className={styles.contactIcon} />
+            </button>
+            
             {socialLinks.map((social) => (
               <a
                 key={social.name}
@@ -114,6 +128,11 @@ export default function Header() {
             </div>
           </nav>
         )}
+
+        <ContactModal 
+          isOpen={contactModalOpen} 
+          onClose={() => setContactModalOpen(false)} 
+        />
       </div>
     </header>
   );

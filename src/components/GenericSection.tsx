@@ -28,6 +28,21 @@ function getHoverColor(bgColor: string | undefined): string {
   return '#26a7c4';
 }
 
+// Helper function to map font family names to CSS variables
+function mapFontFamily(fontFamily: string | undefined): string | undefined {
+  if (!fontFamily) return undefined;
+  const lower = fontFamily.toLowerCase();
+  // Check for exact matches or if the string contains the font name
+  if (lower.includes('lexend deca')) return 'var(--font-lexend-deca), sans-serif';
+  if (lower.includes('leckerli')) return 'var(--font-leckerli), cursive';
+  if (lower.includes('open sans')) return 'var(--font-open-sans), sans-serif';
+  if (lower.includes('roboto slab')) return 'var(--font-roboto-slab), serif';
+  if (lower.includes('roboto')) return 'var(--font-roboto), sans-serif';
+  if (lower.includes('lato')) return 'var(--font-lato), sans-serif';
+  if (lower.includes('ibm plex')) return 'var(--font-ibm-plex), sans-serif';
+  return fontFamily;
+}
+
 interface HeadingData {
   tag: string;
   text: string;
@@ -135,7 +150,7 @@ export default function GenericSection({
                     <HeadingTag
                       className={styles.headingMain}
                       style={{
-                        fontFamily: h.fontFamily,
+                        fontFamily: mapFontFamily(h.fontFamily),
                         fontSize: h.fontSize,
                         fontWeight: h.fontWeight,
                         color: h.color,
@@ -167,7 +182,7 @@ export default function GenericSection({
                   <HeadingTag
                     className={styles.tourHeading}
                     style={{
-                      fontFamily: h.fontFamily,
+                      fontFamily: mapFontFamily(h.fontFamily),
                       fontSize: h.fontSize,
                       fontWeight: h.fontWeight,
                       color: h.color,
@@ -188,7 +203,7 @@ export default function GenericSection({
               style={{
                 fontSize: content.paragraphs[0].fontSize,
                 color: content.paragraphs[0].color,
-                fontFamily: content.paragraphs[0].fontFamily
+                fontFamily: mapFontFamily(content.paragraphs[0].fontFamily)
               }}
             >
               {content.paragraphs[0].text}
@@ -206,7 +221,7 @@ export default function GenericSection({
                     <HeadingTag
                       className={styles.featureHeading}
                       style={{
-                        fontFamily: h.fontFamily,
+                        fontFamily: mapFontFamily(h.fontFamily),
                         fontSize: h.fontSize,
                         fontWeight: h.fontWeight,
                         color: h.color
@@ -220,7 +235,7 @@ export default function GenericSection({
                         style={{
                           fontSize: para.fontSize,
                           color: para.color,
-                          fontFamily: para.fontFamily
+                          fontFamily: mapFontFamily(para.fontFamily)
                         }}
                       >
                         {para.text}
@@ -242,7 +257,7 @@ export default function GenericSection({
                     key={i}
                     className={styles.headingItem}
                     style={{
-                      fontFamily: h.fontFamily,
+                      fontFamily: mapFontFamily(h.fontFamily),
                       fontSize: h.fontSize,
                       fontWeight: h.fontWeight,
                       color: h.color,
@@ -265,7 +280,7 @@ export default function GenericSection({
                   style={{
                     fontSize: p.fontSize,
                     color: p.color,
-                    fontFamily: p.fontFamily
+                    fontFamily: mapFontFamily(p.fontFamily)
                   }}
                 >
                   {p.text}
@@ -303,7 +318,7 @@ export default function GenericSection({
                         className={styles.caption}
                         data-has-button={button ? 'true' : undefined}
                         style={{
-                          fontFamily: caption.fontFamily || '"Lexend Deca", sans-serif',
+                          fontFamily: mapFontFamily(caption.fontFamily) || 'var(--font-lexend-deca), sans-serif',
                           fontSize: caption.fontSize || '16px',
                           fontWeight: caption.fontWeight || '600',
                           color: caption.color || 'rgb(122, 122, 122)'

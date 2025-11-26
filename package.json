@@ -16,8 +16,11 @@
     "@tailwindcss/typography": "^0.5.19",
     "next": "16.0.3",
     "nodemailer": "^7.0.10",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "react-markdown": "^10.1.0",
     "swiper": "^11.2.10"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import WaveDivider from '@/components/WaveDivider';
+import InnerPageHero from '@/components/InnerPageHero';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import { getToursByCategory } from '@/data/tours';
 
@@ -13,35 +13,20 @@ export default function OurToursPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-96">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'url(https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-9.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-30" />
-        <WaveDivider
-          pathD="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,133.3C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          viewBox="0 0 1440 320"
-          fillColor="#FFFFFF"
-          position="bottom"
-          height="100px"
-        />
-        <div className="container mx-auto px-4 h-full flex items-center justify-center relative z-10">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold text-white mb-4">Our Tours</h1>
-            <p className="text-xl text-white/90">Discover Barbuda Your Way</p>
-          </div>
-        </div>
-      </section>
+      <InnerPageHero
+        title="Our Tours"
+        subtitle="Discover Barbuda Your Way"
+        backgroundImage="/images/downloaded/BarbudaLeisureTours-9.jpg"
+        showWave={true}
+        waveFillColor="#FFFFFF"
+      />
+
+      <div className="page-content">
 
       {/* Signature Tours Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 hidden">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Signature Tours</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Our most popular day tours featuring the best of Barbuda&apos;s natural beauty and culture.
@@ -61,17 +46,17 @@ export default function OurToursPage() {
                       loading="lazy"
                     />
                   )}
-                  <div className="absolute top-4 right-4 bg-turquoise text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute top-4 right-4 bg-turquoise text-white px-3 py-1 rounded-full text-sm font-semibold hidden">
                     {tour.price}
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2 text-gray-800">{tour.title}</h3>
+                  <h3 className="font-lexend text-[16px] font-semibold text-[rgb(122,122,122)] mb-[30px]">{tour.title}</h3>
                   {tour.subtitle && (
-                    <p className="text-turquoise font-medium mb-3">{tour.subtitle}</p>
+                    <p className="text-turquoise font-medium mb-3 hidden">{tour.subtitle}</p>
                   )}
-                  <p className="text-gray-600 mb-4 leading-relaxed line-clamp-3">{tour.description}</p>
-                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                  <p className="font-open-sans text-[14px] font-semibold text-[rgb(97,97,97)] leading-[23.8px] mb-[25px] line-clamp-3">{tour.description}</p>
+                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-4 hidden">
                     <span className="flex items-center gap-1">
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -81,9 +66,9 @@ export default function OurToursPage() {
                   </div>
                   <Link
                     href={`/tours/${tour.slug}`}
-                    className="inline-block px-6 py-3 bg-turquoise text-white rounded-full hover:bg-turquoise-hover transition font-semibold"
+                    className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition"
                   >
-                    View Details
+                    Learn More
                   </Link>
                 </div>
               </div>
@@ -246,6 +231,8 @@ export default function OurToursPage() {
           </div>
         </div>
       </section>
+
+      </div>
     </main>
   );
 }

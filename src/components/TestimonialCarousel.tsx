@@ -57,13 +57,15 @@ export default function TestimonialCarousel() {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white rounded-lg p-8 shadow-xl min-h-[280px] flex flex-col justify-center">
-              <p className="text-gray-700 text-lg leading-relaxed mb-6 text-center">
-                &quot;{testimonial.text}&quot;
-              </p>
-              <p className="text-gray-900 font-bold text-xl text-center">
-                — {testimonial.author}
-              </p>
+            <div className="bg-transparent p-0 flex flex-col justify-center items-center">
+              <div className="max-w-[800px] mx-auto px-[20px] py-[20px]">
+                <p className="font-['Lexend_Deca'] text-[16px] font-normal text-[rgb(51,51,51)] leading-[24px] mb-6 text-center">
+                  &quot;{testimonial.text}&quot;
+                </p>
+                <p className="font-['Lexend_Deca'] text-[16px] font-bold text-[rgb(51,51,51)] text-center">
+                  — {testimonial.author}
+                </p>
+              </div>
             </div>
           </SwiperSlide>
         ))}
@@ -71,7 +73,7 @@ export default function TestimonialCarousel() {
 
       <style jsx global>{`
         .testimonial-swiper {
-          padding-bottom: 50px;
+          padding-bottom: 75px;
         }
 
         .testimonial-swiper .swiper-pagination {
@@ -79,7 +81,7 @@ export default function TestimonialCarousel() {
         }
 
         .testimonial-swiper .swiper-pagination-bullet {
-          background: var(--color-primary, #30bbd8);
+          background: #30bbd8;
           opacity: 0.5;
           width: 10px;
           height: 10px;

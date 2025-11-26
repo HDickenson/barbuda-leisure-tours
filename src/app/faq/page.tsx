@@ -234,20 +234,24 @@ function AccordionItem({
   onToggle: () => void;
 }) {
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden mb-4 shadow-sm hover:shadow-md transition-shadow">
+    <div className="border-0 rounded-none overflow-hidden mb-[10px] shadow-none">
       <button
         onClick={onToggle}
-        className="w-full px-6 py-4 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors"
+        className={`w-full px-[20px] py-[15px] flex items-center justify-between transition-colors border border-[#d5d8dc] rounded-[5px] ${
+          isOpen ? 'bg-[#30bbd8] text-white border-[#30bbd8]' : 'bg-white text-[#333333] hover:text-[#30bbd8]'
+        }`}
         aria-expanded={isOpen}
       >
-        <h3 className="text-lg font-semibold text-gray-800 text-left">{item.question}</h3>
+        <h3 className={`text-[16px] font-normal text-left font-['Lexend_Deca'] ${isOpen ? 'text-white' : 'text-[#333333]'}`}>
+          {item.question}
+        </h3>
         <span
           className={`flex-shrink-0 ml-4 transition-transform duration-300 ${
-            isOpen ? 'rotate-180' : ''
+            isOpen ? 'rotate-180 text-white' : 'text-[#333333]'
           }`}
         >
           <svg
-            className="w-6 h-6 text-gray-600"
+            className="w-4 h-4"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -256,7 +260,7 @@ function AccordionItem({
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              d="M19 9l-7 7-7-7"
             />
           </svg>
         </span>
@@ -264,11 +268,13 @@ function AccordionItem({
 
       <div
         className={`overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-96' : 'max-h-0'
+          isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-          <p className="text-gray-700 leading-relaxed">{item.answer}</p>
+        <div className="pt-[30px] pb-[30px] pl-[65px] pr-[85px] bg-[rgba(48,187,216,0.06)] border-0">
+          <p className="font-['Open_Sans'] text-[14px] leading-[24px] text-[rgb(122,122,122)]">
+            {item.answer}
+          </p>
         </div>
       </div>
     </div>
@@ -289,7 +295,7 @@ function FAQCategory({
 }) {
   return (
     <div className="mb-12">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-turquoise">
+      <h2 className="font-['Open_Sans'] text-[24px] font-semibold text-[rgb(84,89,95)] mb-[20px]">
         {category}
       </h2>
       <div className="space-y-0">
@@ -342,9 +348,12 @@ export default function FAQPage() {
       <InnerPageHero
         title="Frequently Asked Questions"
         subtitle="Everything you need to know about Barbuda Leisure Day Tours"
-        backgroundImage="https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureToursSection-2-2.jpg"
-        showWave={false}
+        backgroundImage="/images/downloaded/BarbudaLeisureTours-6.jpg"
+        showWave={true}
+        waveFillColor="#FFFFFF"
       />
+
+      <div className="page-content">
 
       {/* FAQ Content Section */}
       <section className="py-16 md:py-24 bg-gray-50">
@@ -375,100 +384,7 @@ export default function FAQPage() {
           </div>
         </div>
       </section>
-
-      {/* Contact CTA Section */}
-      <section className="py-12 bg-[#E6F5FA] border-y border-gray-200">
-        <div className="container mx-auto px-4 text-center max-w-3xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Still Have Questions?
-          </h2>
-          <p className="text-lg text-gray-700 mb-8">
-            Our team is here to help! If you don&apos;t find the answer you&apos;re looking for,
-            please don&apos;t hesitate to get in touch. We&apos;re available to answer any questions
-            and help you plan the perfect Barbuda experience.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="tel:+1-268-460-3000"
-              className="inline-flex items-center justify-center bg-turquoise text-white px-8 py-3 rounded-lg hover:bg-turquoise-hover transition-colors font-semibold"
-            >
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                />
-              </svg>
-              Call Us
-            </a>
-            <a
-              href="mailto:info@barbudaleisure.com"
-              className="inline-flex items-center justify-center bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-900 transition-colors font-semibold"
-            >
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-              Email Us
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Form Section */}
-      <ContactForm />
-
-      {/* Quick Info Section */}
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Quick Information
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Operating Hours */}
-            <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="text-4xl font-bold text-turquoise mb-4">24/7</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Booking Available</h3>
-              <p className="text-gray-700">
-                Book your tour anytime online or contact us for immediate assistance
-              </p>
-            </div>
-
-            {/* Fastest Booking */}
-            <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="text-4xl font-bold text-turquoise mb-4">24 Hours</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Confirmation</h3>
-              <p className="text-gray-700">
-                Get confirmation of your tour booking within 24 hours of submission
-              </p>
-            </div>
-
-            {/* Group Sizes */}
-            <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-4">1-100+</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Group Sizes</h3>
-              <p className="text-gray-700">
-                We accommodate everyone from solo travelers to large group tours
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
   );
 }

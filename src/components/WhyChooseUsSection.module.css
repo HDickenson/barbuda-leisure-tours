@@ -29,7 +29,7 @@
 }
 
 .heading {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 32px;
   font-weight: 600;
   color: rgb(71, 2, 2);
@@ -38,7 +38,7 @@
 }
 
 .intro {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 16px;
   color: rgb(71, 2, 2);
   text-align: center;
@@ -108,19 +108,30 @@
 }
 
 .featureTitle {
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 20px;
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 16px; /* Updated from extraction */
   font-weight: 600;
   color: rgb(71, 2, 2);
-  margin: 0 0 14px 0;
-  line-height: 1.3;
+  margin: 8px 0 16px; /* Updated from extraction */
+  line-height: 24px;
 }
 
 .featureDescription {
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 15px;
+  font-family: var(--font-open-sans), sans-serif; /* Updated from extraction */
+  font-size: 14.4px; /* Updated from extraction */
+  font-weight: 600; /* Updated from extraction */
   color: rgb(71, 2, 2);
-  line-height: 1.6;
+  line-height: 21.6px;
   margin: 0;
-  opacity: 0.8;
+}
+
+.iconWrapper svg {
+  width: 50px; /* Updated from extraction */
+  height: 50px; /* Updated from extraction */
+  color: rgb(71, 2, 2);
+}
+
+.icon {
+  font-size: 50px; /* Updated from extraction */
+  color: rgb(71, 2, 2);
 }

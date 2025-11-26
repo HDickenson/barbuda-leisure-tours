@@ -3,13 +3,42 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import styles from './Footer.module.css';
 import WaveDivider from './WaveDivider';
-import OceanWaveDivider from './OceanWaveDivider';
+import UnderwaterWave from './UnderwaterWave';
 
-// Wave-brush paths from WordPress
+// Extraction data: Social links
+const socialLinks = [
+  { platform: 'facebook', url: 'https://www.facebook.com/BarbudaLeisureDayTours', icon: faFacebookF },
+  { platform: 'instagram', url: 'https://www.instagram.com/barbudaleisuredaytours/', icon: faInstagram },
+  { platform: 'twitter', url: 'https://x.com/BarbudaLeisure', icon: faXTwitter },
+];
+
+// Extraction data: Contact info (from WordPress extraction)
+const contactInfo = {
+  address: "P.O. Box W595, Woods Centre\nSt. John's, Antigua & Barbuda, W.I.",
+  phone: '+268-728-BLDT (2538)',
+  email: 'bookings@barbudaleisure.com',
+};
+
+// Extraction data: Navigation links (from WordPress - correct order)
+const navLinks = [
+  { text: 'Tours', url: '/our-tours' },
+  { text: 'About Us', url: '/about-us' },
+  { text: 'Reviews', url: '/reviews' },
+  { text: 'FAQs', url: '/faq' },
+  { text: 'Our Blog', url: '/our-blog' },
+];
+
+// Extraction data: Legal links
+const legalLinks = [
+  { text: 'Terms and Conditions', url: '/terms-and-conditions' },
+  { text: 'Cancellation Policy', url: '/refund_returns' },
+];
+
+// Wave-brush paths from WordPress extraction
 const waveBrushPaths = [
   { d: "M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z", className: "elementor-shape-fill", opacity: null },
   { d: "M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3C267.7,18.8,269.7,18,269.6,18z", className: "elementor-shape-fill", opacity: null },
@@ -28,59 +57,118 @@ export default function Footer() {
       {/* Top Wave Divider */}
       <WaveDivider
         viewBox="0 0 283.5 27.8"
-        fillColor="rgb(0, 29, 70)"
+        fillColor="rgb(255, 255, 255)"
         height="120px"
         position="top"
         rotate={false}
         paths={waveBrushPaths}
       />
 
-      {/* Ocean Wave Background */}
-      <div className={styles.oceanWaveBackground}>
-        <OceanWaveDivider
-          fillColor="#ffffff"
-          height="400px"
-          position="top"
-        />
+      {/* Main Footer Content */}
+      <div className={styles.container}>
+        {/* Left Column - Logo and Contact */}
+        <div className={styles.leftColumn}>
+          {/* Footer Logo */}
+          <div className={styles.logoWrapper}>
+            <Link href="/">
+              <Image
+                src="/images/footer-logo-white.svg"
+                alt="Barbuda Leisure Day Tours"
+                width={200}
+                height={63}
+                className={styles.footerLogo}
+              />
+            </Link>
+          </div>
+
+          {/* Contact Information */}
+          <div className={styles.contactItem}>
+            <span className={styles.contactIcon}>
+              <FontAwesomeIcon icon={faLocationDot} />
+            </span>
+            <span className={styles.contactText}>
+              P.O. Box W595, Woods Centre<br />
+              St. John&apos;s, Antigua &amp; Barbuda, W.I.
+            </span>
+          </div>
+
+          {/* Line above phone number */}
+          <div className={styles.contactDivider}></div>
+
+          <div className={styles.contactItem}>
+            <span className={styles.contactIcon}>
+              <FontAwesomeIcon icon={faPhone} />
+            </span>
+            <a href="tel:+2687282538" className={styles.contactLink}>
+              {contactInfo.phone}
+            </a>
+          </div>
+
+          {/* Line below phone number */}
+          <div className={styles.contactDivider}></div>
+
+          <div className={styles.contactItem}>
+            <span className={styles.contactIcon}>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </span>
+            <a href={`mailto:${contactInfo.email}`} className={styles.contactLink}>
+              {contactInfo.email}
+            </a>
+          </div>
+
+          {/* Social Icons */}
+          <div className={styles.socialIcons}>
+            {socialLinks.map((social) => (
+              <a
+                key={social.platform}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialIcon}
+                aria-label={social.platform}
+              >
+                <FontAwesomeIcon icon={social.icon} />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Middle Column - Navigation Links */}
+        <div className={styles.middleColumn}>
+          <h2 className={styles.linksTitle}>Links</h2>
+          <ul className={styles.linksList}>
+            {navLinks.map((link, index) => (
+              <li key={link.url}>
+                <Link href={link.url} className={styles.navLink}>
+                  {link.text}
+                </Link>
+                {/* Dotted divider lines between link items (4 lines total) */}
+                {index < navLinks.length - 1 && (
+                  <div className={styles.linkDivider}></div>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
+
+      {/* Underwater Wave Decoration */}
+      <UnderwaterWave className={styles.underwaterWave} />
 
       {/* Bottom Pink Strip */}
       <div className={styles.bottomStrip}>
         <div className={styles.bottomContent}>
-          <span className={styles.bottomText}>
+          <p className={styles.bottomText}>
             © Copyright 2024 Barbuda Leisure Day Tours. All rights reserved.
-          </span>
+          </p>
           <div className={styles.bottomLinks}>
-            <Link href="/terms-and-conditions" className={styles.bottomLink}>
-              Terms and Conditions
-            </Link>
-            <Link href="/refund_returns" className={styles.bottomLink}>
-              Cancellation Policy
-            </Link>
+            {legalLinks.map((link) => (
+              <Link key={link.url} href={link.url} className={styles.bottomLink}>
+                {link.text}
+              </Link>
+            ))}
           </div>
         </div>
-      </div>
-
-      {/* Elementor Shape Bottom - Underwater Decoration */}
-      <div className={`${styles.elementorShape} ${styles.elementorShapeBottom}`} aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 200" preserveAspectRatio="xMidYMax slice">
-          <g fill="rgba(0, 40, 80, 0.4)">
-            {/* Coral and seaweed silhouettes */}
-            <path d="M0,200 L0,160 Q20,140 30,160 Q40,130 60,150 Q70,120 90,140 Q100,110 120,130 L120,200 Z" />
-            <path d="M80,200 L80,170 Q100,150 110,165 Q120,140 140,155 Q150,130 170,150 L170,200 Z" />
-            <path d="M200,200 Q210,160 200,140 Q220,150 210,120 Q230,130 220,100 Q240,110 230,80" strokeWidth="8" stroke="rgba(0, 40, 80, 0.3)" fill="none" />
-            <path d="M250,200 Q260,170 250,150 Q270,160 260,130 Q280,140 270,110" strokeWidth="6" stroke="rgba(0, 40, 80, 0.3)" fill="none" />
-            <path d="M400,200 L400,140 Q420,120 440,140 Q460,100 480,130 Q500,90 520,120 Q540,80 560,110 Q580,100 600,130 L600,200 Z" />
-            <path d="M550,200 L550,150 Q570,130 590,145 Q610,115 630,135 Q650,105 670,125 L670,200 Z" />
-            <path d="M750,200 Q760,150 750,120 Q780,140 760,90 Q800,110 780,60" strokeWidth="10" stroke="rgba(0, 40, 80, 0.25)" fill="none" />
-            <path d="M800,200 Q810,160 800,130 Q830,150 810,100" strokeWidth="8" stroke="rgba(0, 40, 80, 0.25)" fill="none" />
-            <path d="M1000,200 L1000,130 Q1030,100 1050,125 Q1070,85 1100,115 Q1130,75 1150,105 L1150,200 Z" />
-            <path d="M1200,200 L1200,150 Q1220,130 1240,145 Q1260,110 1280,135 L1280,200 Z" />
-            <path d="M1400,200 Q1410,150 1400,110 Q1430,130 1410,80 Q1450,100 1430,50" strokeWidth="10" stroke="rgba(0, 40, 80, 0.3)" fill="none" />
-            <path d="M1500,200 L1500,140 Q1530,110 1550,130 Q1580,90 1600,120 Q1630,80 1650,110 L1650,200 Z" />
-            <path d="M1750,200 L1750,160 Q1780,140 1800,155 Q1830,120 1860,145 Q1890,110 1920,140 L1920,200 Z" />
-          </g>
-        </svg>
       </div>
     </footer>
   );

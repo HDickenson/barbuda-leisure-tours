@@ -11,7 +11,7 @@
 }
 
 .heading {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 32px;
   font-weight: 600;
   color: rgb(48, 187, 216);
@@ -80,7 +80,7 @@
   z-index: 10;
   background-color: rgb(48, 187, 216);
   color: white;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 11px;
   font-weight: 600;
   padding: 6px 14px;
@@ -100,31 +100,35 @@
 }
 
 .cardTitle {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-lexend-deca), sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: rgb(84, 89, 95);
+  color: rgb(122, 122, 122); /* Updated from extraction */
   text-align: center;
   margin: 0;
-  line-height: 1.4;
+  line-height: 24px;
 }
 
 .learnMore {
-  display: inline-block;
-  font-family: "Lexend Deca", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-roboto), sans-serif; /* Updated from extraction */
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
-  background-color: rgb(245, 182, 211); /* Pink color restored */
-  padding: 12px 28px;
+  background-color: rgb(48, 187, 216); /* Updated from extraction */
+  padding: 15px 25px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Match extracted width behavior */
+  max-width: 200px;
 }
 
 .learnMore:hover {
-  background-color: rgb(240, 165, 200);
-  transform: scale(1.02);
+  background-color: rgb(0, 29, 70); /* Navy hover */
+  transform: translateY(-2px);
 }
 
 .buttonIcon {

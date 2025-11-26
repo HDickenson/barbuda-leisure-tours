@@ -16,6 +16,8 @@ interface WaveDividerProps {
   fillColor: string;
   position: 'top' | 'bottom';
   height?: string;
+  /** vertical offset applied to the SVG wrapper (e.g. '-2px'). Only affects visual position, not rotation */
+  offsetY?: string | number;
   rotate?: boolean;  // Explicit rotation control (overrides position-based rotation)
 }
 
@@ -26,6 +28,7 @@ export default function WaveDivider({
   fillColor,
   position,
   height = '100px',
+  offsetY,
   rotate
 }: WaveDividerProps) {
   // Support both single path (legacy) and multiple paths (WordPress-accurate)
@@ -40,17 +43,18 @@ export default function WaveDivider({
     <div
       className={`wave-divider wave-${position}`}
       style={{
-        position: 'absolute',
-        [position]: 0,
-        left: 0,
-        width: '100%',
-        height,
-        overflow: 'hidden',
-        lineHeight: 0,
-        transform: shouldRotate ? 'rotate(180deg)' : 'none',
-        zIndex: 10,
-        pointerEvents: 'none'
-      }}
+          position: 'absolute',
+          /* if offsetY passed, use it as the position offset for the chosen edge (top/bottom). Otherwise default to 0 */
+          [position]: offsetY !== undefined ? offsetY : 0,
+          left: 0,
+          width: '100%',
+          height,
+          overflow: 'hidden',
+          lineHeight: 0,
+          transform: shouldRotate ? 'rotate(180deg)' : 'none',
+          zIndex: 10,
+          pointerEvents: 'none'
+        }}
     >
       <svg
         viewBox={viewBox}

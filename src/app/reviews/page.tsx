@@ -1,53 +1,47 @@
-import WaveDivider from '@/components/WaveDivider';
+import InnerPageHero from '@/components/InnerPageHero';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
+import ContactForm from '@/components/ContactForm';
 
 export default function ReviewsPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-96">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'url(https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour.webp)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <WaveDivider
-          pathD="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,133.3C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          viewBox="0 0 1440 320"
-          fillColor="#FFFFFF"
-          position="bottom"
-          height="100px"
-        />
-        <div className="container mx-auto px-4 h-full flex items-center justify-center relative z-10">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold text-white mb-4">Customer Reviews</h1>
-          </div>
-        </div>
-      </section>
+      <InnerPageHero
+        title="Customer Reviews"
+        subtitle="What people say about our tours"
+        backgroundImage="/images/downloaded/BarbudaLeisureTours-7.jpg"
+        showWave={true}
+        waveFillColor="#FFFFFF"
+      />
+
+      <div className="page-content">
 
       {/* Main Content Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="prose prose-lg mb-12">
-              <p className="text-center text-xl">We greatly value your feedback and are excited to hear how we&apos;re doing! Your input—whether shared through email, social media, your hotel&apos;s tour desk or by completing our Customer Feedback Survey—is instrumental in helping us grow and elevate our services.</p>
+            <div className="mb-12">
+              <p className="font-['Lexend_Deca'] text-[16px] font-semibold text-[rgb(122,122,122)] leading-[24px] mb-[14.4px] text-left">We greatly value your feedback and are excited to hear how we&apos;re doing! Your input—whether shared through email, social media, your hotel&apos;s tour desk or by completing our Customer Feedback Survey—is instrumental in helping us grow and elevate our services.</p>
+              <p className="font-['Lexend_Deca'] text-[16px] font-semibold text-[rgb(122,122,122)] leading-[24px] text-left">We are committed to reviewing each piece of feedback and continuously enhancing our offerings based on your valuable insights. Thank you for helping us improve and make your experiences even better!</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Testimonial Carousel Section */}
-      <section className="py-20 bg-gray-100">
+      <section className="pb-20 pt-0 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <TestimonialCarousel />
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactForm />
+
+      {/* close page-content wrapper */}
+      </div>
     </main>
   );
 }
