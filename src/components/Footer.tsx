@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -32,20 +33,36 @@ export default function Footer() {
         position="top"
         rotate={false}
         paths={waveBrushPaths}
-        width="100%"
       />
 
       {/* Ocean Wave Background */}
       <div className={styles.oceanWaveBackground}>
         <OceanWaveDivider
-          fillColor="rgba(0, 40, 80, 0.4)"
+          fillColor="#ffffff"
           height="400px"
           position="top"
         />
       </div>
 
-      {/* Underwater coral/seaweed silhouette at bottom */}
-      <div className={styles.underwaterDecoration}>
+      {/* Bottom Pink Strip */}
+      <div className={styles.bottomStrip}>
+        <div className={styles.bottomContent}>
+          <span className={styles.bottomText}>
+            © Copyright 2024 Barbuda Leisure Day Tours. All rights reserved.
+          </span>
+          <div className={styles.bottomLinks}>
+            <Link href="/terms-and-conditions" className={styles.bottomLink}>
+              Terms and Conditions
+            </Link>
+            <Link href="/refund_returns" className={styles.bottomLink}>
+              Cancellation Policy
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Elementor Shape Bottom - Underwater Decoration */}
+      <div className={`${styles.elementorShape} ${styles.elementorShapeBottom}`} aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 200" preserveAspectRatio="xMidYMax slice">
           <g fill="rgba(0, 40, 80, 0.4)">
             {/* Coral and seaweed silhouettes */}
@@ -64,113 +81,6 @@ export default function Footer() {
             <path d="M1750,200 L1750,160 Q1780,140 1800,155 Q1830,120 1860,145 Q1890,110 1920,140 L1920,200 Z" />
           </g>
         </svg>
-      </div>
-
-      <div className={styles.container}>
-        {/* Left Column - Logo & Contact */}
-        <div className={styles.leftColumn}>
-          {/* Logo - Text-based matching WordPress style */}
-          <div className={styles.logoWrapper}>
-            <div className={styles.logoText}>
-              <span className={styles.logoBlack}>Barbuda</span>
-              <span className={styles.logoPink}>Leisure</span>
-              <span className={styles.logoSubtext}>Day Tours</span>
-            </div>
-            <p className={styles.tagline}>One Day, Endless Memories...</p>
-          </div>
-
-          {/* Address */}
-          <div className={styles.contactItem}>
-            <span className={styles.contactIcon}>
-              <FontAwesomeIcon icon={faLocationDot} className="fa-fw" />
-            </span>
-            <span className={styles.contactText}>
-              P.O. Box W595, Woods Centre<br />
-              St. John&apos;s, Antigua &amp; Barbuda, W.I.
-            </span>
-          </div>
-
-          <div className={styles.divider}></div>
-
-          {/* Phone */}
-          <div className={styles.contactItem}>
-            <span className={styles.contactIcon}>
-              <FontAwesomeIcon icon={faPhone} className="fa-fw" />
-            </span>
-            <a href="tel:+2687282538" className={styles.contactLink}>
-              +268-728-BLDT (2538)
-            </a>
-          </div>
-
-          <div className={styles.divider}></div>
-
-          {/* Email */}
-          <div className={styles.contactItem}>
-            <span className={styles.contactIcon}>
-              <FontAwesomeIcon icon={faEnvelope} className="fa-fw" />
-            </span>
-            <a href="mailto:bookings@barbudaleisure.com" className={styles.contactLink}>
-              bookings@barbudaleisure.com
-            </a>
-          </div>
-
-          {/* Social Icons */}
-          <div className={styles.socialIcons}>
-            <a href="https://www.facebook.com/BarbudaLeisureDayTours" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              <FontAwesomeIcon icon={faFacebookF} className="fa-lg" />
-            </a>
-            <a href="https://www.instagram.com/barbudaleisuredaytours/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              <FontAwesomeIcon icon={faInstagram} className="fa-lg" />
-            </a>
-            <a href="https://x.com/BarbudaLeisure" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              <FontAwesomeIcon icon={faXTwitter} className="fa-lg" />
-            </a>
-          </div>
-        </div>
-
-        {/* Right Column - Links */}
-        <div className={styles.rightColumn}>
-          <h3 className={styles.linksTitle}>Links</h3>
-          <ul className={styles.linksList}>
-            <li>
-              <span className={styles.bullet}>●</span>
-              <Link href="/our-tours" className={styles.navLink}>Tours</Link>
-            </li>
-            <li>
-              <span className={styles.bullet}>●</span>
-              <Link href="/about-us" className={styles.navLink}>About Us</Link>
-            </li>
-            <li>
-              <span className={styles.bullet}>●</span>
-              <Link href="/reviews" className={styles.navLink}>Reviews</Link>
-            </li>
-            <li>
-              <span className={styles.bullet}>●</span>
-              <Link href="/elementor-416" className={styles.navLink}>FAQs</Link>
-            </li>
-            <li>
-              <span className={styles.bullet}>●</span>
-              <Link href="/our-blog" className={styles.navLink}>Our Blog</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Bottom Pink Strip */}
-      <div className={styles.bottomStrip}>
-        <div className={styles.bottomContent}>
-          <span className={styles.bottomText}>
-            © Copyright 2024 Barbuda Leisure Day Tours. All rights reserved.
-          </span>
-          <div className={styles.bottomLinks}>
-            <Link href="/terms-and-conditions" className={styles.bottomLink}>
-              Terms and Conditions
-            </Link>
-            <Link href="/refund_returns" className={styles.bottomLink}>
-              Cancellation Policy
-            </Link>
-          </div>
-        </div>
       </div>
     </footer>
   );
