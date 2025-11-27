@@ -1,0 +1,97 @@
+{
+  "timestamp": "2025-11-27T13:18:55.957Z",
+  "threshold": 10,
+  "heightTolerance": 0.05,
+  "passed": false,
+  "summary": {
+    "total": 7,
+    "passed": 0,
+    "failed": 7
+  },
+  "pages": [
+    {
+      "name": "home",
+      "mismatch": 73.43,
+      "threshold": 10,
+      "mismatchPass": false,
+      "liveHeight": 5774,
+      "localHeight": 26319,
+      "heightDiff": -20545,
+      "heightVariance": 355.82,
+      "heightPass": false,
+      "pass": false
+    },
+    {
+      "name": "reviews",
+      "mismatch": 22.4,
+      "threshold": 10,
+      "mismatchPass": false,
+      "liveHeight": 2964,
+      "localHeight": 3058,
+      "heightDiff": -94,
+      "heightVariance": 3.17,
+      "heightPass": true,
+      "pass": false
+    },
+    {
+      "name": "blog",
+      "mismatch": 54.25,
+      "threshold": 10,
+      "mismatchPass": false,
+      "liveHeight": 3158,
+      "localHeight": 2154,
+      "heightDiff": 1004,
+      "heightVariance": 31.79,
+      "heightPass": false,
+      "pass": false
+    },
+    {
+      "name": "faq",
+      "mismatch": 31.49,
+      "threshold": 10,
+      "mismatchPass": false,
+      "liveHeight": 4382,
+      "localHeight": 3290,
+      "heightDiff": 1092,
+      "heightVariance": 24.92,
+      "heightPass": false,
+      "pass": false
+    },
+    {
+      "name": "tour-detail",
+      "mismatch": 43.46,
+      "threshold": 10,
+      "mismatchPass": false,
+      "liveHeight": 3046,
+      "localHeight": 3607,
+      "heightDiff": -561,
+      "heightVariance": 18.42,
+      "heightPass": false,
+      "pass": false
+    },
+    {
+      "name": "terms",
+      "mismatch": 63.63,
+      "threshold": 10,
+      "mismatchPass": false,
+      "liveHeight": 2387,
+      "localHeight": 2931,
+      "heightDiff": -544,
+      "heightVariance": 22.79,
+      "heightPass": false,
+      "pass": false
+    },
+    {
+      "name": "cancellation",
+      "mismatch": 83.83,
+      "threshold": 10,
+      "mismatchPass": false,
+      "liveHeight": 1755,
+      "localHeight": 2010,
+      "heightDiff": -255,
+      "heightVariance": 14.53,
+      "heightPass": false,
+      "pass": false
+    }
+  ]
+}

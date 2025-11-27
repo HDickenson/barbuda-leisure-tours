@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import InnerPageHero from '@/components/InnerPageHero';
+import ContactFormSection from '@/components/ContactFormSection';
 
 // FAQ Item Type Definition
 interface FAQItem {
@@ -292,6 +293,9 @@ export default function FAQPage() {
         </div>
       </section>
       </div>
+
+      {/* Contact Form Section */}
+      <ContactFormSection />
     </main>
   );
 }

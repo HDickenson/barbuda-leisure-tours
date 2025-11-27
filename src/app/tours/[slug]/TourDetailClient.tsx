@@ -7,6 +7,8 @@ import type { Tour } from '@/data/tours'
 import { BookingForm } from '@/components/booking/BookingForm'
 import type { TourConfig } from '@/components/booking/types'
 import WaveDivider from '@/components/WaveDivider'
+import heroWave from '@/components/heroWavePaths'
+import styles from '@/components/InnerPageHero.module.css'
 
 interface Props {
   tour: Tour
@@ -74,7 +76,7 @@ export default function TourDetailClient({ tour }: Props) {
             src={tour.heroImage}
             alt={tour.title}
             fill
-            className="object-cover"
+            className={`${styles.bg} object-cover`}
             priority
           />
         ) : (
@@ -82,22 +84,23 @@ export default function TourDetailClient({ tour }: Props) {
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         <WaveDivider
-          pathD="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,133.3C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          viewBox="0 0 1440 320"
+          {...heroWave}
+          viewBox={heroWave.viewBox}
+          paths={heroWave.paths}
           fillColor="#FFFFFF"
           position="bottom"
-          height="100px"
+          height="120px"
         />
         <div className="absolute bottom-0 left-0 right-0 pb-28">
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="inline-block px-3 py-1 bg-turquoise text-white rounded-full text-sm font-semibold mb-4">
               {tour.category.charAt(0).toUpperCase() + tour.category.slice(1)} Tour
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="font-['Leckerli_One'] text-[50px] md:text-[80px] font-light text-[rgb(48,187,216)] leading-tight md:leading-[80px] mb-4">
               {tour.title}
             </h1>
             {tour.subtitle && (
-              <p className="text-xl md:text-2xl text-white/90">
+              <p className="font-['Lexend_Deca'] text-xl md:text-2xl text-white/90">
                 {tour.subtitle}
               </p>
             )}
@@ -105,8 +108,9 @@ export default function TourDetailClient({ tour }: Props) {
         </div>
       </section>
 
-      {/* Tour Details */}
-      <section className="py-16 bg-white">
+      {/* Tour Details (wrapped in page-content to match live DOM ordering) */}
+      <div className="page-content">
+        <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Main Content */}
@@ -114,7 +118,7 @@ export default function TourDetailClient({ tour }: Props) {
               {/* Description */}
               <div>
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">About This Tour</h2>
-                <p className="text-gray-600 leading-relaxed text-lg">
+                <p className="font-['Roboto'] text-[18px] font-semibold text-[rgb(122,122,122)] leading-[27px]">
                   {tour.description}
                 </p>
               </div>
@@ -123,11 +127,15 @@ export default function TourDetailClient({ tour }: Props) {
               {tour.included && tour.included.length > 0 && (
                 <div>
                   <h2 className="text-2xl font-bold text-gray-800 mb-4">What&apos;s Included</h2>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-2">
                     {tour.included.map((item, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-green-500 mr-2 mt-1">✓</span>
-                        <span className="text-gray-600">{item}</span>
+                      <li key={index} className="flex items-center mx-2">
+                        <span className="text-[rgb(48,187,216)]">
+                          <svg className="w-4 h-4 fill-current" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                          </svg>
+                        </span>
+                        <span className="font-['Roboto'] text-[16px] text-[rgb(84,89,95)] pl-[5px]">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -186,11 +194,15 @@ export default function TourDetailClient({ tour }: Props) {
               {tour.whatToBring && tour.whatToBring.length > 0 && (
                 <div>
                   <h2 className="text-2xl font-bold text-gray-800 mb-4">What to Bring</h2>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-2">
                     {tour.whatToBring.map((item, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-blue-500 mr-2">•</span>
-                        <span className="text-gray-600">{item}</span>
+                      <li key={index} className="flex items-center mx-2">
+                        <span className="text-[rgb(48,187,216)]">
+                          <svg className="w-4 h-4 fill-current" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                          </svg>
+                        </span>
+                        <span className="font-['Roboto'] text-[16px] text-[rgb(84,89,95)] pl-[5px]">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -218,7 +230,7 @@ export default function TourDetailClient({ tour }: Props) {
             {/* Sidebar - Booking Card */}
             <div className="lg:col-span-1">
               <div className="bg-gray-50 p-6 rounded-xl sticky top-4 shadow-lg">
-                <div className="text-3xl font-bold text-turquoise mb-1">
+                <div className="font-['Open_Sans'] text-[24px] font-bold text-[rgb(48,187,216)] mb-1">
                   {tour.price}
                 </div>
                 {tour.pricing?.notes && (
@@ -259,9 +271,12 @@ export default function TourDetailClient({ tour }: Props) {
 
                 <button
                   onClick={() => setIsBookingOpen(true)}
-                  className="w-full bg-turquoise text-white text-center px-6 py-4 rounded-full text-lg font-bold hover:bg-turquoise-hover transition transform hover:scale-105 shadow-lg"
+                  className="w-full bg-[rgb(245,182,211)] text-white text-center px-[28px] py-[17px] rounded-[8px] text-[14px] font-medium font-['Roboto'] hover:bg-[rgb(235,172,201)] transition transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
                 >
-                  Book This Tour
+                  Book Reservation
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
                 </button>
 
                 <p className="text-center text-sm text-gray-500 mt-3">
@@ -273,7 +288,7 @@ export default function TourDetailClient({ tour }: Props) {
         </div>
       </section>
 
-      {/* Gallery */}
+        {/* Gallery */}
       {tour.gallery && tour.gallery.length > 0 && (
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 max-w-5xl">
@@ -298,8 +313,8 @@ export default function TourDetailClient({ tour }: Props) {
         </section>
       )}
 
-      {/* Back to Tours */}
-      <section className="py-12 bg-white">
+        {/* Back to Tours */}
+        <section className="py-12 bg-white">
         <div className="container mx-auto px-4 text-center">
           <Link
             href="/our-tours"
@@ -312,6 +327,8 @@ export default function TourDetailClient({ tour }: Props) {
           </Link>
         </div>
       </section>
+
+      </div>
 
       {/* Booking Form Modal */}
       <BookingForm

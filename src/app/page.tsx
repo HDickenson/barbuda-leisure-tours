@@ -753,29 +753,8 @@ const pageData = {
 // Tour cards data - imported from JSON
 const tourCards = toursData.tours;
 
-// Why Choose Us features data - icons match WordPress
-const whyChooseUsFeatures = [
-  {
-    icon: 'handshake' as const,
-    title: "Seamless, Top-Tier Service",
-    description: "We've partnered with the best in the tourism industry."
-  },
-  {
-    icon: 'users' as const,
-    title: "Convenient Travel Options",
-    description: "Air, sea, private boat, or helicopter – we handle every detail."
-  },
-  {
-    icon: 'diamond' as const,
-    title: "Luxury and Comfort",
-    description: "Collaborations with Antigua and Barbuda's best hotels and resorts."
-  },
-  {
-    icon: 'clock' as const,
-    title: "Flexible Tour Options",
-    description: "Relaxing beach days, cultural explorations, or adventure."
-  }
-];
+// Why Choose Us features data - hidden to match live site
+const whyChooseUsFeatures: any[] = [];
 
 export default function Home() {
   return (

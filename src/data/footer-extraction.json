@@ -1,0 +1,91 @@
+{
+  "logo": {
+    "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour-White.svg",
+    "width": 200,
+    "height": 63
+  },
+  "contact": {
+    "items": [
+      {
+        "text": "P.O. Box W595, Woods Centre  St. John's, Antigua & Barbuda, W.I.",
+        "href": null,
+        "icon": "location"
+      },
+      {
+        "text": "+268-728-BLDT (2538)",
+        "href": "tel:+268-728-2538",
+        "icon": "phone"
+      },
+      {
+        "text": "bookings@barbudaleisure.com",
+        "href": "mailto:bookings@barbudaleisure.com",
+        "icon": "email"
+      }
+    ],
+    "styles": {
+      "fontFamily": "Open Sans",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "-0.25px",
+      "lineHeight": "24px"
+    }
+  },
+  "links": {
+    "title": "Links",
+    "titleStyles": {
+      "fontFamily": "Lato",
+      "fontSize": "20px",
+      "fontWeight": "800",
+      "color": "rgb(255, 255, 255)",
+      "lineHeight": "35px"
+    },
+    "items": [
+      { "text": "Tours", "href": "/our-tours" },
+      { "text": "About Us", "href": "/about-us" },
+      { "text": "Reviews", "href": "/reviews" },
+      { "text": "FAQs", "href": "/elementor-416" },
+      { "text": "Our Blog", "href": "/our-blog" }
+    ],
+    "linkStyles": {
+      "fontFamily": "Open Sans",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "color": "rgb(255, 255, 255)",
+      "hoverColor": "rgb(204, 51, 102)",
+      "letterSpacing": "-0.25px",
+      "lineHeight": "24px"
+    }
+  },
+  "tagline": {
+    "text": "Your trusted partner...",
+    "styles": {
+      "fontFamily": "Lato",
+      "fontSize": "20px",
+      "fontWeight": "800",
+      "color": "rgb(255, 255, 255)",
+      "lineHeight": "35px"
+    }
+  },
+  "bottomStrip": {
+    "copyright": "© Copyright 2024 Barbuda Leisure Day Tours. All rights reserved.",
+    "links": [
+      { "text": "Terms and Conditions", "href": "/terms-and-conditions" },
+      { "text": "Cancellation Policy", "href": "/refund_returns" }
+    ],
+    "styles": {
+      "fontFamily": "Open Sans",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "color": "rgb(71, 2, 2)",
+      "lineHeight": "21px"
+    }
+  },
+  "socialIcons": {
+    "items": [
+      { "platform": "facebook", "href": "https://www.facebook.com/BarbudaLeisureDayTours" },
+      { "platform": "instagram", "href": "https://www.instagram.com/barbudaleisuredaytours/" },
+      { "platform": "twitter", "href": "https://x.com/BarbudaLeisure" }
+    ]
+  }
+}

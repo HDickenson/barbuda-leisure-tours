@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "npx playwright test",
+    "test:visual": "node ../run-visual-regression.mjs",
+    "test:visual:report": "npx playwright show-report visual-regression/playwright-report"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",

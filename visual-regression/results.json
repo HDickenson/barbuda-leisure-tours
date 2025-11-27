@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-11-27T13:17:24.740Z",
+  "threshold": 10,
+  "heightTolerance": 0.05,
+  "passed": true,
+  "summary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  },
+  "pages": []
+}

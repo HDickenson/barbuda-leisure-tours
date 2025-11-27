@@ -3,11 +3,12 @@ import { getAllTours, getTourBySlug } from '@/data/tours'
 import TourDetailClient from './TourDetailClient'
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
-export default function TourDetailPage({ params }: Props) {
-  const tour = getTourBySlug(params.slug)
+export default async function TourDetailPage({ params }: Props) {
+  const { slug } = await params
+  const tour = getTourBySlug(slug)
 
   if (!tour) {
     notFound()

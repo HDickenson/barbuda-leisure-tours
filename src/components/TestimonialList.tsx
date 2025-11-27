@@ -50,9 +50,9 @@ export default function TestimonialList() {
       {testimonials.map((testimonial, index) => (
         <div
           key={index}
-          className="bg-[rgba(204,51,102,0.08)] rounded-[10px] p-6 md:p-8 relative"
+          className="bg-[rgba(204,51,102,0.08)] rounded-[10px] p-6 md:p-7 relative"
         >
-          <div className="flex gap-4 md:gap-6">
+          <div className="flex gap-4 md:gap-5">
             <div className="flex-shrink-0 pt-1">
               <QuoteIcon />
             </div>

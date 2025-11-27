@@ -2,28 +2,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import styles from './Footer.module.css';
-import WaveDivider from './WaveDivider';
-import UnderwaterWave from './UnderwaterWave';
 
-// Extraction data: Social links
-const socialLinks = [
-  { platform: 'facebook', url: 'https://www.facebook.com/BarbudaLeisureDayTours', icon: faFacebookF },
-  { platform: 'instagram', url: 'https://www.instagram.com/barbudaleisuredaytours/', icon: faInstagram },
-  { platform: 'twitter', url: 'https://x.com/BarbudaLeisure', icon: faXTwitter },
-];
-
-// Extraction data: Contact info (from WordPress extraction)
-const contactInfo = {
-  address: "P.O. Box W595, Woods Centre\nSt. John's, Antigua & Barbuda, W.I.",
-  phone: '+268-728-BLDT (2538)',
-  email: 'bookings@barbudaleisure.com',
-};
-
-// Extraction data: Navigation links (from WordPress - correct order)
+// Navigation links with icons (matching live site)
 const navLinks = [
   { text: 'Tours', url: '/our-tours' },
   { text: 'About Us', url: '/about-us' },
@@ -32,138 +13,121 @@ const navLinks = [
   { text: 'Our Blog', url: '/our-blog' },
 ];
 
-// Extraction data: Legal links
+// Legal links
 const legalLinks = [
   { text: 'Terms and Conditions', url: '/terms-and-conditions' },
   { text: 'Cancellation Policy', url: '/refund_returns' },
 ];
 
-// Wave-brush paths from WordPress extraction
-const waveBrushPaths = [
-  { d: "M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z", className: "elementor-shape-fill", opacity: null },
-  { d: "M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3C267.7,18.8,269.7,18,269.6,18z", className: "elementor-shape-fill", opacity: null },
-  { d: "M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2S227.6,9.9,227.4,9.8z", className: "elementor-shape-fill", opacity: null },
-  { d: "M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4C206.4,12.9,204.6,13.5,204.5,13.4z", className: "elementor-shape-fill", opacity: null },
-  { d: "M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6S201,10.7,201,10.6z", className: "elementor-shape-fill", opacity: null },
-  { d: "M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3C152.6,27.5,154.6,26.8,154.5,26.7z", className: "elementor-shape-fill", opacity: null },
-  { d: "M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z", className: "elementor-shape-fill", opacity: null },
-  { d: "M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0C76.9,11.5,75.3,12.5,75.5,12.6z", className: "elementor-shape-fill", opacity: null },
-  { d: "M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4C19.9,13.7,15.7,13.3,15.6,13.2z", className: "elementor-shape-fill", opacity: null }
-];
-
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      {/* Top Wave Divider */}
-      <WaveDivider
-        viewBox="0 0 283.5 27.8"
-        fillColor="rgb(255, 255, 255)"
-        height="120px"
-        position="top"
-        rotate={false}
-        paths={waveBrushPaths}
-      />
+      {/* Main Footer Content - Pink Background */}
+      <div className={styles.mainSection}>
+        <div className={styles.container}>
+          {/* Left Column - Logo and Contact with Large Circular Icons */}
+          <div className={styles.leftColumn}>
+            {/* Footer Logo */}
+            <div className={styles.logoWrapper}>
+              <Link href="/">
+                <Image
+                  src="/images/footer-logo-white.svg"
+                  alt="Barbuda Leisure Day Tours"
+                  width={180}
+                  height={57}
+                  className={styles.footerLogo}
+                />
+              </Link>
+            </div>
 
-      {/* Main Footer Content */}
-      <div className={styles.container}>
-        {/* Left Column - Logo and Contact */}
-        <div className={styles.leftColumn}>
-          {/* Footer Logo */}
-          <div className={styles.logoWrapper}>
-            <Link href="/">
-              <Image
-                src="/images/footer-logo-white.svg"
-                alt="Barbuda Leisure Day Tours"
-                width={200}
-                height={63}
-                className={styles.footerLogo}
-              />
-            </Link>
-          </div>
+            {/* Contact Items with Large Circular Icons */}
+            <div className={styles.contactList}>
+              {/* Location */}
+              <div className={styles.contactItem}>
+                <div className={styles.circleIcon}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div className={styles.contactText}>
+                  <p>P.O. Box W595, Woods Centre</p>
+                  <p>St. John&apos;s, Antigua &amp; Barbuda, W.I.</p>
+                </div>
+              </div>
 
-          {/* Contact Information */}
-          <div className={styles.contactItem}>
-            <span className={styles.contactIcon}>
-              <FontAwesomeIcon icon={faLocationDot} />
-            </span>
-            <span className={styles.contactText}>
-              P.O. Box W595, Woods Centre<br />
-              St. John&apos;s, Antigua &amp; Barbuda, W.I.
-            </span>
-          </div>
+              {/* Phone */}
+              <div className={styles.contactItem}>
+                <div className={styles.circleIcon}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </div>
+                <a href="tel:+2687282538" className={styles.contactLink}>
+                  +268-728-BLDT (2538)
+                </a>
+              </div>
 
-          {/* Line above phone number */}
-          <div className={styles.contactDivider}></div>
+              {/* Email */}
+              <div className={styles.contactItem}>
+                <div className={styles.circleIcon}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </div>
+                <a href="mailto:bookings@barbudaleisure.com" className={styles.contactLink}>
+                  bookings@barbudaleisure.com
+                </a>
+              </div>
+            </div>
 
-          <div className={styles.contactItem}>
-            <span className={styles.contactIcon}>
-              <FontAwesomeIcon icon={faPhone} />
-            </span>
-            <a href="tel:+2687282538" className={styles.contactLink}>
-              {contactInfo.phone}
-            </a>
-          </div>
-
-          {/* Line below phone number */}
-          <div className={styles.contactDivider}></div>
-
-          <div className={styles.contactItem}>
-            <span className={styles.contactIcon}>
-              <FontAwesomeIcon icon={faEnvelope} />
-            </span>
-            <a href={`mailto:${contactInfo.email}`} className={styles.contactLink}>
-              {contactInfo.email}
-            </a>
-          </div>
-
-          {/* Social Icons */}
-          <div className={styles.socialIcons}>
-            {socialLinks.map((social) => (
-              <a
-                key={social.platform}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialIcon}
-                aria-label={social.platform}
-              >
-                <FontAwesomeIcon icon={social.icon} />
+            {/* Social Icons */}
+            <div className={styles.socialIcons}>
+              <a href="https://www.facebook.com/BarbudaLeisureDayTours" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                </svg>
               </a>
-            ))}
+              <a href="https://www.instagram.com/barbudaleisuredaytours/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="17.5" cy="6.5" r="1.5"/>
+                </svg>
+              </a>
+              <a href="https://x.com/BarbudaLeisure" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="X (Twitter)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
 
-        {/* Middle Column - Navigation Links */}
-        <div className={styles.middleColumn}>
-          <h2 className={styles.linksTitle}>Links</h2>
-          <ul className={styles.linksList}>
-            {navLinks.map((link, index) => (
-              <li key={link.url}>
-                <Link href={link.url} className={styles.navLink}>
-                  {link.text}
-                </Link>
-                {/* Dotted divider lines between link items (4 lines total) */}
-                {index < navLinks.length - 1 && (
-                  <div className={styles.linkDivider}></div>
-                )}
-              </li>
-            ))}
-          </ul>
+          {/* Right Column - Links with Circular Icons */}
+          <div className={styles.rightColumn}>
+            <h2 className={styles.linksTitle}>Links</h2>
+            <ul className={styles.linksList}>
+              {navLinks.map((link) => (
+                <li key={link.url} className={styles.linkItem}>
+                  <div className={styles.linkCircleIcon}></div>
+                  <Link href={link.url} className={styles.navLink}>
+                    {link.text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
 
-      {/* Underwater Wave Decoration */}
-      <UnderwaterWave className={styles.underwaterWave} />
-
-      {/* Bottom Pink Strip */}
-      <div className={styles.bottomStrip}>
+      {/* Bottom Section - Copyright */}
+      <div className={styles.bottomSection}>
         <div className={styles.bottomContent}>
-          <p className={styles.bottomText}>
+          <p className={styles.copyright}>
             © Copyright 2024 Barbuda Leisure Day Tours. All rights reserved.
           </p>
-          <div className={styles.bottomLinks}>
+          <div className={styles.legalLinks}>
             {legalLinks.map((link) => (
-              <Link key={link.url} href={link.url} className={styles.bottomLink}>
+              <Link key={link.url} href={link.url} className={styles.legalLink}>
                 {link.text}
               </Link>
             ))}

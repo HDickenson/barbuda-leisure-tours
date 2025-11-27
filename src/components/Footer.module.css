@@ -1,36 +1,28 @@
-/* Footer Styles - Matching WordPress & Responsive */
+/* Footer Styles - Matching Live Site (Pink with Large Circular Icons) */
 
-:where(.footer) {
+.footer {
   position: relative;
-  color: white;
-  overflow: hidden;
-  background-color: rgb(0, 29, 70);
-  background-image: linear-gradient(181deg, var(--e-global-color-ee9d8c2, rgb(48, 187, 216)) 10%, #001D46 84%);
-  box-sizing: border-box;
-  font-family: var(--font-roboto), -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
+  width: 100%;
+}
+
+/* Main Section - Teal to Navy Gradient (matching live site) */
+.mainSection {
+  background: linear-gradient(181deg, rgb(48, 187, 216) 10%, rgb(0, 29, 70) 84%);
+  padding: 60px 20px 40px;
 }
 
 .container {
+  max-width: 1140px;
   margin: 0 auto;
-  padding: calc(4rem + 50px) 1.25rem 3rem;
-  position: relative;
-  z-index: 10;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
-  max-width: 1200px;
-  align-items: start;
+  gap: 40px;
 }
 
 @media (min-width: 768px) {
   .container {
-    grid-template-columns: 1.5fr 1fr;
-    gap: 3rem;
-    padding: calc(5rem + 50px) 2rem 4rem;
-    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
   }
 }
 
@@ -38,130 +30,124 @@
 .leftColumn {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
+  align-items: flex-start;
 }
 
-@media (min-width: 768px) {
-  .leftColumn {
-    align-items: flex-start;
-  }
-}
-
-/* Logo Wrapper */
 .logoWrapper {
-  margin-bottom: 2rem;
-  text-align: center;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .logoWrapper {
-    text-align: left;
-  }
+  margin-bottom: 30px;
 }
 
 .footerLogo {
-  width: 200px;
+  width: 180px;
   height: auto;
-  object-fit: contain;
 }
 
-/* Contact Items */
+/* Contact List */
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
 .contactItem {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
-  margin: 0.5rem 0;
+  gap: 15px;
 }
 
-.contactIcon {
-  color: rgb(245, 182, 211);
-  flex-shrink: 0;
-  margin-top: 0.125rem;
+/* Large Circular Icons */
+.circleIcon {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  border-radius: 50%;
+  background-color: rgb(245, 182, 211);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.contactIcon svg {
-  width: 1.25rem;
-  height: 1.25rem;
+.iconSvg {
+  width: 28px;
+  height: 28px;
+  color: white;
 }
 
 .contactText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 12px;
+}
+
+.contactText p {
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  color: rgb(255, 255, 255);
-  letter-spacing: -0.25px;
-  line-height: 24px;
-  text-align: left;
+  color: white;
+  line-height: 1.5;
 }
 
 .contactLink {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  color: rgb(255, 255, 255);
-  letter-spacing: -0.25px;
-  line-height: 24px;
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
-  text-align: left;
+  padding-top: 12px;
+  transition: opacity 0.3s ease;
 }
 
 .contactLink:hover {
-  color: rgb(204, 51, 102);
+  opacity: 0.8;
 }
 
 /* Social Icons */
 .socialIcons {
   display: flex;
-  gap: 0.75rem;
-  margin-top: 1rem;
+  gap: 10px;
+  margin-top: 25px;
 }
 
 .socialIcon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(245, 182, 211);
-  border-radius: 50%;
   color: white;
   transition: all 0.3s ease;
 }
 
 .socialIcon:hover {
   background-color: white;
-  transform: scale(1.1);
   color: rgb(245, 182, 211);
 }
 
 .socialIcon svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 18px;
+  height: 18px;
 }
 
-/* Middle Column - Links */
-.middleColumn {
+/* Right Column - Links */
+.rightColumn {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .middleColumn {
-    align-items: flex-start;
-  }
+  align-items: flex-start;
 }
 
 .linksTitle {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 800;
-  color: rgb(255, 255, 255);
-  line-height: 35px;
-  margin: 0 0 1.5rem 0;
+  color: white;
+  margin: 0 0 25px 0;
 }
 
 .linksList {
@@ -170,116 +156,88 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 15px;
 }
 
-.linksList li {
-  display: block;
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Circular Icon for Links */
+.linkCircleIcon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  background-color: rgb(245, 182, 211);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .navLink {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: rgb(255, 255, 255);
-  letter-spacing: -0.25px;
-  line-height: 24px;
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
-  display: block;
-  padding: 0.75rem 0;
+  transition: opacity 0.3s ease;
 }
 
 .navLink:hover {
-  color: rgb(204, 51, 102);
+  opacity: 0.8;
 }
 
-/* Dotted divider line for contact section (above/below phone) */
-.contactDivider {
-  width: 220px;
-  height: 0;
-  border-top: 1px dotted rgba(255, 255, 255, 0.5);
-  margin: 0.75rem 0;
-  margin-left: 2rem;
-}
-
-/* Dotted divider line between links (4 lines total) */
-.linkDivider {
-  width: 100%;
-  height: 0;
-  border-top: 1px dotted rgba(255, 255, 255, 0.5);
-  margin: 0.5rem 0;
-}
-
-/* Underwater Wave Decoration */
-.underwaterWave {
-  position: relative;
-  width: 100%;
-  height: 80px;
-  overflow: hidden;
-  z-index: 5;
-}
-
-/* Bottom Pink Strip */
-.bottomStrip {
-  position: relative;
-  width: 100%;
+/* Bottom Section - Copyright Bar */
+.bottomSection {
   background-color: rgb(245, 182, 211);
-  padding: 0.75rem 0;
-  z-index: 10;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
 }
 
 .bottomContent {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 21px;
-  color: rgb(71, 2, 2);
+  gap: 10px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .bottomContent {
     flex-direction: row;
     justify-content: space-between;
-    gap: 0;
-  }
-}
-
-.bottomText {
-  text-align: center;
-  color: rgb(71, 2, 2);
-  font-weight: 600;
-  margin: 0;
-}
-
-@media (min-width: 768px) {
-  .bottomText {
     text-align: left;
   }
 }
 
-.bottomLinks {
+.copyright {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(71, 2, 2);
+}
+
+.legalLinks {
   display: flex;
-  gap: 2rem;
-  align-items: center;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.bottomLink {
+.legalLink {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
   color: rgb(71, 2, 2);
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
-.bottomLink:hover {
-  color: white;
+.legalLink:hover {
+  opacity: 0.7;
 }
