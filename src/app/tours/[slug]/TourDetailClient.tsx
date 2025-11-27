@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Tour } from '@/data/tours'
+import { getAllTours } from '@/data/tours'
 import { BookingForm } from '@/components/booking/BookingForm'
 import type { TourConfig } from '@/components/booking/types'
 import WaveDivider from '@/components/WaveDivider'
@@ -66,6 +67,12 @@ function getTourConfig(tour: Tour): TourConfig {
 export default function TourDetailClient({ tour }: Props) {
   const [isBookingOpen, setIsBookingOpen] = useState(false)
   const tourConfig = getTourConfig(tour)
+
+  // Get other tours for recommendations (exclude current tour)
+  const allTours = getAllTours()
+  const otherTours = allTours
+    .filter(t => t.slug !== tour.slug)
+    .slice(0, 3) // Show up to 3 related tours
 
   return (
     <main className="min-h-screen">
@@ -329,6 +336,186 @@ export default function TourDetailClient({ tour }: Props) {
       </section>
 
       </div>
+
+      {/* Other Tours Section */}
+      {otherTours.length > 0 && (
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Other Tours</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {otherTours.map((relatedTour, index) => (
+                <Link
+                  key={index}
+                  href={`/tours/${relatedTour.slug}`}
+                  className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+                >
+                  {relatedTour.heroImage && (
+                    <div className="relative h-48 overflow-hidden">
+                      <Image
+                        src={relatedTour.heroImage}
+                        alt={relatedTour.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                  )}
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-turquoise transition-colors">
+                      {relatedTour.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4 line-clamp-3">{relatedTour.description}</p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-2xl font-bold text-turquoise">{relatedTour.price}</span>
+                      <span className="text-sm text-gray-500">{relatedTour.duration}</span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Contact Form Section - "Make an Enquiry" */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Make an Enquiry</h2>
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="enquiry-firstName" className="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                  <input
+                    type="text"
+                    id="enquiry-firstName"
+                    name="firstName"
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-turquoise focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="enquiry-lastName" className="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                  <input
+                    type="text"
+                    id="enquiry-lastName"
+                    name="lastName"
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-turquoise focus:border-transparent"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="enquiry-email" className="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                <input
+                  type="email"
+                  id="enquiry-email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-turquoise focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label htmlFor="enquiry-subject" className="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                <input
+                  type="text"
+                  id="enquiry-subject"
+                  name="subject"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-turquoise focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label htmlFor="enquiry-message" className="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                <textarea
+                  id="enquiry-message"
+                  name="message"
+                  rows={6}
+                  required
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-turquoise focus:border-transparent"
+                />
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  className="w-full bg-[rgb(245,182,211)] text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-[rgb(235,172,201)] transition-colors"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section - "Get In Touch" */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Get In Touch</h2>
+          <div className="bg-gray-50 p-8 rounded-lg shadow-md">
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="contact-firstName" className="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                  <input
+                    type="text"
+                    id="contact-firstName"
+                    name="firstName"
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-turquoise focus:border-transparent bg-white"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="contact-lastName" className="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                  <input
+                    type="text"
+                    id="contact-lastName"
+                    name="lastName"
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-turquoise focus:border-transparent bg-white"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="contact-email" className="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-turquoise focus:border-transparent bg-white"
+                />
+              </div>
+              <div>
+                <label htmlFor="contact-subject" className="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="subject"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-turquoise focus:border-transparent bg-white"
+                />
+              </div>
+              <div>
+                <label htmlFor="contact-message" className="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows={6}
+                  required
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-turquoise focus:border-transparent bg-white"
+                />
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  className="w-full bg-[rgb(245,182,211)] text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-[rgb(235,172,201)] transition-colors"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
       {/* Booking Form Modal */}
       <BookingForm

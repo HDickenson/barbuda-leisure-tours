@@ -13,13 +13,13 @@ export default function RefundReturnsPage() {
       />
 
       {/* Main Content Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-['Open_Sans'] text-[24px] font-semibold text-[rgb(122,122,122)] leading-[24px] mb-8 text-center">
+            <h2 className="font-['Open_Sans'] text-[24px] font-semibold text-[rgb(122,122,122)] leading-[24px] mb-6 text-center">
               Tour Cancellation Policy
             </h2>
-            <div className="space-y-8 font-['Open_Sans'] text-[14px] font-semibold text-[rgb(122,122,122)] leading-[21px]">
+            <div className="space-y-6 font-['Open_Sans'] text-[14px] font-semibold text-[rgb(122,122,122)] leading-[21px]">
               <div>
                 <p className="mb-2">1. Deposit Requirement: A 100% deposit is required to confirm your reservation.</p>
               </div>

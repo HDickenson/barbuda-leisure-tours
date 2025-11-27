@@ -13,13 +13,13 @@ export default function TermsandConditionsPage() {
       />
 
       {/* Main Content Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h1 className="font-['Open_Sans'] text-[48px] font-semibold text-[rgb(122,122,122)] leading-[48px] mb-8 text-center">
+            <h1 className="font-['Open_Sans'] text-[48px] font-semibold text-[rgb(122,122,122)] leading-[48px] mb-6 text-center">
               Terms and Conditions
             </h1>
-            <div className="space-y-8 font-['Open_Sans'] text-[14px] text-[rgb(122,122,122)] leading-[21px]">
+            <div className="space-y-6 font-['Open_Sans'] text-[14px] text-[rgb(122,122,122)] leading-[21px]">
               <div>
                 <p className="font-semibold mb-2">1. Booking and Payment</p>
                 <ul className="list-disc pl-5 space-y-2 font-normal text-[rgb(51,51,51)] text-[16px] leading-[24px]">

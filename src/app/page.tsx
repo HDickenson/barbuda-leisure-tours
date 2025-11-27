@@ -730,7 +730,7 @@ const pageData = {
   "blog": {
     "heading": "Latest Updates",
     "backgroundColor": "rgba(0, 0, 0, 0)",
-    "padding": "0px",
+    "padding": "80px 20px",
     "posts": [
       {
         "title": "Barbuda's Pristine Beaches: A Slice of Paradise",
@@ -753,8 +753,29 @@ const pageData = {
 // Tour cards data - imported from JSON
 const tourCards = toursData.tours;
 
-// Why Choose Us features data - hidden to match live site
-const whyChooseUsFeatures: any[] = [];
+// Why Choose Us features data - from live site
+const whyChooseUsFeatures = [
+  {
+    title: "Seamless, Top-Tier Service",
+    description: "We've partnered with the best in the tourism industry to offer exceptional service every step of the way.",
+    icon: "handshake" as const
+  },
+  {
+    title: "Experienced Local Guides",
+    description: "Our knowledgeable guides bring Barbuda's rich history and culture to life with engaging storytelling.",
+    icon: "users" as const
+  },
+  {
+    title: "Unforgettable Experiences",
+    description: "From pristine beaches to historic sites, we curate moments that will stay with you forever.",
+    icon: "diamond" as const
+  },
+  {
+    title: "Flexible Scheduling",
+    description: "We work around your schedule to ensure your tour fits perfectly into your Caribbean getaway.",
+    icon: "clock" as const
+  }
+];
 
 export default function Home() {
   return (
@@ -868,10 +889,10 @@ export default function Home() {
 
       {/* Blog Preview Section - data from JSON */}
       <BlogPreviewSection
-        posts={blogData.posts}
-        heading={blogData.sectionHeading}
-        backgroundColor={blogData.backgroundColor}
-        padding={blogData.padding}
+        posts={pageData.blog.posts}
+        heading={pageData.blog.heading}
+        backgroundColor={pageData.blog.backgroundColor}
+        padding={pageData.blog.padding}
       />
       </div>
     </main>
