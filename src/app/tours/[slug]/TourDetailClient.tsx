@@ -7,10 +7,9 @@ import type { Tour } from '@/data/tours'
 import { getAllTours } from '@/data/tours'
 import { BookingForm } from '@/components/booking/BookingForm'
 import type { TourConfig } from '@/components/booking/types'
-import HeroCarousel from '@/components/HeroCarousel'
+import BackgroundSlideshow from '@/components/BackgroundSlideshow'
 import WaveDivider from '@/components/WaveDivider'
 import heroWave from '@/components/heroWavePaths'
-import styles from '@/components/InnerPageHero.module.css'
 
 interface Props {
   tour: Tour
@@ -90,16 +89,16 @@ export default function TourDetailClient({ tour }: Props) {
 
   return (
     <main className="min-h-screen">
-      {/* Hero Section with Carousel */}
+      {/* Hero Section with Background Slideshow */}
       <div className="relative">
         <div className="relative h-[500px]">
-          <HeroCarousel
+          <BackgroundSlideshow
             slides={heroSlides}
-            minHeight="500px"
-            backgroundOverlayColor="rgba(0,0,0,0.3)"
+            height="500px"
+            overlayOpacity={0.4}
           />
 
-          {/* Title Overlay */}
+          {/* Title Overlay - positioned over slideshow */}
           <div className="absolute bottom-0 left-0 right-0 pb-28 z-10">
             <div className="container mx-auto px-4 max-w-5xl">
               <div className="inline-block px-3 py-1 bg-turquoise text-white rounded-full text-sm font-semibold mb-4">
