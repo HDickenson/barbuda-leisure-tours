@@ -142,6 +142,25 @@ export default function TourDetailClient({ tour }: Props) {
                 </p>
               </div>
 
+              {/* Gallery Montage */}
+              {tour.gallery && tour.gallery.length > 0 && (
+                <div>
+                  <div className="grid grid-cols-3 gap-2">
+                    {tour.gallery.map((image, index) => (
+                      <div key={index} className="relative aspect-square overflow-hidden rounded">
+                        <Image
+                          src={image}
+                          alt={`${tour.title} gallery image ${index + 1}`}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 33vw, 150px"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* What's Included */}
               {tour.included && tour.included.length > 0 && (
                 <div>
