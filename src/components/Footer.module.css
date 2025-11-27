@@ -5,6 +5,23 @@
   width: 100%;
 }
 
+/* Wave Divider Above Footer */
+.waveContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  margin-bottom: -1px;
+}
+
+.wave {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
 /* Main Section - Teal to Navy Gradient (matching live site) */
 .mainSection {
   background: linear-gradient(181deg, rgb(48, 187, 216) 10%, rgb(0, 29, 70) 84%);
@@ -106,7 +123,7 @@
   opacity: 0.8;
 }
 
-/* Social Icons */
+/* Social Icons - Pink, No Circles, Smaller */
 .socialIcons {
   display: flex;
   gap: 10px;
@@ -114,25 +131,20 @@
 }
 
 .socialIcon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(245, 182, 211);
   transition: all 0.3s ease;
 }
 
 .socialIcon:hover {
-  background-color: white;
-  color: rgb(245, 182, 211);
+  opacity: 0.7;
 }
 
 .socialIcon svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
 
 /* Right Column - Links */
@@ -165,15 +177,15 @@
   gap: 15px;
 }
 
-/* Circular Icon for Links */
+/* Circular Icon for Links - Smaller */
 .linkCircleIcon {
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
   border-radius: 50%;
   background-color: rgb(245, 182, 211);
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  box-shadow: none;
 }
 
 .navLink {
