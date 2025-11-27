@@ -73,18 +73,14 @@
   gap: 15px;
 }
 
-/* Large Circular Icons */
+/* Contact Icons - Small without background */
 .circleIcon {
-  width: 70px;
-  height: 70px;
-  min-width: 70px;
-  border-radius: 50%;
-  background-color: rgb(245, 182, 211);
-  border: 3px solid rgba(255, 255, 255, 0.3);
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .iconSvg {
@@ -199,6 +195,22 @@
 
 .navLink:hover {
   opacity: 0.8;
+}
+
+/* Wave Divider Below Footer */
+.bottomWaveContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -1px;
+}
+
+.bottomWave {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 120px;
 }
 
 /* Bottom Section - Copyright Bar */
