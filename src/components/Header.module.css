@@ -54,7 +54,7 @@
 }
 
 .navLink {
-  color: #666666;
+  color: #7A7A7A;
   font-family: var(--font-lexend-deca), sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -65,7 +65,7 @@
   padding-bottom: 4px;
 }
 
-/* Menu text: gray with pink rollover */
+/* Menu text: #7A7A7A (medium gray) with pink rollover */
 
 .navLink:hover {
   color: rgb(245, 182, 211);
