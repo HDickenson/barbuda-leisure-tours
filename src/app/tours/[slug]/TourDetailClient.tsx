@@ -16,38 +16,50 @@ interface Props {
 }
 
 function getTourConfig(tour: Tour): TourConfig {
-  const transportMap: Record<string, TourConfig['transportMethod']> = {
-    'discover-barbuda-by-air': 'air',
-    'discover-barbuda-by-sea': 'sea',
-    'barbuda-sky-sea-adventure': 'air',
-    'barbuda-beach-escape': 'sea',
-    'discover-barbuda-local-tour': 'sea',
-    'excellence-barbuda-by-sea': 'sea',
-    'shared-barbuda-boat-charter': 'sea',
-    'barbuda-exclusive-helicopter': 'helicopter',
-    'barbuda-exclusive-yacht': 'yacht',
-    'barbuda-exclusive-airplane': 'airplane',
+  // Helper for backward compatibility - derives tourType from slug if not specified in tour data
+  const deriveTourTypeFromSlug = (slug: string): TourConfig['tourType'] => {
+    const map: Record<string, TourConfig['tourType']> = {
+      'discover-barbuda-by-air': 'discover-air',
+      'discover-barbuda-by-sea': 'discover-sea',
+      'barbuda-sky-sea-adventure': 'sky-sea',
+      'barbuda-beach-escape': 'beach-escape',
+      'discover-barbuda-local-tour': 'already-in-barbuda',
+      'excellence-barbuda-by-sea': 'excellence',
+      'shared-barbuda-boat-charter': 'shared-boat',
+      'barbuda-exclusive-helicopter': 'private-helicopter',
+      'barbuda-exclusive-yacht': 'private-yacht',
+      'barbuda-exclusive-airplane': 'private-airplane',
+    }
+    return map[slug] || 'discover-air'
   }
 
-  const tourTypeMap: Record<string, TourConfig['tourType']> = {
-    'discover-barbuda-by-air': 'discover-air',
-    'discover-barbuda-by-sea': 'discover-sea',
-    'barbuda-sky-sea-adventure': 'sky-sea',
-    'barbuda-beach-escape': 'beach-escape',
-    'discover-barbuda-local-tour': 'already-in-barbuda',
-    'excellence-barbuda-by-sea': 'excellence',
-    'shared-barbuda-boat-charter': 'shared-boat',
-    'barbuda-exclusive-helicopter': 'private-helicopter',
-    'barbuda-exclusive-yacht': 'private-yacht',
-    'barbuda-exclusive-airplane': 'private-airplane',
+  // Helper to parse season dates - supports both 'MM-DD' and ISO date strings
+  const parseSeasonDate = (dateStr?: string): Date | undefined => {
+    if (!dateStr) return undefined
+    if (dateStr.match(/^\d{2}-\d{2}$/)) {
+      // MM-DD format - use current year for recurring seasonal dates
+      const [month, day] = dateStr.split('-')
+      const year = new Date().getFullYear()
+      return new Date(year, parseInt(month) - 1, parseInt(day))
+    }
+    return new Date(dateStr)
+  }
+
+  // Default meal upgrades - can be overridden by tour-specific pricing
+  const defaultMealUpgrades = {
+    lobster: 15,
+    fish: 10,
+    conch: 10,
+    shrimp: 10,
+    vegetarian: 5,
   }
 
   return {
-    tourType: tourTypeMap[tour.slug] || 'discover-air',
+    tourType: tour.tourType || deriveTourTypeFromSlug(tour.slug),
     tourName: tour.title,
-    transportMethod: transportMap[tour.slug] || 'sea',
-    requiresPassport: tour.category !== 'local',
-    requiresBodyWeight: tour.slug.includes('helicopter') || tour.slug.includes('airplane'),
+    transportMethod: tour.transportMethod || 'sea',
+    requiresPassport: tour.transportRequirements?.requiresPassport ?? (tour.category !== 'local'),
+    requiresBodyWeight: tour.transportRequirements?.requiresBodyWeight ?? false,
     tourImage: tour.heroImage,
     pricing: {
       adult: tour.pricing?.adult || 249,
@@ -55,12 +67,15 @@ function getTourConfig(tour: Tour): TourConfig {
       infant: tour.pricing?.infant || 99,
     },
     mealUpgrades: {
-      lobster: 15,
-      fish: 10,
-      conch: 10,
-      shrimp: 10,
-      vegetarian: 5,
+      ...defaultMealUpgrades,
+      ...tour.mealUpgradePricing,  // Override with tour-specific pricing
     },
+    restrictions: tour.bookingRestrictions ? {
+      minAge: tour.bookingRestrictions.minAge,
+      daysOfWeek: tour.bookingRestrictions.daysOfWeek,
+      seasonStart: parseSeasonDate(tour.bookingRestrictions.seasonStart),
+      seasonEnd: parseSeasonDate(tour.bookingRestrictions.seasonEnd),
+    } : undefined,
   }
 }
 
@@ -311,7 +326,7 @@ export default function TourDetailClient({ tour }: Props) {
                   onClick={() => setIsBookingOpen(true)}
                   className="w-full bg-[rgb(245,182,211)] text-white text-center px-[28px] py-[17px] rounded-[8px] text-[14px] font-medium font-['Roboto'] hover:bg-[rgb(235,172,201)] transition transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
                 >
-                  Book Reservation
+                  REQUEST BOOKING
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>

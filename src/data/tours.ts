@@ -1,3 +1,28 @@
+// Transport requirements for booking form
+export interface TransportRequirements {
+  requiresPassport?: boolean
+  requiresBodyWeight?: boolean
+}
+
+// Booking restrictions for tours
+export interface BookingRestrictions {
+  minAge?: number
+  daysOfWeek?: number[]       // 0=Sunday, 1=Monday, ... 5=Friday, 6=Saturday
+  seasonStart?: string         // 'MM-DD' format or ISO date string
+  seasonEnd?: string           // 'MM-DD' format or ISO date string
+  minGuests?: number
+  maxGuests?: number
+}
+
+// Tour-specific meal upgrade pricing (overrides defaults)
+export interface MealUpgradePricing {
+  lobster?: number
+  fish?: number
+  conch?: number
+  shrimp?: number
+  vegetarian?: number
+}
+
 export interface Tour {
   slug: string
   title: string
@@ -59,6 +84,13 @@ export interface Tour {
 
   // Minimum group size
   minimumGuests?: number
+
+  // Booking form configuration (auto-configures booking form based on tour)
+  transportMethod?: 'air' | 'sea' | 'helicopter' | 'yacht' | 'airplane'
+  tourType?: 'discover-air' | 'discover-sea' | 'sky-sea' | 'beach-escape' | 'already-in-barbuda' | 'excellence' | 'shared-boat' | 'private-helicopter' | 'private-yacht' | 'private-airplane'
+  transportRequirements?: TransportRequirements
+  bookingRestrictions?: BookingRestrictions
+  mealUpgradePricing?: MealUpgradePricing
 }
 
 // All tours - Barbuda Leisure Day Tours 2025-2026
@@ -133,6 +165,13 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/1-2-300x300.webp',
     ],
     featured: true,
+    // Booking form configuration
+    transportMethod: 'air',
+    tourType: 'discover-air',
+    transportRequirements: {
+      requiresPassport: true,
+      requiresBodyWeight: false,
+    },
   },
   {
     slug: 'discover-barbuda-by-sea',
@@ -202,6 +241,9 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-13-300x300.jpg',
     ],
     featured: true,
+    // Booking form configuration
+    transportMethod: 'sea',
+    tourType: 'discover-sea',
   },
   {
     slug: 'barbuda-sky-sea-adventure',
@@ -271,6 +313,13 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg',
     ],
     featured: true,
+    // Booking form configuration
+    transportMethod: 'air',
+    tourType: 'sky-sea',
+    transportRequirements: {
+      requiresPassport: true,
+      requiresBodyWeight: false,
+    },
   },
   {
     slug: 'barbuda-beach-escape',
@@ -316,6 +365,9 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-10-300x300.jpg',
     ],
     featured: true,
+    // Booking form configuration (default to sea/ferry, but supports air/helicopter/boat)
+    transportMethod: 'sea',
+    tourType: 'beach-escape',
   },
 
   // LOCAL TOUR
@@ -375,6 +427,12 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-13-300x300.jpg',
     ],
     featured: false,
+    // Booking form configuration
+    transportMethod: 'sea',
+    tourType: 'already-in-barbuda',
+    transportRequirements: {
+      requiresPassport: false,  // Already on island, no passport needed
+    },
   },
 
   // SHARED ADVENTURES
@@ -432,6 +490,15 @@ const tours: Tour[] = [
       '/images/excellence/LobsterLunch-3.jpg',
     ],
     featured: true,
+    // Booking form configuration
+    transportMethod: 'sea',
+    tourType: 'excellence',
+    bookingRestrictions: {
+      daysOfWeek: [5],  // Friday only
+      seasonStart: '05-01',  // May 1
+      seasonEnd: '10-31',    // October 31
+      minAge: 5,
+    },
   },
   {
     slug: 'shared-barbuda-boat-charter',
@@ -487,6 +554,16 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg',
     ],
     featured: true,
+    // Booking form configuration
+    transportMethod: 'sea',
+    tourType: 'shared-boat',
+    bookingRestrictions: {
+      minGuests: 6,
+      maxGuests: 10,
+    },
+    mealUpgradePricing: {
+      lobster: 25,  // Override default $15 with $25 for this tour
+    },
   },
 
   // PRIVATE CHARTERS
@@ -527,6 +604,13 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg',
     ],
     featured: false,
+    // Booking form configuration
+    transportMethod: 'helicopter',
+    tourType: 'private-helicopter',
+    transportRequirements: {
+      requiresPassport: true,
+      requiresBodyWeight: true,  // Required for helicopter weight and balance
+    },
   },
   {
     slug: 'barbuda-exclusive-yacht',
@@ -565,6 +649,9 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg',
     ],
     featured: false,
+    // Booking form configuration
+    transportMethod: 'yacht',
+    tourType: 'private-yacht',
   },
   {
     slug: 'barbuda-exclusive-airplane',
@@ -603,6 +690,13 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg',
     ],
     featured: false,
+    // Booking form configuration
+    transportMethod: 'airplane',
+    tourType: 'private-airplane',
+    transportRequirements: {
+      requiresPassport: true,
+      requiresBodyWeight: true,  // Required for airplane weight and balance
+    },
   },
 ]
 

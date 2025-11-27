@@ -13,6 +13,35 @@ interface Step1Props {
 export function Step1PartySize({ formData, updateFormData, onNext, tourConfig }: Step1Props) {
   const [errors, setErrors] = useState<Record<string, string>>({})
 
+  // Helper to create human-readable restriction messages
+  const getRestrictionMessage = (): string => {
+    const restrictions = tourConfig.restrictions
+    if (!restrictions) return ''
+
+    const parts: string[] = []
+
+    // Days of week restriction
+    if (restrictions.daysOfWeek && restrictions.daysOfWeek.length > 0) {
+      const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+      const days = restrictions.daysOfWeek.map(d => dayNames[d])
+      parts.push(`Available on: ${days.join(', ')}`)
+    }
+
+    // Season restriction
+    if (restrictions.seasonStart && restrictions.seasonEnd) {
+      const start = restrictions.seasonStart.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
+      const end = restrictions.seasonEnd.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
+      parts.push(`Season: ${start} - ${end}`)
+    }
+
+    // Minimum age restriction
+    if (restrictions.minAge) {
+      parts.push(`Minimum age: ${restrictions.minAge} years`)
+    }
+
+    return parts.join(' • ')
+  }
+
   const handlePartySizeChange = (field: 'adults' | 'children' | 'infants', value: number) => {
     updateFormData({
       partySize: {
@@ -184,10 +213,10 @@ export function Step1PartySize({ formData, updateFormData, onNext, tourConfig }:
         <p className="text-sm text-gray-500 mt-2">
           Bookings must be made at least 3 days in advance. Maximum 6 months ahead.
         </p>
-        {tourConfig.restrictions?.daysOfWeek && (
-          <p className="text-sm text-blue-600 mt-1">
-            This tour is only available on specific days of the week.
-          </p>
+        {getRestrictionMessage() && (
+          <div className="text-sm text-blue-600 bg-blue-50 p-3 rounded mt-2">
+            {getRestrictionMessage()}
+          </div>
         )}
       </div>
 
