@@ -7,6 +7,7 @@ import type { Tour } from '@/data/tours'
 import { getAllTours } from '@/data/tours'
 import { BookingForm } from '@/components/booking/BookingForm'
 import type { TourConfig } from '@/components/booking/types'
+import HeroCarousel from '@/components/HeroCarousel'
 import WaveDivider from '@/components/WaveDivider'
 import heroWave from '@/components/heroWavePaths'
 import styles from '@/components/InnerPageHero.module.css'
@@ -74,22 +75,49 @@ export default function TourDetailClient({ tour }: Props) {
     .filter(t => t.slug !== tour.slug)
     .slice(0, 3) // Show up to 3 related tours
 
+  // Hero carousel slides - using tour-specific images or fallback to generic Barbuda images
+  const heroSlides = [
+    { id: 0, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSC3121-scaled.jpg', alt: 'Barbuda scenic view 1' },
+    { id: 1, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/10/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp', alt: 'Catamaran on beach' },
+    { id: 2, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/10/Another-View-of-Frigate-Bird-During-their-Mating-Season.webp', alt: 'Frigate birds' },
+    { id: 3, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/10/Horses-swim-too-and-they-particularly-love-Barbudas-beaches-scaled.webp', alt: 'Horses on beach' },
+    { id: 4, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/10/IMG_6031-scaled.webp', alt: 'Barbuda coastal view' },
+    { id: 5, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-2.jpg', alt: 'Barbuda leisure tour' },
+    { id: 6, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-scaled.jpg', alt: 'Beach landscape' },
+    { id: 7, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/11/yellow-brest.jpg', alt: 'Yellow breast bird' },
+    { id: 8, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/11/Pink-Beach-North-scaled.jpg', alt: 'Pink sand beach' }
+  ]
+
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[500px]">
-        {tour.heroImage ? (
-          <Image
-            src={tour.heroImage}
-            alt={tour.title}
-            fill
-            className={`${styles.bg} object-cover`}
-            priority
+      {/* Hero Section with Carousel */}
+      <div className="relative">
+        <div className="relative h-[500px]">
+          <HeroCarousel
+            slides={heroSlides}
+            minHeight="500px"
+            backgroundOverlayColor="rgba(0,0,0,0.3)"
           />
-        ) : (
-          <div className="w-full h-full bg-gradient-to-br from-cyan-400 to-blue-500" />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+
+          {/* Title Overlay */}
+          <div className="absolute bottom-0 left-0 right-0 pb-28 z-10">
+            <div className="container mx-auto px-4 max-w-5xl">
+              <div className="inline-block px-3 py-1 bg-turquoise text-white rounded-full text-sm font-semibold mb-4">
+                {tour.category.charAt(0).toUpperCase() + tour.category.slice(1)} Tour
+              </div>
+              <h1 className="font-['Leckerli_One'] text-[50px] md:text-[80px] font-light text-[rgb(48,187,216)] leading-tight md:leading-[80px] mb-4">
+                {tour.title}
+              </h1>
+              {tour.subtitle && (
+                <p className="font-['Lexend_Deca'] text-xl md:text-2xl text-white/90">
+                  {tour.subtitle}
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* Wave Divider */}
         <WaveDivider
           {...heroWave}
           viewBox={heroWave.viewBox}
@@ -98,22 +126,7 @@ export default function TourDetailClient({ tour }: Props) {
           position="bottom"
           height="120px"
         />
-        <div className="absolute bottom-0 left-0 right-0 pb-28">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <div className="inline-block px-3 py-1 bg-turquoise text-white rounded-full text-sm font-semibold mb-4">
-              {tour.category.charAt(0).toUpperCase() + tour.category.slice(1)} Tour
-            </div>
-            <h1 className="font-['Leckerli_One'] text-[50px] md:text-[80px] font-light text-[rgb(48,187,216)] leading-tight md:leading-[80px] mb-4">
-              {tour.title}
-            </h1>
-            {tour.subtitle && (
-              <p className="font-['Lexend_Deca'] text-xl md:text-2xl text-white/90">
-                {tour.subtitle}
-              </p>
-            )}
-          </div>
-        </div>
-      </section>
+      </div>
 
       {/* Tour Details (wrapped in page-content to match live DOM ordering) */}
       <div className="page-content">
