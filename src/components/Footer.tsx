@@ -134,9 +134,9 @@ export default function Footer() {
         </div>
       </div>
 
-            {/* Wave Divider Below Footer */}
-      <div className={styles.bottomWaveContainer}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4080 400" className={styles.bottomWave} preserveAspectRatio="none">
+            {/* Underwater Scene Background - Behind Copyright Bar */}
+      <div className={styles.bottomSVGBkgContainer}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4080 400" className={styles.bottomSVGBkg} preserveAspectRatio="none">
         <path fill="rgba(48, 187, 216, 0.09)" opacity="0.33" d="M4080,297.2c0,0-147,5.8-216.2-69.3c-70-76-148.6-49.5-197.5-32.9c-18.2,6.1-54.3,13.2-89.3,3.7
 	c-58.9-16.1-48-23.6-110-13.2c-62,10.4-66.6,12-118-4.8c-18.9-6.2-46.6,21.7-62.6,13.8c-34.3-16.8-72.5-24.4-110.5-20.7l0,0
 	c-26.4,2.6-52.1,10.1-75.5,22.6c-26.6,14.2-67,29.2-100.8,13.6c-55.6-25.7-35-25.7-104.6,5.9s-116,8.9-178,0s-90-11-132-6

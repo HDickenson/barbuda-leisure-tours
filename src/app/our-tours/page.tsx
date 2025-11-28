@@ -91,47 +91,51 @@ export default async function OurToursPage() {
         </div>
       </section>
 
-      {/* Local Tours Section */}
+      {/* Local Tours Section - Horizontal Card */}
       {localTours.length > 0 && (
         <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-800 mb-4">Already in Barbuda?</h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                If you&apos;re already on the island, you can still experience Barbuda Leisure&apos;s guided tours! Join our local excursions that include sightseeing, beach relaxation, and cultural exploration - available daily upon request.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-              {localTours.map((tour) => (
-                <div key={tour.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition group flex flex-col h-full">
-                  <div className="relative aspect-square">
+          <div className="container mx-auto px-4 max-w-6xl">
+            {localTours.map((tour) => (
+              <div key={tour.slug} className="bg-white rounded-lg overflow-hidden hover:shadow-xl transition group">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+
+                  {/* Tour Image - Left */}
+                  <div className="relative w-full h-full">
                     {tour.heroImage && (
                       <Image
                         src={tour.heroImage}
                         alt={tour.title}
                         fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
                       />
                     )}
-                    <div className="absolute top-4 right-4 bg-[rgb(245,182,211)] text-white px-3 py-1 rounded-full text-sm font-semibold hidden">
-                      {tour.price}
-                    </div>
                   </div>
-                  <div className="p-6 flex flex-col flex-1">
-                    <h3 className="font-lexend text-[16px] font-semibold text-[rgb(122,122,122)] mb-[30px]">{tour.title}</h3>
-                    <p className="font-open-sans text-[14px] font-semibold text-[rgb(97,97,97)] leading-[23.8px] mb-[25px] line-clamp-3">{tour.description}</p>
+
+                  {/* All Content - Right */}
+                  <div className="p-8 flex flex-col justify-between">
+                    <div>
+                      <h2 className="text-4xl font-bold text-gray-800 mb-4 text-left">Already in Barbuda?</h2>
+                      <p className="text-lg text-gray-600 mb-8 text-left">
+                        If you&apos;re already on the island, you can still experience Barbuda Leisure&apos;s guided tours! Join our local excursions that include sightseeing, beach relaxation, and cultural exploration - available daily upon request.
+                      </p>
+                      <h3 className="font-lexend text-[16px] font-semibold text-[rgb(122,122,122)] mb-3 text-left">{tour.title}</h3>
+                      <p className="text-sm text-gray-700 mb-2 text-left font-semibold">{tour.price}</p>
+                      <p className="text-sm text-gray-600 mb-4 text-left">{tour.duration}</p>
+                      <p className="font-open-sans text-[14px] font-semibold text-[rgb(97,97,97)] leading-[23.8px] mb-3 line-clamp-3 text-left">{tour.description}</p>
+                    </div>
                     <Link
                       href={`/tours/${tour.slug}`}
-                      className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition mt-auto"
+                      className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition w-fit"
                     >
                       REQUEST BOOKING
                     </Link>
                   </div>
+
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </section>
       )}

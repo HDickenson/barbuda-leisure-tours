@@ -3,6 +3,7 @@
 .footer {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 /* Wave Divider Above Footer */
@@ -175,13 +176,14 @@
 
 /* Circular Icon for Links - Smaller */
 .linkCircleIcon {
-  width: 12px;
-  height: 12px;
-  min-width: 12px;
+  width: 0.8rem;
+  height: 0.8rem;
+  min-width: 0.8rem;
   border-radius: 50%;
   background-color: rgb(245, 182, 211);
   border: none;
   box-shadow: none;
+  flex-shrink: 0;
 }
 
 .navLink {
@@ -197,18 +199,19 @@
   opacity: 0.8;
 }
 
-/* Wave Divider Below Footer */
-.bottomWaveContainer {
-  position: relative;
+/* Underwater Scene Background - Behind Copyright Bar */
+.bottomSVGBkgContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  margin-top: -1px;
-  transform: rotate(180deg);
+  z-index: 0;
+  pointer-events: none;
 }
 
-.bottomWave {
-  position: relative;
+.bottomSVGBkg {
   display: block;
   width: 100%;
   height: 120px;
@@ -216,9 +219,11 @@
 
 /* Bottom Section - Copyright Bar */
 .bottomSection {
+  position: relative;
   background-color: rgb(245, 182, 211);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding: 15px 20px;
+  z-index: 1;
 }
 
 .bottomContent {
