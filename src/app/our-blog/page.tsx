@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
-import ContactFormSection from '@/components/ContactFormSection';
 import { getAllPosts } from '@/data/posts';
 
 export default function OurBlogPage() {
@@ -65,9 +64,6 @@ export default function OurBlogPage() {
       </section>
 
       </div>
-
-      {/* Contact Form Section */}
-      <ContactFormSection />
     </main>
   );
 }

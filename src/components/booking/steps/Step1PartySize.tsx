@@ -111,163 +111,114 @@ export function Step1PartySize({ formData, updateFormData, onNext, tourConfig }:
   }
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Party Size</h3>
-
+    <div className="space-y-8">
+      {/* Party Size - Clean, No Boxes */}
+      <div className="space-y-5">
         {/* Adults */}
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Adults (13 years and older)
-          </label>
-          <div className="flex items-center space-x-4">
+        <div className="flex items-center justify-between py-3 border-b border-gray-200">
+          <div>
+            <p className="font-medium text-gray-900">Adults</p>
+            <p className="text-sm text-gray-500">${tourConfig.pricing.adult} per person</p>
+          </div>
+          <div className="flex items-center gap-3">
             <button
               type="button"
               onClick={() => handlePartySizeChange('adults', formData.partySize.adults - 1)}
-              className="w-10 h-10 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 transition flex items-center justify-center"
+              className="w-9 h-9 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-[rgb(48,187,216)] hover:text-[rgb(48,187,216)] transition disabled:opacity-30 disabled:hover:border-gray-300 disabled:hover:text-gray-900"
               disabled={formData.partySize.adults <= 1}
             >
-              <span className="text-xl">−</span>
+              <span className="text-xl font-light">−</span>
             </button>
-            <span className="text-2xl font-semibold w-12 text-center">
-              {formData.partySize.adults}
-            </span>
+            <span className="w-10 text-center font-semibold text-lg">{formData.partySize.adults}</span>
             <button
               type="button"
               onClick={() => handlePartySizeChange('adults', formData.partySize.adults + 1)}
-              className="w-10 h-10 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 transition flex items-center justify-center"
+              className="w-9 h-9 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-[rgb(48,187,216)] hover:text-[rgb(48,187,216)] transition"
             >
-              <span className="text-xl">+</span>
+              <span className="text-xl font-light">+</span>
             </button>
           </div>
-          {errors.adults && <p className="text-red-600 text-sm mt-1">{errors.adults}</p>}
         </div>
 
-        {/* Children */}
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Children (2-12 years)
-          </label>
-          <div className="flex items-center space-x-4">
+        {/* Youth */}
+        <div className="flex items-center justify-between py-3 border-b border-gray-200">
+          <div>
+            <p className="font-medium text-gray-900">Youth (0-14)</p>
+            <p className="text-sm text-gray-500">${tourConfig.pricing.child} per child</p>
+          </div>
+          <div className="flex items-center gap-3">
             <button
               type="button"
               onClick={() => handlePartySizeChange('children', formData.partySize.children - 1)}
-              className="w-10 h-10 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 transition flex items-center justify-center"
+              className="w-9 h-9 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-[rgb(48,187,216)] hover:text-[rgb(48,187,216)] transition disabled:opacity-30 disabled:hover:border-gray-300 disabled:hover:text-gray-900"
               disabled={formData.partySize.children <= 0}
             >
-              <span className="text-xl">−</span>
+              <span className="text-xl font-light">−</span>
             </button>
-            <span className="text-2xl font-semibold w-12 text-center">
-              {formData.partySize.children}
-            </span>
+            <span className="w-10 text-center font-semibold text-lg">{formData.partySize.children}</span>
             <button
               type="button"
               onClick={() => handlePartySizeChange('children', formData.partySize.children + 1)}
-              className="w-10 h-10 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 transition flex items-center justify-center"
+              className="w-9 h-9 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-[rgb(48,187,216)] hover:text-[rgb(48,187,216)] transition"
             >
-              <span className="text-xl">+</span>
+              <span className="text-xl font-light">+</span>
             </button>
           </div>
         </div>
 
         {/* Infants */}
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Infants (under 2 years)
-          </label>
-          <div className="flex items-center space-x-4">
+        <div className="flex items-center justify-between py-3 border-b border-gray-200">
+          <div>
+            <p className="font-medium text-gray-900">Infants (0-2)</p>
+            <p className="text-sm text-gray-500">Free</p>
+          </div>
+          <div className="flex items-center gap-3">
             <button
               type="button"
               onClick={() => handlePartySizeChange('infants', formData.partySize.infants - 1)}
-              className="w-10 h-10 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 transition flex items-center justify-center"
+              className="w-9 h-9 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-[rgb(48,187,216)] hover:text-[rgb(48,187,216)] transition disabled:opacity-30 disabled:hover:border-gray-300 disabled:hover:text-gray-900"
               disabled={formData.partySize.infants <= 0}
             >
-              <span className="text-xl">−</span>
+              <span className="text-xl font-light">−</span>
             </button>
-            <span className="text-2xl font-semibold w-12 text-center">
-              {formData.partySize.infants}
-            </span>
+            <span className="w-10 text-center font-semibold text-lg">{formData.partySize.infants}</span>
             <button
               type="button"
               onClick={() => handlePartySizeChange('infants', formData.partySize.infants + 1)}
-              className="w-10 h-10 rounded-full border-2 border-gray-300 hover:border-blue-600 hover:bg-blue-50 transition flex items-center justify-center"
+              className="w-9 h-9 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-[rgb(48,187,216)] hover:text-[rgb(48,187,216)] transition"
             >
-              <span className="text-xl">+</span>
+              <span className="text-xl font-light">+</span>
             </button>
           </div>
         </div>
+        {errors.adults && <p className="text-red-600 text-sm">{errors.adults}</p>}
       </div>
 
-      {/* Date Selection */}
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">Tour Date</label>
+      {/* Date Selection - Clean */}
+      <div className="space-y-3">
+        <label htmlFor="tour-date" className="block text-sm font-medium text-gray-700">
+          Preferred Date
+        </label>
         <input
+          id="tour-date"
           type="date"
           value={formData.tourDate ? formData.tourDate.toISOString().split('T')[0] : ''}
           onChange={handleDateChange}
           min={getMinDate()}
           max={getMaxDate()}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
         />
         {errors.date && <p className="text-red-600 text-sm mt-1">{errors.date}</p>}
-        <p className="text-sm text-gray-500 mt-2">
-          Bookings must be made at least 3 days in advance. Maximum 6 months ahead.
-        </p>
         {getRestrictionMessage() && (
-          <div className="text-sm text-blue-600 bg-blue-50 p-3 rounded mt-2">
-            {getRestrictionMessage()}
-          </div>
+          <p className="text-sm text-gray-600 mt-2">{getRestrictionMessage()}</p>
         )}
       </div>
 
-      {/* Price Preview */}
-      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-        <h4 className="font-semibold text-gray-900 mb-2">Estimated Price</h4>
-        <div className="space-y-1 text-sm">
-          {formData.partySize.adults > 0 && (
-            <div className="flex justify-between">
-              <span>Adults ({formData.partySize.adults})</span>
-              <span className="font-medium">
-                ${(formData.partySize.adults * tourConfig.pricing.adult).toFixed(2)}
-              </span>
-            </div>
-          )}
-          {formData.partySize.children > 0 && (
-            <div className="flex justify-between">
-              <span>Children ({formData.partySize.children})</span>
-              <span className="font-medium">
-                ${(formData.partySize.children * tourConfig.pricing.child).toFixed(2)}
-              </span>
-            </div>
-          )}
-          {formData.partySize.infants > 0 && (
-            <div className="flex justify-between">
-              <span>Infants ({formData.partySize.infants})</span>
-              <span className="font-medium">
-                ${(formData.partySize.infants * tourConfig.pricing.infant).toFixed(2)}
-              </span>
-            </div>
-          )}
-          <div className="flex justify-between pt-2 border-t border-gray-300 font-bold text-base">
-            <span>Subtotal</span>
-            <span>
-              $
-              {(
-                formData.partySize.adults * tourConfig.pricing.adult +
-                formData.partySize.children * tourConfig.pricing.child +
-                formData.partySize.infants * tourConfig.pricing.infant
-              ).toFixed(2)}
-            </span>
-          </div>
-          <p className="text-xs text-gray-500 pt-2">Meal upgrades will be added in the next step</p>
-        </div>
-      </div>
-
       {/* Navigation */}
-      <div className="flex justify-end">
+      <div className="flex justify-end pt-4">
         <button
           onClick={handleNext}
-          className="px-8 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl"
+          className="px-8 py-3 bg-[rgb(48,187,216)] text-white rounded-lg font-medium hover:bg-[rgb(38,177,206)] transition"
         >
           Continue
         </button>

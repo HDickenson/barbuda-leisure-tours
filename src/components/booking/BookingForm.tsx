@@ -6,7 +6,6 @@ import { Step1PartySize } from './steps/Step1PartySize'
 import { Step2PassengerDetails } from './steps/Step2PassengerDetails'
 import { Step3ContactInfo } from './steps/Step3ContactInfo'
 import { Step4Review } from './steps/Step4Review'
-import { Step5Terms } from './steps/Step5Terms'
 import { Step6Confirmation } from './steps/Step6Confirmation'
 import { TourSummary } from './TourSummary'
 import type { BookingFormData, TourConfig } from './types'
@@ -28,7 +27,14 @@ export function BookingForm({ isOpen, onClose, tourConfig }: BookingFormProps) {
   })
   const [bookingReference, setBookingReference] = useState<string>('')
 
-  const totalSteps = 6
+  const totalSteps = 4
+
+  const stepNames = [
+    'Party & Date',
+    'Passenger Details',
+    'Contact Information',
+    'Review & Submit'
+  ]
 
   const handleNext = () => {
     if (currentStep < totalSteps) {
@@ -101,19 +107,18 @@ export function BookingForm({ isOpen, onClose, tourConfig }: BookingFormProps) {
   return (
     <Modal isOpen={isOpen} onClose={handleClose} title="">
       <div className="booking-form">
-        {/* Progress Bar */}
-        <div className="mb-6">
-          <div className="flex justify-between items-center mb-2">
-            <h2 className="text-xl md:text-2xl font-bold text-gray-900">{tourConfig.tourName}</h2>
-            <span className="text-sm text-gray-500">
-              Step {currentStep} of {totalSteps}
-            </span>
-          </div>
-          <div className="w-full bg-gray-200 rounded-full h-2">
-            <div
-              className="bg-blue-600 h-2 rounded-full transition-all duration-300"
-              style={{ width: `${(currentStep / totalSteps) * 100}%` }}
-            />
+        {/* Clean Step Header */}
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">{stepNames[currentStep - 1]}</h2>
+          <div className="flex items-center gap-2">
+            {Array.from({ length: totalSteps }).map((_, index) => (
+              <div
+                key={index}
+                className={`h-1 flex-1 rounded-full transition-all duration-300 ${
+                  index < currentStep ? 'bg-[rgb(48,187,216)]' : 'bg-gray-200'
+                }`}
+              />
+            ))}
           </div>
         </div>
 
@@ -149,26 +154,18 @@ export function BookingForm({ isOpen, onClose, tourConfig }: BookingFormProps) {
               />
             )}
 
-            {currentStep === 4 && (
+            {currentStep === 4 && bookingReference === '' && (
               <Step4Review
                 formData={formData}
                 tourConfig={tourConfig}
-                onNext={handleNext}
+                updateFormData={updateFormData}
+                onSubmit={handleSubmit}
                 onBack={handleBack}
                 onEdit={handleStepChange}
               />
             )}
 
-            {currentStep === 5 && (
-              <Step5Terms
-                formData={formData}
-                updateFormData={updateFormData}
-                onSubmit={handleSubmit}
-                onBack={handleBack}
-              />
-            )}
-
-            {currentStep === 6 && (
+            {currentStep === 4 && bookingReference !== '' && (
               <Step6Confirmation
                 bookingReference={bookingReference}
                 contactEmail={formData.contactInfo.email}

@@ -157,25 +157,6 @@ export default function TourDetailClient({ tour }: Props) {
                 </p>
               </div>
 
-              {/* Gallery Montage */}
-              {tour.gallery && tour.gallery.length > 0 && (
-                <div>
-                  <div className="grid grid-cols-3 gap-2">
-                    {tour.gallery.map((image, index) => (
-                      <div key={index} className="relative aspect-square overflow-hidden rounded">
-                        <Image
-                          src={image}
-                          alt={`${tour.title} gallery image ${index + 1}`}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 33vw, 150px"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
               {/* What's Included */}
               {tour.included && tour.included.length > 0 && (
                 <div>
@@ -286,41 +267,13 @@ export default function TourDetailClient({ tour }: Props) {
                 <div className="font-['Open_Sans'] text-[24px] font-bold text-[rgb(48,187,216)] mb-1">
                   {tour.price}
                 </div>
-                {tour.pricing?.notes && (
-                  <p className="text-sm text-gray-500 mb-4">{tour.pricing.notes}</p>
-                )}
 
                 <div className="space-y-4 mb-6 border-t border-gray-200 pt-4">
                   <div>
                     <h3 className="font-semibold text-gray-500 text-xs uppercase tracking-wider">Duration</h3>
                     <p className="text-gray-800">{tour.duration}</p>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-500 text-xs uppercase tracking-wider">Group Size</h3>
-                    <p className="text-gray-800">{tour.groupSize}</p>
-                  </div>
-                  {tour.minimumGuests && (
-                    <div>
-                      <h3 className="font-semibold text-gray-500 text-xs uppercase tracking-wider">Minimum Guests</h3>
-                      <p className="text-gray-800">{tour.minimumGuests} people</p>
-                    </div>
-                  )}
                 </div>
-
-                {/* Lunch Upgrades */}
-                {tour.lunchUpgrades && tour.lunchUpgrades.length > 0 && (
-                  <div className="mb-6 border-t border-gray-200 pt-4">
-                    <h3 className="font-semibold text-gray-500 text-xs uppercase tracking-wider mb-2">Lunch Upgrades</h3>
-                    <ul className="space-y-1 text-sm">
-                      {tour.lunchUpgrades.map((upgrade, index) => (
-                        <li key={index} className="flex justify-between text-gray-600">
-                          <span>{upgrade.name}</span>
-                          <span className="font-medium">+${upgrade.price}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
 
                 <button
                   onClick={() => setIsBookingOpen(true)}
@@ -331,36 +284,55 @@ export default function TourDetailClient({ tour }: Props) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </button>
-
-                <p className="text-center text-sm text-gray-500 mt-3">
-                  Free cancellation up to 48 hours before
-                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-        {/* Gallery */}
+      {/* Image Montage */}
       {tour.gallery && tour.gallery.length > 0 && (
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-              Gallery
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]">
+              Photo Gallery
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {tour.gallery.map((image, index) => (
-                <div key={index} className="relative h-64 overflow-hidden rounded-lg">
-                  <Image
-                    src={image}
-                    alt={`${tour.title} gallery image ${index + 1}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover hover:scale-110 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              {tour.gallery.map((image, index) => {
+                // Create varied heights for visual interest
+                const isLarge = index % 5 === 0 || index % 7 === 0;
+                const isMedium = index % 3 === 0 && !isLarge;
+
+                // Stagger animation delays
+                const animationDelay = `${index * 0.08}s`;
+
+                let className = "relative overflow-hidden rounded-lg group cursor-pointer opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]";
+                if (isLarge) {
+                  className += " md:col-span-2 md:row-span-2 h-[400px]";
+                } else if (isMedium) {
+                  className += " md:row-span-2 h-[400px]";
+                } else {
+                  className += " h-[195px]";
+                }
+
+                return (
+                  <div
+                    key={index}
+                    className={className}
+                    style={{ animationDelay }}
+                  >
+                    <Image
+                      src={image}
+                      alt={`${tour.title} gallery image ${index + 1}`}
+                      fill
+                      sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

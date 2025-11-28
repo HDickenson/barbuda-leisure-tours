@@ -28,7 +28,7 @@ export function Modal({ isOpen, onClose, children, title }: ModalProps) {
     <div className="fixed inset-0 z-50 overflow-y-auto">
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/50 transition-opacity"
+        className="fixed inset-0 bg-[rgb(48,187,216)]/40 backdrop-blur-sm transition-opacity"
         onClick={onClose}
       />
 

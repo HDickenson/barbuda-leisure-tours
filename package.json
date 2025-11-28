@@ -16,6 +16,8 @@
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.0",
+    "@sanity/client": "^7.13.1",
+    "@sanity/image-url": "^2.0.0",
     "@tailwindcss/typography": "^0.5.19",
     "next": "16.0.3",
     "nodemailer": "^7.0.10",

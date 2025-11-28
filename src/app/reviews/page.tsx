@@ -1,6 +1,5 @@
 import InnerPageHero from '@/components/InnerPageHero';
 import TestimonialList from '@/components/TestimonialList';
-import ContactFormSection from '@/components/ContactFormSection';
 
 export default function ReviewsPage() {
   return (
@@ -36,9 +35,6 @@ export default function ReviewsPage() {
           </div>
         </div>
       </section>
-
-      {/* Contact Form Section */}
-      <ContactFormSection />
 
       {/* close page-content wrapper */}
       </div>

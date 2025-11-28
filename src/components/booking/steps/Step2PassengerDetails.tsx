@@ -157,12 +157,7 @@ export function Step2PassengerDetails({
   }
 
   return (
-    <div className="space-y-6">
-      <div className="mb-4">
-        <h3 className="text-lg font-semibold text-gray-900">{getPassengerLabel()}</h3>
-        <p className="text-sm text-gray-500 mt-1">Please provide details for this passenger</p>
-      </div>
-
+    <div className="space-y-8">
       <div className="space-y-4">
         {/* First Name */}
         <div>
@@ -173,7 +168,7 @@ export function Step2PassengerDetails({
             type="text"
             value={currentPassenger.firstName}
             onChange={(e) => updateCurrentPassenger({ firstName: e.target.value })}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
           />
           {errors.firstName && <p className="text-red-600 text-sm mt-1">{errors.firstName}</p>}
         </div>
@@ -187,7 +182,7 @@ export function Step2PassengerDetails({
             type="text"
             value={currentPassenger.lastName}
             onChange={(e) => updateCurrentPassenger({ lastName: e.target.value })}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
           />
           {errors.lastName && <p className="text-red-600 text-sm mt-1">{errors.lastName}</p>}
         </div>
@@ -205,7 +200,7 @@ export function Step2PassengerDetails({
                 onChange={(e) =>
                   updateCurrentPassenger({ gender: e.target.value as 'Male' | 'Female' | 'Other' })
                 }
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
               >
                 <option value="">Select gender</option>
                 <option value="Male">Male</option>
@@ -224,7 +219,7 @@ export function Step2PassengerDetails({
                 type="date"
                 value={currentPassenger.dateOfBirth?.toISOString().split('T')[0] || ''}
                 onChange={(e) => updateCurrentPassenger({ dateOfBirth: new Date(e.target.value) })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
               />
               {errors.dateOfBirth && (
                 <p className="text-red-600 text-sm mt-1">{errors.dateOfBirth}</p>
@@ -242,7 +237,7 @@ export function Step2PassengerDetails({
                   value={currentPassenger.bodyWeight || ''}
                   onChange={(e) => updateCurrentPassenger({ bodyWeight: Number(e.target.value) })}
                   min="1"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
                 />
                 {errors.bodyWeight && (
                   <p className="text-red-600 text-sm mt-1">{errors.bodyWeight}</p>
@@ -259,7 +254,7 @@ export function Step2PassengerDetails({
                 type="text"
                 value={currentPassenger.passportNumber || ''}
                 onChange={(e) => updateCurrentPassenger({ passportNumber: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
               />
               {errors.passportNumber && (
                 <p className="text-red-600 text-sm mt-1">{errors.passportNumber}</p>
@@ -277,7 +272,7 @@ export function Step2PassengerDetails({
                 onChange={(e) =>
                   updateCurrentPassenger({ passportExpiry: new Date(e.target.value) })
                 }
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
               />
               {errors.passportExpiry && (
                 <p className="text-red-600 text-sm mt-1">{errors.passportExpiry}</p>
@@ -292,7 +287,7 @@ export function Step2PassengerDetails({
               <select
                 value={currentPassenger.passportCountry || ''}
                 onChange={(e) => updateCurrentPassenger({ passportCountry: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
               >
                 <option value="">Select country</option>
                 {COUNTRIES.map((country) => (
@@ -314,7 +309,7 @@ export function Step2PassengerDetails({
               <select
                 value={currentPassenger.nationality || ''}
                 onChange={(e) => updateCurrentPassenger({ nationality: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
               >
                 <option value="">Select nationality</option>
                 {COUNTRIES.map((country) => (
@@ -338,7 +333,7 @@ export function Step2PassengerDetails({
             onChange={(e) =>
               updateCurrentPassenger({ mealPreference: e.target.value as MealPreference })
             }
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[rgb(48,187,216)] focus:border-transparent"
           >
             {MEAL_OPTIONS.map((option) => (
               <option key={option.value} value={option.value}>
@@ -353,13 +348,13 @@ export function Step2PassengerDetails({
       <div className="flex justify-between pt-4">
         <button
           onClick={handlePreviousPassenger}
-          className="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-gray-400 hover:bg-gray-50 transition"
+          className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:border-gray-400 hover:bg-gray-50 transition"
         >
           Back
         </button>
         <button
           onClick={handleNextPassenger}
-          className="px-8 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl"
+          className="px-8 py-3 bg-[rgb(48,187,216)] text-white rounded-lg font-medium hover:bg-[rgb(38,177,206)] transition"
         >
           {currentPassengerIndex < totalPassengers - 1 ? 'Next Passenger' : 'Continue'}
         </button>

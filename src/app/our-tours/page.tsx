@@ -2,13 +2,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
-import { getToursByCategory } from '@/data/tours';
+import { getToursByCategory } from '@/lib/sanity/queries/tours';
 
-export default function OurToursPage() {
-  const signatureTours = getToursByCategory('signature');
-  const localTours = getToursByCategory('local');
-  const sharedTours = getToursByCategory('shared');
-  const privateTours = getToursByCategory('private');
+// Enable ISR - revalidate every hour
+export const revalidate = 3600;
+
+export default async function OurToursPage() {
+  const signatureTours = await getToursByCategory('signature');
+  const localTours = await getToursByCategory('local');
+  const sharedTours = await getToursByCategory('shared');
+  const privateTours = await getToursByCategory('private');
 
   return (
     <main className="min-h-screen">
@@ -45,7 +48,7 @@ export default function OurToursPage() {
           </div>
           <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
             {signatureTours.map((tour) => (
-              <div key={tour.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition group">
+              <div key={tour.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition group flex flex-col h-full">
                 <div className="relative aspect-square">
                   {tour.heroImage && (
                     <Image
@@ -61,7 +64,7 @@ export default function OurToursPage() {
                     {tour.price}
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-1">
                   <h3 className="font-lexend text-[16px] font-semibold text-[rgb(122,122,122)] mb-[30px]">{tour.title}</h3>
                   {tour.subtitle && (
                     <p className="text-turquoise font-medium mb-3 hidden">{tour.subtitle}</p>
@@ -77,7 +80,7 @@ export default function OurToursPage() {
                   </div>
                   <Link
                     href={`/tours/${tour.slug}`}
-                    className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition"
+                    className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition mt-auto"
                   >
                     REQUEST BOOKING
                   </Link>
@@ -100,7 +103,7 @@ export default function OurToursPage() {
             </div>
             <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
               {localTours.map((tour) => (
-                <div key={tour.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition group">
+                <div key={tour.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition group flex flex-col h-full">
                   <div className="relative aspect-square">
                     {tour.heroImage && (
                       <Image
@@ -116,12 +119,12 @@ export default function OurToursPage() {
                       {tour.price}
                     </div>
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-1">
                     <h3 className="font-lexend text-[16px] font-semibold text-[rgb(122,122,122)] mb-[30px]">{tour.title}</h3>
                     <p className="font-open-sans text-[14px] font-semibold text-[rgb(97,97,97)] leading-[23.8px] mb-[25px] line-clamp-3">{tour.description}</p>
                     <Link
                       href={`/tours/${tour.slug}`}
-                      className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition"
+                      className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition mt-auto"
                     >
                       REQUEST BOOKING
                     </Link>
@@ -145,7 +148,7 @@ export default function OurToursPage() {
             </div>
             <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
               {sharedTours.map((tour) => (
-                <div key={tour.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition group">
+                <div key={tour.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition group flex flex-col h-full">
                   <div className="relative aspect-square">
                     {tour.heroImage && (
                       <Image
@@ -166,7 +169,7 @@ export default function OurToursPage() {
                       </div>
                     )}
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-1">
                     <h3 className="font-lexend text-[16px] font-semibold text-[rgb(122,122,122)] mb-[30px]">{tour.title}</h3>
                     {tour.subtitle && (
                       <p className="text-[rgb(48,187,216)] font-medium mb-3 hidden">{tour.subtitle}</p>
@@ -174,7 +177,7 @@ export default function OurToursPage() {
                     <p className="font-open-sans text-[14px] font-semibold text-[rgb(97,97,97)] leading-[23.8px] mb-[25px] line-clamp-3">{tour.description}</p>
                     <Link
                       href={`/tours/${tour.slug}`}
-                      className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition"
+                      className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition mt-auto"
                     >
                       REQUEST BOOKING
                     </Link>
@@ -198,7 +201,7 @@ export default function OurToursPage() {
             </div>
             <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
               {privateTours.map((tour) => (
-                <div key={tour.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition group">
+                <div key={tour.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition group flex flex-col h-full">
                   <div className="relative aspect-square">
                     {tour.heroImage && (
                       <Image
@@ -214,7 +217,7 @@ export default function OurToursPage() {
                       {tour.price}
                     </div>
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-1">
                     <h3 className="font-lexend text-[16px] font-semibold text-[rgb(122,122,122)] mb-[30px]">{tour.title}</h3>
                     {tour.subtitle && (
                       <p className="text-[rgb(48,187,216)] font-medium mb-3 hidden">{tour.subtitle}</p>
@@ -222,7 +225,7 @@ export default function OurToursPage() {
                     <p className="font-open-sans text-[14px] font-semibold text-[rgb(97,97,97)] leading-[23.8px] mb-[25px] line-clamp-3">{tour.description}</p>
                     <Link
                       href={`/tours/${tour.slug}`}
-                      className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition"
+                      className="inline-flex items-center justify-center bg-[rgb(48,187,216)] font-roboto text-[14px] font-medium text-white px-[25px] py-[15px] rounded-[5px] hover:bg-[rgb(35,150,175)] transition mt-auto"
                     >
                       REQUEST BOOKING
                     </Link>
