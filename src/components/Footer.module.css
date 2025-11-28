@@ -25,8 +25,10 @@
 
 /* Main Section - Teal to Navy Gradient (matching live site) */
 .mainSection {
+  position: relative;
   background: linear-gradient(181deg, rgb(48, 187, 216) 10%, rgb(0, 29, 70) 84%);
-  padding: 60px 20px 40px;
+  padding: 60px 20px 80px;
+  z-index: 1;
 }
 
 .container {
@@ -35,6 +37,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -53,11 +57,25 @@
 
 .logoWrapper {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .footerLogo {
   width: 180px;
   height: auto;
+}
+
+.tagline {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+  opacity: 0.9;
 }
 
 /* Contact List */
@@ -74,27 +92,19 @@
   gap: 15px;
 }
 
-/* Contact Icons - Small without background */
-.circleIcon {
-  width: 10px;
-  height: 10px;
-  min-width: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.iconSvg {
-  width: 28px;
-  height: 28px;
-  color: white;
+/* Emoji Icons for Contact Info */
+.emojiIcon {
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: grayscale(0);
+  display: inline-block;
 }
 
 .contactText {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  padding-top: 12px;
 }
 
 .contactText p {
@@ -112,7 +122,6 @@
   font-weight: 600;
   color: white;
   text-decoration: none;
-  padding-top: 12px;
   transition: opacity 0.3s ease;
 }
 
@@ -199,22 +208,24 @@
   opacity: 0.8;
 }
 
-/* Underwater Scene Background - Behind Copyright Bar */
+/* Underwater Scene Background - Overlays gradient */
 .bottomSVGBkgContainer {
   position: absolute;
-  bottom: 0;
+  bottom: 48px;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
+  opacity: 1;
 }
 
 .bottomSVGBkg {
   display: block;
   width: 100%;
-  height: 120px;
+  height: 188px;
+  transform: translateY(0);
 }
 
 /* Bottom Section - Copyright Bar */
@@ -223,7 +234,7 @@
   background-color: rgb(245, 182, 211);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding: 15px 20px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .bottomContent {
