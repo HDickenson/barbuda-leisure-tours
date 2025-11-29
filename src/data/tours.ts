@@ -95,7 +95,6 @@ export interface Tour {
 
 // All tours - Barbuda Leisure Day Tours 2025-2026
 const tours: Tour[] = [
-  // SIGNATURE TOURS
   {
     slug: 'discover-barbuda-by-air',
     title: 'Discover Barbuda by Air',
@@ -111,7 +110,7 @@ const tours: Tour[] = [
       child: 249,
       infant: 99,
       currency: 'USD',
-      notes: "Infants must sit on an adult's lap during flight",
+      notes: 'Infants must sit on an adult\'s lap during flight',
     },
     schedule: {
       departure: '7:15 AM',
@@ -131,13 +130,20 @@ const tours: Tour[] = [
       'Two Foot Bay National Park',
       'Princess Diana Beach (leisure time)',
       'BBQ Chicken Lunch',
-      'Bottled water during the tour',
+      'Bottled water during the tour'
     ],
     lunchUpgrades: [
       { name: 'Fish, Conch, or Shrimp', price: 10 },
       { name: 'Lobster', price: 15 },
+      { name: 'Vegetarian Meal', price: 5 }
     ],
-    transportDetails: ['J8-VBL Islander', 'J8-CRU Twin Otter', 'J8-VBK', 'Dash-8', 'ATR-42'],
+    transportDetails: [
+      'J8-VBL Islander',
+      'J8-CRU Twin Otter',
+      'J8-VBK',
+      'Dash-8',
+      'ATR-42'
+    ],
     whatToBring: [
       'Valid passport or government-issued ID (same used when booking)',
       'Sunscreen, hat, and sunglasses',
@@ -146,15 +152,15 @@ const tours: Tour[] = [
       'Camera or smartphone for photos',
       'Light snacks or preferred beverages',
       'Reusable water bottle (water also provided)',
-      'Umbrella (recommended)',
+      'Umbrella (recommended)'
     ],
     importantInfo: [
-      "Please check in at V.C. Bird International Airport no later than one hour and 15 minutes before your flight's departure",
+      'Please check in at V.C. Bird International Airport no later than one hour and 15 minutes before your flight\'s departure',
       'Bring the same ID or passport used during booking - required for check-in',
       'Flight availability is limited - book early to secure your seats',
       'Weather conditions may affect tour timing. In the event of cancellation, guests will be fully refunded or rescheduled',
       'Transportation to and from your hotel, towels and snorkeling gears are not included in the tour package',
-      'Guests will receive a detailed tour itinerary & weather forecast 24 hours prior to departure',
+      'Guests will receive a detailed tour itinerary & weather forecast 24 hours prior to departure'
     ],
     gallery: [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/MG_6762.tif-300x300.webp',
@@ -162,7 +168,7 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/100_6287-300x300.webp',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/grill-mangrove-snapper-300x300.webp',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/BELLE-BarbudaBelle-1505JMR7800-300x300.webp',
-      'https://www.barbudaleisure.com/wp-content/uploads/2024/11/1-2-300x300.webp',
+      'https://www.barbudaleisure.com/wp-content/uploads/2024/11/1-2-300x300.webp'
     ],
     featured: true,
     // Booking form configuration
@@ -173,6 +179,7 @@ const tours: Tour[] = [
       requiresBodyWeight: false,
     },
   },
+
   {
     slug: 'discover-barbuda-by-sea',
     title: 'Discover Barbuda by Sea',
@@ -188,7 +195,7 @@ const tours: Tour[] = [
       child: 199,
       infant: 99,
       currency: 'USD',
-      notes: "Infants must sit on an adult's lap",
+      notes: 'Infants must sit on an adult\'s lap',
     },
     schedule: {
       departure: '6:30 AM',
@@ -201,18 +208,19 @@ const tours: Tour[] = [
     },
     included: [
       'Round-trip ferry transportation between Antigua and Barbuda',
-      "Pick-up and drop-off from Barbuda's ferry dock",
+      'Pick-up and drop-off from Barbuda\'s ferry dock',
       'Guided sightseeing tour',
       'Frigate Bird Sanctuary and Pink Sand Beach (water taxi included)',
       'Martello Tower',
       'Two Foot Bay National Park',
       'Princess Diana Beach (relaxation time)',
       'BBQ Chicken Lunch',
-      'Bottled water during the tour',
+      'Bottled water during the tour'
     ],
     lunchUpgrades: [
       { name: 'Fish, Conch, or Shrimp', price: 10 },
       { name: 'Lobster', price: 15 },
+      { name: 'Vegetarian Meal', price: 5 }
     ],
     whatToBring: [
       'Passport or government-issued ID',
@@ -223,14 +231,14 @@ const tours: Tour[] = [
       'Light snacks or preferred beverages',
       'Seasickness medication (recommended for sensitive travelers)',
       'Reusable water bottle (water also provided)',
-      'Umbrella (recommended)',
+      'Umbrella (recommended)'
     ],
     importantInfo: [
       'Check-in for the ferry at Heritage Quay Ferry Pier by 6:00 AM',
       'Weather conditions can affect sea travel; rescheduling or refunds will be offered if necessary',
       'The ferry ride can be bumpy on rough days - this tour may not be ideal for those prone to motion sickness',
       'Transportation to and from your hotel, towels and snorkeling gears are not included in the tour package',
-      'Guests will receive a detailed tour itinerary & weather forecast 24 hours prior to departure',
+      'Guests will receive a detailed tour itinerary & weather forecast 24 hours prior to departure'
     ],
     gallery: [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-8-300x300.jpg',
@@ -238,13 +246,18 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-300x300.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-10-300x300.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-2-300x300.jpg',
-      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-13-300x300.jpg',
+      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-13-300x300.jpg'
     ],
     featured: true,
     // Booking form configuration
     transportMethod: 'sea',
     tourType: 'discover-sea',
+    transportRequirements: {
+      requiresPassport: false,
+      requiresBodyWeight: false,
+    },
   },
+
   {
     slug: 'barbuda-sky-sea-adventure',
     title: 'Barbuda Sky & Sea Adventure',
@@ -260,7 +273,7 @@ const tours: Tour[] = [
       child: 229,
       infant: 99,
       currency: 'USD',
-      notes: "Infants on adult's lap",
+      notes: 'Infants on adult\'s lap',
     },
     schedule: {
       departure: '7:00 AM',
@@ -281,11 +294,12 @@ const tours: Tour[] = [
       'Two Foot Bay National Park',
       'Princess Diana Beach',
       'BBQ Chicken Lunch',
-      'Bottled water during the tour',
+      'Bottled water during the tour'
     ],
     lunchUpgrades: [
       { name: 'Fish, Conch, or Shrimp', price: 10 },
       { name: 'Lobster', price: 15 },
+      { name: 'Vegetarian Meal', price: 5 }
     ],
     whatToBring: [
       'Passport (required for flight check-in)',
@@ -293,7 +307,7 @@ const tours: Tour[] = [
       'Swimwear and towels',
       'Comfortable footwear',
       'Camera or phone',
-      'Light snacks or preferred beverages',
+      'Light snacks or preferred beverages'
     ],
     importantInfo: [
       'Check-in for flight at V.C. Bird International Airport no later than one hour and 15 minutes before departure',
@@ -302,7 +316,7 @@ const tours: Tour[] = [
       'Tour includes both air and sea travel; schedule may vary due to weather',
       'The ferry ride can be bumpy on rough days - this tour may not be ideal for those prone to motion sickness',
       'Transportation to and from your hotel, towels and snorkeling gears are not included in the tour package',
-      'Guests will receive a detailed tour itinerary & weather forecast 24 hours prior to departure',
+      'Guests will receive a detailed tour itinerary & weather forecast 24 hours prior to departure'
     ],
     gallery: [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/MG_6762.tif-300x300.webp',
@@ -310,7 +324,7 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/100_6287-300x300.webp',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-8-300x300.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-10-300x300.jpg',
-      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg',
+      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg'
     ],
     featured: true,
     // Booking form configuration
@@ -321,6 +335,7 @@ const tours: Tour[] = [
       requiresBodyWeight: false,
     },
   },
+
   {
     slug: 'barbuda-beach-escape',
     title: 'Barbuda Beach Escape',
@@ -341,7 +356,7 @@ const tours: Tour[] = [
       'Taxi pick-up and drop-off from Barbuda airport/ferry dock to Princess Diana Beach',
       'Leisure time for swimming, sunbathing, and exploring',
       'Lunch at beach Grill',
-      "Optional lunch arrangements at Nobu Barbuda or Uncle Roddy's Beach Bar (additional cost)",
+      'Optional lunch arrangements at Nobu Barbuda or Uncle Roddy\'s Beach Bar (additional cost)'
     ],
     whatToBring: [
       'Passport (for air travel) or valid ID',
@@ -349,12 +364,12 @@ const tours: Tour[] = [
       'Swimwear, towel, and beachwear',
       'Comfortable sandals or flip-flops',
       'Camera or phone',
-      'Small cash for lunch or souvenirs',
+      'Small cash for lunch or souvenirs'
     ],
     importantInfo: [
       'Guests traveling by air must check in 1 hour and 15 minutes before departure',
-      "Lunch at Nobu Barbuda or Uncle Roddy's are not included but can be arranged in advance",
-      'Bring your own beach towel, sun protection and snorkeling gear',
+      'Lunch at Nobu Barbuda or Uncle Roddy\'s are not included but can be arranged in advance',
+      'Bring your own beach towel, sun protection and snorkeling gear'
     ],
     gallery: [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-2-300x300.jpg',
@@ -362,15 +377,18 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/IMG_1963_Edited-300x300.webp',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/100_6287-300x300.webp',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-13-300x300.jpg',
-      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-10-300x300.jpg',
+      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-10-300x300.jpg'
     ],
     featured: true,
-    // Booking form configuration (default to sea/ferry, but supports air/helicopter/boat)
+    // Booking form configuration
     transportMethod: 'sea',
     tourType: 'beach-escape',
+    transportRequirements: {
+      requiresPassport: false,
+      requiresBodyWeight: false,
+    },
   },
 
-  // LOCAL TOUR
   {
     slug: 'discover-barbuda-local-tour',
     title: 'Discover Barbuda - Local Guided Day Tour',
@@ -398,11 +416,12 @@ const tours: Tour[] = [
       'Sightseeing at Two Foot Bay and the Martello Tower',
       'Delicious island-style lunch',
       'Bottled water',
-      'Leisure time at Princess Diana Beach',
+      'Leisure time at Princess Diana Beach'
     ],
     lunchUpgrades: [
       { name: 'Fish, Conch, or Shrimp', price: 10 },
       { name: 'Lobster', price: 15 },
+      { name: 'Vegetarian Meal', price: 5 }
     ],
     whatToBring: [
       'Hat, sunscreen, and sunglasses',
@@ -411,12 +430,12 @@ const tours: Tour[] = [
       'Camera or smartphone',
       'Light snacks or preferred beverages',
       'Seasickness or motion-sickness medication (recommended for sensitive travelers)',
-      'Reusable water bottle (water also provided)',
+      'Reusable water bottle (water also provided)'
     ],
     importantInfo: [
       'Weather conditions can affect sea travel; rescheduling or refunds will be offered if necessary',
       'Snorkeling gear is not included in the tour package',
-      'Guests will receive a detailed tour itinerary and weather forecast 24 hours prior to departure',
+      'Guests will receive a detailed tour itinerary and weather forecast 24 hours prior to departure'
     ],
     gallery: [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-8-300x300.jpg',
@@ -424,25 +443,22 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-300x300.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-10-300x300.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-2-300x300.jpg',
-      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-13-300x300.jpg',
+      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-13-300x300.jpg'
     ],
     featured: false,
     // Booking form configuration
     transportMethod: 'sea',
     tourType: 'already-in-barbuda',
     transportRequirements: {
-      requiresPassport: false,  // Already on island, no passport needed
+      requiresPassport: false,
     },
   },
 
-  // SHARED ADVENTURES
   {
     slug: 'excellence-barbuda-by-sea',
     title: 'Excellence Barbuda by Sea',
     subtitle: 'A Spectacular Day Adventure to Paradise',
     category: 'shared',
-    partnerOperated: true,
-    partnerName: 'Excellence Tours',
     description: `Embark on an unforgettable journey to Barbuda aboard Excellence, a luxury power catamaran designed for comfort, relaxation, and discovery. This exclusive day tour, available only on Fridays from May to October, offers the perfect blend of adventure, nature, and Caribbean charm. Cruise along Low Bay's 17-mile beach, marvel at pink-sand pockets, and spot turtle tracks during nesting season. Step ashore via the Excellence's drop-stair gangway and explore the warm, turquoise shallows. Your day continues with a Frigate Bird Sanctuary tour guided by local experts, followed by a relaxing lunch onboard before heading to Princess Diana Beach - where you can swim, sunbathe, and savor pure Caribbean tranquility.`,
     heroImage: '/images/downloaded/BarbudaLeisureTours-7.jpg',
     duration: '7 hours',
@@ -455,9 +471,9 @@ const tours: Tour[] = [
       notes: 'Children 5-12 years. Not suitable for children under 5 years old',
     },
     schedule: {
-      checkInTime: '8:15 AM',
       departure: '9:00 AM',
-      frequency: 'Fridays only (May to October)',
+      checkInTime: '8:15 AM',
+      frequency: 'Fridays only (October to May)',
       notes: 'Enjoy a scenic 90-minute sea crossing to Barbuda',
     },
     included: [
@@ -467,46 +483,51 @@ const tours: Tour[] = [
       'Guided Frigate Bird Sanctuary Tour with local experts',
       'Caribbean-style lunch (grilled chicken and fish with local sides)',
       'Round-trip sea crossing (90 minutes each way)',
-      "Visit to Low Bay - the island's longest beach with sea turtle tracks",
-      'Stop at Princess Diana Beach',
+      'Visit to Low Bay - the island\'s longest beach with sea turtle tracks',
+      'Stop at Princess Diana Beach'
     ],
-    ageRestrictions: 'Not suitable for pregnant women, those with back or neck conditions, or children under 5 years old',
     whatToBring: [
       'Sunscreen / Sunblock',
       'Beach Towel',
-      'Spending Money for souvenirs or extra refreshments',
+      'Spending Money for souvenirs or extra refreshments'
     ],
     importantInfo: [
       'This tour is not suitable for pregnant women or anyone with back or neck conditions',
       'Children under 5 years old are not permitted on this tour',
-      'Available only on Fridays from May to October',
+      'Available only on Fridays from May to October'
     ],
+    ageRestrictions: 'Not suitable for pregnant women, those with back or neck conditions, or children under 5 years old',
+    partnerOperated: true,
+    partnerName: 'Excellence Tours',
     gallery: [
       '/images/excellence/DJI_0918.jpg',
       '/images/excellence/exclnce-10.jpg',
       '/images/excellence/exclnce-25.jpg',
       '/images/excellence/exclnce-27.jpg',
       '/images/excellence/exclnce-27 (1).jpg',
-      '/images/excellence/LobsterLunch-3.jpg',
+      '/images/excellence/LobsterLunch-3.jpg'
     ],
     featured: true,
     // Booking form configuration
     transportMethod: 'sea',
     tourType: 'excellence',
+    transportRequirements: {
+      requiresPassport: false,
+      requiresBodyWeight: false,
+    },
     bookingRestrictions: {
-      daysOfWeek: [5],  // Friday only
-      seasonStart: '05-01',  // May 1
-      seasonEnd: '10-31',    // October 31
       minAge: 5,
+      daysOfWeek: [5],
+      seasonStart: '10-01',
+      seasonEnd: '05-31',
     },
   },
+
   {
     slug: 'shared-barbuda-boat-charter',
     title: 'Shared Barbuda Boat Charter',
     subtitle: 'A Fun, Social, and Scenic Way to Experience Barbuda',
     category: 'shared',
-    partnerOperated: true,
-    partnerName: 'Local Charter Partners',
     description: `Looking for a fun, social, and scenic way to experience Barbuda? Join our Shared Barbuda Charter by our partners - a small-group adventure that combines comfort, breathtaking views, and authentic island hospitality. Enjoy a full day exploring Barbuda's pristine beaches, snorkeling in turquoise waters, and savoring a freshly grilled island-style lunch.`,
     heroImage: '/images/downloaded/BarbudaLeisureTours-4.jpg',
     duration: 'Full day (approximately 8 hours)',
@@ -519,7 +540,6 @@ const tours: Tour[] = [
       currency: 'USD',
       notes: 'Ages 6-12 ($220), Ages 3-5 ($75), 2 and under (Free). US$20 deposit per person required for booking',
     },
-    minimumGuests: 6,
     schedule: {
       departure: '9:00 AM (Jolly Harbour) / 9:30 AM (Dickenson Bay)',
       returnArrival: '5:00 PM - 5:30 PM',
@@ -532,41 +552,47 @@ const tours: Tour[] = [
       'Towels and snorkeling gear provided',
       'Island-style lunch freshly prepared (Grilled Chicken or Grilled Lobster)',
       'Visits to Spanish Point, Coco Point, Princess Diana Beach, and Palmetto Point (time permitting)',
-      'Side dishes: rice & peas, macaroni salad, sweet potato salad, plantains, or local ground provisions',
+      'Side dishes: rice & peas, macaroni salad, sweet potato salad, plantains, or local ground provisions'
     ],
     lunchUpgrades: [
       { name: 'Grilled Lobster', price: 25 },
-      { name: 'Grilled Chicken Wings', price: 20 },
+      { name: 'Grilled Chicken Wings', price: 20 }
     ],
     importantInfo: [
       'Minimum of 6 people required for the trip to operate (up to 10 guests maximum)',
       'Weather Policy: If sea conditions are unsafe, the trip will be rescheduled or moved to an alternate Antigua-based experience',
       'Motion Sickness: The boats are fast and comfortable, but conditions can be choppy. If you are prone to seasickness, we recommend taking motion sickness medication prior to departure',
       'Cancellation Policy: 50% fee applies unless canceled at least 48 hours in advance',
-      'The exact itinerary and stops may vary depending on weather and sea conditions',
+      'The exact itinerary and stops may vary depending on weather and sea conditions'
     ],
+    partnerOperated: true,
+    partnerName: 'Local Charter Partners',
+    minimumGuests: 6,
     gallery: [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/IMG_7042-300x200.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-300x300.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-10-300x300.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-2-300x300.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg',
-      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg',
+      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg'
     ],
     featured: true,
     // Booking form configuration
     transportMethod: 'sea',
     tourType: 'shared-boat',
+    transportRequirements: {
+      requiresPassport: false,
+      requiresBodyWeight: false,
+    },
     bookingRestrictions: {
       minGuests: 6,
       maxGuests: 10,
     },
     mealUpgradePricing: {
-      lobster: 25,  // Override default $15 with $25 for this tour
+      lobster: 25,
     },
   },
 
-  // PRIVATE CHARTERS
   {
     slug: 'barbuda-exclusive-helicopter',
     title: 'Barbuda Exclusive: Helicopter Adventure',
@@ -588,12 +614,12 @@ const tours: Tour[] = [
       'Customized itinerary',
       'Scenic aerial views',
       'Beach landing access',
-      'Flexible scheduling',
+      'Flexible scheduling'
     ],
     importantInfo: [
-      "This is more than a trip - it's an experience made for those who believe paradise should be personalized",
+      'This is more than a trip - it\'s an experience made for those who believe paradise should be personalized',
       'Custom itinerary designed based on your preferences',
-      'Contact us to discuss your specific requirements and preferences',
+      'Contact us to discuss your specific requirements and preferences'
     ],
     gallery: [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-09-300x300.jpg',
@@ -601,7 +627,7 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSC3121-300x199.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/BELLE-BarbudaBelle-1505JMR6691-300x190.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg',
-      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg',
+      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg'
     ],
     featured: false,
     // Booking form configuration
@@ -609,9 +635,10 @@ const tours: Tour[] = [
     tourType: 'private-helicopter',
     transportRequirements: {
       requiresPassport: true,
-      requiresBodyWeight: true,  // Required for helicopter weight and balance
+      requiresBodyWeight: true,
     },
   },
+
   {
     slug: 'barbuda-exclusive-yacht',
     title: 'Barbuda Exclusive: Yacht Adventure',
@@ -633,12 +660,12 @@ const tours: Tour[] = [
       'Cooler of complimentary drinks (water, sodas, beer, rum, rosé, Prosecco)',
       'All snorkeling gear and towels provided',
       'Visits to Spanish Point, Coco Point, Princess Diana Beach, Palmetto Point',
-      'Optional add-ons: seafood lunch, BBQ chicken meal, or guided island tour',
+      'Optional add-ons: seafood lunch, BBQ chicken meal, or guided island tour'
     ],
     importantInfo: [
       'Perfect for celebrating special occasions, romantic escapes, or adventure in luxury',
       'Customizable itinerary based on your preferences',
-      'Contact us to arrange your private yacht adventure',
+      'Contact us to arrange your private yacht adventure'
     ],
     gallery: [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/IMG_7042-300x200.jpg',
@@ -646,13 +673,18 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-10-300x300.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-2-300x300.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg',
-      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg',
+      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg'
     ],
     featured: false,
     // Booking form configuration
     transportMethod: 'yacht',
     tourType: 'private-yacht',
+    transportRequirements: {
+      requiresPassport: false,
+      requiresBodyWeight: false,
+    },
   },
+
   {
     slug: 'barbuda-exclusive-airplane',
     title: 'Barbuda Exclusive: Airplane Adventure',
@@ -674,12 +706,12 @@ const tours: Tour[] = [
       'Customized itinerary',
       'Scenic aerial views',
       'Flexible scheduling',
-      'Options for beach day or guided tour',
+      'Options for beach day or guided tour'
     ],
     importantInfo: [
-      "Experience the Caribbean's most pristine paradise - your way",
+      'Experience the Caribbean\'s most pristine paradise - your way',
       'Fully customizable itinerary based on your preferences',
-      'Contact us to book your private air adventure',
+      'Contact us to book your private air adventure'
     ],
     gallery: [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-09-300x300.jpg',
@@ -687,7 +719,7 @@ const tours: Tour[] = [
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSC3121-300x199.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/11/BELLE-BarbudaBelle-1505JMR6691-300x190.jpg',
       'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg',
-      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg',
+      'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg'
     ],
     featured: false,
     // Booking form configuration
@@ -695,10 +727,10 @@ const tours: Tour[] = [
     tourType: 'private-airplane',
     transportRequirements: {
       requiresPassport: true,
-      requiresBodyWeight: true,  // Required for airplane weight and balance
+      requiresBodyWeight: true,
     },
   },
-]
+];
 
 export function getAllTours(): Tour[] {
   return tours

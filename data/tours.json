@@ -1,0 +1,463 @@
+{
+  "tours": [
+    {
+      "slug": "discover-barbuda-by-air",
+      "name": "Discover Barbuda by Air",
+      "category": "Signature Tours",
+      "formKey": "air",
+      "montage": {
+        "layout": "layout1",
+        "images": [
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-18.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-11.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-25.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-8.jpg"
+        ]
+      },
+      "sections": [
+        {
+          "heading": "# **Discover Barbuda by Air**",
+          "body": "**Experience Barbuda from Above — A Journey Like No Other** when you take a flight across the Caribbean Sea and discover Barbuda’s unspoiled beauty from a bird’s-eye view. In just 20 minutes, you’ll arrive on one of the most breathtaking islands in the Caribbean — home to pink-sand beaches, turquoise lagoons, and the world’s largest Frigate Bird Sanctuary.  \nThis signature tour is ideal for those who prefer a **comfortable, scenic, and time-efficient** way to explore Barbuda.\n\n---"
+        },
+        {
+          "heading": "### **Included in Your Tour**",
+          "body": "* Round-trip flights between Antigua and Barbuda\n\n* Pick-up and drop-off from Barbuda International Airport\n\n* Fully guided sightseeing tour including:\n\n  * **Frigate Bird Sanctuary and Pink Sand Beach** (water taxi ride included)\n\n  * **Martello Tower**\n\n  * **Two Foot Bay National Park**\n\n  * **Princess Diana Beach** (leisure time)\n\n* BBQ Chicken Lunch *(upgrade available)*\n\n* Bottled water during the tour.\n\n---"
+        },
+        {
+          "heading": "### **Tour Duration**",
+          "body": "Approximately **8** \\- 9 **hours total**, including flights, guided sightseeing, lunch, and beach time.\n\n---"
+        },
+        {
+          "heading": "### **Price**",
+          "body": "* **Adults:** US$349 per person\n\n* **Children (2–12 years):** US$249 per person\n\n* **Infants (under 2 years):** US$99 *(must sit on an adult’s lap during flight)*\n\n**Lunch Upgrade Options:**\t\n\n* Fish, Conch, or Shrimp — *Add US$10*\n\n* Lobster — *Add US$15*"
+        },
+        {
+          "heading": "### ---",
+          "body": ""
+        },
+        {
+          "heading": "**Flight Schedule**",
+          "body": "* **Departure from Antigua:** 7:15 AM \n\n* **Arrival in Barbuda:** 7:35 AM\n\n* **Return from Barbuda:** 4:30 PM\n\n* **Arrival in Antigua:** 4:50 PM\n\n*(Flight times may vary slightly depending on weather and operational conditions.)*\n\n---"
+        },
+        {
+          "heading": "### **Aircraft Used**",
+          "body": "You’ll travel aboard one of the following aircraft:\n\n* **J8-VBL Islander** \n\n* **J8-CRU Twin Otter** \n\n* **J8-VBK** \n\n* **Dash**\\-**8**\n\n* **ATR**\\-**42** \n\nAll aircraft are operated by one of our approved air partners, meeting the highest safety standards.\n\n---"
+        },
+        {
+          "heading": "### **What to Bring**",
+          "body": "* **Valid passport or government-issued ID (same used when booking)**\n\n* **Sunscreen, hat, and sunglasses**\n\n* **Swimwear and towel**\n\n* **Comfortable clothing and footwear**\n\n* **Camera or smartphone for photos**\n\n* **Light snacks or preferred beverages**\n\n* **Reusable water bottle (water also provided)**\n\n* **Umbrella (recommended)**\n\n---"
+        },
+        {
+          "heading": "### **Important Information**",
+          "body": "* Please check in at **V.C. Bird International Airport** no later than **one hour and 15 minutes before your flight’s departure.** \n\n* Bring the **same ID or passport** used during booking — required for check-in.\n\n* Flight availability is limited — book early to secure your seats.\n\n* Weather conditions may affect tour timing. In the event of cancellation, guests will be fully refunded or rescheduled.\n\n* Transportation to and from your hotel, towels and snorkeling gears are not included in the tour package.\n\n* Guests will receive a **detailed tour itinerary & weather forecast 24 hours prior** to departure.\n\n---"
+        },
+        {
+          "heading": "### **Why Choose Discover Barbuda by Air?**",
+          "body": "* **Fast & Scenic:** Get to Barbuda in just 20 minutes instead of a 90-minute ferry ride.\n\n* **Comfort & Convenience:** Ideal for those prone to seasickness or short on time.\n\n* **All-in-One Experience:** Includes sightseeing, beach relaxation, and authentic local cuisine.\n\n* **Professional Guides:** Our local experts ensure an informative and memorable day.\n\n* **Breathtaking Views:** Enjoy unmatched aerial views of Antigua, Barbuda, and the Caribbean Sea.\n\n---\n\n##"
+        }
+      ]
+    },
+    {
+      "slug": "discover-barbuda-by-sea",
+      "name": "Discover Barbuda by Sea",
+      "category": "Signature Tours",
+      "formKey": "sea",
+      "montage": {
+        "layout": "layout2",
+        "images": [
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-14.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-18.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-11.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-25.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-17.jpg"
+        ]
+      },
+      "sections": [
+        {
+          "heading": "# **Discover Barbuda by Sea**",
+          "body": "**Sail Across the Caribbean Sea to Discover** Barbuda aboard a scenic ferry from Antigua and spend the day exploring one of the Caribbean’s most untouched islands. From the world-famous **Pink Sand Beach** to the breathtaking **Frigate Bird Sanctuary**, this tour combines adventure, culture, and relaxation — a perfect way to experience Barbuda’s natural beauty at an affordable rate.\n\n---"
+        },
+        {
+          "heading": "### **Included in Your Tour**",
+          "body": "* Round-trip ferry transportation between Antigua and Barbuda\n\n* Pick-up and drop-off from Barbuda’s ferry dock\n\n* Guided sightseeing tour including:\n\n  * **Frigate Bird Sanctuary and Pink Sand Beach** (water taxi included)\n\n  * **Martello Tower**\n\n  * **Two Foot Bay National Park**\n\n  * **Princess Diana Beach** (relaxation time)\n\n* **BBQ Chicken Lunch** *(upgrade available)*\n\n* Bottled water during the tour.\n\n---"
+        },
+        {
+          "heading": "### **Tour Duration**",
+          "body": "Approximately **6-7 hours total**, including round-trip ferry and guided sightseeing.\n\n---"
+        },
+        {
+          "heading": "### **Price**",
+          "body": "* **Adults:** US$249 per person\n\n* **Children (2–12 years):** US$199 per person\n\n* **Infants (under 2 years):** US$99 *(must sit on an adult’s lap)*"
+        },
+        {
+          "heading": "**Lunch Upgrade Options:**",
+          "body": "* Fish, Conch, or Shrimp — *Add US$10*\n\n* Lobster — *Add US$15*"
+        },
+        {
+          "heading": "### ---",
+          "body": ""
+        },
+        {
+          "heading": "**Ferry Schedule**",
+          "body": "* **Departure from Antigua:** 6:30 AM (Heritage Quay Ferry Terminal)\n\n* **Arrival in Barbuda:** 8:00 AM\n\n* **Return from Barbuda:** 3:00 PM\n\n* **Arrival back in Antigua:** 4:30 PM\n\n*(90-minute crossing each way — schedule may vary based on weather and ferry operations.)*\n\n---"
+        },
+        {
+          "heading": "### **What to Bring**",
+          "body": "* Passport or government-issued ID\n\n* Hat, sunscreen, and sunglasses\n\n* Swimwear and towel\n\n* Comfortable shoes and light clothing\n\n* Camera or smartphone\n\n* Light snacks or preferred beverages\n\n* Seasickness medication (recommended for sensitive travelers)\n\n* **Reusable water bottle** (water also provided)\n\n* **Umbrella** (recommended)\n\n---"
+        },
+        {
+          "heading": "### **Important Information**",
+          "body": "* Check-in for the ferry at **Heritage Quay Ferry Pier** by **6:00 AM**.\n\n* Weather conditions can affect sea travel; rescheduling or refunds will be offered if necessary.\n\n* The ferry ride can be bumpy on rough days — this tour may not be ideal for those prone to motion sickness.\n\n* Transportation to and from your hotel, towels and snorkeling gears are not included in the tour package.\n\n* Guests will receive a **detailed tour itinerary & weather forecast 24 hours prior** to departure.\n\n---"
+        },
+        {
+          "heading": "### **Why Choose Discover Barbuda by Sea?**",
+          "body": "* A scenic and budget-friendly way to explore Barbuda.\n\n* Perfect for adventure seekers and nature lovers\n\n* Full-day guided experience with authentic local hospitality\n\n* Ideal for small groups and families\n\n---\n\n##"
+        }
+      ]
+    },
+    {
+      "slug": "barbuda-sky-and-sea-adventure",
+      "name": "Barbuda Sky & Sea Adventure",
+      "category": "Signature Tours",
+      "formKey": "air",
+      "montage": {
+        "layout": "layout3",
+        "images": [
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-30.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-18.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-11.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-25.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-17.jpg"
+        ]
+      },
+      "sections": [
+        {
+          "heading": "# **Barbuda Sky & Sea Adventure**",
+          "body": "**The Ultimate Way to Experience Barbuda — Fly In, Cruise Back**.  This signature tour offers the best of both worlds — a **flight to Barbuda** in the morning and a **return ferry** in the afternoon.  Enjoy a smooth 20-minute scenic flight over the Caribbean Sea followed by an unforgettable day of exploration, sightseeing, and relaxation before sailing back to Antigua.\n\n---"
+        },
+        {
+          "heading": "### **Schedule**",
+          "body": "* **Flight from Antigua:** 7:00 AM\n\n* **Arrival in Barbuda:** 7:20 AM\n\n* **Ferry departure from Barbuda:** 3:00 PM\n\n* **Arrival in Antigua:** 4:30 PM\n\n---"
+        },
+        {
+          "heading": "### **Tour Duration**",
+          "body": "Approximately **6-7 hours**, combining flight, guided tour, and ferry return.\n\n---"
+        },
+        {
+          "heading": "### **Included in Your Tour**",
+          "body": "* One-way flight Antigua → Barbuda\n\n* Return ferry Barbuda → Antigua\n\n* Guided sightseeing tour with local expert\n\n* Visits to:\n\n  * **Frigate Bird Sanctuary**\n\n  * **Pink Sand Beach**\n\n  * **Martello Tower**\n\n  * **Two Foot Bay National Park**\n\n  * **Princess Diana Beach**\n\n* **BBQ Chicken Lunch** *(upgrade available)*\n\n* Bottled water during the tour\n\n---"
+        },
+        {
+          "heading": "### **Price**",
+          "body": "* **Adults:** US$299 per person\n\n* **Children (2–12 years):** US$229 per person\n\n* **Infants (under 2 years):** US$99 *(on adult’s lap)*"
+        },
+        {
+          "heading": "**Lunch Upgrade Options:**",
+          "body": "* Fish, Conch, or Shrimp — *Add US$10*\n\n* Lobster — *Add US$15*"
+        },
+        {
+          "heading": "### ---",
+          "body": ""
+        },
+        {
+          "heading": "**What to Bring**",
+          "body": "* Passport (required for flight check-in)\n\n* Hat, sunscreen, and sunglasses\n\n* Swimwear and towels\n\n* Comfortable footwear\n\n* Camera or phone\n\n* Light snacks or preferred beverages\n\n---"
+        },
+        {
+          "heading": "### **Important Information**",
+          "body": "* Check-in for flight at **V.C. Bird International Airport** no later than **one hour and 15 minutes before departure.** \n\n* Check-in for the ferry 30 minutes before departure. \n\n* Bring the same ID used during booking.\n\n* Tour includes both air and sea travel; schedule may vary due to weather.\n\n* The ferry ride can be bumpy on rough days — this tour may not be ideal for those prone to motion sickness.\n\n* Transportation to and from your hotel, towels and snorkeling gears are not included in the tour package.\n\n* Guests will receive a **detailed tour itinerary & weather forecast 24 hours prior** to departure.\n\n---"
+        },
+        {
+          "heading": "### **Why Choose the Barbuda Sky & Sea Adventure?**",
+          "body": "* Enjoy both air and sea views of the Caribbean.\n\n* Avoid the morning bumpy ferry ride while still experiencing the scenic return.\n\n* Includes full-day tour and beach relaxation.\n\n* A perfect balance of convenience and adventure\n\n---"
+        }
+      ]
+    },
+    {
+      "slug": "barbuda-beach-escape",
+      "name": "Barbuda Beach Escape",
+      "category": "Signature Tours",
+      "formKey": "air",
+      "montage": {
+        "layout": "layout1",
+        "images": [
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-10.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-11.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-18.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-17.jpg"
+        ]
+      },
+      "sections": [
+        {
+          "heading": "# **Barbuda Beach Escape**",
+          "body": ""
+        },
+        {
+          "heading": "### **A Relaxing Getaway to Paradise**",
+          "body": "If your idea of paradise is sun, sea, and serenity — this is the tour for you. Fly or sail to Barbuda and spend the day on the island’s most famous beach, **Princess Diana Beach**, where turquoise waters and pink sands await.\n\n---"
+        },
+        {
+          "heading": "### **Travel Options**",
+          "body": "Choose between:\n\n* **Round-trip by Air** – Fast and comfortable (20-minute flight each way)\n\n* **Round-trip by Sea** – Scenic ferry ride (90 minutes each way)\n\n* **Round-trip by Helicopter –** Exclusive and luxurious way to get to the island in 15 minutes. \n\n* **Round-trip by Private Boat** – the best way for scenic with luxury to see paradise in 1-hour and 15 minutes.  \n\n\n---"
+        },
+        {
+          "heading": "### **Tour Duration**",
+          "body": "Approx. **6–8 hours** depending on transport mode.\n\n---"
+        },
+        {
+          "heading": "### **Included in Your Tour**",
+          "body": "* Round-trip transportation (flight, ferry, helicopter, or private boat)\n\n* Taxi pick-up and drop-off from Barbuda airport/ferry dock to Princess Diana Beach\n\n* Leisure time for swimming, sunbathing, and exploring.\n\n* Lunch at beach Grill\n\n* Optional lunch arrangements (additional cost):\n\n  * **Nobu Barbuda**\n\n  * **Uncle Roddy’s Beach Bar**\n\n---"
+        },
+        {
+          "heading": "### ",
+          "body": ""
+        },
+        {
+          "heading": "### **Price**",
+          "body": "* **Round-trip by Air:** From US$299 per person\n\n* **Round-trip by Ferry:** From US$199 per person\n\n* **Round-trip by Helicopter:** From US$699 per person (based on 6 people)\n\n* **Round-trip by Private Boat:** From US$399 per person (based on 8 people)\n\n---"
+        },
+        {
+          "heading": "### **What to Bring**",
+          "body": "* Passport (for air travel) or valid ID\n\n* Hat, sunscreen, and sunglasses\n\n* Swimwear, towel, and beachwear\n\n* Comfortable sandals or flip-flops\n\n* Camera or phone\n\n* Small cash for lunch or souvenirs\n\n---"
+        },
+        {
+          "heading": "### **Important Information**",
+          "body": "* Guests traveling by air must check in 1 hour and 15 minutes before departure.\n\n* Lunch at Nobu Barbuda or Uncle Roddy’s are not included but can be arranged in advance.\n\n* Bring your own beach towel, sun protection and snorkeling gear.\n\n---"
+        },
+        {
+          "heading": "### **Why Choose the Barbuda Beach Escape?**",
+          "body": "* The ultimate relaxation experience.\n\n* Perfect for couples and small groups\n\n* Spend your day at the world-famous **Princess Diana Beach**\n\n* Option to add luxury lunch or extend your beach time."
+        }
+      ]
+    },
+    {
+      "slug": "already-in-barbuda",
+      "name": "Already in Barbuda?",
+      "category": "Already in Barbuda?",
+      "formKey": "local",
+      "montage": {
+        "layout": "layout4",
+        "images": [
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-28.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-18.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-11.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-8.jpg"
+        ]
+      },
+      "sections": [
+        {
+          "heading": "# **Already in Barbuda?**",
+          "body": "If you’re already on the island, you can still experience Barbuda Leisure’s guided tours\\!  \nJoin our local excursions that include sightseeing, beach relaxation, and cultural exploration \\- available daily upon request. **REQUEST BOOKING**\n\n---"
+        },
+        {
+          "heading": "## **Shared Charter/Adventures**",
+          "body": "Enjoy these exceptional shared experiences operated in partnership with trusted local providers.\n\n**Excellence Barbuda by Sea**  \nOperated by *our partners* — available **every Friday**. Experience a shared cruise from Antigua to Barbuda with onboard entertainment, snorkeling, and a beachside lunch."
+        },
+        {
+          "heading": "**REQUEST BOOKING**",
+          "body": "**Shared Barbuda Boat Charter**  \nOperated by *our partners*. Cruise in comfort on a shared charter experience with complimentary beverages, snorkeling, and beach time in Barbuda."
+        },
+        {
+          "heading": "**REQUEST BOOKING**",
+          "body": "---"
+        },
+        {
+          "heading": "## **Private Charters**",
+          "body": "For those seeking exclusivity and personalized service, our private charter experiences offer the ultimate in comfort and luxury.\n\n**Barbuda Exclusive: Helicopter Adventure**  \nFly privately by helicopter and land directly on Princess Diana Beach for a full day of relaxation and a gourmet lunch. **REQUEST BOOKING**\n\n**Barbuda Exclusive: Yacht Adventure**  \nSail aboard a private luxury yacht with your own captain and crew. Includes beach access, snorkeling, drinks, and a personalized itinerary. **REQUEST BOOKING**\n\n**Barbuda Exclusive: Airplane Adventure**  \nTravel privately by aircraft and explore Barbuda at your own pace with a custom island tour and optional dining experiences. **REQUEST BOOKING**\n\n---\n\n(Individual Tour Page)"
+        }
+      ]
+    },
+    {
+      "slug": "shared-barbuda-boat-charter",
+      "name": "Shared Barbuda Boat Charter",
+      "category": "Shared Charter/Adventures",
+      "formKey": "charter",
+      "montage": {
+        "layout": "layout4",
+        "images": [
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-27.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-18.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-11.jpg"
+        ]
+      },
+      "sections": [
+        {
+          "heading": "# **Shared Barbuda Boat Charter**",
+          "body": "Looking for a fun, social, and scenic way to experience Barbuda?  \nJoin our **Shared Barbuda Charter by our partners** — a small-group adventure that combines comfort, breathtaking views, and authentic island hospitality.  \nEnjoy a full day exploring Barbuda’s pristine beaches, snorkeling in turquoise waters, and savoring a freshly grilled island-style lunch.\n\n---"
+        },
+        {
+          "heading": "### **Departure & Return Details**",
+          "body": "* **Departure Points:**\n\n  * Jolly Harbour – *9:00 AM*\n\n  * Dickenson Bay – *9:30 AM*\n\n* **Crossing Duration:** 1 hour 10 minutes to 1 hour 25 minutes (depending on sea conditions)\n\n* **Return Time:** Between *5:00 PM and 5:30 PM*\n\n---"
+        },
+        {
+          "heading": "### **Experience Highlights**",
+          "body": "Once you arrive in Barbuda, you’ll explore some of the island’s most beautiful and untouched locations, including:\n\n* 🐚 **Spanish Point** – perfect for snorkeling and crystal-clear waters.\n\n* 🌊 **Coco Point** – known for its long stretches of soft white and pink sand.\n\n* 🏖️ **Princess Diana Beach** – Barbuda’s most famous beach, ideal for swimming and sunbathing.\n\n* 🌅 Palmetto **Point** *(Time permitting)* – where the sand shimmers pink under the sunlight.\n\n**Please note:** The exact itinerary and stops may vary depending on weather and sea conditions. Safety and guest comfort are always our top priority.\n\n---"
+        },
+        {
+          "heading": "### **What’s Included**",
+          "body": "* **Round-trip boat transportation** between Antigua and Barbuda\n\n* **Professional crew and guide** for the day\n\n* **Cooler stocked with complimentary drinks:** water, sodas, beer, rum, rosé, and Prosecco\n\n* **Towels and snorkeling gear provided**\n\n* **Island-style lunch** freshly prepared by **a Local Beach Restaurant**\n\n  * Choice of *Grilled Chicken* or *Grilled Lobster*\n\n  * Side dishes may include rice & peas, macaroni salad, sweet potato salad, plantains, or local ground provisions — depending on the chef’s selection for the day.\n\n---"
+        },
+        {
+          "heading": "### **Lunch Upgrades**",
+          "body": "Want to indulge a little more? You can add extra mains for a small fee:\n\n* **Grilled Lobster** – \\+US $25 per person\n\n* **Grilled Chicken Wings** – \\+US $20 per person\n\nIf you have any **dietary restrictions or food allergies**, please inform us when booking so we can make special arrangements with the chef.\n\n---"
+        },
+        {
+          "heading": "### **Important Information**",
+          "body": "* **Group Size:** Minimum of 6 people required for the trip to operate (up to 10 guests maximum).\n\n* **Weather Policy:** If sea conditions are unsafe, the trip will be rescheduled or moved to an alternate Antigua-based experience.\n\n* **Motion Sickness:** The boats are fast and comfortable, but conditions can be choppy. If you are prone to seasickness, we recommend taking motion sickness medication prior to departure.\n\n* **Cancellation Policy:** 50% fee applies unless canceled at least 48 hours in advance.\n\n---"
+        },
+        {
+          "heading": "### **Price & Booking**",
+          "body": "* **Cost:** US$310 per person (Adults), US$220 (6-12 yrs. old), US$75 (3-5 yrs. old), Free (2 and under)\n\n* **Deposit:** US$$20 deposit per person is required for booking.\n\n* **Payment Methods:** Cash, Visa, MasterCard, or American Express accepted. Balance is payable on day of charter. \n\n* Once your deposit is received, we’ll confirm your spot and handle the coordination for the rest of the group.\n\n---"
+        }
+      ]
+    },
+    {
+      "slug": "excellence-barbuda-by-sea",
+      "name": "Excellence Barbuda by Sea",
+      "category": "Shared Charter/Adventures",
+      "formKey": "excellence",
+      "montage": {
+        "layout": "layout2",
+        "images": [
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-18.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-11.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-17.jpg"
+        ]
+      },
+      "sections": []
+    },
+    {
+      "slug": "barbuda-exclusive-helicopter-adventure",
+      "name": "Barbuda Exclusive: Helicopter Adventure",
+      "category": "Private Charters",
+      "formKey": "charter",
+      "montage": {
+        "layout": "layout3",
+        "images": [
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-2.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-18.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-11.jpg"
+        ]
+      },
+      "sections": [
+        {
+          "heading": "# **Barbuda Exclusive: Helicopter Adventure**",
+          "body": "Experience Barbuda like never before with our **luxury private helicopter adventure** — the most exclusive way to discover the island’s untouched beauty.\n\nWhether you’re dreaming of a **romantic lunch escape**, a **sun-kissed beach picnic**, or an **extended day of exploration** among Barbuda’s pink-sand shores and natural wonders, we’ll design a **custom itinerary** just for you.\n\nFrom the moment you lift off from Antigua, every detail is crafted for comfort, privacy, and unforgettable views of the Caribbean Sea below.\n\n**Starting at just US $3,500**, this is more than a trip — it’s an experience made for those who believe paradise should be personalized.\n\n📞 **Reserve your exclusive helicopter escape today\\!**"
+        }
+      ]
+    },
+    {
+      "slug": "barbuda-exclusive-yacht-adventure",
+      "name": "Barbuda Exclusive: Yacht Adventure",
+      "category": "Private Charters",
+      "formKey": "charter",
+      "montage": {
+        "layout": "layout1",
+        "images": [
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-19.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-18.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-11.jpg"
+        ]
+      },
+      "sections": [
+        {
+          "heading": "# **Barbuda Exclusive: Yacht Adventure**",
+          "body": ""
+        },
+        {
+          "heading": "### **Set sail in style — discover Barbuda, your way.** ",
+          "body": "Embark on one of our most sought-after experiences — the **Barbuda Exclusive Yacht Adventure**, where luxury meets the open sea. Enjoy a **private charter across the Caribbean**, guided by our professional captain and crew, as you glide effortlessly from Antigua to Barbuda in just **1 hour and 15 minutes**.\n\nYour unforgettable day can begin with a scenic departure from **Dickenson Bay** or **Jolly Harbour**, followed by an island-hopping escape to Barbuda’s most breathtaking coastal gems, including:\n\n* **Spanish Point**  \n* **Coco Point**  \n* **Princess Diana Beach**  \n* **Palmetto Point** *(Time permitting)*, where you may find shimmering pink sand.\n\nRelax on deck with a **cooler of complimentary drinks** — including water, sodas, beer, rum, rosé, and Prosecco — and enjoy the sunshine, sea breeze, and unmatched Caribbean beauty.\n\nAll snorkeling gear and towels are provided, and you can choose to add a **seafood lunch, BBQ chicken meal, or guided island tour** for the ultimate indulgence.\n\nWhether you’re celebrating a special occasion, enjoying a romantic escape, or simply craving adventure in luxury — this is the journey that defines paradise. **Starting at US$1800**"
+        }
+      ]
+    },
+    {
+      "slug": "barbuda-exclusive-airplane-adventure",
+      "name": "Barbuda Exclusive: Airplane Adventure",
+      "category": "Private Charters",
+      "formKey": "charter",
+      "montage": {
+        "layout": "layout2",
+        "images": [
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-29.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-18.jpg",
+          "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-11.jpg"
+        ]
+      },
+      "sections": [
+        {
+          "heading": "# **Barbuda Exclusive: Airplane Adventure**",
+          "body": ""
+        },
+        {
+          "heading": "### **Elevate your escape. Experience Barbuda from above.**",
+          "body": "Take your island getaway to new heights with our **private aircraft charter from Antigua to Barbuda** — designed for those who seek **luxury, adventure, and exclusivity** in one unforgettable experience.\n\nAs you soar across the **turquoise Caribbean Sea**, enjoy breathtaking aerial views of Antigua’s coastline and Barbuda’s untouched pink-sand beaches below.  Every moment of your journey is tailored to perfection, offering comfort, style, and seamless service from takeoff to touchdown.\n\nYour **Barbuda Exclusive Airplane Adventure** is fully customizable — whether you desire a **scenic flight**, a **private beach day**, or a **private day tour** exploring Barbuda’s natural wonders and cultural gems.  \nSimply share your preferences, and our team will craft a **bespoke itinerary** designed precisely to your wishes.\n\n**Starting at US $2,800 (round trip)**  \nExperience the Caribbean’s most pristine paradise — your way."
+        },
+        {
+          "heading": "### **Enquire Now to Book Your Private Air Adventure\\!**",
+          "body": ""
+        },
+        {
+          "heading": "## **Form for Discover Barbuda by Air, Barbuda Sky and Sea Adventure and Barbuda Beach Escape (*If guests chose to travel by Air instead of sea*)**",
+          "body": ""
+        },
+        {
+          "heading": "**Step 1:**",
+          "body": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older\n\nChildren \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years\n\nInfants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years\n\n**Step 2:** \n\nDate of Tour (Add calendar up to 6 months in advance since we can only accept 6 months in advance reservation of the date of booking)"
+        },
+        {
+          "heading": "**Step 3:**",
+          "body": "Passenger 1 \n\nFirst Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nLast Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nGender \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nBody Weight \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nDate of Birth \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nPassport ID \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nPassport Expiry Date \\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nPassport Issued by \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ add Country listing\n\nNationally \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nEmail \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nTelephone number: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nHotel Name: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nMeal Preference \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ Add Drop Down List: 1\\. BBQ Chicken Lunch (Included\n\n\t\t\t\t\t\t\t       2\\. Lobster Lunch (add $15)\n\n\t\t\t\t\t\t\t     3\\. Fish (add $10)\n\n\t\t\t\t\t\t   \t     4\\. Conch (add $10)\n\n\t\t\t\t\t\t\t    5\\. Shrimp (add $10)\n\n\t\t\t\t\t\t\t   6\\. Vegetarian Meal (add $5)\n\nComments \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nStep 4: Review Page and request Booking\n\nStep 5: Tour and Cancellation Policy\n\nStep 6: \n\n**Thank you for your booking request.**  \nA member of our customer service team will review your booking request, and if availability is confirmed, you will receive an email **momentarily** containing your **invoice** and a **secure payment link powered by Fygaro**, our trusted payment platform.\n\nWe appreciate your interest in Barbuda Leisure and look forward to hosting you soon.\n\n*This message could be sent to the customer email as well*"
+        },
+        {
+          "heading": "## **Form for Discover Barbuda by Sea and Barbuda Beach Escape (If guests choose to travel by sea instead of air) and Already in Barbuda**",
+          "body": ""
+        },
+        {
+          "heading": "**Step 1:**",
+          "body": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older\n\nChildren \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years\n\nInfants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years\n\n**Step 2:** \n\nDate of Tour (Add calendar up to 6 months in advance since we can only accept 6 months in advance reservation of the date of booking)"
+        },
+        {
+          "heading": "**Step 3:**",
+          "body": "Passenger 1 \n\nFirst Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nLast Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nEmail: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nTelephone number: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nHotel Name: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nMeal Preference \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ Add Drop Down List: 1\\. BBQ Chicken Lunch (Included\n\n\t\t\t\t\t\t\t       2\\. Lobster Lunch (add $15)\n\n\t\t\t\t\t\t\t     3\\. Fish (add $10)\n\n\t\t\t\t\t\t   \t     4\\. Conch (add $10)\n\n\t\t\t\t\t\t\t    5\\. Shrimp (add $10)\n\n\t\t\t\t\t\t\t   6\\. Vegetarian Meal (add $5)\n\nComments \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nStep 4: Review Page with and request Booking\n\nStep 5: Tour and Cancellation Policy\n\nStep 6: \n\n**Thank you for your booking request.**  \nA member of our customer service team will review your booking request, and if availability is confirmed, you will receive an email **momentarily** containing your **invoice** and a **secure payment link powered by Fygaro**, our trusted payment platform.\n\nWe appreciate your interest in Barbuda Leisure and look forward to hosting you soon.\n\n*This message could be sent to the customer email as well*"
+        },
+        {
+          "heading": "## **Excellence Barbuda by Sea** ",
+          "body": ""
+        },
+        {
+          "heading": "**Step 1:**",
+          "body": "Adults \\_\\_\\_\\_\\_\\_\\_ 13+ years \n\nChildren \\_\\_\\_\\_\\_\\_\\_\\_ 5-12 years\n\n**Step 2:** \n\nDate of Tour (Add calendar for Fridays only (May to October 2026\\)"
+        },
+        {
+          "heading": "**Step 3:**",
+          "body": "Passenger 1 \n\nFirst Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nLast Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nEmail: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nTelephone number: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nHotel Name: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nComments \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nStep 4: Review Page with and request Booking\n\nStep 5: Tour and Cancellation Policy\n\nStep 6: \n\n**Thank you for your booking request.**  \nA member of our customer service team will review your booking request, and if availability is confirmed, you will receive an email **momentarily** containing your **invoice** and a **secure payment link powered by Fygaro**, our trusted payment platform.\n\nWe appreciate your interest in Barbuda Leisure and look forward to hosting you soon."
+        },
+        {
+          "heading": "## **Shared Barbuda Boat Charter**",
+          "body": ""
+        },
+        {
+          "heading": "## **Barbuda Exclusive: Helicopter Adventure**",
+          "body": ""
+        },
+        {
+          "heading": "## **Barbuda Exclusive: Airplane Adventure,**",
+          "body": ""
+        },
+        {
+          "heading": "## **Barbuda Exclusive: Yacht Adventure**",
+          "body": ""
+        },
+        {
+          "heading": "**Step 1:**",
+          "body": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older\n\nChildren \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years\n\nInfants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years\n\n**Step 2:** \n\nDate of Charter (Add calendar up to 6 months in advance since we can only accept 6 months in advance reservation of the date of booking) \n\n**Step 3: Primary Contact** \n\nFirst Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nLast Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nEmail: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nTelephone number: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nHotel Name: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nStart date of vacation in Antigua: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nEnd date of Vacation in Antigua: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nMeal Preference \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ \n\nSpecial Request/ Comments \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nStep 4: Review Page with and request Booking\n\nStep 5: Tour and Cancellation Policy\n\nStep 6: \n\n**Thank you for your booking request.**  \nA member of our customer service team will review your booking request, and if availability is confirmed, you will receive an email **momentarily** containing your **invoice** and a **secure payment link powered by Fygaro**, our trusted payment platform.\n\nWe appreciate your interest in Barbuda Leisure and look forward to hosting you soon."
+        }
+      ]
+    }
+  ]
+}

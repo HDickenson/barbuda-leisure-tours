@@ -2,16 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import InnerPageHero from '@/components/InnerPageHero';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
-import { getToursByCategory } from '@/lib/sanity/queries/tours';
+import { getToursByCategory } from '@/data/tours';
 
-// Enable ISR - revalidate every hour
-export const revalidate = 3600;
-
-export default async function OurToursPage() {
-  const signatureTours = await getToursByCategory('signature');
-  const localTours = await getToursByCategory('local');
-  const sharedTours = await getToursByCategory('shared');
-  const privateTours = await getToursByCategory('private');
+export default function OurToursPage() {
+  const signatureTours = getToursByCategory('signature');
+  const localTours = getToursByCategory('local');
+  const sharedTours = getToursByCategory('shared');
+  const privateTours = getToursByCategory('private');
 
   return (
     <main className="min-h-screen">

@@ -26,6 +26,10 @@ export interface Tour {
   description: string;
   buttonText: string;
   buttonHref: string;
+  heroImage?: string;
+  slug?: string;
+  subtitle?: string;
+  price?: string;
 }
 
 export interface Feature {

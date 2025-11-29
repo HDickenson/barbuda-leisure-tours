@@ -7,7 +7,7 @@ import type { Tour } from '@/data/tours'
 import { getAllTours } from '@/data/tours'
 import { BookingForm } from '@/components/booking/BookingForm'
 import type { TourConfig } from '@/components/booking/types'
-import BackgroundSlideshow from '@/components/BackgroundSlideshow'
+import Montage from '@/components/Montage'
 import WaveDivider from '@/components/WaveDivider'
 import heroWave from '@/components/heroWavePaths'
 
@@ -89,57 +89,59 @@ export default function TourDetailClient({ tour }: Props) {
     .filter(t => t.slug !== tour.slug)
     .slice(0, 3) // Show up to 3 related tours
 
-  // Hero carousel slides - using tour-specific images or fallback to generic Barbuda images
-  const heroSlides = [
-    { id: 0, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSC3121-scaled.jpg', alt: 'Barbuda scenic view 1' },
-    { id: 1, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/10/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp', alt: 'Catamaran on beach' },
-    { id: 2, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/10/Another-View-of-Frigate-Bird-During-their-Mating-Season.webp', alt: 'Frigate birds' },
-    { id: 3, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/10/Horses-swim-too-and-they-particularly-love-Barbudas-beaches-scaled.webp', alt: 'Horses on beach' },
-    { id: 4, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/10/IMG_6031-scaled.webp', alt: 'Barbuda coastal view' },
-    { id: 5, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-2.jpg', alt: 'Barbuda leisure tour' },
-    { id: 6, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-scaled.jpg', alt: 'Beach landscape' },
-    { id: 7, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/11/yellow-brest.jpg', alt: 'Yellow breast bird' },
-    { id: 8, image: 'https://www.barbudaleisure.com/wp-content/uploads/2024/11/Pink-Beach-North-scaled.jpg', alt: 'Pink sand beach' }
-  ]
-
   return (
     <main className="min-h-screen">
-      {/* Hero Section with Background Slideshow */}
+      {/* Hero Section with Single Feature Image */}
       <div className="relative">
+        {/* Hero Image - centered and fill */}
         <div className="relative h-[500px]">
-          <BackgroundSlideshow
-            slides={heroSlides}
-            height="500px"
-            overlayOpacity={0.4}
-          />
-
-          {/* Title Overlay - positioned over slideshow */}
-          <div className="absolute bottom-0 left-0 right-0 pb-28 z-10">
-            <div className="container mx-auto px-4 max-w-5xl">
-              <div className="inline-block px-3 py-1 bg-turquoise text-white rounded-full text-sm font-semibold mb-4">
-                {tour.category.charAt(0).toUpperCase() + tour.category.slice(1)} Tour
-              </div>
-              <h1 className="font-['Leckerli_One'] text-[50px] md:text-[80px] font-light text-[rgb(48,187,216)] leading-tight md:leading-[80px] mb-4">
-                {tour.title}
-              </h1>
-              {tour.subtitle && (
-                <p className="font-['Lexend_Deca'] text-xl md:text-2xl text-white/90">
-                  {tour.subtitle}
-                </p>
-              )}
-            </div>
-          </div>
+          {tour.heroImage && (
+            <Image
+              src={tour.heroImage}
+              alt={tour.title}
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+            />
+          )}
         </div>
 
-        {/* Wave Divider */}
-        <WaveDivider
-          {...heroWave}
-          viewBox={heroWave.viewBox}
-          paths={heroWave.paths}
-          fillColor="#FFFFFF"
-          position="bottom"
-          height="120px"
-        />
+        {/* Wave Divider - at bottom of hero section */}
+        <div className="relative">
+          <WaveDivider
+            {...heroWave}
+            viewBox={heroWave.viewBox}
+            paths={heroWave.paths}
+            fillColor="#FFFFFF"
+            position="bottom"
+            height="120px"
+          />
+        </div>
+      </div>
+
+      {/* Title Section - Below Hero */}
+      <div className="bg-white py-12">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="inline-block px-3 py-1 bg-turquoise text-white rounded-full text-sm font-semibold">
+              {tour.category.charAt(0).toUpperCase() + tour.category.slice(1)} Tour
+            </div>
+            {tour.groupSize && (
+              <div className="inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium border border-gray-300">
+                {tour.groupSize}
+              </div>
+            )}
+          </div>
+          <h1 className="font-['Leckerli_One'] text-[50px] md:text-[80px] font-light text-[rgb(48,187,216)] leading-tight md:leading-[80px] mb-4">
+            {tour.title}
+          </h1>
+          {tour.subtitle && (
+            <p className="font-['Lexend_Deca'] text-xl md:text-2xl text-gray-700">
+              {tour.subtitle}
+            </p>
+          )}
+        </div>
       </div>
 
       {/* Tour Details (wrapped in page-content to match live DOM ordering) */}
@@ -157,6 +159,58 @@ export default function TourDetailClient({ tour }: Props) {
                 </p>
               </div>
 
+              {/* Partner Operator Information */}
+              {tour.partnerOperated && tour.partnerName && (
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-5 rounded-r-lg">
+                  <div className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
+                    </svg>
+                    <div className="text-sm">
+                      <p className="font-semibold text-blue-900 mb-1">Partner Operated Tour</p>
+                      <p className="text-blue-800">
+                        This exceptional experience is operated in partnership with{' '}
+                        <span className="font-semibold">{tour.partnerName}</span>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Age & Safety Restrictions */}
+              {tour.ageRestrictions && (
+                <div
+                  className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg shadow-sm"
+                  role="alert"
+                  aria-label="Important restrictions and safety information"
+                >
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0">
+                      <svg
+                        className="w-6 h-6 text-red-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <h3 className="text-lg font-semibold text-red-900 mb-2">
+                        Important Restrictions
+                      </h3>
+                      <p className="text-red-800 leading-relaxed">
+                        {tour.ageRestrictions}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* What's Included */}
               {tour.included && tour.included.length > 0 && (
                 <div>
@@ -173,6 +227,32 @@ export default function TourDetailClient({ tour }: Props) {
                       </li>
                     ))}
                   </ul>
+                </div>
+              )}
+
+              {/* Meal Upgrade Options */}
+              {tour.lunchUpgrades && tour.lunchUpgrades.length > 0 && (
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-800 mb-4">Meal Upgrade Options</h2>
+                  <div className="bg-gradient-to-br from-turquoise-50 to-blue-50 rounded-lg p-6 border border-turquoise-100">
+                    <p className="text-sm text-gray-700 mb-4 flex items-start">
+                      <svg className="w-5 h-5 text-turquoise mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                        <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Enhance your dining experience with these delicious upgrade options (select during booking):</span>
+                    </p>
+                    <div className="space-y-3">
+                      {tour.lunchUpgrades.map((upgrade, index) => (
+                        <div key={index} className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                          <span className="font-medium text-gray-800">{upgrade.name}</span>
+                          <span className="text-lg font-bold text-turquoise whitespace-nowrap ml-4">
+                            +${upgrade.price}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               )}
 
@@ -220,6 +300,33 @@ export default function TourDetailClient({ tour }: Props) {
                     {tour.schedule.notes && (
                       <p className="text-sm text-gray-500 pt-2 border-t">{tour.schedule.notes}</p>
                     )}
+                  </div>
+                </div>
+              )}
+
+              {/* Aircraft & Transport Information */}
+              {tour.transportDetails && tour.transportDetails.length > 0 && (
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-800 mb-4">Aircraft Information</h2>
+                  <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
+                    <div className="flex items-start mb-3">
+                      <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                      </svg>
+                      <p className="text-sm text-gray-700">
+                        Your flight may be operated by one of the following aircraft:
+                      </p>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {tour.transportDetails.map((aircraft, index) => (
+                        <span
+                          key={index}
+                          className="inline-flex items-center px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-800 shadow-sm border border-gray-200"
+                        >
+                          {aircraft}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               )}
@@ -275,6 +382,57 @@ export default function TourDetailClient({ tour }: Props) {
                   </div>
                 </div>
 
+                {/* Detailed Pricing Breakdown */}
+                {tour.pricing && (
+                  <div className="border-t border-gray-200 pt-4 mt-4">
+                    <h3 className="font-semibold text-gray-700 text-sm uppercase tracking-wide mb-3">
+                      Pricing Breakdown
+                    </h3>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-600">Adults (13+)</span>
+                        <span className="text-lg font-bold text-gray-900">${tour.pricing.adult}</span>
+                      </div>
+                      {tour.pricing.child && (
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">Children (2-12)</span>
+                          <span className="text-lg font-bold text-gray-900">${tour.pricing.child}</span>
+                        </div>
+                      )}
+                      {tour.pricing.infant !== undefined && (
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">Infants (under 2)</span>
+                          <span className="text-lg font-bold text-gray-900">${tour.pricing.infant}</span>
+                        </div>
+                      )}
+                    </div>
+                    {tour.pricing.notes && (
+                      <p className="text-xs text-gray-500 mt-3 italic border-t border-gray-100 pt-3">
+                        {tour.pricing.notes}
+                      </p>
+                    )}
+                  </div>
+                )}
+
+                {/* Minimum Group Size Requirement */}
+                {tour.minimumGuests && (
+                  <div className="bg-yellow-50 border border-yellow-300 rounded-lg p-4 mb-4">
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
+                      </svg>
+                      <div className="text-sm">
+                        <p className="font-semibold text-yellow-900 mb-1">
+                          Minimum {tour.minimumGuests} {tour.minimumGuests === 1 ? 'Guest' : 'Guests'} Required
+                        </p>
+                        <p className="text-yellow-800 leading-snug">
+                          This tour requires a minimum group size to operate.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 <button
                   onClick={() => setIsBookingOpen(true)}
                   className="w-full bg-[rgb(245,182,211)] text-white text-center px-[28px] py-[17px] rounded-[8px] text-[14px] font-medium font-['Roboto'] hover:bg-[rgb(235,172,201)] transition transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
@@ -289,54 +447,6 @@ export default function TourDetailClient({ tour }: Props) {
           </div>
         </div>
       </section>
-
-      {/* Image Montage */}
-      {tour.gallery && tour.gallery.length > 0 && (
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]">
-              Photo Gallery
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {tour.gallery.map((image, index) => {
-                // Create varied heights for visual interest
-                const isLarge = index % 5 === 0 || index % 7 === 0;
-                const isMedium = index % 3 === 0 && !isLarge;
-
-                // Stagger animation delays
-                const animationDelay = `${index * 0.08}s`;
-
-                let className = "relative overflow-hidden rounded-lg group cursor-pointer opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]";
-                if (isLarge) {
-                  className += " md:col-span-2 md:row-span-2 h-[400px]";
-                } else if (isMedium) {
-                  className += " md:row-span-2 h-[400px]";
-                } else {
-                  className += " h-[195px]";
-                }
-
-                return (
-                  <div
-                    key={index}
-                    className={className}
-                    style={{ animationDelay }}
-                  >
-                    <Image
-                      src={image}
-                      alt={`${tour.title} gallery image ${index + 1}`}
-                      fill
-                      sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                      className="object-cover group-hover:scale-110 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      )}
 
         {/* Back to Tours */}
         <section className="py-12 bg-white">

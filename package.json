@@ -9,15 +9,15 @@
     "lint": "eslint",
     "test": "npx playwright test",
     "test:visual": "node ../run-visual-regression.mjs",
-    "test:visual:report": "npx playwright show-report visual-regression/playwright-report"
+    "test:visual:report": "npx playwright show-report visual-regression/playwright-report",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "optimize:images:dry": "node scripts/optimize-images.mjs --dry-run"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.0",
-    "@sanity/client": "^7.13.1",
-    "@sanity/image-url": "^2.0.0",
     "@tailwindcss/typography": "^0.5.19",
     "next": "16.0.3",
     "nodemailer": "^7.0.10",
@@ -39,6 +39,7 @@
     "eslint-config-next": "16.0.3",
     "playwright": "^1.56.1",
     "postcss": "^8.5.6",
+    "sharp": "^0.33.5",
     "tailwindcss": "^3.4.18",
     "typescript": "^5",
     "wait-on": "^9.0.3"

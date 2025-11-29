@@ -1,0 +1,22 @@
+{
+  "air": {
+    "title": "Form for Discover Barbuda by Air, Barbuda Sky and Sea Adventure and Barbuda Beach Escape (*If guests chose to travel by Air instead of sea*)",
+    "steps": []
+  },
+  "sea": {
+    "title": "Form for Discover Barbuda by Sea and Barbuda Beach Escape (If guests choose to travel by sea instead of air) and Already in Barbuda",
+    "steps": []
+  },
+  "excellence": {
+    "title": "Excellence Barbuda by Sea",
+    "steps": []
+  },
+  "charter": {
+    "title": "Barbuda Exclusive: Helicopter Adventure / Airplane Adventure / Yacht Adventure",
+    "steps": []
+  },
+  "local": {
+    "title": "Already in Barbuda",
+    "steps": []
+  }
+}

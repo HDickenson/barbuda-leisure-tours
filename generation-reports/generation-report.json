@@ -1,30 +1,183 @@
 {
-  "generatedAt": "2025-11-19T21:29:20.646Z",
+  "generatedAt": "2025-11-28T11:11:25.986Z",
   "version": "1.0.0",
   "extraction": {
-    "path": "C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\extractors\\output\\comprehensive\\comprehensive-extraction.json",
+    "path": "tests/fixtures/sample-extraction.json",
     "summary": {
-      "carouselSlides": 9,
-      "waveDividers": 5,
-      "sections": 4,
-      "images": 6
+      "carouselSlides": 3,
+      "waveDividers": 1,
+      "sections": 1,
+      "images": 2
     }
   },
   "generation": {
     "files": [
       {
-        "path": "C:/Users/harol/projects/Barbuda/barbuda-local/src/app/page.tsx",
+        "path": "barbuda-local/src/app/page.tsx",
         "type": "page",
-        "linesOfCode": 534
+        "linesOfCode": 73
       }
     ],
     "dependencies": [],
-    "determinismHash": "b385ea831d68b51ec6980f128334969f7edfff19e5d305d1f8b810f2607fc565"
+    "determinismHash": "767f1b22b85195f42001d43451d26bcc16d9a60b9916b448ecc9295415582c1d"
   },
   "validation": {
-    "coverage": null,
-    "typescript": null,
-    "visual": null
+    "coverage": {
+      "overall": {
+        "percentage": 0,
+        "total": 5,
+        "covered": 0,
+        "missing": 5
+      },
+      "details": {
+        "carouselSlides": {
+          "total": 3,
+          "covered": 0,
+          "missing": [
+            {
+              "type": "carousel-slide",
+              "index": 0,
+              "image": "https://example.com/slide1.jpg"
+            },
+            {
+              "type": "carousel-slide",
+              "index": 1,
+              "image": "https://example.com/slide2.jpg"
+            },
+            {
+              "type": "carousel-slide",
+              "index": 2,
+              "image": "https://example.com/slide3.jpg"
+            }
+          ]
+        },
+        "waveDividers": {
+          "total": 1,
+          "covered": 0,
+          "missing": [
+            {
+              "type": "wave-divider",
+              "index": 0,
+              "pathD": "M283.5,9.7c0,0-7.3,4.3-14,4.6c..."
+            }
+          ]
+        },
+        "sections": {
+          "total": 1,
+          "covered": 0,
+          "missing": [
+            {
+              "type": "section",
+              "index": 0,
+              "heading": "Our Hottest Tours"
+            }
+          ]
+        }
+      },
+      "issues": [
+        {
+          "severity": "warning",
+          "component": "hero-carousel",
+          "message": "3 carousel slides not generated",
+          "details": [
+            {
+              "type": "carousel-slide",
+              "index": 0,
+              "image": "https://example.com/slide1.jpg"
+            },
+            {
+              "type": "carousel-slide",
+              "index": 1,
+              "image": "https://example.com/slide2.jpg"
+            },
+            {
+              "type": "carousel-slide",
+              "index": 2,
+              "image": "https://example.com/slide3.jpg"
+            }
+          ]
+        },
+        {
+          "severity": "warning",
+          "component": "wave-divider",
+          "message": "1 wave dividers not generated",
+          "details": [
+            {
+              "type": "wave-divider",
+              "index": 0,
+              "pathD": "M283.5,9.7c0,0-7.3,4.3-14,4.6c..."
+            }
+          ]
+        },
+        {
+          "severity": "warning",
+          "component": "sections",
+          "message": "1 sections not generated",
+          "details": [
+            {
+              "type": "section",
+              "index": 0,
+              "heading": "Our Hottest Tours"
+            }
+          ]
+        }
+      ]
+    },
+    "typescript": {
+      "valid": false,
+      "errors": [
+        {
+          "file": null,
+          "line": null,
+          "column": null,
+          "code": "TS0000",
+          "message": "TypeScript compilation failed (see output for details)",
+          "severity": "error"
+        }
+      ],
+      "warnings": [],
+      "duration": 3810,
+      "output": "src/app/page.tsx(63,8): error TS2322: Type '{ slides: { image: string; alt: string; }[]; backgroundOverlayColor: string; minHeight: string; }' is not assignable to type 'HeroCarouselProps'.\r\n  Types of property 'slides' are incompatible.\r\n    Type '{ image: string; alt: string; }[]' is not assignable to type 'CarouselSlide[]'.\r\n      Property 'id' is missing in type '{ image: string; alt: string; }' but required in type 'CarouselSlide'.\r\nsrc/app/page.tsx(66,10): error TS2322: Type '{ position: string; viewBox: string; height: string; fillColor: string; paths: { d: string; }[]; key: number; }' is not assignable to type 'WaveDividerProps'.\r\n  Types of property 'position' are incompatible.\r\n    Type 'string' is not assignable to type '\"top\" | \"bottom\"'.\r\n"
+    },
+    "visual": {
+      "enabled": true,
+      "breakpoints": {
+        "mobile": {
+          "viewport": {
+            "width": 375,
+            "height": 667,
+            "name": "mobile"
+          },
+          "similarity": 0,
+          "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n",
+          "passed": false
+        },
+        "tablet": {
+          "viewport": {
+            "width": 768,
+            "height": 1024,
+            "name": "tablet"
+          },
+          "similarity": 0,
+          "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n",
+          "passed": false
+        },
+        "desktop": {
+          "viewport": {
+            "width": 1920,
+            "height": 1080,
+            "name": "desktop"
+          },
+          "similarity": 0,
+          "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n",
+          "passed": false
+        }
+      },
+      "averageScore": 0,
+      "passed": false,
+      "targetScore": 95,
+      "message": "Some breakpoints failed (<95%)"
+    }
   },
   "dependencies": {
     "required": [],
@@ -33,27 +186,74 @@
     "installDuration": 0
   },
   "metrics": {
-    "totalDuration": 17,
+    "totalDuration": 28288,
     "phases": {
-      "validation": 3,
+      "validation": 1,
       "templateLoading": 0,
-      "codeGeneration": 5,
+      "codeGeneration": 1,
       "dependencyInstall": 0,
-      "typeScriptValidation": 0
+      "typeScriptValidation": 28284
     }
   },
   "issues": [
     {
-      "severity": "info",
-      "component": "sections",
-      "message": "Section 1 has no images",
-      "fallback": "Use placeholder image URLs"
+      "severity": "warning",
+      "component": "hero-carousel",
+      "message": "3 carousel slides not generated",
+      "details": [
+        {
+          "type": "carousel-slide",
+          "index": 0,
+          "image": "https://example.com/slide1.jpg"
+        },
+        {
+          "type": "carousel-slide",
+          "index": 1,
+          "image": "https://example.com/slide2.jpg"
+        },
+        {
+          "type": "carousel-slide",
+          "index": 2,
+          "image": "https://example.com/slide3.jpg"
+        }
+      ]
     },
     {
-      "severity": "info",
+      "severity": "warning",
+      "component": "wave-divider",
+      "message": "1 wave dividers not generated",
+      "details": [
+        {
+          "type": "wave-divider",
+          "index": 0,
+          "pathD": "M283.5,9.7c0,0-7.3,4.3-14,4.6c..."
+        }
+      ]
+    },
+    {
+      "severity": "warning",
       "component": "sections",
-      "message": "Section 2 has no images",
-      "fallback": "Use placeholder image URLs"
+      "message": "1 sections not generated",
+      "details": [
+        {
+          "type": "section",
+          "index": 0,
+          "heading": "Our Hottest Tours"
+        }
+      ]
+    },
+    {
+      "severity": "error",
+      "component": "typescript",
+      "message": "null:null:null - TypeScript compilation failed (see output for details)",
+      "details": {
+        "file": null,
+        "line": null,
+        "column": null,
+        "code": "TS0000",
+        "message": "TypeScript compilation failed (see output for details)",
+        "severity": "error"
+      }
     }
   ]
 }

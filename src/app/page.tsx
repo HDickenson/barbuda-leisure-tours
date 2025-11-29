@@ -13,8 +13,8 @@ import WaveDivider from '@/components/WaveDivider';
 import heroWave from '@/components/heroWavePaths';
 import BlogPreviewSection from '@/components/BlogPreviewSection';
 
-// Dynamic content from JSON files
-import toursData from '@/data/tours.json';
+// Dynamic content from local data
+import { getToursByCategory } from '@/data/tours';
 import blogData from '@/data/blog.json';
 
 // Note: BookingForm removed - contact form is popup in WordPress
@@ -750,8 +750,17 @@ const pageData = {
   }
 };
 
-// Tour cards data - imported from JSON
-const tourCards = toursData.tours;
+// Get all signature tours dynamically from tours.ts
+const signatureTours = getToursByCategory('signature');
+
+// Tour cards data - transform all signature tours for TourCardsSection component
+const tourCards = signatureTours.map(tour => ({
+  id: tour.slug,
+  image: tour.heroImage || tour.gallery?.[0] || '/images/placeholder.jpg',
+  title: tour.title,
+  link: `/tours/${tour.slug}`,
+  popular: true
+}));
 
 // Why Choose Us features data - from live site
 const whyChooseUsFeatures = [
@@ -795,7 +804,7 @@ export default function Home() {
           viewBox={heroWave.viewBox}
           fillColor={pageData.waveDividers?.[0]?.fillColor || 'rgb(255, 255, 255)'}
           position="bottom"
-          height="240px"
+          height="120px"
         />
       </div>
 
@@ -813,13 +822,12 @@ export default function Home() {
           />
         )}
         <TourCardsSection
-          heading={toursData.sectionHeading}
+          heading="Our Hottest Tours"
           cards={tourCards.map((card, index) => ({
             ...card,
             button: {
-              backgroundColor:
-                pageData.sections[0].content.buttons[index]?.backgroundColor,
-              textColor: pageData.sections[0].content.buttons[index]?.color,
+              backgroundColor: 'rgb(48, 187, 216)',
+              textColor: 'rgb(255, 255, 255)',
             },
           }))}
         />
@@ -887,12 +895,12 @@ export default function Home() {
         )}
       </div>
 
-      {/* Blog Preview Section - data from JSON */}
+      {/* Blog Preview Section - data from blog.json */}
       <BlogPreviewSection
-        posts={pageData.blog.posts}
-        heading={pageData.blog.heading}
-        backgroundColor={pageData.blog.backgroundColor}
-        padding={pageData.blog.padding}
+        posts={blogData.posts}
+        heading="Latest Updates"
+        backgroundColor="transparent"
+        padding="80px 20px"
       />
       </div>
     </main>

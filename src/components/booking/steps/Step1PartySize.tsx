@@ -76,12 +76,32 @@ export function Step1PartySize({ formData, updateFormData, onNext, tourConfig }:
       return false
     }
 
-    // Check season
-    if (restrictions.seasonStart && date < restrictions.seasonStart) {
-      return false
-    }
-    if (restrictions.seasonEnd && date > restrictions.seasonEnd) {
-      return false
+    // Check season - handles both normal ranges and year-wrapping seasons
+    if (restrictions.seasonStart && restrictions.seasonEnd) {
+      // Extract month and day for comparison (ignore year)
+      const dateMonth = date.getMonth()
+      const dateDay = date.getDate()
+      const startMonth = restrictions.seasonStart.getMonth()
+      const startDay = restrictions.seasonStart.getDate()
+      const endMonth = restrictions.seasonEnd.getMonth()
+      const endDay = restrictions.seasonEnd.getDate()
+
+      // Check if season wraps across years (e.g., October to May)
+      if (startMonth > endMonth || (startMonth === endMonth && startDay > endDay)) {
+        // Year-wrapping season: valid if date is after start OR before end
+        const afterStart = dateMonth > startMonth || (dateMonth === startMonth && dateDay >= startDay)
+        const beforeEnd = dateMonth < endMonth || (dateMonth === endMonth && dateDay <= endDay)
+        if (!afterStart && !beforeEnd) {
+          return false
+        }
+      } else {
+        // Normal season: valid if date is between start and end
+        const afterStart = dateMonth > startMonth || (dateMonth === startMonth && dateDay >= startDay)
+        const beforeEnd = dateMonth < endMonth || (dateMonth === endMonth && dateDay <= endDay)
+        if (!afterStart || !beforeEnd) {
+          return false
+        }
+      }
     }
 
     return true

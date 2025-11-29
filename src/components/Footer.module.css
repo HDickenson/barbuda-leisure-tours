@@ -8,12 +8,13 @@
 
 /* Wave Divider Above Footer */
 .waveContainer {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
-  margin-bottom: -1px;
+  z-index: 2;
 }
 
 .wave {
@@ -27,7 +28,7 @@
 .mainSection {
   position: relative;
   background: linear-gradient(181deg, rgb(48, 187, 216) 10%, rgb(0, 29, 70) 84%);
-  padding: 60px 20px 80px;
+  padding: 75px 20px;
   z-index: 1;
 }
 
@@ -90,6 +91,20 @@
   display: flex;
   align-items: flex-start;
   gap: 15px;
+}
+
+/* Circular Icon Backgrounds for Contact Info */
+.circleIcon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 50%;
+  background-color: rgb(245, 182, 211);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
 }
 
 /* Emoji Icons for Contact Info */
@@ -211,20 +226,20 @@
 /* Underwater Scene Background - Overlays gradient */
 .bottomSVGBkgContainer {
   position: absolute;
-  bottom: 48px;
+  bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
   z-index: 1;
   pointer-events: none;
-  opacity: 1;
+  height: 100px;
 }
 
 .bottomSVGBkg {
   display: block;
   width: 100%;
-  height: 188px;
+  height: 100%;
   transform: translateY(0);
 }
 

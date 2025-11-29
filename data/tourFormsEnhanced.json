@@ -1,0 +1,749 @@
+[
+  {
+    "_type": "tourForm",
+    "key": "air",
+    "title": "Flight Booking Form",
+    "steps": [
+      {
+        "label": "Step 1:",
+        "body": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older\n\nChildren \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years\n\nInfants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years",
+        "fields": [
+          {
+            "name": "adults",
+            "label": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older",
+            "type": "number",
+            "required": true,
+            "validation": {
+              "min": 0,
+              "max": 20,
+              "message": "Please enter number of adults"
+            }
+          },
+          {
+            "name": "children",
+            "label": "Children \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years",
+            "type": "number",
+            "required": false,
+            "validation": {
+              "min": 0,
+              "max": 10,
+              "message": "Please enter number of children"
+            }
+          },
+          {
+            "name": "infants",
+            "label": "Infants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years",
+            "type": "number",
+            "required": false,
+            "validation": {
+              "min": 0,
+              "max": 5,
+              "message": "Please enter number of infants"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Step 2:",
+        "body": "Date of Tour (Add calendar up to 6 months in advance since we can only accept 6 months in advance reservation of the date of booking)",
+        "fields": [
+          {
+            "name": "tourDate",
+            "label": "Date of Tour",
+            "type": "date",
+            "required": true,
+            "validation": {
+              "min": 0,
+              "max": 180,
+              "message": "Please select a date within the next 6 months"
+            },
+            "note": "Up to 6 months in advance"
+          }
+        ]
+      },
+      {
+        "label": "Step 3:",
+        "body": "Passenger 1 \n\nFirst Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nLast Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nGender \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nBody Weight \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nDate of Birth \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nPassport ID \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nPassport Expiry Date \\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nPassport Issued by \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ add Country listing\n\nNationally \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nEmail \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nTelephone number: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nHotel Name: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nMeal Preference \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ Add Drop Down List: 1\\. BBQ Chicken Lunch (Included\n\n\t\t\t\t\t\t\t       2\\. Lobster Lunch (add $15)\n\n\t\t\t\t\t\t\t     3\\. Fish (add $10)\n\n\t\t\t\t\t\t   \t     4\\. Conch (add $10)\n\n\t\t\t\t\t\t\t    5\\. Shrimp (add $10)\n\n\t\t\t\t\t\t\t   6\\. Vegetarian Meal (add $5)\n\nComments \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nStep 4: Review Page and request Booking\n\nStep 5: Tour and Cancellation Policy\n\nStep 6: \n\n**Thank you for your booking request.**  \nA member of our customer service team will review your booking request, and if availability is confirmed, you will receive an email **momentarily** containing your **invoice** and a **secure payment link powered by Fygaro**, our trusted payment platform.\n\nWe appreciate your interest in Barbuda Leisure and look forward to hosting you soon.\n\n*This message could be sent to the customer email as well*",
+        "fields": [
+          {
+            "name": "firstName",
+            "label": "First Name",
+            "type": "text",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z\\s-]+$",
+              "message": "Please enter a valid first name"
+            }
+          },
+          {
+            "name": "lastName",
+            "label": "Last Name",
+            "type": "text",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z\\s-]+$",
+              "message": "Please enter a valid last name"
+            }
+          },
+          {
+            "name": "gender",
+            "label": "Gender",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "label": "Male",
+                "value": "male"
+              },
+              {
+                "label": "Female",
+                "value": "female"
+              },
+              {
+                "label": "Other",
+                "value": "other"
+              },
+              {
+                "label": "Prefer not to say",
+                "value": "undisclosed"
+              }
+            ]
+          },
+          {
+            "name": "bodyWeight",
+            "label": "Body Weight",
+            "type": "number",
+            "required": true,
+            "placeholder": "lbs",
+            "note": "Required for aircraft weight and balance calculations",
+            "validation": {
+              "min": 20,
+              "max": 400,
+              "message": "Please enter a valid weight"
+            }
+          },
+          {
+            "name": "dateOfBirth",
+            "label": "Date of Birth",
+            "type": "date",
+            "required": true,
+            "validation": {
+              "message": "Please enter a valid date of birth"
+            }
+          },
+          {
+            "name": "passportId",
+            "label": "Passport ID",
+            "type": "text",
+            "required": true,
+            "note": "Must match the ID used when booking",
+            "validation": {
+              "pattern": "^[A-Z0-9]+$",
+              "message": "Please enter a valid passport number"
+            }
+          },
+          {
+            "name": "passportExpiry",
+            "label": "Passport Expiry Date",
+            "type": "date",
+            "required": true,
+            "validation": {
+              "message": "Passport must be valid for at least 6 months"
+            }
+          },
+          {
+            "name": "passportIssuedBy",
+            "label": "Passport Issued by",
+            "type": "select",
+            "required": true,
+            "note": "Country listing",
+            "placeholder": "Select country"
+          },
+          {
+            "name": "nationality",
+            "label": "Nationality",
+            "type": "select",
+            "required": true,
+            "placeholder": "Select nationality"
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+              "message": "Please enter a valid email address"
+            }
+          },
+          {
+            "name": "phone",
+            "label": "Telephone number",
+            "type": "tel",
+            "required": true,
+            "placeholder": "+1 (268) 000-0000",
+            "validation": {
+              "message": "Please enter a valid phone number"
+            }
+          },
+          {
+            "name": "hotelName",
+            "label": "Hotel Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Where are you staying in Antigua?"
+          },
+          {
+            "name": "mealPreference",
+            "label": "Meal Preference",
+            "type": "select",
+            "required": true,
+            "note": "Add Drop Down List",
+            "options": [
+              {
+                "label": "BBQ Chicken Lunch (Included)",
+                "value": "chicken",
+                "price": 0
+              },
+              {
+                "label": "Lobster Lunch (add $15)",
+                "value": "lobster",
+                "price": 15
+              },
+              {
+                "label": "Fish (add $10)",
+                "value": "fish",
+                "price": 10
+              },
+              {
+                "label": "Conch (add $10)",
+                "value": "conch",
+                "price": 10
+              },
+              {
+                "label": "Shrimp (add $10)",
+                "value": "shrimp",
+                "price": 10
+              },
+              {
+                "label": "Vegetarian Meal (add $5)",
+                "value": "vegetarian",
+                "price": 5
+              }
+            ]
+          },
+          {
+            "name": "comments",
+            "label": "Comments",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Any special requests or dietary restrictions?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_type": "tourForm",
+    "key": "sea",
+    "title": "Ferry Booking Form",
+    "steps": [
+      {
+        "label": "Step 1:",
+        "body": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older\n\nChildren \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years\n\nInfants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years",
+        "fields": [
+          {
+            "name": "adults",
+            "label": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older",
+            "type": "number",
+            "required": true,
+            "validation": {
+              "min": 0,
+              "max": 20,
+              "message": "Please enter number of adults"
+            }
+          },
+          {
+            "name": "children",
+            "label": "Children \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years",
+            "type": "number",
+            "required": false,
+            "validation": {
+              "min": 0,
+              "max": 10,
+              "message": "Please enter number of children"
+            }
+          },
+          {
+            "name": "infants",
+            "label": "Infants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years",
+            "type": "number",
+            "required": false,
+            "validation": {
+              "min": 0,
+              "max": 5,
+              "message": "Please enter number of infants"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Step 2:",
+        "body": "Date of Tour (Add calendar up to 6 months in advance since we can only accept 6 months in advance reservation of the date of booking)",
+        "fields": [
+          {
+            "name": "tourDate",
+            "label": "Date of Tour",
+            "type": "date",
+            "required": true,
+            "validation": {
+              "min": 0,
+              "max": 180,
+              "message": "Please select a date within the next 6 months"
+            },
+            "note": "Up to 6 months in advance"
+          }
+        ]
+      },
+      {
+        "label": "Step 3:",
+        "body": "Passenger 1 \n\nFirst Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nLast Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nEmail: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nTelephone number: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nHotel Name: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nMeal Preference \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ Add Drop Down List: 1\\. BBQ Chicken Lunch (Included\n\n\t\t\t\t\t\t\t       2\\. Lobster Lunch (add $15)\n\n\t\t\t\t\t\t\t     3\\. Fish (add $10)\n\n\t\t\t\t\t\t   \t     4\\. Conch (add $10)\n\n\t\t\t\t\t\t\t    5\\. Shrimp (add $10)\n\n\t\t\t\t\t\t\t   6\\. Vegetarian Meal (add $5)\n\nComments \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nStep 4: Review Page with and request Booking\n\nStep 5: Tour and Cancellation Policy\n\nStep 6: \n\n**Thank you for your booking request.**  \nA member of our customer service team will review your booking request, and if availability is confirmed, you will receive an email **momentarily** containing your **invoice** and a **secure payment link powered by Fygaro**, our trusted payment platform.\n\nWe appreciate your interest in Barbuda Leisure and look forward to hosting you soon.\n\n*This message could be sent to the customer email as well*",
+        "fields": [
+          {
+            "name": "firstName",
+            "label": "First Name",
+            "type": "text",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z\\s-]+$",
+              "message": "Please enter a valid first name"
+            }
+          },
+          {
+            "name": "lastName",
+            "label": "Last Name",
+            "type": "text",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z\\s-]+$",
+              "message": "Please enter a valid last name"
+            }
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+              "message": "Please enter a valid email address"
+            }
+          },
+          {
+            "name": "phone",
+            "label": "Telephone number",
+            "type": "tel",
+            "required": true,
+            "placeholder": "+1 (268) 000-0000",
+            "validation": {
+              "message": "Please enter a valid phone number"
+            }
+          },
+          {
+            "name": "hotelName",
+            "label": "Hotel Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Where are you staying in Antigua?"
+          },
+          {
+            "name": "mealPreference",
+            "label": "Meal Preference",
+            "type": "select",
+            "required": true,
+            "note": "Add Drop Down List",
+            "options": [
+              {
+                "label": "BBQ Chicken Lunch (Included)",
+                "value": "chicken",
+                "price": 0
+              },
+              {
+                "label": "Lobster Lunch (add $15)",
+                "value": "lobster",
+                "price": 15
+              },
+              {
+                "label": "Fish (add $10)",
+                "value": "fish",
+                "price": 10
+              },
+              {
+                "label": "Conch (add $10)",
+                "value": "conch",
+                "price": 10
+              },
+              {
+                "label": "Shrimp (add $10)",
+                "value": "shrimp",
+                "price": 10
+              },
+              {
+                "label": "Vegetarian Meal (add $5)",
+                "value": "vegetarian",
+                "price": 5
+              }
+            ]
+          },
+          {
+            "name": "comments",
+            "label": "Comments",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Any special requests or dietary restrictions?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_type": "tourForm",
+    "key": "excellence",
+    "title": "Excellence Barbuda by Sea Booking Form",
+    "steps": [
+      {
+        "label": "Step 1:",
+        "body": "Adults \\_\\_\\_\\_\\_\\_\\_ 13+ years \n\nChildren \\_\\_\\_\\_\\_\\_\\_\\_ 5-12 years",
+        "fields": [
+          {
+            "name": "adults",
+            "label": "Adults \\_\\_\\_\\_\\_\\_\\_ 13+ years",
+            "type": "number",
+            "required": true,
+            "validation": {
+              "min": 0,
+              "max": 20,
+              "message": "Please enter number of adults"
+            }
+          },
+          {
+            "name": "children",
+            "label": "Children \\_\\_\\_\\_\\_\\_\\_\\_ 5-12 years",
+            "type": "number",
+            "required": false,
+            "validation": {
+              "min": 0,
+              "max": 10,
+              "message": "Please enter number of children"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Step 2:",
+        "body": "Date of Tour (Add calendar for Fridays only (May to October 2026\\)",
+        "fields": [
+          {
+            "name": "tourDate",
+            "label": "Date of Tour",
+            "type": "date",
+            "required": true,
+            "validation": {
+              "min": 0,
+              "max": 180,
+              "message": "Please select a date within the next 6 months"
+            },
+            "note": "Fridays only (May to October)"
+          }
+        ]
+      },
+      {
+        "label": "Step 3:",
+        "body": "Passenger 1 \n\nFirst Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nLast Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nEmail: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nTelephone number: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nHotel Name: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nComments \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nStep 4: Review Page with and request Booking\n\nStep 5: Tour and Cancellation Policy\n\nStep 6: \n\n**Thank you for your booking request.**  \nA member of our customer service team will review your booking request, and if availability is confirmed, you will receive an email **momentarily** containing your **invoice** and a **secure payment link powered by Fygaro**, our trusted payment platform.\n\nWe appreciate your interest in Barbuda Leisure and look forward to hosting you soon.",
+        "fields": [
+          {
+            "name": "firstName",
+            "label": "First Name",
+            "type": "text",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z\\s-]+$",
+              "message": "Please enter a valid first name"
+            }
+          },
+          {
+            "name": "lastName",
+            "label": "Last Name",
+            "type": "text",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z\\s-]+$",
+              "message": "Please enter a valid last name"
+            }
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+              "message": "Please enter a valid email address"
+            }
+          },
+          {
+            "name": "phone",
+            "label": "Telephone number",
+            "type": "tel",
+            "required": true,
+            "placeholder": "+1 (268) 000-0000",
+            "validation": {
+              "message": "Please enter a valid phone number"
+            }
+          },
+          {
+            "name": "hotelName",
+            "label": "Hotel Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Where are you staying in Antigua?"
+          },
+          {
+            "name": "comments",
+            "label": "Comments",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Any special requests or dietary restrictions?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_type": "tourForm",
+    "key": "charter",
+    "title": "Private Charter Booking Form",
+    "steps": [
+      {
+        "label": "Step 1:",
+        "body": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older\n\nChildren \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years\n\nInfants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years",
+        "fields": [
+          {
+            "name": "adults",
+            "label": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older",
+            "type": "number",
+            "required": true,
+            "validation": {
+              "min": 0,
+              "max": 20,
+              "message": "Please enter number of adults"
+            }
+          },
+          {
+            "name": "children",
+            "label": "Children \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years",
+            "type": "number",
+            "required": false,
+            "validation": {
+              "min": 0,
+              "max": 10,
+              "message": "Please enter number of children"
+            }
+          },
+          {
+            "name": "infants",
+            "label": "Infants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years",
+            "type": "number",
+            "required": false,
+            "validation": {
+              "min": 0,
+              "max": 5,
+              "message": "Please enter number of infants"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Step 2:",
+        "body": "Date of Charter (Add calendar up to 6 months in advance since we can only accept 6 months in advance reservation of the date of booking)",
+        "fields": [
+          {
+            "name": "tourDate",
+            "label": "Date of Charter",
+            "type": "date",
+            "required": true,
+            "validation": {
+              "min": 0,
+              "max": 180,
+              "message": "Please select a date within the next 6 months"
+            },
+            "note": "Up to 6 months in advance"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_type": "tourForm",
+    "key": "local",
+    "title": "Already in Barbuda Booking Form",
+    "steps": [
+      {
+        "label": "Step 1:",
+        "body": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older\n\nChildren \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years\n\nInfants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years",
+        "fields": [
+          {
+            "name": "adults",
+            "label": "Adults \\_\\_\\_\\_\\_\\_\\_ 13 and older",
+            "type": "number",
+            "required": true,
+            "validation": {
+              "min": 0,
+              "max": 20,
+              "message": "Please enter number of adults"
+            }
+          },
+          {
+            "name": "children",
+            "label": "Children \\_\\_\\_\\_\\_\\_\\_\\_ 2-12 years",
+            "type": "number",
+            "required": false,
+            "validation": {
+              "min": 0,
+              "max": 10,
+              "message": "Please enter number of children"
+            }
+          },
+          {
+            "name": "infants",
+            "label": "Infants \\_\\_\\_\\_\\_\\_\\_\\_\\_ under 2 years",
+            "type": "number",
+            "required": false,
+            "validation": {
+              "min": 0,
+              "max": 5,
+              "message": "Please enter number of infants"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Step 2:",
+        "body": "Date of Tour (Add calendar up to 6 months in advance since we can only accept 6 months in advance reservation of the date of booking)",
+        "fields": [
+          {
+            "name": "tourDate",
+            "label": "Date of Tour",
+            "type": "date",
+            "required": true,
+            "validation": {
+              "min": 0,
+              "max": 180,
+              "message": "Please select a date within the next 6 months"
+            },
+            "note": "Up to 6 months in advance"
+          }
+        ]
+      },
+      {
+        "label": "Step 3:",
+        "body": "Passenger 1 \n\nFirst Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nLast Name \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nEmail: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nTelephone number: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nHotel Name: \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nMeal Preference \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ Add Drop Down List: 1\\. BBQ Chicken Lunch (Included\n\n\t\t\t\t\t\t\t       2\\. Lobster Lunch (add $15)\n\n\t\t\t\t\t\t\t     3\\. Fish (add $10)\n\n\t\t\t\t\t\t   \t     4\\. Conch (add $10)\n\n\t\t\t\t\t\t\t    5\\. Shrimp (add $10)\n\n\t\t\t\t\t\t\t   6\\. Vegetarian Meal (add $5)\n\nComments \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nStep 4: Review Page with and request Booking\n\nStep 5: Tour and Cancellation Policy\n\nStep 6: \n\n**Thank you for your booking request.**  \nA member of our customer service team will review your booking request, and if availability is confirmed, you will receive an email **momentarily** containing your **invoice** and a **secure payment link powered by Fygaro**, our trusted payment platform.\n\nWe appreciate your interest in Barbuda Leisure and look forward to hosting you soon.\n\n*This message could be sent to the customer email as well*",
+        "fields": [
+          {
+            "name": "firstName",
+            "label": "First Name",
+            "type": "text",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z\\s-]+$",
+              "message": "Please enter a valid first name"
+            }
+          },
+          {
+            "name": "lastName",
+            "label": "Last Name",
+            "type": "text",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z\\s-]+$",
+              "message": "Please enter a valid last name"
+            }
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true,
+            "validation": {
+              "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+              "message": "Please enter a valid email address"
+            }
+          },
+          {
+            "name": "phone",
+            "label": "Telephone number",
+            "type": "tel",
+            "required": true,
+            "placeholder": "+1 (268) 000-0000",
+            "validation": {
+              "message": "Please enter a valid phone number"
+            }
+          },
+          {
+            "name": "hotelName",
+            "label": "Hotel Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Where are you staying in Antigua?"
+          },
+          {
+            "name": "mealPreference",
+            "label": "Meal Preference",
+            "type": "select",
+            "required": true,
+            "note": "Add Drop Down List",
+            "options": [
+              {
+                "label": "BBQ Chicken Lunch (Included)",
+                "value": "chicken",
+                "price": 0
+              },
+              {
+                "label": "Lobster Lunch (add $15)",
+                "value": "lobster",
+                "price": 15
+              },
+              {
+                "label": "Fish (add $10)",
+                "value": "fish",
+                "price": 10
+              },
+              {
+                "label": "Conch (add $10)",
+                "value": "conch",
+                "price": 10
+              },
+              {
+                "label": "Shrimp (add $10)",
+                "value": "shrimp",
+                "price": 10
+              },
+              {
+                "label": "Vegetarian Meal (add $5)",
+                "value": "vegetarian",
+                "price": 5
+              }
+            ]
+          },
+          {
+            "name": "comments",
+            "label": "Comments",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Any special requests or dietary restrictions?"
+          }
+        ]
+      }
+    ]
+  }
+]
