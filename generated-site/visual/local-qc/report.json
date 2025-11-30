@@ -1,0 +1,113 @@
+{
+  "when": "2025-11-13T06:51:44.190Z",
+  "local": "http://localhost:3001",
+  "routes": [
+    "/",
+    "/about",
+    "/contact",
+    "/faq",
+    "/reviews",
+    "/tours",
+    "/blog",
+    "/blog/discover-the-enchanting-island-of-barbuda",
+    "/blog/best-time-visit-barbuda",
+    "/blog/stingray-city-conservation",
+    "/blog/photography-tips-caribbean",
+    "/tours/airplane-adventure",
+    "/tours/already-in-barbuda",
+    "/tours/barbuda-beach-escape",
+    "/tours/barbuda-sky-sea-adventure",
+    "/tours/discover-barbuda-by-air",
+    "/tours/discover-barbuda-by-sea",
+    "/tours/excellence-barbuda-by-sea",
+    "/tours/helicopter-adventure",
+    "/tours/shared-boat-charter",
+    "/tours/yacht-adventure"
+  ],
+  "results": [
+    {
+      "route": "/",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/"
+    },
+    {
+      "route": "/about",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/about"
+    },
+    {
+      "route": "/contact",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/contact"
+    },
+    {
+      "route": "/faq",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/faq"
+    },
+    {
+      "route": "/reviews",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/reviews"
+    },
+    {
+      "route": "/tours",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours"
+    },
+    {
+      "route": "/blog",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/blog"
+    },
+    {
+      "route": "/blog/discover-the-enchanting-island-of-barbuda",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/blog/discover-the-enchanting-island-of-barbuda"
+    },
+    {
+      "route": "/blog/best-time-visit-barbuda",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/blog/best-time-visit-barbuda"
+    },
+    {
+      "route": "/blog/stingray-city-conservation",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/blog/stingray-city-conservation"
+    },
+    {
+      "route": "/blog/photography-tips-caribbean",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/blog/photography-tips-caribbean"
+    },
+    {
+      "route": "/tours/airplane-adventure",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours/airplane-adventure"
+    },
+    {
+      "route": "/tours/already-in-barbuda",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours/already-in-barbuda"
+    },
+    {
+      "route": "/tours/barbuda-beach-escape",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours/barbuda-beach-escape"
+    },
+    {
+      "route": "/tours/barbuda-sky-sea-adventure",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours/barbuda-sky-sea-adventure"
+    },
+    {
+      "route": "/tours/discover-barbuda-by-air",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours/discover-barbuda-by-air"
+    },
+    {
+      "route": "/tours/discover-barbuda-by-sea",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours/discover-barbuda-by-sea"
+    },
+    {
+      "route": "/tours/excellence-barbuda-by-sea",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours/excellence-barbuda-by-sea"
+    },
+    {
+      "route": "/tours/helicopter-adventure",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours/helicopter-adventure"
+    },
+    {
+      "route": "/tours/shared-boat-charter",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours/shared-boat-charter"
+    },
+    {
+      "route": "/tours/yacht-adventure",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:3001/tours/yacht-adventure"
+    }
+  ]
+}

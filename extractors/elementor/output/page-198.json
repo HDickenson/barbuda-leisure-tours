@@ -1,0 +1,595 @@
+{
+  "id": 198,
+  "title": "About Us",
+  "url": "https://www.barbudaleisure.com/about-us/",
+  "slug": "about-us",
+  "status": "publish",
+  "lastModified": "2024-11-24T21:31:00",
+  "elementorVersion": "unknown",
+  "editMode": "builder",
+  "templateType": "page",
+  "sections": [
+    {
+      "id": "9b580c5",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "classic",
+        "image": {
+          "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/m-6-scaled-e1731509852408.jpg",
+          "id": 689,
+          "size": "",
+          "alt": "",
+          "source": "library"
+        }
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "%",
+        "top": "0",
+        "right": "0",
+        "bottom": "07.5",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "497e1fe",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "20",
+      "columns": [
+        {
+          "id": "6b34b05",
+          "elType": "column",
+          "width": 50,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "classic"
+          },
+          "widgets": [
+            {
+              "id": "edfe401",
+              "elType": "widget",
+              "widgetType": "heading",
+              "content": {
+                "title": "Welcome to Barbuda Leisure Day Tours",
+                "htmlTag": "h2"
+              },
+              "style": {
+                "padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "030",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "f40ee40",
+              "elType": "widget",
+              "widgetType": "heading",
+              "content": {
+                "title": "Your Gateway to Discovering Barbuda",
+                "htmlTag": "h4"
+              },
+              "style": {
+                "padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "76b1cd7",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "content": {
+                "editor": "<p>At Barbuda Leisure Day Tours, we're passionate about sharing the unspoiled beauty of Barbuda with the world. As the only dedicated Barbuda day tour concierge company, we've been proudly serving guests since 2011, offering exceptional experiences and flexible travel options between Antigua and Barbuda.</p>"
+              },
+              "style": {
+                "padding": {
+                  "unit": "px",
+                  "top": "29",
+                  "right": "0",
+                  "bottom": "10",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "7aab795",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "content": {
+                "editor": "<p>Whether by air, sea, private boat, or even helicopter, we're your trusted partner in making your visit to Barbuda truly unforgettable.</p>"
+              },
+              "style": {
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "10",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "50",
+            "right": "100",
+            "bottom": "50",
+            "left": "50",
+            "isLinked": false
+          }
+        },
+        {
+          "id": "abef11c",
+          "elType": "column",
+          "width": 50,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "none"
+          },
+          "widgets": [
+            {
+              "id": "b5876bf",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-6.jpg",
+                  "alt": "",
+                  "id": 320
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {
+                "zIndex": 3
+              },
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "c1d3ace",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-4.jpg",
+                  "alt": "",
+                  "id": 318
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "04a0cdf",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/PFA4070-scaled.jpg",
+                  "alt": "",
+                  "id": 236
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {
+                "zIndex": 2
+              },
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "6ef9f57",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/DSC3331-scaled.jpg",
+                  "alt": "",
+                  "id": 242
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {
+                "zIndex": 1
+              },
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "c7e7a5a",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/MG_9010.tif.jpg",
+                  "alt": "",
+                  "id": 243
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {
+                "zIndex": 5
+              },
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "8b0557a",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3.jpg",
+                  "alt": "",
+                  "id": 317
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "4a757da",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-12.jpg",
+                  "alt": "",
+                  "id": 414
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {
+                "zIndex": 1
+              },
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "40",
+            "isLinked": false
+          }
+        }
+      ],
+      "padding": {
+        "unit": "px",
+        "top": "250",
+        "right": "0",
+        "bottom": "200",
+        "left": "0",
+        "isLinked": false
+      },
+      "margin": {
+        "unit": "%",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "7cdff4a",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "classic",
+        "color": "#FEFAF6"
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "px",
+        "top": "80",
+        "right": "0",
+        "bottom": "80",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "7dd812b",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "20",
+      "columns": [
+        {
+          "id": "af4a2ee",
+          "elType": "column",
+          "width": 50,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "none"
+          },
+          "widgets": [
+            {
+              "id": "f0ea257",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-2.jpg",
+                  "alt": "",
+                  "id": 394
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {
+                "zIndex": 5
+              },
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "02444cb",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-8.jpg",
+                  "alt": "",
+                  "id": 395
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "81ec78e",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-6-2.jpg",
+                  "alt": "",
+                  "id": 393
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {
+                "zIndex": 3
+              },
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "3ddd1d8",
+              "elType": "widget",
+              "widgetType": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7.jpg",
+                  "alt": "",
+                  "id": 321
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              },
+              "style": {},
+              "advanced": {
+                "zIndex": 6
+              },
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "40",
+            "isLinked": false
+          }
+        },
+        {
+          "id": "aa39736",
+          "elType": "column",
+          "width": 100,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "none"
+          },
+          "widgets": [
+            {
+              "id": "e625f76",
+              "elType": "widget",
+              "widgetType": "heading",
+              "content": {
+                "title": "Thank You for Considering Us",
+                "htmlTag": "h2"
+              },
+              "style": {
+                "margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "16",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "9427fe5",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "content": {
+                "editor": "<p>We look forward to making your trip a memorable one!</p>"
+              },
+              "style": {},
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "8c7cc5f",
+              "elType": "widget",
+              "widgetType": "button",
+              "content": {
+                "text": "Explore Our Tours",
+                "link": {
+                  "url": "https://www.barbudaleisure.com/our-tours/",
+                  "isExternal": false,
+                  "nofollow": false
+                },
+                "size": "md",
+                "iconAlign": "left"
+              },
+              "style": {
+                "margin": {
+                  "unit": "px",
+                  "top": "25",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          }
+        }
+      ],
+      "padding": {
+        "unit": "px",
+        "top": "81",
+        "right": "0",
+        "bottom": "200",
+        "left": "0",
+        "isLinked": false
+      },
+      "margin": {
+        "unit": "px",
+        "top": "0",
+        "right": 0,
+        "bottom": "0",
+        "left": 0,
+        "isLinked": false
+      }
+    }
+  ],
+  "pageSettings": {
+    "pageLayout": "default",
+    "contentWidth": 1140
+  },
+  "extractedAt": "2025-11-13T13:21:01.797Z",
+  "extractorVersion": "1.0.0"
+}

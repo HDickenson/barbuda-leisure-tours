@@ -1,0 +1,171 @@
+{
+  "when": "2025-11-13T07:21:12.148Z",
+  "origin": "https://www.barbudaleisure.com",
+  "local": "http://localhost:3001",
+  "engine": "mcp",
+  "routes": [
+    "/",
+    "/about",
+    "/contact",
+    "/faq",
+    "/reviews",
+    "/tours",
+    "/blog",
+    "/blog/discover-the-enchanting-island-of-barbuda",
+    "/blog/best-time-visit-barbuda",
+    "/blog/stingray-city-conservation",
+    "/blog/photography-tips-caribbean",
+    "/tours/airplane-adventure",
+    "/tours/already-in-barbuda",
+    "/tours/barbuda-beach-escape",
+    "/tours/barbuda-sky-sea-adventure",
+    "/tours/discover-barbuda-by-air",
+    "/tours/discover-barbuda-by-sea",
+    "/tours/excellence-barbuda-by-sea",
+    "/tours/helicopter-adventure",
+    "/tours/shared-boat-charter",
+    "/tours/yacht-adventure"
+  ],
+  "results": [
+    {
+      "route": "/",
+      "mismatched": 1183751,
+      "mismatchPct": 88.43,
+      "width": 1366,
+      "height": 980,
+      "cropped": true,
+      "original": {
+        "live": {
+          "width": 1366,
+          "height": 4266
+        },
+        "local": {
+          "width": 1366,
+          "height": 980
+        }
+      }
+    },
+    {
+      "route": "/about",
+      "mismatched": 798767,
+      "mismatchPct": 29.49,
+      "width": 1366,
+      "height": 1983,
+      "cropped": true,
+      "original": {
+        "live": {
+          "width": 1366,
+          "height": 4679
+        },
+        "local": {
+          "width": 1366,
+          "height": 1983
+        }
+      }
+    },
+    {
+      "route": "/contact",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_contact.png'"
+    },
+    {
+      "route": "/faq",
+      "mismatched": 1491021,
+      "mismatchPct": 89.03,
+      "width": 1366,
+      "height": 1226,
+      "cropped": true,
+      "original": {
+        "live": {
+          "width": 1366,
+          "height": 1226
+        },
+        "local": {
+          "width": 1366,
+          "height": 2897
+        }
+      }
+    },
+    {
+      "route": "/reviews",
+      "mismatched": 1949159,
+      "mismatchPct": 49.65,
+      "width": 1366,
+      "height": 2874,
+      "cropped": true,
+      "original": {
+        "live": {
+          "width": 1366,
+          "height": 2874
+        },
+        "local": {
+          "width": 1366,
+          "height": 4061
+        }
+      }
+    },
+    {
+      "route": "/tours",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours.png'"
+    },
+    {
+      "route": "/blog",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_blog.png'"
+    },
+    {
+      "route": "/blog/discover-the-enchanting-island-of-barbuda",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_blog_discover-the-enchanting-island-of-barbuda.png'"
+    },
+    {
+      "route": "/blog/best-time-visit-barbuda",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_blog_best-time-visit-barbuda.png'"
+    },
+    {
+      "route": "/blog/stingray-city-conservation",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_blog_stingray-city-conservation.png'"
+    },
+    {
+      "route": "/blog/photography-tips-caribbean",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_blog_photography-tips-caribbean.png'"
+    },
+    {
+      "route": "/tours/airplane-adventure",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours_airplane-adventure.png'"
+    },
+    {
+      "route": "/tours/already-in-barbuda",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours_already-in-barbuda.png'"
+    },
+    {
+      "route": "/tours/barbuda-beach-escape",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours_barbuda-beach-escape.png'"
+    },
+    {
+      "route": "/tours/barbuda-sky-sea-adventure",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours_barbuda-sky-sea-adventure.png'"
+    },
+    {
+      "route": "/tours/discover-barbuda-by-air",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours_discover-barbuda-by-air.png'"
+    },
+    {
+      "route": "/tours/discover-barbuda-by-sea",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours_discover-barbuda-by-sea.png'"
+    },
+    {
+      "route": "/tours/excellence-barbuda-by-sea",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours_excellence-barbuda-by-sea.png'"
+    },
+    {
+      "route": "/tours/helicopter-adventure",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours_helicopter-adventure.png'"
+    },
+    {
+      "route": "/tours/shared-boat-charter",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours_shared-boat-charter.png'"
+    },
+    {
+      "route": "/tours/yacht-adventure",
+      "error": "ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\local\\_tours_yacht-adventure.png'"
+    }
+  ]
+}

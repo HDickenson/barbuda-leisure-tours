@@ -1,0 +1,41 @@
+{
+  "when": "2025-11-13T08:07:13.282Z",
+  "origin": "https://www.barbudaleisure.com",
+  "local": "http://127.0.0.1:3000",
+  "routes": [
+    "/",
+    "/about",
+    "/faq",
+    "/reviews"
+  ],
+  "results": [
+    {
+      "route": "/",
+      "liveUrl": "https://www.barbudaleisure.com/",
+      "localUrl": "http://127.0.0.1:3000/",
+      "ok": false,
+      "error": "connect ECONNREFUSED 127.0.0.1:3000"
+    },
+    {
+      "route": "/about",
+      "liveUrl": "https://www.barbudaleisure.com/about",
+      "localUrl": "http://127.0.0.1:3000/about",
+      "ok": false,
+      "error": "connect ECONNREFUSED 127.0.0.1:3000"
+    },
+    {
+      "route": "/faq",
+      "liveUrl": "https://www.barbudaleisure.com/faq",
+      "localUrl": "http://127.0.0.1:3000/faq",
+      "ok": false,
+      "error": "connect ECONNREFUSED 127.0.0.1:3000"
+    },
+    {
+      "route": "/reviews",
+      "liveUrl": "https://www.barbudaleisure.com/reviews",
+      "localUrl": "http://127.0.0.1:3000/reviews",
+      "ok": false,
+      "error": "connect ECONNREFUSED 127.0.0.1:3000"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@barbuda/vercel-nextjs-transformer",
+  "version": "1.0.0",
+  "description": "Transform Elementor extractions to Next.js/Vercel components",
+  "main": "dist/transformer.js",
+  "bin": {
+    "elementor-to-nextjs": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "transform": "node dist/cli.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "elementor",
+    "nextjs",
+    "vercel",
+    "transformer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}

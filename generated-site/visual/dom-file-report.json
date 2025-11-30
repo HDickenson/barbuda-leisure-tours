@@ -1,0 +1,30 @@
+[
+  {
+    "route": "/",
+    "livePath": "visual\\html-live\\home.html",
+    "localPath": "out\\index.html",
+    "status": "error",
+    "error": "Error: ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\html-live\\home.html'"
+  },
+  {
+    "route": "/about",
+    "livePath": "visual\\html-live\\about.html",
+    "localPath": "out\\about\\index.html",
+    "status": "error",
+    "error": "Error: ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\html-live\\about.html'"
+  },
+  {
+    "route": "/faq",
+    "livePath": "visual\\html-live\\faq.html",
+    "localPath": "out\\faq\\index.html",
+    "status": "error",
+    "error": "Error: ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\html-live\\faq.html'"
+  },
+  {
+    "route": "/reviews",
+    "livePath": "visual\\html-live\\reviews.html",
+    "localPath": "out\\reviews\\index.html",
+    "status": "error",
+    "error": "Error: ENOENT: no such file or directory, open 'C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\generated-site\\visual\\html-live\\reviews.html'"
+  }
+]

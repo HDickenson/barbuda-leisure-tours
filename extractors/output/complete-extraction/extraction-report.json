@@ -1,0 +1,118 @@
+{
+  "timestamp": "2025-11-14T01:12:27.774Z",
+  "url": "https://www.barbudaleisure.com",
+  "summary": {
+    "header": "Extracted",
+    "sections": 5,
+    "footer": "Extracted",
+    "totalProperties": 117
+  },
+  "elements": {
+    "header": {
+      "found": true,
+      "selector": ".ekit-template-content-header",
+      "dimensions": {
+        "top": 0,
+        "left": 0,
+        "width": 1920,
+        "height": 0
+      },
+      "properties": 16,
+      "keyStyles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "position": "static"
+      }
+    },
+    "sections": [
+      {
+        "containerType": "wp-post",
+        "containerId": "1229",
+        "selector": ".elementor-1229",
+        "dimensions": {
+          "top": 0,
+          "left": 0,
+          "width": 1920,
+          "height": 0
+        },
+        "properties": 16,
+        "keyStyles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      },
+      {
+        "containerType": "page",
+        "containerId": "1147",
+        "selector": ".elementor-1147",
+        "dimensions": {
+          "top": 227,
+          "left": 560,
+          "width": 800,
+          "height": 626
+        },
+        "properties": 17,
+        "keyStyles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      },
+      {
+        "containerType": "wp-post",
+        "containerId": "700",
+        "selector": ".elementor-700",
+        "dimensions": {
+          "top": 227,
+          "left": 560,
+          "width": 800,
+          "height": 626
+        },
+        "properties": 17,
+        "keyStyles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      },
+      {
+        "containerType": "wp-page",
+        "containerId": "85",
+        "selector": ".elementor-85",
+        "dimensions": {
+          "top": 0,
+          "left": 0,
+          "width": 1920,
+          "height": 3960.578125
+        },
+        "properties": 17,
+        "keyStyles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      },
+      {
+        "containerType": "wp-post",
+        "containerId": "186",
+        "selector": ".elementor-186",
+        "dimensions": {
+          "top": 3960.578125,
+          "left": 0,
+          "width": 1920,
+          "height": 610.390625
+        },
+        "properties": 17,
+        "keyStyles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+      }
+    ],
+    "footer": {
+      "found": true,
+      "selector": ".ekit-template-content-footer",
+      "dimensions": {
+        "top": 3960.578125,
+        "left": 0,
+        "width": 1920,
+        "height": 610.390625
+      },
+      "properties": 17,
+      "keyStyles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "siteId": "",
+  "success": false,
+  "crawl": {
+    "siteId": "",
+    "pages": [],
+    "assets": [],
+    "metrics": {
+      "pageCount": 0,
+      "assetCount": 0,
+      "duration": 0,
+      "errors": 0
+    }
+  },
+  "assets": {
+    "siteId": "",
+    "total": 0,
+    "downloaded": 0,
+    "failed": 0,
+    "duration": 0
+  },
+  "designSystem": {
+    "siteId": "",
+    "tokens": {
+      "colors": {
+        "primary": "#000",
+        "background": "#fff",
+        "foreground": "#000"
+      },
+      "typography": {
+        "fontFamily": [],
+        "fontSize": [],
+        "fontWeight": [],
+        "lineHeight": []
+      },
+      "spacing": {
+        "xs": 4,
+        "sm": 8,
+        "md": 16,
+        "lg": 24,
+        "xl": 32
+      },
+      "shadows": [],
+      "borderRadius": [],
+      "animations": []
+    },
+    "components": [],
+    "timestamp": "2025-10-30T15:56:31.714Z"
+  },
+  "synthesis": {
+    "siteId": "",
+    "pages": 0,
+    "components": 0,
+    "files": [],
+    "duration": 0
+  },
+  "verification": {
+    "siteId": "",
+    "passed": false,
+    "visualDiff": {
+      "passed": false,
+      "pages": []
+    },
+    "linkReport": {
+      "ok": false,
+      "total": 0,
+      "broken": []
+    },
+    "responsiveReport": {
+      "ok": false
+    },
+    "perf": {
+      "regression": 0
+    },
+    "a11y": {
+      "ok": false,
+      "issues": []
+    },
+    "timestamp": "2025-10-30T15:56:31.715Z"
+  },
+  "duration": 2,
+  "errors": [
+    "Pipeline error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the \"X-Api-Key\" or \"Authorization\" headers to be explicitly omitted"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "timestamp": "2025-11-14T01:18:44.141Z",
+  "url": "https://www.barbudaleisure.com",
+  "header": {
+    "found": true,
+    "selector": ".ekit-wid-con",
+    "rect": {
+      "top": 21.203125,
+      "left": 871.046875,
+      "width": 453.59375,
+      "height": 35
+    },
+    "styles": {
+      "display": "block",
+      "position": "static",
+      "width": "453.594px",
+      "height": "35px",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px"
+    }
+  },
+  "sections": [
+    {
+      "selector": ".elementor-section:nth-of-type(1)",
+      "classList": "elementor-section elementor-top-section elementor-element elementor-element-26ea9738 elementor-section-full_width elementor-section-height-default",
+      "isTopSection": true,
+      "rect": {
+        "top": 227,
+        "left": 560,
+        "width": 800,
+        "height": 626
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "800px",
+        "height": "626px",
+        "padding": "29px 35px 39px",
+        "paddingTop": "29px",
+        "paddingBottom": "39px",
+        "paddingLeft": "35px",
+        "paddingRight": "35px",
+        "background": "rgb(48, 187, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(48, 187, 216)",
+        "backgroundPosition": "0% 0%",
+        "backgroundRepeat": "repeat",
+        "backgroundAttachment": "scroll",
+        "border": "0px none rgb(51, 51, 51)",
+        "color": "rgb(51, 51, 51)",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "opacity": "1",
+        "transition": "background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s",
+        "textAlign": "start",
+        "overflow": "visible",
+        "flexDirection": "row"
+      },
+      "screenshot": "C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\extractors\\output\\deep-extraction\\screenshots\\section-1.png"
+    },
+    {
+      "selector": ".elementor-section:nth-of-type(2)",
+      "classList": "elementor-section elementor-inner-section elementor-element elementor-element-6a37e2f9 elementor-section-full_width elementor-section-height-default",
+      "isTopSection": false,
+      "rect": {
+        "top": 321,
+        "left": 595,
+        "width": 730,
+        "height": 102
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "730px",
+        "height": "102px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundPosition": "0% 0%",
+        "backgroundRepeat": "repeat",
+        "backgroundAttachment": "scroll",
+        "border": "0px none rgb(51, 51, 51)",
+        "color": "rgb(51, 51, 51)",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "opacity": "1",
+        "transition": "all",
+        "textAlign": "start",
+        "overflow": "visible",
+        "flexDirection": "row"
+      },
+      "screenshot": "C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\extractors\\output\\deep-extraction\\screenshots\\section-2.png"
+    },
+    {
+      "selector": ".elementor-section:nth-of-type(3)",
+      "classList": "elementor-section elementor-inner-section elementor-element elementor-element-3a62ea78 elementor-section-full_width elementor-section-height-default",
+      "isTopSection": false,
+      "rect": {
+        "top": 423,
+        "left": 595,
+        "width": 730,
+        "height": 102
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "730px",
+        "height": "102px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundPosition": "0% 0%",
+        "backgroundRepeat": "repeat",
+        "backgroundAttachment": "scroll",
+        "border": "0px none rgb(51, 51, 51)",
+        "color": "rgb(51, 51, 51)",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "opacity": "1",
+        "transition": "all",
+        "textAlign": "start",
+        "overflow": "visible",
+        "flexDirection": "row"
+      },
+      "screenshot": "C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\extractors\\output\\deep-extraction\\screenshots\\section-3.png"
+    },
+    {
+      "selector": ".elementor-section:nth-of-type(4)",
+      "classList": "elementor-section elementor-inner-section elementor-element elementor-element-1f6daab4 elementor-section-full_width elementor-section-height-default",
+      "isTopSection": false,
+      "rect": {
+        "top": 525,
+        "left": 595,
+        "width": 730,
+        "height": 289
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "width": "730px",
+        "height": "289px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundPosition": "0% 0%",
+        "backgroundRepeat": "repeat",
+        "backgroundAttachment": "scroll",
+        "border": "0px none rgb(51, 51, 51)",
+        "color": "rgb(51, 51, 51)",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "opacity": "1",
+        "transition": "all",
+        "textAlign": "start",
+        "overflow": "visible",
+        "flexDirection": "row"
+      },
+      "screenshot": "C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\extractors\\output\\deep-extraction\\screenshots\\section-4.png"
+    }
+  ],
+  "footer": {
+    "found": true,
+    "selector": ".ekit-template-content-footer",
+    "rect": {
+      "top": 3960.578125,
+      "left": 0,
+      "width": 1920,
+      "height": 610.390625
+    },
+    "styles": {
+      "display": "block",
+      "position": "static",
+      "width": "1920px",
+      "height": "610.391px",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(51, 51, 51)",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+    },
+    "screenshot": "C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\extractors\\output\\deep-extraction\\screenshots\\footer.png"
+  },
+  "sharedComponents": {
+    "header": {
+      "isShared": true,
+      "componentPath": "src/components/Header.tsx",
+      "needsUpdate": false
+    },
+    "footer": {
+      "isShared": true,
+      "componentPath": "src/components/Footer.tsx",
+      "needsUpdate": false
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "timestamp": "2025-11-25T23:47:29.270Z",
+  "url": "https://www.barbudaleisure.com",
+  "sections": [
+    {
+      "name": "hero",
+      "selector": "section.elementor-section:nth-of-type(1)",
+      "screenshot": "C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\extractors\\output\\deterministic\\section-screenshots\\hero.png",
+      "dimensions": {
+        "top": 227,
+        "left": 560,
+        "width": 800,
+        "height": 626
+      },
+      "propertiesExtracted": 45,
+      "keyProperties": {
+        "backgroundColor": "rgb(48, 187, 216)",
+        "padding": "29px 35px 39px",
+        "minHeight": "0px",
+        "backgroundImage": "no",
+        "filter": "none"
+      }
+    },
+    {
+      "name": "tours",
+      "selector": "section.elementor-section:nth-of-type(2)",
+      "screenshot": "C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\extractors\\output\\deterministic\\section-screenshots\\tours.png",
+      "dimensions": {
+        "top": 423,
+        "left": 595,
+        "width": 730,
+        "height": 102
+      },
+      "propertiesExtracted": 43,
+      "keyProperties": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "backgroundImage": "no",
+        "filter": "none"
+      }
+    },
+    {
+      "name": "why-choose-us",
+      "selector": "section.elementor-section:nth-of-type(3)",
+      "screenshot": "C:\\Users\\harol\\projects\\Barbuda\\bl-new-site\\extractors\\output\\deterministic\\section-screenshots\\why-choose-us.png",
+      "dimensions": {
+        "top": 525,
+        "left": 595,
+        "width": 730,
+        "height": 289
+      },
+      "propertiesExtracted": 43,
+      "keyProperties": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "backgroundImage": "no",
+        "filter": "none"
+      }
+    }
+  ],
+  "summary": {
+    "totalSections": 3,
+    "totalCSSRules": 18465,
+    "totalTransformations": 3
+  }
+}

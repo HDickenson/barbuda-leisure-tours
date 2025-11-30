@@ -1,0 +1,572 @@
+{
+  "id": 681,
+  "title": "Reviews",
+  "url": "https://www.barbudaleisure.com/reviews/",
+  "slug": "reviews",
+  "status": "publish",
+  "lastModified": "2025-04-16T01:24:04",
+  "elementorVersion": "unknown",
+  "editMode": "builder",
+  "templateType": "page",
+  "sections": [
+    {
+      "id": "ef16983",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "classic",
+        "image": {
+          "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-6-2.jpg",
+          "id": 393,
+          "size": "",
+          "alt": "",
+          "source": "library"
+        }
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "%",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "2c288f8",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "px",
+        "top": "80",
+        "right": "15",
+        "bottom": "30",
+        "left": "15",
+        "isLinked": false
+      },
+      "margin": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "12c5d87",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "classic"
+      },
+      "structure": "60",
+      "columns": [
+        {
+          "id": "7ef39cf",
+          "elType": "column",
+          "width": 100,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "classic",
+            "color": "#FFFFFF"
+          },
+          "widgets": [
+            {
+              "id": "00b0ffe",
+              "elType": "widget",
+              "widgetType": "heading",
+              "content": {
+                "title": "Jessica R.",
+                "htmlTag": "h5"
+              },
+              "style": {
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "-25",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "border": {
+            "type": "groove",
+            "width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "color": "#FA529F8C"
+          },
+          "borderRadius": {
+            "unit": "px",
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8",
+            "isLinked": true
+          }
+        },
+        {
+          "id": "a3f4c20",
+          "elType": "column",
+          "width": 100,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "classic",
+            "color": "#FFFFFF"
+          },
+          "widgets": [
+            {
+              "id": "75f7e5f",
+              "elType": "widget",
+              "widgetType": "heading",
+              "content": {
+                "title": "Daniel S.",
+                "htmlTag": "h5"
+              },
+              "style": {
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "-25",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "border": {
+            "type": "groove",
+            "width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "color": "#FA529F8C"
+          },
+          "borderRadius": {
+            "unit": "px",
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8",
+            "isLinked": true
+          }
+        },
+        {
+          "id": "e866001",
+          "elType": "column",
+          "width": 100,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "classic",
+            "color": "#FFFFFF"
+          },
+          "widgets": [
+            {
+              "id": "a303d16",
+              "elType": "widget",
+              "widgetType": "heading",
+              "content": {
+                "title": "Sophia T.",
+                "htmlTag": "h5"
+              },
+              "style": {
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "-25",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "border": {
+            "type": "groove",
+            "width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "color": "#FA529F8C"
+          },
+          "borderRadius": {
+            "unit": "px",
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8",
+            "isLinked": true
+          }
+        },
+        {
+          "id": "64b2dad",
+          "elType": "column",
+          "width": 100,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "classic",
+            "color": "#FFFFFF"
+          },
+          "widgets": [
+            {
+              "id": "03d99d7",
+              "elType": "widget",
+              "widgetType": "heading",
+              "content": {
+                "title": "James P.",
+                "htmlTag": "h5"
+              },
+              "style": {
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "-25",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "border": {
+            "type": "groove",
+            "width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "color": "#FA529F8C"
+          },
+          "borderRadius": {
+            "unit": "px",
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8",
+            "isLinked": true
+          }
+        },
+        {
+          "id": "c02fcc8",
+          "elType": "column",
+          "width": 100,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "classic",
+            "color": "#FFFFFF"
+          },
+          "widgets": [
+            {
+              "id": "0ab712b",
+              "elType": "widget",
+              "widgetType": "heading",
+              "content": {
+                "title": "Emily W.",
+                "htmlTag": "h5"
+              },
+              "style": {
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "-25",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "border": {
+            "type": "groove",
+            "width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "color": "#FA529F8C"
+          },
+          "borderRadius": {
+            "unit": "px",
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8",
+            "isLinked": true
+          }
+        },
+        {
+          "id": "605312c",
+          "elType": "column",
+          "width": 100,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "classic",
+            "color": "#FFFFFF"
+          },
+          "widgets": [
+            {
+              "id": "76f6b58",
+              "elType": "widget",
+              "widgetType": "heading",
+              "content": {
+                "title": "Michael L.",
+                "htmlTag": "h5"
+              },
+              "style": {
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "-25",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "border": {
+            "type": "groove",
+            "width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "color": "#FA529F8C"
+          },
+          "borderRadius": {
+            "unit": "px",
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8",
+            "isLinked": true
+          }
+        }
+      ],
+      "padding": {
+        "unit": "px",
+        "top": "30",
+        "right": "30",
+        "bottom": "75",
+        "left": "30",
+        "isLinked": false
+      }
+    }
+  ],
+  "pageSettings": {
+    "pageLayout": "default",
+    "contentWidth": 1140
+  },
+  "extractedAt": "2025-11-13T13:20:43.243Z",
+  "extractorVersion": "1.0.0"
+}

@@ -1,0 +1,17 @@
+# Ignore monorepo workspace files
+apps/
+packages/
+infra/
+workers/
+app/
+scripts/
+docs/
+data/
+
+# Ignore root workspace config
+pnpm-lock.yaml
+pnpm-workspace.yaml
+turbo.json
+
+# Keep only generated-site for deployment
+!generated-site/

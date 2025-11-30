@@ -1,0 +1,437 @@
+{
+  "post_id": 42,
+  "post_title": "Barbuda Leisure - Caribbean Paradise",
+  "post_name": "home",
+  "post_status": "publish",
+  "post_modified": "2024-01-15 14:30:00",
+  "elementor_version": "3.18.0",
+  "elementor_data": [
+    {
+      "id": "hero-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "content_width": "1140",
+        "gap": "default",
+        "height": "fit-to-screen",
+        "background_background": "classic",
+        "background_color": "#0066cc",
+        "background_image": {
+          "url": "https://barbudaleisure.com/wp-content/uploads/hero-beach.jpg",
+          "id": 101
+        }
+      },
+      "elements": [
+        {
+          "id": "hero-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "content_position": "center"
+          },
+          "elements": [
+            {
+              "id": "hero-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Discover Paradise in Barbuda",
+                "header_size": "h1",
+                "align": "center",
+                "color": "#ffffff",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                  "size": 48,
+                  "unit": "px"
+                }
+              }
+            },
+            {
+              "id": "hero-spacer",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "size": 30,
+                  "unit": "px"
+                }
+              }
+            },
+            {
+              "id": "hero-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Experience pristine pink sand beaches, crystal-clear waters, and unforgettable adventures in the Caribbean's best-kept secret.</p>",
+                "align": "center",
+                "text_color": "#ffffff"
+              }
+            },
+            {
+              "id": "hero-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Explore Activities",
+                "link": {
+                  "url": "https://barbudaleisure.com/activities",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "size": "lg",
+                "button_type": "success",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "features-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "gap": "wider",
+        "background_background": "classic",
+        "background_color": "#f5f5f5"
+      },
+      "elements": [
+        {
+          "id": "features-col-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "id": "icon-1",
+              "elType": "widget",
+              "widgetType": "icon",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-umbrella-beach",
+                  "library": "solid"
+                },
+                "view": "stacked",
+                "shape": "circle",
+                "primary_color": "#0066cc",
+                "size": {
+                  "size": 64,
+                  "unit": "px"
+                }
+              }
+            },
+            {
+              "id": "feature-heading-1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Pristine Beaches",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "feature-text-1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>17 miles of untouched pink sand beaches await your discovery.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "features-col-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "id": "icon-2",
+              "elType": "widget",
+              "widgetType": "icon",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-water",
+                  "library": "solid"
+                },
+                "view": "stacked",
+                "shape": "circle",
+                "primary_color": "#00ccff",
+                "size": {
+                  "size": 64,
+                  "unit": "px"
+                }
+              }
+            },
+            {
+              "id": "feature-heading-2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Water Sports",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "feature-text-2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Snorkeling, diving, kayaking, and more in crystal-clear Caribbean waters.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "id": "features-col-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "id": "icon-3",
+              "elType": "widget",
+              "widgetType": "icon",
+              "settings": {
+                "selected_icon": {
+                  "value": "fas fa-ship",
+                  "library": "solid"
+                },
+                "view": "stacked",
+                "shape": "circle",
+                "primary_color": "#ff6600",
+                "size": {
+                  "size": 64,
+                  "unit": "px"
+                }
+              }
+            },
+            {
+              "id": "feature-heading-3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Island Tours",
+                "header_size": "h3",
+                "align": "center"
+              }
+            },
+            {
+              "id": "feature-text-3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Explore hidden coves, historic sites, and local culture with expert guides.</p>",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "video-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed"
+      },
+      "elements": [
+        {
+          "id": "video-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "section-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "See Barbuda in Action",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "video-widget",
+              "elType": "widget",
+              "widgetType": "video",
+              "settings": {
+                "video_type": "youtube",
+                "youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                "controls": "yes",
+                "modest_branding": "yes",
+                "aspect_ratio": "169",
+                "show_image_overlay": "yes",
+                "image_overlay": {
+                  "url": "https://barbudaleisure.com/wp-content/uploads/video-thumb.jpg",
+                  "id": 201
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "location-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "id": "location-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "location-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Find Us in Paradise",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "divider-1",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {
+                "style": "solid",
+                "weight": {
+                  "size": 3,
+                  "unit": "px"
+                },
+                "color": "#0066cc",
+                "width": {
+                  "size": 80,
+                  "unit": "%"
+                },
+                "gap": {
+                  "size": 20,
+                  "unit": "px"
+                },
+                "align": "center",
+                "insert_icon": "yes",
+                "selected_icon": {
+                  "value": "fas fa-anchor",
+                  "library": "solid"
+                }
+              }
+            },
+            {
+              "id": "map-widget",
+              "elType": "widget",
+              "widgetType": "google_maps",
+              "settings": {
+                "address": "Barbuda, Antigua and Barbuda",
+                "zoom": {
+                  "size": 12
+                },
+                "height": {
+                  "size": 500
+                },
+                "prevent_scroll": "yes",
+                "map_type": "satellite",
+                "street_view": "no",
+                "markers": [
+                  {
+                    "address": "Codrington, Barbuda",
+                    "title": "Barbuda Leisure Office",
+                    "description": "Visit us for tours and activities"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta-section",
+      "elType": "section",
+      "settings": {
+        "layout": "boxed",
+        "background_background": "gradient",
+        "background_color": "#0066cc",
+        "background_color_b": "#00ccff"
+      },
+      "elements": [
+        {
+          "id": "cta-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "content_position": "center"
+          },
+          "elements": [
+            {
+              "id": "cta-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ready for Your Adventure?",
+                "header_size": "h2",
+                "align": "center",
+                "color": "#ffffff"
+              }
+            },
+            {
+              "id": "cta-spacer",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "size": 20
+                },
+                "space_tablet": {
+                  "size": 15
+                },
+                "space_mobile": {
+                  "size": 10
+                }
+              }
+            },
+            {
+              "id": "cta-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book Your Experience",
+                "link": {
+                  "url": "https://barbudaleisure.com/book",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "size": "lg",
+                "button_type": "warning",
+                "align": "center",
+                "icon": "fas fa-calendar-check",
+                "icon_align": "right"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elementor_edit_mode": "builder",
+  "elementor_template_type": "page",
+  "elementor_css": ""
+}

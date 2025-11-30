@@ -1,0 +1,76 @@
+{
+  "id": 983,
+  "title": "Blog",
+  "url": "https://www.barbudaleisure.com/our-blog/",
+  "slug": "our-blog",
+  "status": "publish",
+  "lastModified": "2025-04-25T16:37:59",
+  "elementorVersion": "unknown",
+  "editMode": "builder",
+  "templateType": "page",
+  "sections": [
+    {
+      "id": "9b580c5",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "classic",
+        "image": {
+          "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureToursSection-2-2.jpg",
+          "id": 330,
+          "size": "",
+          "alt": "",
+          "source": "library"
+        }
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "%",
+        "top": "0",
+        "right": "0",
+        "bottom": "6",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "d3605b5",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "px",
+        "top": "100",
+        "right": "0",
+        "bottom": "200",
+        "left": "0",
+        "isLinked": false
+      },
+      "margin": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    }
+  ],
+  "pageSettings": {
+    "pageLayout": "default",
+    "contentWidth": 1140
+  },
+  "extractedAt": "2025-11-13T13:20:30.780Z",
+  "extractorVersion": "1.0.0"
+}

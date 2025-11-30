@@ -1,0 +1,144 @@
+{
+  "id": 1591,
+  "title": "Your Tour Review",
+  "url": "https://www.barbudaleisure.com/elementor-page-1591/",
+  "slug": "elementor-page-1591",
+  "status": "publish",
+  "lastModified": "2025-01-07T09:37:18",
+  "elementorVersion": "unknown",
+  "editMode": "builder",
+  "templateType": "page",
+  "sections": [
+    {
+      "id": "0205bcc",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "slideshow"
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+      }
+    },
+    {
+      "id": "5895bbc",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "10",
+      "columns": [
+        {
+          "id": "d1e9fb2",
+          "elType": "column",
+          "width": 100,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "classic"
+          },
+          "widgets": [
+            {
+              "id": "1bb287e",
+              "elType": "widget",
+              "widgetType": "heading",
+              "content": {
+                "title": "Your Tour Review",
+                "htmlTag": "h2"
+              },
+              "style": {
+                "margin": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "0",
+                  "bottom": "10",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "advanced": {
+                "zIndex": 2
+              },
+              "isInner": false,
+              "defaultRendered": false
+            },
+            {
+              "id": "eafa1d4",
+              "elType": "widget",
+              "widgetType": "metform",
+              "content": {
+                "mf_form_id": "1629***1736194885464",
+                "ha_cmc_text": "Happy Addons"
+              },
+              "style": {},
+              "advanced": {},
+              "isInner": false,
+              "defaultRendered": false
+            }
+          ],
+          "padding": {
+            "unit": "px",
+            "top": "50",
+            "right": "50",
+            "bottom": "50",
+            "left": "50",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "80",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "borderRadius": {
+            "unit": "px",
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8",
+            "isLinked": true
+          }
+        }
+      ],
+      "padding": {
+        "unit": "px",
+        "top": "50",
+        "right": "50",
+        "bottom": "50",
+        "left": "50",
+        "isLinked": true
+      },
+      "margin": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      },
+      "zIndex": 1
+    }
+  ],
+  "pageSettings": {
+    "pageLayout": "default",
+    "contentWidth": 1140
+  },
+  "extractedAt": "2025-11-13T13:20:14.029Z",
+  "extractorVersion": "1.0.0"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@kanousei/orchestrator-app",
+  "type": "module",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx agent.ts",
+    "lint": "echo 'lint ok'"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.2.1",
+    "dotenv": "16.4.5",
+    "openai": "^6.7.0",
+    "zod": "^4.1.12"
+  }
+}

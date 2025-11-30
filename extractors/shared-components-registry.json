@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "description": "Registry of shared components that should never be duplicated",
+  "sharedComponents": {
+    "header": {
+      "componentPath": "src/components/Header.tsx",
+      "selectors": [
+        ".ekit-template-content-header",
+        "header",
+        ".site-header",
+        ".main-header",
+        "[data-elementor-type='header']"
+      ],
+      "purpose": "Site-wide navigation header",
+      "usage": "Imported in layout.tsx",
+      "extracted": true,
+      "lastUpdated": "2025-11-14"
+    },
+    "footer": {
+      "componentPath": "src/components/Footer.tsx",
+      "selectors": [
+        ".ekit-template-content-footer",
+        "footer",
+        ".site-footer",
+        ".main-footer",
+        "[data-elementor-type='footer']"
+      ],
+      "purpose": "Site-wide footer with links and contact info",
+      "usage": "Imported in layout.tsx",
+      "extracted": true,
+      "lastUpdated": "2025-11-14"
+    },
+    "waveDivider": {
+      "componentPath": "src/components/WaveDivider.tsx",
+      "selectors": [
+        ".wave-divider",
+        ".elementor-shape-fill"
+      ],
+      "purpose": "Reusable wave shape divider",
+      "usage": "Imported in page sections",
+      "extracted": true,
+      "lastUpdated": "2025-11-14"
+    }
+  },
+  "extractionRules": {
+    "skipDuplication": true,
+    "updateExistingOnly": true,
+    "preserveCustomizations": true
+  },
+  "notes": [
+    "Shared components are defined in layout.tsx and reused across all pages",
+    "Extractors should check this registry before creating new components",
+    "Design updates should modify existing components, not create duplicates",
+    "Page-specific content should be in page.tsx, not in shared components"
+  ]
+}

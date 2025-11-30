@@ -1,0 +1,53 @@
+{
+  "id": 1475,
+  "title": "Elementor #1475",
+  "url": "https://www.barbudaleisure.com/elementor-1475/",
+  "slug": "elementor-1475",
+  "status": "publish",
+  "lastModified": "2024-11-30T08:35:32",
+  "elementorVersion": "unknown",
+  "editMode": "builder",
+  "templateType": "page",
+  "sections": [
+    {
+      "id": "2b51c8c",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "classic"
+      },
+      "structure": "100",
+      "columns": [],
+      "margin": {
+        "unit": "px",
+        "top": "30",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "c63ba1d",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "100",
+      "columns": []
+    }
+  ],
+  "pageSettings": {
+    "pageLayout": "default",
+    "contentWidth": 1140
+  },
+  "extractedAt": "2025-11-13T13:20:18.681Z",
+  "extractorVersion": "1.0.0"
+}

@@ -1,0 +1,33 @@
+{
+  "reportVersion": "1.0.0",
+  "generatedAt": "2025-11-13T13:21:52.023Z",
+  "extractorVersion": "1.0.0",
+  "config": {
+    "connectorType": "rest-api",
+    "continueOnError": true,
+    "validateSchemas": true,
+    "extractGlobalStyles": true,
+    "includeProWidgets": true
+  },
+  "status": "partial",
+  "statusMessage": "Extracted 11/27 pages successfully",
+  "coverage": {
+    "totalWidgets": 43,
+    "extractedWidgets": 43,
+    "failedWidgets": 0,
+    "coveragePercentage": 100,
+    "widgetTypes": {}
+  },
+  "performance": {
+    "extractionStartTime": "2025-11-13T13:21:52.023Z",
+    "extractionEndTime": "2025-11-13T13:21:52.023Z",
+    "durationMs": 0,
+    "durationHuman": "0ms",
+    "timings": {}
+  },
+  "issues": [],
+  "errorCount": 16,
+  "warningCount": 0,
+  "infoCount": 0,
+  "source": {}
+}

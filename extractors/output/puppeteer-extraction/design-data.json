@@ -1,0 +1,2128 @@
+{
+  "metadata": {
+    "url": "https://www.barbudaleisure.com/",
+    "title": "Barbuda Leisure Day Tours – One Day, Endless Memories",
+    "timestamp": "2025-11-14T00:56:50.332Z"
+  },
+  "sections": [
+    {
+      "index": 0,
+      "selector": "section",
+      "id": "",
+      "className": "elementor-section elementor-top-section elementor-element elementor-element-26ea9738 elementor-section-full_width elementor-section-height-default elementor-section-height-default",
+      "position": {
+        "top": 227,
+        "height": 626,
+        "width": 800
+      },
+      "styles": {
+        "background": "rgb(48, 187, 216) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgb(48, 187, 216)",
+        "backgroundImage": "none",
+        "backgroundSize": "auto",
+        "backgroundPosition": "0% 0%",
+        "backgroundAttachment": "scroll",
+        "padding": "29px 35px 39px",
+        "paddingTop": "29px",
+        "paddingBottom": "39px",
+        "margin": "0px",
+        "minHeight": "0px",
+        "display": "block",
+        "position": "relative",
+        "zIndex": "auto",
+        "overflow": "visible"
+      },
+      "filters": {
+        "filter": "none",
+        "backdropFilter": "none"
+      },
+      "children": {
+        "containers": 4,
+        "columns": 6,
+        "widgets": 22
+      }
+    },
+    {
+      "index": 1,
+      "selector": "section",
+      "id": "",
+      "className": "elementor-section elementor-inner-section elementor-element elementor-element-6a37e2f9 elementor-section-full_width elementor-section-height-default elementor-section-height-default",
+      "position": {
+        "top": 321,
+        "height": 102,
+        "width": 730
+      },
+      "styles": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "backgroundSize": "auto",
+        "backgroundPosition": "0% 0%",
+        "backgroundAttachment": "scroll",
+        "padding": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "margin": "0px",
+        "minHeight": "auto",
+        "display": "block",
+        "position": "relative",
+        "zIndex": "auto",
+        "overflow": "visible"
+      },
+      "filters": {
+        "filter": "none",
+        "backdropFilter": "none"
+      },
+      "children": {
+        "containers": 1,
+        "columns": 2,
+        "widgets": 6
+      }
+    },
+    {
+      "index": 2,
+      "selector": "section",
+      "id": "",
+      "className": "elementor-section elementor-inner-section elementor-element elementor-element-3a62ea78 elementor-section-full_width elementor-section-height-default elementor-section-height-default",
+      "position": {
+        "top": 423,
+        "height": 102,
+        "width": 730
+      },
+      "styles": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "backgroundSize": "auto",
+        "backgroundPosition": "0% 0%",
+        "backgroundAttachment": "scroll",
+        "padding": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "margin": "0px",
+        "minHeight": "auto",
+        "display": "block",
+        "position": "relative",
+        "zIndex": "auto",
+        "overflow": "visible"
+      },
+      "filters": {
+        "filter": "none",
+        "backdropFilter": "none"
+      },
+      "children": {
+        "containers": 1,
+        "columns": 2,
+        "widgets": 6
+      }
+    },
+    {
+      "index": 3,
+      "selector": "section",
+      "id": "",
+      "className": "elementor-section elementor-inner-section elementor-element elementor-element-1f6daab4 elementor-section-full_width elementor-section-height-default elementor-section-height-default",
+      "position": {
+        "top": 525,
+        "height": 289,
+        "width": 730
+      },
+      "styles": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "backgroundSize": "auto",
+        "backgroundPosition": "0% 0%",
+        "backgroundAttachment": "scroll",
+        "padding": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "margin": "0px",
+        "minHeight": "auto",
+        "display": "block",
+        "position": "relative",
+        "zIndex": "auto",
+        "overflow": "visible"
+      },
+      "filters": {
+        "filter": "none",
+        "backdropFilter": "none"
+      },
+      "children": {
+        "containers": 1,
+        "columns": 1,
+        "widgets": 7
+      }
+    },
+    {
+      "index": 4,
+      "selector": "section",
+      "id": "",
+      "className": "elementor-element elementor-element-a1299fc e-flex e-con-boxed e-con e-parent e-lazyloaded animated fadeIn",
+      "position": {
+        "top": 0,
+        "height": 1080,
+        "width": 1920
+      },
+      "styles": {
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "backgroundSize": "auto",
+        "backgroundPosition": "0% 0%",
+        "backgroundAttachment": "scroll",
+        "padding": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "margin": "0px",
+        "minHeight": "1080px",
+        "display": "flex",
+        "position": "relative",
+        "zIndex": "auto",
+        "overflow": "hidden"
+      },
+      "filters": {
+        "filter": "none",
+        "backdropFilter": "none"
+      },
+      "children": {
+        "containers": 0,
+        "columns": 0,
+        "widgets": 6
+      }
+    }
+  ],
+  "carousels": [
+    {
+      "type": "swiper",
+      "index": 0,
+      "className": "elementor-background-slideshow swiper swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-watch-progress",
+      "slidesCount": 27,
+      "slides": [
+        {
+          "index": 0,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 1,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 2,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 3,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 4,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 5,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 6,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 7,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 8,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 9,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 10,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 11,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 12,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 13,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 14,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 15,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 16,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 17,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 18,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 19,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 20,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 21,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 22,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 23,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 24,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 25,
+          "backgroundImage": "none",
+          "image": null
+        },
+        {
+          "index": 26,
+          "backgroundImage": "none",
+          "image": null
+        }
+      ],
+      "config": {}
+    },
+    {
+      "type": "swiper",
+      "index": 1,
+      "className": "swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden",
+      "slidesCount": 2,
+      "slides": [
+        {
+          "index": 0,
+          "backgroundImage": "none",
+          "image": {
+            "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-370x247.jpg",
+            "alt": "",
+            "width": 367,
+            "height": 245
+          }
+        },
+        {
+          "index": 1,
+          "backgroundImage": "none",
+          "image": {
+            "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-370x247.jpg",
+            "alt": "",
+            "width": 367,
+            "height": 245
+          }
+        }
+      ],
+      "config": {}
+    },
+    {
+      "type": "elementor-slideshow",
+      "index": 0,
+      "className": "elementor-background-slideshow swiper swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-watch-progress",
+      "slidesCount": 54,
+      "slides": [
+        {
+          "index": 0,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 1,
+          "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSC3121-scaled.jpg\")",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 2,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 3,
+          "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/10/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp\")",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 4,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 5,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 6,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 7,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 8,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 9,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 10,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 11,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 12,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 13,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 14,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 15,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 16,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 17,
+          "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/11/Pink-Beach-North-scaled.jpg\")",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 18,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 19,
+          "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSC3121-scaled.jpg\")",
+          "transition": "transform 20s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 20,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 21,
+          "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/10/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp\")",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 22,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 23,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 24,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 25,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 26,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 27,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 28,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 29,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 30,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 31,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 32,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 33,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 34,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 35,
+          "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/11/Pink-Beach-North-scaled.jpg\")",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 36,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 37,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 38,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 39,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 40,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 41,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 42,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 43,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 44,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 45,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 46,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 47,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 48,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 49,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 50,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 51,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 52,
+          "backgroundImage": "none",
+          "transition": "opacity",
+          "animation": "none 0s ease 0s 1 normal none running"
+        },
+        {
+          "index": 53,
+          "backgroundImage": "none",
+          "transition": "transform 10s linear",
+          "animation": "none 0s ease 0s 1 normal none running"
+        }
+      ],
+      "dataSlideshow": null
+    }
+  ],
+  "images": [
+    {
+      "index": 0,
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour.webp",
+      "alt": "",
+      "title": "",
+      "width": 130,
+      "height": 45,
+      "naturalWidth": 468,
+      "naturalHeight": 163,
+      "className": "attachment-full size-full wp-image-574",
+      "loading": "auto",
+      "srcset": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour.webp 468w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour-300x104.webp 300w",
+      "sizes": "(max-width: 468px) 100vw, 468px",
+      "parent": {
+        "tagName": "A",
+        "className": ""
+      }
+    },
+    {
+      "index": 1,
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour-White.svg",
+      "alt": "BlackBarbuda Leisure Day Tours - 2 Colour White",
+      "title": "BlackBarbuda Leisure Day Tours – 2 Colour White",
+      "width": 622,
+      "height": 215,
+      "naturalWidth": 622,
+      "naturalHeight": 215,
+      "className": "",
+      "loading": "auto",
+      "srcset": "",
+      "sizes": "",
+      "parent": {
+        "tagName": "A",
+        "className": "elementskit-nav-logo"
+      }
+    },
+    {
+      "index": 2,
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg",
+      "alt": "Discover Barbuda by Sea",
+      "title": "",
+      "width": 251,
+      "height": 250,
+      "naturalWidth": 300,
+      "naturalHeight": 300,
+      "className": "attachment-medium size-medium wp-image-389",
+      "loading": "auto",
+      "srcset": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg 300w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-100x100.jpg 100w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-600x600.jpg 600w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-150x150.jpg 150w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-768x768.jpg 768w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-355x355.jpg 355w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-370x370.jpg 370w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-170x170.jpg 170w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2.jpg 1024w",
+      "sizes": "(max-width: 300px) 100vw, 300px",
+      "parent": {
+        "tagName": "FIGURE",
+        "className": "ha-card-figure"
+      }
+    },
+    {
+      "index": 3,
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg",
+      "alt": "",
+      "title": "",
+      "width": 251,
+      "height": 250,
+      "naturalWidth": 300,
+      "naturalHeight": 300,
+      "className": "attachment-medium size-medium wp-image-321",
+      "loading": "auto",
+      "srcset": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg 300w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-100x100.jpg 100w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-600x600.jpg 600w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-150x150.jpg 150w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-768x768.jpg 768w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-355x355.jpg 355w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-370x370.jpg 370w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-170x170.jpg 170w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7.jpg 1024w",
+      "sizes": "(max-width: 300px) 100vw, 300px",
+      "parent": {
+        "tagName": "FIGURE",
+        "className": "ha-card-figure"
+      }
+    },
+    {
+      "index": 4,
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-300x300.jpg",
+      "alt": "",
+      "title": "",
+      "width": 251,
+      "height": 250,
+      "naturalWidth": 300,
+      "naturalHeight": 300,
+      "className": "attachment-medium size-medium wp-image-445",
+      "loading": "lazy",
+      "srcset": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-300x300.jpg 300w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-100x100.jpg 100w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-600x600.jpg 600w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-150x150.jpg 150w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-768x768.jpg 768w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-355x355.jpg 355w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-370x370.jpg 370w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-170x170.jpg 170w, https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15.jpg 1024w",
+      "sizes": "(max-width: 300px) 100vw, 300px",
+      "parent": {
+        "tagName": "FIGURE",
+        "className": "ha-card-figure"
+      }
+    },
+    {
+      "index": 5,
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-300x200.jpg",
+      "alt": "",
+      "title": "",
+      "width": 251,
+      "height": 250,
+      "naturalWidth": 300,
+      "naturalHeight": 200,
+      "className": "attachment-medium size-medium wp-image-596",
+      "loading": "lazy",
+      "srcset": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-300x200.jpg 300w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-1024x683.jpg 1024w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-768x512.jpg 768w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-370x247.jpg 370w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-270x180.jpg 270w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-1536x1024.jpg 1536w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-2048x1365.jpg 2048w",
+      "sizes": "(max-width: 300px) 100vw, 300px",
+      "parent": {
+        "tagName": "FIGURE",
+        "className": "ha-card-figure"
+      }
+    },
+    {
+      "index": 6,
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-370x247.jpg",
+      "alt": "",
+      "title": "",
+      "width": 367,
+      "height": 245,
+      "naturalWidth": 370,
+      "naturalHeight": 247,
+      "className": "attachment-meafe-blog-one size-meafe-blog-one",
+      "loading": "lazy",
+      "srcset": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-370x247.jpg 370w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-300x200.jpg 300w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-1024x683.jpg 1024w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-768x512.jpg 768w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-270x180.jpg 270w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-1536x1024.jpg 1536w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-2048x1365.jpg 2048w",
+      "sizes": "(max-width: 370px) 100vw, 370px",
+      "parent": {
+        "tagName": "A",
+        "className": "meafe-grid-post-link"
+      }
+    },
+    {
+      "index": 7,
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-370x247.jpg",
+      "alt": "",
+      "title": "",
+      "width": 367,
+      "height": 245,
+      "naturalWidth": 370,
+      "naturalHeight": 247,
+      "className": "attachment-meafe-blog-one size-meafe-blog-one",
+      "loading": "lazy",
+      "srcset": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-370x247.jpg 370w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-300x200.jpg 300w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-1024x683.jpg 1024w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-768x512.jpg 768w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-270x180.jpg 270w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-1536x1025.jpg 1536w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-2048x1366.jpg 2048w, https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-600x400.jpg 600w",
+      "sizes": "(max-width: 370px) 100vw, 370px",
+      "parent": {
+        "tagName": "A",
+        "className": "meafe-grid-post-link"
+      }
+    },
+    {
+      "index": 8,
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour-White.svg",
+      "alt": "",
+      "title": "",
+      "width": 200,
+      "height": 63,
+      "naturalWidth": 622,
+      "naturalHeight": 215,
+      "className": "attachment-full size-full wp-image-309",
+      "loading": "auto",
+      "srcset": "",
+      "sizes": "",
+      "parent": {
+        "tagName": "A",
+        "className": ""
+      }
+    }
+  ],
+  "backgroundImages": [
+    {
+      "index": 245,
+      "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSC3121-scaled.jpg",
+      "element": "DIV",
+      "className": "elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded",
+      "id": "",
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 0%",
+      "backgroundRepeat": "repeat"
+    },
+    {
+      "index": 247,
+      "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp",
+      "element": "DIV",
+      "className": "elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded",
+      "id": "",
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 0%",
+      "backgroundRepeat": "repeat"
+    },
+    {
+      "index": 267,
+      "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Pink-Beach-North-scaled.jpg",
+      "element": "DIV",
+      "className": "elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded",
+      "id": "",
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 0%",
+      "backgroundRepeat": "repeat"
+    },
+    {
+      "index": 269,
+      "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSC3121-scaled.jpg",
+      "element": "DIV",
+      "className": "elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy elementor-ken-burns--active swiper-lazy-loaded",
+      "id": "",
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 0%",
+      "backgroundRepeat": "repeat"
+    },
+    {
+      "index": 271,
+      "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp",
+      "element": "DIV",
+      "className": "elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded",
+      "id": "",
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 0%",
+      "backgroundRepeat": "repeat"
+    },
+    {
+      "index": 291,
+      "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Pink-Beach-North-scaled.jpg",
+      "element": "DIV",
+      "className": "elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded",
+      "id": "",
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 0%",
+      "backgroundRepeat": "repeat"
+    },
+    {
+      "index": 462,
+      "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureToursSection-3-2.jpg",
+      "element": "DIV",
+      "className": "elementor-element elementor-element-2ffd8da e-flex e-con-boxed elementor-invisible e-con e-parent",
+      "id": "",
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 100%",
+      "backgroundRepeat": "no-repeat"
+    }
+  ],
+  "colors": [
+    "rgb(204, 51, 102)",
+    "rgb(51, 51, 51)",
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)",
+    "rgb(48, 187, 216)",
+    "rgb(167, 167, 167)",
+    "rgba(0, 0, 0, 0.5)",
+    "rgb(245, 182, 211)",
+    "rgba(0, 0, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0)",
+    "rgb(71, 2, 2)",
+    "rgb(122, 122, 122)",
+    "rgb(84, 89, 95)",
+    "rgb(67, 71, 78)",
+    "rgb(245, 247, 249)",
+    "rgb(45, 183, 66)",
+    "rgb(217, 235, 198)",
+    "rgb(165, 171, 183)",
+    "rgb(204, 51, 102) rgb(204, 51, 102) rgb(204, 51, 102) rgb(45, 183, 66)",
+    "rgb(54, 60, 71)",
+    "rgb(152, 155, 159)"
+  ],
+  "fonts": [
+    "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "\"Lexend Deca\", sans-serif",
+    "\"Open Sans\", sans-serif",
+    "Roboto, sans-serif",
+    "\"Leckerli One\", sans-serif",
+    "Lexend, sans-serif",
+    "Lato, sans-serif",
+    "Arial, Helvetica, sans-serif"
+  ],
+  "typography": [
+    {
+      "index": 0,
+      "tagName": "A",
+      "className": "skip-link screen-reader-text",
+      "text": "Skip to content",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 1,
+      "tagName": "A",
+      "className": "",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 2,
+      "tagName": "BUTTON",
+      "className": "elementskit-menu-hamburger elementskit-menu-toggler",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "index": 3,
+      "tagName": "A",
+      "className": "ekit-menu-nav-link active",
+      "text": "Home",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(48, 187, 216)"
+    },
+    {
+      "index": 4,
+      "tagName": "A",
+      "className": "ekit-menu-nav-link",
+      "text": "Tours",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(167, 167, 167)"
+    },
+    {
+      "index": 5,
+      "tagName": "A",
+      "className": "ekit-menu-nav-link",
+      "text": "Reviews",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(167, 167, 167)"
+    },
+    {
+      "index": 6,
+      "tagName": "A",
+      "className": "ekit-menu-nav-link",
+      "text": "FAQ",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(167, 167, 167)"
+    },
+    {
+      "index": 7,
+      "tagName": "A",
+      "className": "ekit-menu-nav-link",
+      "text": "Blog",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(167, 167, 167)"
+    },
+    {
+      "index": 8,
+      "tagName": "A",
+      "className": "ekit-menu-nav-link",
+      "text": "About Us",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(167, 167, 167)"
+    },
+    {
+      "index": 9,
+      "tagName": "A",
+      "className": "elementskit-nav-logo",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 10,
+      "tagName": "BUTTON",
+      "className": "elementskit-menu-close elementskit-menu-toggler",
+      "text": "X",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 11,
+      "tagName": "A",
+      "className": "ue-simple-popup-trigger",
+      "text": "Contact",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "fontStyle": "normal",
+      "lineHeight": "21px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 12,
+      "tagName": "H3",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "Get In Touch",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "36px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 13,
+      "tagName": "BUTTON",
+      "className": "metform-btn metform-submit-btn ",
+      "text": "Send Message",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "fontStyle": "normal",
+      "lineHeight": "11px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 14,
+      "tagName": "A",
+      "className": "02",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 15,
+      "tagName": "A",
+      "className": "1",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 16,
+      "tagName": "A",
+      "className": "twitter",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 17,
+      "tagName": "H1",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "Discover Barbuda for a Day…",
+      "fontFamily": "\"Leckerli One\", sans-serif",
+      "fontSize": "80px",
+      "fontWeight": "300",
+      "fontStyle": "normal",
+      "lineHeight": "80px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 18,
+      "tagName": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "Your escape to the untouched beauty of this Caribbean paradise!",
+      "fontFamily": "Lexend, sans-serif",
+      "fontSize": "20.8px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "41.6px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 19,
+      "tagName": "A",
+      "className": "elementor-button elementor-button-link elementor-size-sm",
+      "text": "Explore Our Tours",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "fontStyle": "normal",
+      "lineHeight": "14px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 20,
+      "tagName": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "Our Hottest Tours",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "32px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "32px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(48, 187, 216)"
+    },
+    {
+      "index": 21,
+      "tagName": "H2",
+      "className": "ha-card-title",
+      "text": "Discover Barbuda by Sea",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "19.2px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(122, 122, 122)"
+    },
+    {
+      "index": 22,
+      "tagName": "A",
+      "className": "ha-btn",
+      "text": "Learn More",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "fontStyle": "normal",
+      "lineHeight": "14px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 23,
+      "tagName": "H2",
+      "className": "ha-card-title",
+      "text": "Discover Barbuda by Air",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "19.2px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(122, 122, 122)"
+    },
+    {
+      "index": 24,
+      "tagName": "A",
+      "className": "ha-btn",
+      "text": "Learn More",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "fontStyle": "normal",
+      "lineHeight": "14px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 25,
+      "tagName": "H2",
+      "className": "ha-card-title",
+      "text": "Private Charter by Air",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "19.2px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(122, 122, 122)"
+    },
+    {
+      "index": 26,
+      "tagName": "A",
+      "className": "ha-btn",
+      "text": "Learn More",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "fontStyle": "normal",
+      "lineHeight": "14px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 27,
+      "tagName": "H2",
+      "className": "ha-card-title",
+      "text": "Private Charter by Sea",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "19.2px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(122, 122, 122)"
+    },
+    {
+      "index": 28,
+      "tagName": "A",
+      "className": "ha-btn",
+      "text": "Learn More",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "fontStyle": "normal",
+      "lineHeight": "14px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 29,
+      "tagName": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "Why Choose Us?",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "32px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "27px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 30,
+      "tagName": "P",
+      "className": "",
+      "text": "We understand that your time in Antigua and Barbuda is precious, which is why we’ve partnered with t",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "32px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 31,
+      "tagName": "H3",
+      "className": "elementor-icon-box-title",
+      "text": "Seamless, Top-Tier Service",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "19.2px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 32,
+      "tagName": "P",
+      "className": "elementor-icon-box-description",
+      "text": "We've partnered with the best in the tourism industry.",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14.4px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "21.6px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 33,
+      "tagName": "H3",
+      "className": "elementor-icon-box-title",
+      "text": "Convenient Travel Options",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "19.2px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 34,
+      "tagName": "P",
+      "className": "elementor-icon-box-description",
+      "text": "Air, sea, private boat, or helicopter - we handle every detail.",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14.4px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "21.6px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 35,
+      "tagName": "H3",
+      "className": "elementor-icon-box-title",
+      "text": "Luxury and Comfort",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "19.2px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 36,
+      "tagName": "P",
+      "className": "elementor-icon-box-description",
+      "text": "Collaborations with Antigua and Barbuda's best hotels and resorts.",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14.4px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "21.6px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 37,
+      "tagName": "H3",
+      "className": "elementor-icon-box-title",
+      "text": "Flexible Tour Options",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "19.2px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 38,
+      "tagName": "P",
+      "className": "elementor-icon-box-description",
+      "text": "Relaxing beach days, cultural explorations, or adventure.",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14.4px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "21.6px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 39,
+      "tagName": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "Premier Day Tour Experience",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "32px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "38.4px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(84, 89, 95)"
+    },
+    {
+      "index": 40,
+      "tagName": "A",
+      "className": "elementor-button elementor-button-link elementor-size-sm",
+      "text": "Explore Our Tours",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "fontStyle": "normal",
+      "lineHeight": "14px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 41,
+      "tagName": "A",
+      "className": "meafe-grid-post-link",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "0px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 42,
+      "tagName": "H2",
+      "className": "meafe-entry-title",
+      "text": "Barbuda’s Pristine Beaches: A Slice of Paradise",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "30.8px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(51, 51, 51)"
+    },
+    {
+      "index": 43,
+      "tagName": "A",
+      "className": "meafe-grid-post-link",
+      "text": "Barbuda’s Pristine Beaches: A Slice of Paradise",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "30.8px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(48, 187, 216)"
+    },
+    {
+      "index": 44,
+      "tagName": "P",
+      "className": "",
+      "text": "Barbuda’s Pristine Beaches: A Slice of Paradise If you’re dreaming of secluded, untouched shores wit",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "21px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(122, 122, 122)"
+    },
+    {
+      "index": 45,
+      "tagName": "A",
+      "className": "meafe-post-elements-readmore-btn",
+      "text": "More",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "23.8px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(48, 187, 216)"
+    },
+    {
+      "index": 46,
+      "tagName": "A",
+      "className": "meafe-grid-post-link",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "0px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 47,
+      "tagName": "H2",
+      "className": "meafe-entry-title",
+      "text": "Discover the Enchanting Island of Barbuda with Barbuda Leisure Day Tours",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "30.8px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(51, 51, 51)"
+    },
+    {
+      "index": 48,
+      "tagName": "A",
+      "className": "meafe-grid-post-link",
+      "text": "Discover the Enchanting Island of Barbuda with Barbuda Leisure Day Tours",
+      "fontFamily": "\"Lexend Deca\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "30.8px",
+      "letterSpacing": "-0.75px",
+      "textTransform": "none",
+      "color": "rgb(48, 187, 216)"
+    },
+    {
+      "index": 49,
+      "tagName": "P",
+      "className": "",
+      "text": "Discover the Enchanting Island of Barbuda with Barbuda Leisure Day Tours Nestled in the heart of the",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "21px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(122, 122, 122)"
+    },
+    {
+      "index": 50,
+      "tagName": "A",
+      "className": "meafe-post-elements-readmore-btn",
+      "text": "More",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "23.8px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(48, 187, 216)"
+    },
+    {
+      "index": 51,
+      "tagName": "A",
+      "className": "",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 52,
+      "tagName": "A",
+      "className": "",
+      "text": "+268-728-BLDT (2538)",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.25px",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 53,
+      "tagName": "A",
+      "className": "",
+      "text": "bookings@barbudaleisure.com",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.25px",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 54,
+      "tagName": "A",
+      "className": "02",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "30px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 55,
+      "tagName": "A",
+      "className": "1",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "30px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 56,
+      "tagName": "A",
+      "className": "twitter",
+      "text": "",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "30px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 57,
+      "tagName": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "Links",
+      "fontFamily": "Lato, sans-serif",
+      "fontSize": "20px",
+      "fontWeight": "800",
+      "fontStyle": "normal",
+      "lineHeight": "35px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 58,
+      "tagName": "A",
+      "className": "",
+      "text": "Tours",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.25px",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 59,
+      "tagName": "A",
+      "className": "",
+      "text": "About Us",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.25px",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 60,
+      "tagName": "A",
+      "className": "",
+      "text": "Reviews",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.25px",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 61,
+      "tagName": "A",
+      "className": "",
+      "text": "FAQs",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.25px",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 62,
+      "tagName": "A",
+      "className": "",
+      "text": "Our Blog",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.25px",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 63,
+      "tagName": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "Your trusted partner...",
+      "fontFamily": "Lato, sans-serif",
+      "fontSize": "20px",
+      "fontWeight": "800",
+      "fontStyle": "normal",
+      "lineHeight": "35px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "index": 64,
+      "tagName": "P",
+      "className": "",
+      "text": "© Copyright 2024 Barbuda Leisure Day Tours. All rights reserved.",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "fontStyle": "normal",
+      "lineHeight": "21px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 65,
+      "tagName": "A",
+      "className": "",
+      "text": "Terms and Conditions",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "900",
+      "fontStyle": "normal",
+      "lineHeight": "21px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(71, 2, 2)"
+    },
+    {
+      "index": 66,
+      "tagName": "A",
+      "className": "",
+      "text": "Cancellation Policy",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "900",
+      "fontStyle": "normal",
+      "lineHeight": "21px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    },
+    {
+      "index": 67,
+      "tagName": "A",
+      "className": "",
+      "text": "privacy policy",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontSize": "11px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "11px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(51, 51, 51)"
+    },
+    {
+      "index": 68,
+      "tagName": "A",
+      "className": "wa__stt wa__stt_online",
+      "text": "Barbuda Leisure",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "fontStyle": "normal",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(204, 51, 102)"
+    }
+  ],
+  "dividers": [
+    {
+      "index": 0,
+      "type": "div",
+      "className": "elementor-shape elementor-shape-bottom",
+      "parentClassName": "e-con-inner",
+      "styles": {
+        "fill": "rgb(0, 0, 0)",
+        "stroke": "none",
+        "width": "1920px",
+        "height": "200px",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto",
+        "left": "auto",
+        "right": "auto",
+        "transform": "matrix(-1, 0, 0, -1, 0, 0)",
+        "zIndex": "auto"
+      },
+      "svgContent": null
+    },
+    {
+      "index": 1,
+      "type": "div",
+      "className": "elementor-shape elementor-shape-top",
+      "parentClassName": "e-con-inner",
+      "styles": {
+        "fill": "rgb(0, 0, 0)",
+        "stroke": "none",
+        "width": "1920px",
+        "height": "60px",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto",
+        "left": "auto",
+        "right": "auto",
+        "transform": "none",
+        "zIndex": "auto"
+      },
+      "svgContent": null
+    },
+    {
+      "index": 2,
+      "type": "div",
+      "className": "elementor-shape elementor-shape-bottom",
+      "parentClassName": "e-con-inner",
+      "styles": {
+        "fill": "rgb(0, 0, 0)",
+        "stroke": "none",
+        "width": "1920px",
+        "height": "60px",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto",
+        "left": "auto",
+        "right": "auto",
+        "transform": "matrix(-1, 0, 0, -1, 0, 0)",
+        "zIndex": "auto"
+      },
+      "svgContent": null
+    },
+    {
+      "index": 3,
+      "type": "div",
+      "className": "elementor-divider",
+      "parentClassName": "elementor-widget-container",
+      "styles": {
+        "fill": "rgb(0, 0, 0)",
+        "stroke": "none",
+        "width": "1140px",
+        "height": "47.5938px",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto",
+        "left": "auto",
+        "right": "auto",
+        "transform": "none",
+        "zIndex": "auto"
+      },
+      "svgContent": null
+    },
+    {
+      "index": 4,
+      "type": "div",
+      "className": "elementor-shape elementor-shape-top",
+      "parentClassName": "e-con-inner",
+      "styles": {
+        "fill": "rgb(0, 0, 0)",
+        "stroke": "none",
+        "width": "1920px",
+        "height": "120px",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto",
+        "left": "auto",
+        "right": "auto",
+        "transform": "none",
+        "zIndex": "auto"
+      },
+      "svgContent": null
+    },
+    {
+      "index": 5,
+      "type": "div",
+      "className": "elementor-shape elementor-shape-bottom",
+      "parentClassName": "e-con-inner",
+      "styles": {
+        "fill": "rgb(0, 0, 0)",
+        "stroke": "none",
+        "width": "1920px",
+        "height": "188.359px",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto",
+        "left": "auto",
+        "right": "auto",
+        "transform": "matrix(-1, 0, 0, -1, 0, 0)",
+        "zIndex": "auto"
+      },
+      "svgContent": null
+    }
+  ],
+  "animations": [
+    {
+      "index": 0,
+      "element": "SECTION",
+      "className": "elementor-element elementor-element-a1299fc e-flex e-con-boxed e-con e-parent e-lazyloaded animated fadeIn",
+      "dataAnimation": null,
+      "styles": {
+        "animation": "1.25s ease 0s 1 normal none running fadeIn",
+        "transition": "background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.4s",
+        "transform": "none"
+      }
+    },
+    {
+      "index": 1,
+      "element": "DIV",
+      "className": "elementor-element elementor-element-344e67f e-con-full e-transform e-flex e-con e-child animated fadeInDown",
+      "dataAnimation": null,
+      "styles": {
+        "animation": "1.25s ease 0s 1 normal none running fadeInDown",
+        "transition": "background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.8s",
+        "transform": "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, 1)"
+      }
+    },
+    {
+      "index": 2,
+      "element": "DIV",
+      "className": "elementor-element elementor-element-e84ae8e elementor-widget elementor-widget-heading animated fadeInUp",
+      "dataAnimation": null,
+      "styles": {
+        "animation": "1.25s ease 0s 1 normal none running fadeInUp",
+        "transition": "all",
+        "transform": "none"
+      }
+    },
+    {
+      "index": 3,
+      "element": "DIV",
+      "className": "elementor-element elementor-element-ecd8b86 elementor-widget elementor-widget-heading animated fadeIn",
+      "dataAnimation": null,
+      "styles": {
+        "animation": "1.25s ease 0s 1 normal none running fadeIn",
+        "transition": "all",
+        "transform": "none"
+      }
+    },
+    {
+      "index": 4,
+      "element": "DIV",
+      "className": "elementor-element elementor-element-1bbf8e3 elementor-widget-mobile__width-auto elementor-widget elementor-widget-button animated fadeIn",
+      "dataAnimation": null,
+      "styles": {
+        "animation": "1.25s ease 0s 1 normal none running fadeIn",
+        "transition": "all",
+        "transform": "none"
+      }
+    },
+    {
+      "index": 5,
+      "element": "DIV",
+      "className": "elementor-element elementor-element-f6fe343 elementor-widget__width-inherit animated-slow elementor-invisible elementor-widget elementor-widget-heading",
+      "dataAnimation": null,
+      "styles": {
+        "animation": "none 0s ease 0s 1 normal none running",
+        "transition": "all",
+        "transform": "none"
+      }
+    }
+  ]
+}

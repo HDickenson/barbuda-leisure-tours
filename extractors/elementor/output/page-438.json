@@ -1,0 +1,54 @@
+{
+  "id": 438,
+  "title": "News &amp; Updates",
+  "url": "https://www.barbudaleisure.com/news-updates/",
+  "slug": "news-updates",
+  "status": "publish",
+  "lastModified": "2024-10-27T23:29:02",
+  "elementorVersion": "unknown",
+  "editMode": "builder",
+  "templateType": "page",
+  "sections": [
+    {
+      "id": "7927524d",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "classic",
+        "color": "#f7f9fb"
+      },
+      "structure": "10",
+      "columns": [
+        {
+          "id": "7e02a067",
+          "elType": "column",
+          "width": 100,
+          "widthUnit": "%",
+          "contentPosition": "default",
+          "background": {
+            "type": "none"
+          },
+          "widgets": []
+        }
+      ],
+      "padding": {
+        "unit": "px",
+        "top": "100",
+        "right": "0",
+        "bottom": "100",
+        "left": "0",
+        "isLinked": ""
+      },
+      "cssId": "xs_blog_light_post_img_9"
+    }
+  ],
+  "pageSettings": {
+    "pageLayout": "default",
+    "contentWidth": 1140
+  },
+  "extractedAt": "2025-11-13T13:20:48.395Z",
+  "extractorVersion": "1.0.0"
+}

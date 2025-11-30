@@ -1,0 +1,40 @@
+{
+  "id": 10,
+  "title": "Refund and Returns Policy",
+  "url": "https://www.barbudaleisure.com/refund_returns/",
+  "slug": "refund_returns",
+  "status": "publish",
+  "lastModified": "2024-11-28T23:09:48",
+  "elementorVersion": "unknown",
+  "editMode": "builder",
+  "templateType": "page",
+  "sections": [
+    {
+      "id": "f995784",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "100",
+      "columns": [],
+      "margin": {
+        "unit": "px",
+        "top": "100",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    }
+  ],
+  "pageSettings": {
+    "pageLayout": "default",
+    "contentWidth": 1140
+  },
+  "extractedAt": "2025-11-13T13:20:24.858Z",
+  "extractorVersion": "1.0.0"
+}

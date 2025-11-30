@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-11-14T02:49:44.689Z",
+  "instructions": [
+    {
+      "component": "Hero Section",
+      "file": "barbuda-local/src/app/page.tsx",
+      "changes": [
+        "Update background color to: rgba(0, 0, 0, 0)",
+        "Set padding to: 0px",
+        "Add slideshow with swiper"
+      ]
+    },
+    {
+      "component": "Section 1: Get In Touch",
+      "file": "barbuda-local/src/app/page.tsx",
+      "changes": [
+        "Background: rgb(48, 187, 216)",
+        "Padding: 29px 35px 39px",
+        "Contains 0 images"
+      ]
+    },
+    {
+      "component": "Section 2: Untitled",
+      "file": "barbuda-local/src/app/page.tsx",
+      "changes": [
+        "Background: rgba(0, 0, 0, 0)",
+        "Padding: 0px",
+        "Contains 0 images"
+      ]
+    },
+    {
+      "component": "Section 3: Untitled",
+      "file": "barbuda-local/src/app/page.tsx",
+      "changes": [
+        "Background: rgba(0, 0, 0, 0)",
+        "Padding: 0px",
+        "Contains 0 images"
+      ]
+    },
+    {
+      "component": "Section 4: Untitled",
+      "file": "barbuda-local/src/app/page.tsx",
+      "changes": [
+        "Background: rgba(0, 0, 0, 0)",
+        "Padding: 0px",
+        "Contains 0 images"
+      ]
+    }
+  ]
+}

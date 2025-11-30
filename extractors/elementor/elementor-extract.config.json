@@ -1,0 +1,23 @@
+{
+  "connector": "rest-api",
+  "restApi": {
+    "baseUrl": "https://www.barbudaleisure.com",
+    "timeout": 30000,
+    "username": "harold-3e1dad",
+    "applicationPassword": "zXWf pY89 WlOD 6jGh 2hvZ HvXY"
+  },
+  "extraction": {
+    "continueOnError": true,
+    "validateSchemas": true,
+    "extractGlobalStyles": true,
+    "includeProWidgets": true,
+    "batchSize": 10
+  },
+  "output": {
+    "directory": "./output",
+    "format": "json-pretty",
+    "includeReport": true,
+    "reportFormat": "both"
+  },
+  "logLevel": "info"
+}

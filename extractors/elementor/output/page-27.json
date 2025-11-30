@@ -1,0 +1,40 @@
+{
+  "id": 27,
+  "title": "Terms and Conditions",
+  "url": "https://www.barbudaleisure.com/terms-and-conditions/",
+  "slug": "terms-and-conditions",
+  "status": "publish",
+  "lastModified": "2024-11-28T22:53:27",
+  "elementorVersion": "unknown",
+  "editMode": "builder",
+  "templateType": "page",
+  "sections": [
+    {
+      "id": "4c0833f",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "100",
+      "columns": [],
+      "margin": {
+        "unit": "px",
+        "top": "100",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    }
+  ],
+  "pageSettings": {
+    "pageLayout": "default",
+    "contentWidth": 1140
+  },
+  "extractedAt": "2025-11-13T13:21:18.602Z",
+  "extractorVersion": "1.0.0"
+}

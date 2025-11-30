@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-01T11:55:00.455Z",
+  "pages": [
+    {
+      "name": "Homepage",
+      "route": "/",
+      "hasSlideshow": true,
+      "slideshowImages": 9,
+      "sections": 4,
+      "widgets": 34
+    },
+    {
+      "name": "About",
+      "route": "/about",
+      "hasSlideshow": false,
+      "slideshowImages": 0,
+      "sections": 4,
+      "widgets": 35
+    },
+    {
+      "name": "Reviews",
+      "route": "/reviews",
+      "hasSlideshow": false,
+      "slideshowImages": 0,
+      "sections": 4,
+      "widgets": 35
+    },
+    {
+      "name": "FAQ",
+      "route": "/faq",
+      "hasSlideshow": false,
+      "slideshowImages": 0,
+      "sections": 4,
+      "widgets": 24
+    }
+  ],
+  "summary": {
+    "totalPages": 4,
+    "pagesWithSlideshows": 1,
+    "totalSlideshowImages": 9,
+    "totalSections": 16,
+    "totalWidgets": 128
+  }
+}

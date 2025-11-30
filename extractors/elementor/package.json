@@ -1,0 +1,56 @@
+{
+  "name": "@barbuda/elementor-extractor",
+  "version": "1.0.0",
+  "description": "Extract Elementor page builder data from WordPress sites for conversion to Next.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "elementor-extract": "./dist/cli/index.js",
+    "elementor-extractor": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:unit": "vitest run --dir tests/unit",
+    "test:integration": "vitest run --dir tests/integration",
+    "test:contract": "vitest run --dir tests/contract",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "elementor",
+    "wordpress",
+    "extractor",
+    "next.js",
+    "conversion",
+    "page-builder"
+  ],
+  "author": "Barbuda Team",
+  "license": "MIT",
+  "dependencies": {
+    "php-serialize": "^5.0.0",
+    "axios": "^1.6.2",
+    "commander": "^11.1.0",
+    "zod": "^3.22.4",
+    "winston": "^3.11.0",
+    "mysql2": "^3.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "@vitest/coverage-v8": "^1.0.4",
+    "@vitest/ui": "^1.0.4",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "timestamp": "2025-11-14T02:49:44.689Z",
+  "url": "https://www.barbudaleisure.com",
+  "hero": {
+    "selector": "elementor-element elementor-element-a1299fc e-flex e-con-boxed e-con e-parent e-lazyloaded animated fadeIn",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 1920,
+      "height": 1080
+    },
+    "styles": {
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "none",
+      "backgroundSize": "auto",
+      "backgroundPosition": "0% 0%",
+      "minHeight": "1080px",
+      "padding": "0px",
+      "display": "flex",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "hasSlideshow": true,
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Discover Barbuda for a Day…",
+        "styles": {
+          "fontFamily": "\"Leckerli One\", sans-serif",
+          "fontSize": "80px",
+          "fontWeight": "300",
+          "color": "rgb(255, 255, 255)",
+          "textAlign": "center"
+        }
+      },
+      {
+        "tag": "h2",
+        "text": "Your escape to the untouched beauty of this Caribbean paradise!",
+        "styles": {
+          "fontFamily": "Lexend, sans-serif",
+          "fontSize": "20.8px",
+          "fontWeight": "600",
+          "color": "rgb(255, 255, 255)",
+          "textAlign": "center"
+        }
+      }
+    ],
+    "paragraphs": [],
+    "buttons": [
+      {
+        "text": "Explore Our Tours",
+        "href": "https://www.barbudaleisure.com/our-tours/",
+        "styles": {
+          "backgroundColor": "rgb(245, 182, 211)",
+          "color": "rgb(255, 255, 255)",
+          "padding": "15px 20px",
+          "borderRadius": "8px",
+          "fontSize": "14px",
+          "fontWeight": "700"
+        }
+      }
+    ]
+  },
+  "sections": [
+    {
+      "index": 0,
+      "selector": "elementor-section elementor-top-section elementor-element elementor-element-26ea9738 elementor-section-full_width elementor-section-height-default elementor-section-height-default",
+      "rect": {
+        "top": 227,
+        "left": 560,
+        "width": 800,
+        "height": 626
+      },
+      "styles": {
+        "backgroundColor": "rgb(48, 187, 216)",
+        "backgroundImage": "none",
+        "padding": "29px 35px 39px",
+        "margin": "0px",
+        "minHeight": "0px"
+      },
+      "content": {
+        "headings": [
+          {
+            "tag": "h3",
+            "text": "Get In Touch",
+            "fontSize": "24px",
+            "fontFamily": "\"Open Sans\", sans-serif",
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "images": [],
+        "links": []
+      }
+    },
+    {
+      "index": 1,
+      "selector": "elementor-section elementor-inner-section elementor-element elementor-element-6a37e2f9 elementor-section-full_width elementor-section-height-default elementor-section-height-default",
+      "rect": {
+        "top": 321,
+        "left": 595,
+        "width": 730,
+        "height": 102
+      },
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "minHeight": "auto"
+      },
+      "content": {
+        "headings": [],
+        "images": [],
+        "links": []
+      }
+    },
+    {
+      "index": 2,
+      "selector": "elementor-section elementor-inner-section elementor-element elementor-element-3a62ea78 elementor-section-full_width elementor-section-height-default elementor-section-height-default",
+      "rect": {
+        "top": 423,
+        "left": 595,
+        "width": 730,
+        "height": 102
+      },
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "minHeight": "auto"
+      },
+      "content": {
+        "headings": [],
+        "images": [],
+        "links": []
+      }
+    },
+    {
+      "index": 3,
+      "selector": "elementor-section elementor-inner-section elementor-element elementor-element-1f6daab4 elementor-section-full_width elementor-section-height-default elementor-section-height-default",
+      "rect": {
+        "top": 525,
+        "left": 595,
+        "width": 730,
+        "height": 289
+      },
+      "styles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "minHeight": "auto"
+      },
+      "content": {
+        "headings": [],
+        "images": [],
+        "links": []
+      }
+    }
+  ],
+  "header": null,
+  "footer": null,
+  "images": [
+    {
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour-White.svg",
+      "alt": "BlackBarbuda Leisure Day Tours - 2 Colour White",
+      "width": 622,
+      "height": 215,
+      "naturalWidth": 622,
+      "naturalHeight": 215
+    },
+    {
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3-2-300x300.jpg",
+      "alt": "Discover Barbuda by Sea",
+      "width": 251,
+      "height": 250,
+      "naturalWidth": 300,
+      "naturalHeight": 300
+    },
+    {
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-300x300.jpg",
+      "alt": "No alt text",
+      "width": 251,
+      "height": 250,
+      "naturalWidth": 300,
+      "naturalHeight": 300
+    },
+    {
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-15-300x300.jpg",
+      "alt": "No alt text",
+      "width": 251,
+      "height": 250,
+      "naturalWidth": 300,
+      "naturalHeight": 300
+    },
+    {
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-300x200.jpg",
+      "alt": "No alt text",
+      "width": 251,
+      "height": 250,
+      "naturalWidth": 300,
+      "naturalHeight": 200
+    },
+    {
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-370x247.jpg",
+      "alt": "No alt text",
+      "width": 367,
+      "height": 245,
+      "naturalWidth": 370,
+      "naturalHeight": 247
+    },
+    {
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-370x247.jpg",
+      "alt": "No alt text",
+      "width": 367,
+      "height": 245,
+      "naturalWidth": 370,
+      "naturalHeight": 247
+    },
+    {
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour-White.svg",
+      "alt": "No alt text",
+      "width": 200,
+      "height": 63,
+      "naturalWidth": 622,
+      "naturalHeight": 215
+    }
+  ],
+  "colors": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgb(51, 51, 51)",
+    "rgb(204, 51, 102)",
+    "rgb(48, 187, 216)",
+    "rgb(167, 167, 167)",
+    "rgba(0, 0, 0, 0.5)",
+    "rgb(245, 182, 211)",
+    "rgb(255, 0, 0)",
+    "rgb(246, 247, 250)",
+    "rgb(13, 20, 39)",
+    "rgb(122, 122, 122)",
+    "rgb(71, 2, 2)",
+    "rgb(84, 89, 95)",
+    "rgb(245, 247, 249)",
+    "rgb(67, 71, 78)",
+    "rgb(45, 183, 66)",
+    "rgb(217, 235, 198)",
+    "rgb(165, 171, 183)",
+    "rgb(54, 60, 71)",
+    "rgb(152, 155, 159)"
+  ],
+  "fonts": []
+}

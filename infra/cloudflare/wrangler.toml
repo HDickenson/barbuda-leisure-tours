@@ -1,0 +1,11 @@
+name = "kanousei-scout"
+main = "../../workers/scout/src/index.ts"
+compatibility_date = "2024-09-01"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "clone-staging"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "b58e6a9ecc3e4f359b14cc3f5eee2729"

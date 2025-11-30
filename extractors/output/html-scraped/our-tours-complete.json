@@ -1,0 +1,229 @@
+{
+  "header": {
+    "logo": {
+      "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BlackBarbuda-Leisure-Day-Tours-2-Colour.webp",
+      "alt": "Barbuda Leisure Day Tours"
+    },
+    "menu_items": [
+      {
+        "text": "Home",
+        "url": "https://www.barbudaleisure.com/"
+      },
+      {
+        "text": "Tours",
+        "url": "https://www.barbudaleisure.com/our-tours/"
+      },
+      {
+        "text": "Reviews",
+        "url": "https://www.barbudaleisure.com/reviews/"
+      },
+      {
+        "text": "FAQ",
+        "url": "https://www.barbudaleisure.com/elementor-416/"
+      },
+      {
+        "text": "Blog",
+        "url": "https://www.barbudaleisure.com/our-blog/"
+      },
+      {
+        "text": "About Us",
+        "url": "https://www.barbudaleisure.com/about-us/"
+      }
+    ]
+  },
+  "footer": {
+    "contact_section": {
+      "address": "P.O. Box W595, Woods Centre, St. John's, Antigua & Barbuda, W.I.",
+      "phone": "+268-728-2538",
+      "email": "[email protected]"
+    },
+    "links_columns": {
+      "column_1": [
+        {
+          "text": "Tours",
+          "url": "https://www.barbudaleisure.com/trip-search-result/"
+        },
+        {
+          "text": "About Us",
+          "url": "https://www.barbudaleisure.com/about-us/"
+        },
+        {
+          "text": "Reviews",
+          "url": "#"
+        },
+        {
+          "text": "FAQs",
+          "url": "https://www.barbudaleisure.com/elementor-416/"
+        },
+        {
+          "text": "Our Blog",
+          "url": "https://www.barbudaleisure.com/elementor-416/"
+        }
+      ]
+    },
+    "legal_links": [
+      {
+        "text": "Terms and Conditions",
+        "url": "https://www.barbudaleisure.com/terms-and-conditions/"
+      },
+      {
+        "text": "Cancellation Policy",
+        "url": "https://www.barbudaleisure.com/refund_returns/"
+      }
+    ],
+    "copyright": "© Copyright 2024 Barbuda Leisure Day Tours. All rights reserved.",
+    "social_media": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/BarbudaLeisureDayTours"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/barbudaleisuredaytours/"
+      },
+      {
+        "platform": "Twitter/X",
+        "url": "https://x.com/BarbudaLeisure"
+      }
+    ]
+  },
+  "forms": {
+    "contact_form": {
+      "form_id": "mf-response-props-id-700",
+      "fields": [
+        {
+          "name": "mf-first-name",
+          "type": "text",
+          "label": "First Name",
+          "required": true,
+          "placeholder": "First name here"
+        },
+        {
+          "name": "mf-last-name",
+          "type": "text",
+          "label": "Last Name",
+          "required": true,
+          "placeholder": "Last name here"
+        },
+        {
+          "name": "mf-email",
+          "type": "email",
+          "label": "Email Address",
+          "required": true,
+          "placeholder": "Add email"
+        },
+        {
+          "name": "mf-subject",
+          "type": "text",
+          "label": "Subject",
+          "required": true,
+          "placeholder": "How can we help you?"
+        },
+        {
+          "name": "mf-comment",
+          "type": "textarea",
+          "label": "Comments / Questions",
+          "required": true,
+          "placeholder": "Comments"
+        },
+        {
+          "name": "g-recaptcha-response-v3",
+          "type": "recaptcha",
+          "sitekey": "6Ld2u4gqAAAAADMobqoK9k1EdiBrcfHsbJpvacjk"
+        }
+      ],
+      "submit_button": "Send Message"
+    }
+  },
+  "testimonials": [
+    {
+      "author": "Jessica R.",
+      "text": "Barbuda took our breath away! We loved every minute—from the pink sands to the serene bird sanctuary, it was all picture-perfect. Our guide was wonderful and made the tour informative and fun."
+    },
+    {
+      "author": "Daniel S.",
+      "text": "The island is truly a hidden gem, and the experience was seamless. The team went above and beyond to ensure we had everything we needed and more."
+    },
+    {
+      "author": "Sophia T.",
+      "text": "This was the highlight of our trip! Barbuda's natural beauty is unmatched, and the beaches were spectacular. The whole experience was well-organized."
+    },
+    {
+      "author": "James P.",
+      "text": "The best way to see Barbuda! From the boat ride to the stunning beaches and incredible bird watching, we felt like we were in own little paradise."
+    },
+    {
+      "author": "Emily W.",
+      "text": "The team was so professional and friendly, and we learned so much about the island's history and wildlife. Loved the personalized touches."
+    },
+    {
+      "author": "Michael L.",
+      "text": "Barbuda Leisure handled every detail perfectly, from the transport to the warm welcome. The tour was relaxed, informative, and truly showcased unique beauty."
+    }
+  ],
+  "color_values": {
+    "primary_colors": [
+      "#000000",
+      "#ffffff",
+      "#32373c",
+      "#abb8c3",
+      "#cf2e2e",
+      "#ff6900",
+      "#fcb900",
+      "#7bdcb5",
+      "#00d084",
+      "#8ed1fc",
+      "#0693e3",
+      "#9b51e0"
+    ],
+    "rgb_values": [
+      "rgba(0, 0, 0, 0.2)",
+      "rgba(0, 0, 0, 0.4)",
+      "rgba(255, 255, 255, 1)",
+      "rgba(6, 147, 227, 1)",
+      "rgba(155, 81, 224, 1)"
+    ]
+  },
+  "spacing_values": {
+    "rem_units": [
+      "0.44rem",
+      "0.67rem",
+      "1rem",
+      "1.5rem",
+      "2.25rem",
+      "3.38rem",
+      "5.06rem"
+    ],
+    "px_units": [
+      "13px",
+      "20px",
+      "36px",
+      "42px"
+    ],
+    "block_gap": "24px"
+  },
+  "tour_packages": [
+    {
+      "name": "Discover Barbuda by Air",
+      "status": "Popular",
+      "description": "Full-day experience of the island's rich heritage and natural wonders with a scenic 15-minute flight from Antigua to Barbuda.",
+      "url": "https://www.barbudaleisure.com/product/discover-barbuda-by-air/"
+    },
+    {
+      "name": "Discover Barbuda by Sea",
+      "status": "Popular",
+      "description": "Exclusive day tour designed for those looking to uncover the island's hidden beauty and cultural treasures.",
+      "url": "https://www.barbudaleisure.com/product/discover-barbuda-by-sea/"
+    },
+    {
+      "name": "Private Charter by Air",
+      "description": "Ultimate luxury and freedom of a private charter from Antigua to Barbuda.",
+      "url": "https://www.barbudaleisure.com/product/private-charter-by-air/"
+    },
+    {
+      "name": "Private Charter by Sea",
+      "description": "Ultimate luxury and freedom of a private charter from Antigua to Barbuda.",
+      "url": "https://www.barbudaleisure.com/product/private-charter-by-sea/"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "connector": "rest-api",
+  "restApi": {
+    "baseUrl": "https://example.com",
+    "username": "admin",
+    "applicationPassword": "your-application-password-here"
+  },
+  "extraction": {
+    "continueOnError": true,
+    "validateSchemas": true,
+    "extractGlobalStyles": true,
+    "includeProWidgets": true,
+    "batchSize": 50,
+    "maxMemoryMB": 512
+  },
+  "output": {
+    "directory": "./output/extractions",
+    "format": "json-pretty",
+    "includeReport": true,
+    "reportFormat": "both"
+  },
+  "logLevel": "info"
+}

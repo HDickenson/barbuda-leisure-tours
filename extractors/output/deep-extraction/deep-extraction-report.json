@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-11-14T01:18:44.141Z",
+  "url": "https://www.barbudaleisure.com",
+  "summary": {
+    "header": "Found",
+    "sections": 4,
+    "topSections": 1,
+    "footer": "Found",
+    "totalProperties": 85
+  },
+  "sharedComponents": {
+    "header": {
+      "isShared": true,
+      "componentPath": "src/components/Header.tsx",
+      "action": "Update existing component, DO NOT create new one"
+    },
+    "footer": {
+      "isShared": true,
+      "componentPath": "src/components/Footer.tsx",
+      "action": "Update existing component, DO NOT create new one"
+    }
+  },
+  "sections": [
+    {
+      "index": 1,
+      "isTopSection": true,
+      "dimensions": {
+        "top": 227,
+        "left": 560,
+        "width": 800,
+        "height": 626
+      },
+      "properties": 25,
+      "keyStyles": {
+        "backgroundColor": "rgb(48, 187, 216)",
+        "padding": "29px 35px 39px"
+      }
+    },
+    {
+      "index": 2,
+      "isTopSection": false,
+      "dimensions": {
+        "top": 321,
+        "left": 595,
+        "width": 730,
+        "height": 102
+      },
+      "properties": 20,
+      "keyStyles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "index": 3,
+      "isTopSection": false,
+      "dimensions": {
+        "top": 423,
+        "left": 595,
+        "width": 730,
+        "height": 102
+      },
+      "properties": 20,
+      "keyStyles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "index": 4,
+      "isTopSection": false,
+      "dimensions": {
+        "top": 525,
+        "left": 595,
+        "width": 730,
+        "height": 289
+      },
+      "properties": 20,
+      "keyStyles": {
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    }
+  ]
+}

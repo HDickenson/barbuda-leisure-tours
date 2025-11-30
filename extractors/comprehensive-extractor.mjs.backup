@@ -1,0 +1,405 @@
+#!/usr/bin/env node
+
+/**
+ * COMPREHENSIVE PAGE EXTRACTOR
+ *
+ * Properly extracts:
+ * 1. Closes all popups/modals FIRST
+ * 2. Scrolls entire page to load lazy content
+ * 3. Extracts hero carousel with all 27 slides
+ * 4. Extracts all wave dividers with SVG paths
+ * 5. Extracts ALL content sections
+ * 6. Extracts images, colors, fonts
+ */
+
+import puppeteer from 'puppeteer';
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const TARGET_URL = 'https://www.barbudaleisure.com';
+const OUTPUT_DIR = path.join(__dirname, 'output', 'comprehensive');
+
+class ComprehensiveExtractor {
+  constructor() {
+    this.browser = null;
+    this.page = null;
+    this.data = {
+      timestamp: new Date().toISOString(),
+      url: TARGET_URL,
+      hero: {
+        carousel: null,
+        text: null,
+        button: null
+      },
+      sections: [],
+      waveDividers: [],
+      carousels: [],
+      images: [],
+      colors: [],
+      fonts: []
+    };
+  }
+
+  async init() {
+    await fs.mkdir(OUTPUT_DIR, { recursive: true });
+    await fs.mkdir(path.join(OUTPUT_DIR, 'screenshots'), { recursive: true });
+
+    this.browser = await puppeteer.launch({
+      headless: 'new',
+      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-web-security']
+    });
+    this.page = await this.browser.newPage();
+    await this.page.setViewport({ width: 1920, height: 1080 });
+  }
+
+  async navigate() {
+    console.log(`🌐 Navigating to ${TARGET_URL}...`);
+    await this.page.goto(TARGET_URL, { waitUntil: 'networkidle2', timeout: 60000 });
+    await new Promise(resolve => setTimeout(resolve, 3000));
+
+    // CRITICAL: Close all popups/modals FIRST
+    console.log('🚫 Closing popups and modals...');
+    await this.page.evaluate(() => {
+      // Find and close all possible popups
+      const selectors = [
+        '.modal', '.popup', '[role="dialog"]',
+        '.elementor-popup-modal', '.dialog',
+        '[class*="popup"]', '[class*="modal"]',
+        '[id*="popup"]', '[id*="modal"]'
+      ];
+
+      selectors.forEach(sel => {
+        document.querySelectorAll(sel).forEach(el => {
+          el.style.display = 'none';
+          el.style.visibility = 'hidden';
+          el.remove();
+        });
+      });
+
+      // Close any overlay backdrops
+      document.querySelectorAll('[class*="overlay"], [class*="backdrop"]').forEach(el => {
+        el.style.display = 'none';
+        el.remove();
+      });
+
+      // Click close buttons
+      document.querySelectorAll('[class*="close"], [aria-label*="close" i]').forEach(btn => {
+        try {
+          btn.click();
+        } catch (e) {}
+      });
+    });
+
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    console.log('✓ Popups closed\n');
+
+    // Scroll entire page to load lazy content
+    console.log('📜 Scrolling page to load all content...');
+    await this.page.evaluate(async () => {
+      await new Promise((resolve) => {
+        let totalHeight = 0;
+        const distance = 300;
+        const timer = setInterval(() => {
+          window.scrollBy(0, distance);
+          totalHeight += distance;
+
+          if (totalHeight >= document.body.scrollHeight) {
+            clearInterval(timer);
+            resolve();
+          }
+        }, 100);
+      });
+    });
+
+    await this.page.evaluate(() => window.scrollTo(0, 0));
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    console.log('✓ Page scrolled and loaded\n');
+  }
+
+  async extractHeroCarousel() {
+    console.log('🎠 Extracting Hero Carousel...\n');
+
+    const carouselData = await this.page.evaluate(() => {
+      // Find hero swiper
+      const swipers = document.querySelectorAll('.swiper');
+      let heroSwiper = null;
+
+      for (const swiper of swipers) {
+        const rect = swiper.getBoundingClientRect();
+        if (rect.top < 500 && rect.width > 1000) {
+          heroSwiper = swiper;
+          break;
+        }
+      }
+
+      if (!heroSwiper) return null;
+
+      const slides = Array.from(heroSwiper.querySelectorAll('.swiper-slide'));
+
+      return {
+        slideCount: slides.length,
+        slides: slides.map((slide, i) => {
+          const img = slide.querySelector('img');
+          const bgStyle = window.getComputedStyle(slide).backgroundImage;
+
+          return {
+            index: i,
+            image: img ? img.src : null,
+            backgroundImage: bgStyle !== 'none' ? bgStyle : null,
+            alt: img ? img.alt : null
+          };
+        }).filter(s => s.image || s.backgroundImage)
+      };
+    });
+
+    if (carouselData) {
+      console.log(`  ✓ Found carousel with ${carouselData.slideCount} slides`);
+      console.log(`  ✓ Extracted ${carouselData.slides.length} image URLs\n`);
+      this.data.hero.carousel = carouselData;
+    } else {
+      console.log('  ⚠ No hero carousel found\n');
+    }
+  }
+
+  async extractWaveDividers() {
+    console.log('🌊 Extracting Wave Dividers...\n');
+
+    const dividers = await this.page.evaluate(() => {
+      const results = [];
+
+      document.querySelectorAll('.elementor-shape, [class*="wave"]').forEach((shape, i) => {
+        const svg = shape.querySelector('svg');
+        if (!svg) return;
+
+        const path = svg.querySelector('path');
+        if (!path) return;
+
+        const parent = shape.closest('section, .e-con, .elementor-section');
+        const parentBg = parent ? window.getComputedStyle(parent).backgroundColor : null;
+
+        results.push({
+          index: i,
+          svgViewBox: svg.getAttribute('viewBox'),
+          pathD: path.getAttribute('d'),
+          fillColor: path.getAttribute('fill') || path.style.fill,
+          parentBackground: parentBg,
+          position: shape.classList.contains('elementor-shape-top') ? 'top' : 'bottom',
+          width: svg.getAttribute('width'),
+          height: svg.getAttribute('height')
+        });
+      });
+
+      return results;
+    });
+
+    console.log(`  ✓ Found ${dividers.length} wave dividers\n`);
+    dividers.forEach((d, i) => {
+      console.log(`    Wave ${i + 1}: ${d.position}, fill: ${d.fillColor || 'inherit'}`);
+    });
+    console.log('');
+
+    this.data.waveDividers = dividers;
+  }
+
+  async extractAllSections() {
+    console.log('📦 Extracting ALL Content Sections...\n');
+
+    const sections = await this.page.evaluate(() => {
+      const results = [];
+
+      // Find ALL visible sections
+      const allSections = document.querySelectorAll('section, .e-con.e-parent, [data-element_type="section"]');
+
+      allSections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+
+        // Skip tiny sections
+        if (rect.height < 80) return;
+
+        // Skip header/footer areas
+        const top = rect.top + window.scrollY;
+        if (top < 100) return; // Skip header
+        if (top > document.body.scrollHeight - 800) return; // Skip footer
+
+        const computed = window.getComputedStyle(section);
+
+        // Extract headings
+        const headings = Array.from(section.querySelectorAll('h1, h2, h3, h4')).map(h => ({
+          tag: h.tagName.toLowerCase(),
+          text: h.textContent.trim(),
+          fontFamily: window.getComputedStyle(h).fontFamily,
+          fontSize: window.getComputedStyle(h).fontSize,
+          fontWeight: window.getComputedStyle(h).fontWeight,
+          color: window.getComputedStyle(h).color
+        }));
+
+        // Extract paragraphs
+        const paragraphs = Array.from(section.querySelectorAll('p')).slice(0, 5).map(p => ({
+          text: p.textContent.trim().substring(0, 200),
+          fontSize: window.getComputedStyle(p).fontSize,
+          color: window.getComputedStyle(p).color
+        }));
+
+        // Extract images
+        const images = Array.from(section.querySelectorAll('img')).map(img => ({
+          src: img.src,
+          alt: img.alt,
+          width: img.width,
+          height: img.height
+        }));
+
+        // Extract buttons/links
+        const buttons = Array.from(section.querySelectorAll('a.elementor-button, a[role="button"], button')).map(btn => ({
+          text: btn.textContent.trim(),
+          href: btn.href || null,
+          backgroundColor: window.getComputedStyle(btn).backgroundColor,
+          color: window.getComputedStyle(btn).color,
+          padding: window.getComputedStyle(btn).padding,
+          borderRadius: window.getComputedStyle(btn).borderRadius
+        }));
+
+        results.push({
+          index,
+          selector: section.className || section.tagName,
+          rect: {
+            top,
+            left: rect.left,
+            width: rect.width,
+            height: rect.height
+          },
+          styles: {
+            backgroundColor: computed.backgroundColor,
+            backgroundImage: computed.backgroundImage !== 'none' ? 'has-bg-image' : 'none',
+            backgroundSize: computed.backgroundSize,
+            backgroundPosition: computed.backgroundPosition,
+            padding: computed.padding,
+            minHeight: computed.minHeight
+          },
+          content: {
+            headings,
+            paragraphs,
+            images: images.slice(0, 10),
+            buttons: buttons.slice(0, 5)
+          }
+        });
+      });
+
+      return results;
+    });
+
+    console.log(`  ✓ Found ${sections.length} content sections\n`);
+    sections.forEach(s => {
+      const heading = s.content.headings[0]?.text || 'No heading';
+      console.log(`    Section ${s.index + 1}: "${heading.substring(0, 50)}" (${Math.round(s.rect.height)}px)`);
+    });
+    console.log('');
+
+    this.data.sections = sections;
+  }
+
+  async saveData() {
+    console.log('💾 Saving comprehensive extraction...\n');
+
+    await fs.writeFile(
+      path.join(OUTPUT_DIR, 'comprehensive-extraction.json'),
+      JSON.stringify(this.data, null, 2)
+    );
+
+    // Generate implementation guide
+    const guide = {
+      timestamp: this.data.timestamp,
+      summary: {
+        heroCarousel: this.data.hero.carousel ? `${this.data.hero.carousel.slideCount} slides` : 'Not found',
+        waveDividers: this.data.waveDividers.length,
+        sections: this.data.sections.length,
+        totalImages: this.data.sections.reduce((sum, s) => sum + s.content.images.length, 0)
+      },
+      implementationSteps: [
+        {
+          step: 1,
+          task: 'Implement Hero Carousel',
+          component: 'Hero Section in page.tsx',
+          details: this.data.hero.carousel ? [
+            `Install swiper: npm install swiper`,
+            `Create carousel with ${this.data.hero.carousel.slideCount} slides`,
+            `Use images: ${this.data.hero.carousel.slides.slice(0, 3).map(s => s.image).join(', ')}`
+          ] : ['Hero carousel not found']
+        },
+        {
+          step: 2,
+          task: 'Add Wave Dividers',
+          component: 'WaveDivider.tsx',
+          details: this.data.waveDividers.map((w, i) => (
+            `Wave ${i + 1}: ${w.position}, SVG path length: ${w.pathD?.length || 0} chars`
+          ))
+        },
+        {
+          step: 3,
+          task: 'Build Content Sections',
+          component: 'page.tsx',
+          details: this.data.sections.map(s => {
+            const heading = s.content.headings[0]?.text || 'Untitled';
+            return `Section: "${heading}" with ${s.content.images.length} images, ${s.content.buttons.length} buttons`;
+          })
+        }
+      ]
+    };
+
+    await fs.writeFile(
+      path.join(OUTPUT_DIR, 'implementation-guide.json'),
+      JSON.stringify(guide, null, 2)
+    );
+
+    console.log('✓ Saved comprehensive-extraction.json');
+    console.log('✓ Saved implementation-guide.json\n');
+  }
+
+  async close() {
+    if (this.browser) {
+      await this.browser.close();
+    }
+  }
+
+  async run() {
+    try {
+      console.log('🚀 COMPREHENSIVE PAGE EXTRACTOR\n');
+      console.log('═══════════════════════════════════════\n');
+
+      await this.init();
+      await this.navigate();
+
+      // Full page screenshot
+      await this.page.screenshot({
+        path: path.join(OUTPUT_DIR, 'screenshots', 'full-page-clean.png'),
+        fullPage: true
+      });
+      console.log('📸 Full page screenshot saved\n');
+
+      await this.extractHeroCarousel();
+      await this.extractWaveDividers();
+      await this.extractAllSections();
+      await this.saveData();
+
+      console.log('═══════════════════════════════════════');
+      console.log('✨ COMPREHENSIVE EXTRACTION COMPLETE\n');
+      console.log(`📁 Output: ${OUTPUT_DIR}\n`);
+      console.log('📊 Summary:');
+      console.log(`   Hero Carousel: ${this.data.hero.carousel ? this.data.hero.carousel.slideCount + ' slides' : 'Not found'}`);
+      console.log(`   Wave Dividers: ${this.data.waveDividers.length}`);
+      console.log(`   Content Sections: ${this.data.sections.length}\n`);
+
+    } catch (error) {
+      console.error('\n❌ Error:', error);
+      throw error;
+    } finally {
+      await this.close();
+    }
+  }
+}
+
+const extractor = new ComprehensiveExtractor();
+extractor.run().catch(console.error);

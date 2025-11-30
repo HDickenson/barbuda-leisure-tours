@@ -1,0 +1,508 @@
+[
+  {
+    "type": "swiper",
+    "index": 0,
+    "className": "elementor-background-slideshow swiper swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-watch-progress",
+    "slidesCount": 27,
+    "slides": [
+      {
+        "index": 0,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 1,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 2,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 3,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 4,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 5,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 6,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 7,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 8,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 9,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 10,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 11,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 12,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 13,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 14,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 15,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 16,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 17,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 18,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 19,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 20,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 21,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 22,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 23,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 24,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 25,
+        "backgroundImage": "none",
+        "image": null
+      },
+      {
+        "index": 26,
+        "backgroundImage": "none",
+        "image": null
+      }
+    ],
+    "config": {}
+  },
+  {
+    "type": "swiper",
+    "index": 1,
+    "className": "swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden",
+    "slidesCount": 2,
+    "slides": [
+      {
+        "index": 0,
+        "backgroundImage": "none",
+        "image": {
+          "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/Allesandra-370x247.jpg",
+          "alt": "",
+          "width": 367,
+          "height": 245
+        }
+      },
+      {
+        "index": 1,
+        "backgroundImage": "none",
+        "image": {
+          "src": "https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSCF5666-2-370x247.jpg",
+          "alt": "",
+          "width": 367,
+          "height": 245
+        }
+      }
+    ],
+    "config": {}
+  },
+  {
+    "type": "elementor-slideshow",
+    "index": 0,
+    "className": "elementor-background-slideshow swiper swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-watch-progress",
+    "slidesCount": 54,
+    "slides": [
+      {
+        "index": 0,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 1,
+        "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSC3121-scaled.jpg\")",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 2,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 3,
+        "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/10/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp\")",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 4,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 5,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 6,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 7,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 8,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 9,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 10,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 11,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 12,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 13,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 14,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 15,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 16,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 17,
+        "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/11/Pink-Beach-North-scaled.jpg\")",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 18,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 19,
+        "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/11/DSC3121-scaled.jpg\")",
+        "transition": "transform 20s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 20,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 21,
+        "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/10/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp\")",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 22,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 23,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 24,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 25,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 26,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 27,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 28,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 29,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 30,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 31,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 32,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 33,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 34,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 35,
+        "backgroundImage": "url(\"https://www.barbudaleisure.com/wp-content/uploads/2024/11/Pink-Beach-North-scaled.jpg\")",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 36,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 37,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 38,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 39,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 40,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 41,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 42,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 43,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 44,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 45,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 46,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 47,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 48,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 49,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 50,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 51,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 52,
+        "backgroundImage": "none",
+        "transition": "opacity",
+        "animation": "none 0s ease 0s 1 normal none running"
+      },
+      {
+        "index": 53,
+        "backgroundImage": "none",
+        "transition": "transform 10s linear",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    ],
+    "dataSlideshow": null
+  }
+]

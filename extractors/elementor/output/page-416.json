@@ -1,0 +1,163 @@
+{
+  "id": 416,
+  "title": "Frequently Asked Questions (FAQ)",
+  "url": "https://www.barbudaleisure.com/elementor-416/",
+  "slug": "elementor-416",
+  "status": "publish",
+  "lastModified": "2025-04-16T01:22:41",
+  "elementorVersion": "unknown",
+  "editMode": "builder",
+  "templateType": "page",
+  "sections": [
+    {
+      "id": "ef16983",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "classic",
+        "image": {
+          "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/Allesandra-scaled.jpg",
+          "id": 244,
+          "size": "",
+          "alt": "",
+          "source": "library"
+        }
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "%",
+        "top": "0",
+        "right": "0",
+        "bottom": "10",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "2c288f8",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "px",
+        "top": "80",
+        "right": "15",
+        "bottom": "30",
+        "left": "15",
+        "isLinked": false
+      },
+      "margin": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "c8d14f3",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "px",
+        "top": "80",
+        "right": "15",
+        "bottom": "30",
+        "left": "15",
+        "isLinked": false
+      },
+      "margin": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "91dde7e",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "px",
+        "top": "80",
+        "right": "15",
+        "bottom": "30",
+        "left": "15",
+        "isLinked": false
+      },
+      "margin": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    {
+      "id": "ba7dc28",
+      "elType": "section",
+      "contentPosition": "default",
+      "stretchSection": "no",
+      "heightType": "default",
+      "gap": "default",
+      "background": {
+        "type": "none"
+      },
+      "structure": "100",
+      "columns": [],
+      "padding": {
+        "unit": "px",
+        "top": "80",
+        "right": "15",
+        "bottom": "30",
+        "left": "15",
+        "isLinked": false
+      },
+      "margin": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    }
+  ],
+  "pageSettings": {
+    "pageLayout": "default",
+    "contentWidth": 1140
+  },
+  "extractedAt": "2025-11-13T13:20:52.912Z",
+  "extractorVersion": "1.0.0"
+}

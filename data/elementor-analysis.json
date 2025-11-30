@@ -1,0 +1,91 @@
+[
+  {
+    "page": "Homepage",
+    "route": "/",
+    "sections": 4,
+    "widgets": 34,
+    "hasSlideshow": false,
+    "slideshowImages": 0,
+    "slideshowSettings": null,
+    "backgroundAnimations": [],
+    "widgetTypes": {
+      "image.default": 2,
+      "ekit-nav-menu.default": 1,
+      "ucaddon_simple_popup.default": 1,
+      "metform.default": 2,
+      "elementskit-social-media.default": 2,
+      "heading.default": 7,
+      "button.default": 2,
+      "ha-card.default": 4,
+      "text-editor.default": 5,
+      "divider.default": 1,
+      "icon-box.default": 4,
+      "meafe-post-carousel.default": 1,
+      "icon-list.default": 2
+    }
+  },
+  {
+    "page": "About",
+    "route": "/about",
+    "sections": 4,
+    "widgets": 35,
+    "hasSlideshow": false,
+    "slideshowImages": 0,
+    "slideshowSettings": null,
+    "backgroundAnimations": [],
+    "widgetTypes": {
+      "image.default": 13,
+      "ekit-nav-menu.default": 1,
+      "ucaddon_simple_popup.default": 1,
+      "metform.default": 1,
+      "elementskit-social-media.default": 2,
+      "heading.default": 6,
+      "text-editor.default": 6,
+      "meafe-testimonial-carousel.default": 1,
+      "button.default": 2,
+      "icon-list.default": 2
+    }
+  },
+  {
+    "page": "Reviews",
+    "route": "/reviews",
+    "sections": 4,
+    "widgets": 35,
+    "hasSlideshow": false,
+    "slideshowImages": 0,
+    "slideshowSettings": null,
+    "backgroundAnimations": [],
+    "widgetTypes": {
+      "image.default": 2,
+      "ekit-nav-menu.default": 1,
+      "ucaddon_simple_popup.default": 1,
+      "metform.default": 1,
+      "elementskit-social-media.default": 2,
+      "heading.default": 9,
+      "text-editor.default": 5,
+      "icon-list.default": 8,
+      "icon.default": 6
+    }
+  },
+  {
+    "page": "FAQ",
+    "route": "/faq",
+    "sections": 4,
+    "widgets": 24,
+    "hasSlideshow": false,
+    "slideshowImages": 0,
+    "slideshowSettings": null,
+    "backgroundAnimations": [],
+    "widgetTypes": {
+      "image.default": 2,
+      "ekit-nav-menu.default": 1,
+      "ucaddon_simple_popup.default": 1,
+      "metform.default": 1,
+      "elementskit-social-media.default": 2,
+      "heading.default": 8,
+      "elementskit-accordion.default": 4,
+      "icon-list.default": 2,
+      "text-editor.default": 3
+    }
+  }
+]
