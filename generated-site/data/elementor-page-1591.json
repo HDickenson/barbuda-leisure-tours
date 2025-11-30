@@ -1,0 +1,36 @@
+{
+  "title": "Your Tour Review",
+  "slug": "elementor-page-1591",
+  "sections": [
+    {
+      "id": "0205bcc",
+      "columns": []
+    },
+    {
+      "id": "5895bbc",
+      "columns": [
+        {
+          "id": "d1e9fb2",
+          "widgets": [
+            {
+              "id": "1bb287e",
+              "type": "heading",
+              "content": {
+                "title": "Your Tour Review",
+                "htmlTag": "h2"
+              }
+            },
+            {
+              "id": "eafa1d4",
+              "type": "metform",
+              "content": {
+                "mf_form_id": "1629***1736194885464",
+                "ha_cmc_text": "Happy Addons"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

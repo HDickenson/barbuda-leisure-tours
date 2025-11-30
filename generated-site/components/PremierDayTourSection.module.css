@@ -1,0 +1,90 @@
+/* Premier Day Tour Experience Section Styles - Matching WordPress */
+
+.section {
+  min-height: 500px;
+  padding: 15% 20% 25% 20%;
+  background-image: url('https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureToursSection-3-2.jpg');
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* White gradient overlay from top */
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #ffffff 35%, rgba(255, 255, 255, 0.125) 67%);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .container {
+    text-align: center;
+  }
+}
+
+.content {
+  text-align: left;
+}
+
+.heading {
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(48, 187, 216);
+  margin: 0 0 25px 0;
+  line-height: 1.25;
+}
+
+.description {
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 16px;
+  color: rgb(84, 89, 95);
+  line-height: 1.8;
+  margin: 0 0 35px 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgb(48, 187, 216);
+  color: rgb(255, 255, 255);
+  padding: 16px 36px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(48, 187, 216, 0.3);
+}
+
+.button:hover {
+  background-color: rgb(38, 167, 196);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(48, 187, 216, 0.4);
+}
+
+.buttonIcon {
+  margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .section {
+    padding: 70px 20px;
+  }
+
+  .content {
+    text-align: center;
+  }
+}

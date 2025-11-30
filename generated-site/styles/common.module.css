@@ -1,0 +1,148 @@
+/* Common typography styles */
+.headingPrimary {
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(48, 187, 216);
+  text-align: center;
+}
+
+.headingSecondary {
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(71, 2, 2);
+}
+
+.bodyText {
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 16px;
+  color: rgb(122, 122, 122);
+}
+
+/* Common button styles */
+.buttonPrimary {
+  background-color: rgb(48, 187, 216);
+  color: rgb(255, 255, 255);
+  padding: 10px 24px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: var(--font-lexend-deca), sans-serif;
+  transition: opacity 0.2s, background-color 0.3s;
+}
+
+.buttonPrimary:hover {
+  background-color: rgb(30, 167, 196);
+  opacity: 0.9;
+}
+
+.buttonPrimary:disabled {
+  background-color: rgb(200, 200, 200);
+  cursor: not-allowed;
+}
+
+/* Common section styles */
+.sectionContainer {
+  max-width: 71.25rem;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionPadding {
+  padding: 80px 20px;
+}
+
+/* Common backgrounds */
+.bgLightBlue {
+  background-color: rgb(230, 245, 250);
+}
+
+.bgPink {
+  background-color: rgb(245, 182, 211);
+}
+
+.bgWhite {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Form elements */
+.formInput {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid rgb(230, 245, 250);
+  border-radius: 4px;
+  font-family: var(--font-lexend-deca), sans-serif;
+}
+
+.formLabel {
+  display: block;
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(71, 2, 2);
+  margin-bottom: 0.5rem;
+}
+
+/* Grid layouts */
+.grid2Col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.grid4Col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .grid2Col,
+  .grid4Col {
+    grid-template-columns: 1fr;
+  }
+
+  .headingPrimary {
+    font-size: 24px;
+  }
+
+  .headingSecondary {
+    font-size: 20px;
+  }
+}
+
+/* Loading states */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Utility classes */
+.textCenter {
+  text-align: center;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+.mb3 {
+  margin-bottom: 3rem;
+}

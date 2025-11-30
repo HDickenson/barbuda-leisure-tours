@@ -1,0 +1,9 @@
+/* Backup created before revert - current content */
+/* container transform, top:44% changes and neutral text-shadow */
+.container {
+  position: relative;
+  /* Nudge front page hero up by 2px to match pixel-perfect design */
+  transform: translateY(-2px);
+}
+
+/* rest omitted - backup is a snapshot of current file */

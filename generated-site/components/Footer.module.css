@@ -1,0 +1,299 @@
+/* Footer Styles - Matching Live Site (Pink with Large Circular Icons) */
+
+.footer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Wave Divider Above Footer */
+.waveContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+}
+
+.wave {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+/* Main Section - Teal to Navy Gradient (matching live site) */
+.mainSection {
+  position: relative;
+  background: linear-gradient(181deg, #30bbd8 10%, #001d46 84%);
+  padding: 150px 20px 60px 20px;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+/* Left Column */
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logoWrapper {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footerLogo {
+  width: 180px;
+  height: auto;
+}
+
+.tagline {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Contact List */
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+/* Circular Icon Backgrounds for Contact Info */
+.circleIcon {
+  width: 1rem;
+  min-width: 1rem;
+  height: 1.2rem;
+  border-radius: none;
+  background-color: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-shrink: 0;
+  color: pink;
+}
+
+/* Emoji Icons for Contact Info */
+.emojiIcon {
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: grayscale(0);
+  display: inline-block;
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contactText p {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  line-height: 1.5;
+}
+
+.contactLink {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.contactLink:hover {
+  opacity: 0.8;
+}
+
+/* Social Icons - Pink, No Circles, Smaller */
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(245, 182, 211);
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  opacity: 0.7;
+}
+
+.socialIcon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Right Column - Links */
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.linksTitle {
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin: 0 0 25px 0;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Circular Icon for Links - Smaller */
+.linkCircleIcon {
+  width: 0.5rem;
+  min-width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #f5b6d3;
+  border: none;
+  box-shadow: none;
+  flex-shrink: 0;
+}
+
+.navLink {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.navLink:hover {
+  opacity: 0.8;
+}
+
+/* Underwater Scene Background - Overlays gradient */
+.bottomSVGBkgContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+  pointer-events: none;
+  height: 100px;
+}
+
+.bottomSVGBkg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+/* Bottom Section - Copyright Bar */
+.bottomSection {
+  position: relative;
+  background-color: rgb(245, 182, 211);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  z-index: 3;
+}
+
+.bottomContent {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bottomContent {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.copyright {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(71, 2, 2);
+}
+
+.legalLinks {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.legalLink {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(71, 2, 2);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.legalLink:hover {
+  opacity: 0.7;
+}

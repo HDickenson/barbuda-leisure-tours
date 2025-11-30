@@ -1,0 +1,137 @@
+/* Tour Cards Section - Matching WordPress Elementor style */
+
+.section {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(48, 187, 216);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  height: 100%;
+  width: 100%;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+/* Popular badge */
+.popularBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  background-color: rgb(48, 187, 216);
+  color: white;
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Card content below image */
+.cardContent {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.cardTitle {
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(122, 122, 122); /* Updated from extraction */
+  text-align: center;
+  margin: 0;
+  line-height: 24px;
+}
+
+.learnMore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-roboto), sans-serif; /* Updated from extraction */
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(48, 187, 216); /* Updated from extraction */
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Match extracted width behavior */
+  max-width: 200px;
+}
+
+.learnMore:hover {
+  background-color: rgb(0, 29, 70); /* Navy hover */
+  transform: translateY(-2px);
+}
+
+.buttonIcon {
+  margin-left: 8px;
+  font-size: 0.9em;
+}

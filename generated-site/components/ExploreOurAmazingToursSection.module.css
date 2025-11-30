@@ -1,0 +1,92 @@
+/* Tours Section Component Styles */
+
+.section {
+  padding: 4.6875rem 0;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.heading {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tourCard {
+  overflow: hidden;
+  border-radius: var(--border-radius-lg);
+  background-color: #30bbd8;
+  box-shadow: var(--shadow-md);
+}
+
+.tourImage {
+  height: 12rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tourContent {
+  padding: 1.25rem;
+  color: white;
+}
+
+.tourTitle {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: white;
+  margin-bottom: var(--spacing-sm);
+}
+
+.tourDescription {
+  font-family: var(--font-primary);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-md);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.9375rem 1.25rem;
+  background-color: rgb(245, 182, 211);
+  color: rgb(71, 2, 2);
+  border-radius: var(--border-radius-lg);
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-semibold);
+  transition: var(--transition-base);
+}
+
+.button:hover {
+  opacity: 0.9;
+}

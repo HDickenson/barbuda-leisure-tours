@@ -1,0 +1,88 @@
+{
+  "sectionHeading": "",
+  "backgroundColor": "transparent",
+  "padding": "80px 20px",
+  "posts": [
+    {
+      "id": "pristine-beaches",
+      "title": "Barbuda's Pristine Beaches: A Slice of Paradise",
+      "excerpt": "If you're dreaming of secluded, untouched shores with endless stretches of powdery sand and crystal-clear waters, Barbuda is the ultimate destination. Discover pink-sand beaches and turquoise waters that define Caribbean paradise.",
+      "image": "/images/optimized/Allesandra-scaled-1024w.webp",
+      "imageAlt": "Beautiful beach in Barbuda",
+      "link": "/our-blog/barbudas-pristine-beaches",
+      "date": "2024-11-16"
+    },
+    {
+      "id": "discover-barbuda",
+      "title": "Discover the Enchanting Island of Barbuda with Barbuda Leisure Day Tours",
+      "excerpt": "Nestled in the heart of the Caribbean, Barbuda is an untouched gem that exudes serenity and natural beauty. Experience the island's pristine beaches, vibrant wildlife, and rich cultural heritage.",
+      "image": "/images/optimized/Pink-Beach-North-scaled-1024w.webp",
+      "imageAlt": "Barbuda island tour experience",
+      "link": "/our-blog/discover-enchanting-barbuda",
+      "date": "2024-11-16"
+    },
+    {
+      "id": "frigate-bird-sanctuary",
+      "title": "Barbuda's Frigate Bird Sanctuary: A Haven for Nature Lovers",
+      "excerpt": "Visit the largest Frigate Bird colony in the Western Hemisphere. Witness thousands of magnificent frigatebirds in their natural habitat at this world-renowned sanctuary in Barbuda's Codrington Lagoon.",
+      "image": "/images/optimized/yellow-brest-1024w.webp",
+      "imageAlt": "Frigate birds in Barbuda sanctuary",
+      "link": "/our-blog/frigate-bird-sanctuary",
+      "date": "2024-11-17"
+    },
+    {
+      "id": "martello-tower",
+      "title": "Discover the Historic Martello Tower: A Must-See in Barbuda",
+      "excerpt": "Explore Barbuda's iconic Martello Tower, a 19th-century fortification perched on the island's highest point. Learn about the island's colonial history while enjoying panoramic views of the Caribbean Sea.",
+      "image": "/images/optimized/DSC3121-scaled-1024w.webp",
+      "imageAlt": "Historic Martello Tower in Barbuda",
+      "link": "/our-blog/martello-tower",
+      "date": "2024-11-18"
+    },
+    {
+      "id": "two-foot-bay",
+      "title": "Explore the Wonders of Two Foot Bay National Park",
+      "excerpt": "Discover ancient Arawak petroglyphs and stunning coastal caves at Two Foot Bay National Park. This archaeological treasure offers a fascinating glimpse into Barbuda's indigenous heritage and natural beauty.",
+      "image": "/images/optimized/PFA4070-1024w.webp",
+      "imageAlt": "Two Foot Bay National Park in Barbuda",
+      "link": "/our-blog/two-foot-bay",
+      "date": "2024-11-19"
+    },
+    {
+      "id": "water-activities",
+      "title": "Dive into Adventure: Water-Based Activities in Barbuda",
+      "excerpt": "From snorkeling in crystal-clear waters to kayaking through mangroves, Barbuda offers endless aquatic adventures. Explore vibrant coral reefs, swim with tropical fish, and experience the Caribbean's best water sports.",
+      "image": "/images/optimized/BarbudaLeisureTours-4-1024w.webp",
+      "imageAlt": "Water activities in Barbuda",
+      "link": "/our-blog/water-activities",
+      "date": "2024-11-20"
+    },
+    {
+      "id": "codrington-village",
+      "title": "Explore Codrington Village: The Heart of Barbuda",
+      "excerpt": "Experience authentic Caribbean life in Codrington, Barbuda's charming main settlement. Discover local culture, friendly residents, and the island's laid-back lifestyle in this welcoming community.",
+      "image": "/images/optimized/BarbudaLeisureTours-6-1024w.webp",
+      "imageAlt": "Codrington Village in Barbuda",
+      "link": "/our-blog/codrington-village",
+      "date": "2024-11-21"
+    },
+    {
+      "id": "fishing-culinary",
+      "title": "Barbuda's Fishing Heritage and Culinary Delights",
+      "excerpt": "Savor the flavors of Barbuda with fresh seafood caught daily by local fishermen. From grilled lobster to conch fritters, discover the island's rich culinary traditions and fishing heritage.",
+      "image": "/images/optimized/BarbudaLeisureTours-8-1024w.webp",
+      "imageAlt": "Fresh seafood in Barbuda",
+      "link": "/our-blog/fishing-culinary",
+      "date": "2024-11-22"
+    },
+    {
+      "id": "getting-to-barbuda",
+      "title": "Getting to Barbuda: Your Guide to Transportation from Antigua",
+      "excerpt": "Plan your journey to Barbuda with our comprehensive transportation guide. Learn about flight options, ferry services, and charter boats to reach this pristine Caribbean island from Antigua.",
+      "image": "/images/optimized/BarbudaLeisureTours-7-1024w.webp",
+      "imageAlt": "Transportation to Barbuda",
+      "link": "/our-blog/getting-to-barbuda",
+      "date": "2024-11-23"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "title": "About Us",
+  "slug": "about-us",
+  "sections": [
+    {
+      "id": "9b580c5",
+      "columns": []
+    },
+    {
+      "id": "497e1fe",
+      "columns": [
+        {
+          "id": "6b34b05",
+          "widgets": [
+            {
+              "id": "edfe401",
+              "type": "heading",
+              "content": {
+                "title": "Welcome to Barbuda Leisure Day Tours",
+                "htmlTag": "h2"
+              }
+            },
+            {
+              "id": "f40ee40",
+              "type": "heading",
+              "content": {
+                "title": "Your Gateway to Discovering Barbuda",
+                "htmlTag": "h4"
+              }
+            },
+            {
+              "id": "76b1cd7",
+              "type": "text-editor",
+              "content": {
+                "editor": "<p>At Barbuda Leisure Day Tours, we're passionate about sharing the unspoiled beauty of Barbuda with the world. As the only dedicated Barbuda day tour concierge company, we've been proudly serving guests since 2011, offering exceptional experiences and flexible travel options between Antigua and Barbuda.</p>"
+              }
+            },
+            {
+              "id": "7aab795",
+              "type": "text-editor",
+              "content": {
+                "editor": "<p>Whether by air, sea, private boat, or even helicopter, we're your trusted partner in making your visit to Barbuda truly unforgettable.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "abef11c",
+          "widgets": [
+            {
+              "id": "b5876bf",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-6.jpg",
+                  "alt": "",
+                  "id": 320
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "c1d3ace",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-4.jpg",
+                  "alt": "",
+                  "id": 318
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "04a0cdf",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/PFA4070-scaled.jpg",
+                  "alt": "",
+                  "id": 236
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "6ef9f57",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/DSC3331-scaled.jpg",
+                  "alt": "",
+                  "id": 242
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "c7e7a5a",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/MG_9010.tif.jpg",
+                  "alt": "",
+                  "id": 243
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "8b0557a",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-3.jpg",
+                  "alt": "",
+                  "id": 317
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "4a757da",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-12.jpg",
+                  "alt": "",
+                  "id": 414
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7cdff4a",
+      "columns": []
+    },
+    {
+      "id": "7dd812b",
+      "columns": [
+        {
+          "id": "af4a2ee",
+          "widgets": [
+            {
+              "id": "f0ea257",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7-2.jpg",
+                  "alt": "",
+                  "id": 394
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "02444cb",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-8.jpg",
+                  "alt": "",
+                  "id": 395
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "81ec78e",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-6-2.jpg",
+                  "alt": "",
+                  "id": 393
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            },
+            {
+              "id": "3ddd1d8",
+              "type": "image",
+              "content": {
+                "image": {
+                  "url": "https://www.barbudaleisure.com/wp-content/uploads/2024/10/BarbudaLeisureTours-7.jpg",
+                  "alt": "",
+                  "id": 321
+                },
+                "imageSize": "medium",
+                "openLightbox": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "aa39736",
+          "widgets": [
+            {
+              "id": "e625f76",
+              "type": "heading",
+              "content": {
+                "title": "Thank You for Considering Us",
+                "htmlTag": "h2"
+              }
+            },
+            {
+              "id": "9427fe5",
+              "type": "text-editor",
+              "content": {
+                "editor": "<p>We look forward to making your trip a memorable one!</p>"
+              }
+            },
+            {
+              "id": "8c7cc5f",
+              "type": "button",
+              "content": {
+                "text": "Explore Our Tours",
+                "link": {
+                  "url": "https://www.barbudaleisure.com/our-tours/",
+                  "isExternal": false,
+                  "nofollow": false
+                },
+                "size": "md",
+                "iconAlign": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

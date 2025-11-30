@@ -2,27 +2,302 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import consolidated shared CSS from downloaded WordPress assets */
-@import url('/css/build/shared.css');
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: #ffffff;
+  --foreground: #171717;
+    /* Default fallback CSS variables for fonts. These act as safe fallbacks when next/font doesn't load
+      (e.g., in deterministic Playwright runs) — next/font will override these when present. */
+    --font-leckerli: 'Leckerli One', 'Leckerli One Fallback', cursive;
+    --font-lexend: 'Lexend', 'Lexend Deca', sans-serif;
+    --font-lexend-deca: 'Lexend Deca', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-roboto-slab: 'Roboto Slab', serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-ibm-plex: 'IBM Plex Sans', sans-serif;
+  --border-radius-lg: 12px;
+  --color-cta: #30bbd8;
+  /* --font-lexend: "Lexend Deca", sans-serif; Removed to avoid conflict with next/font */
+  --color-navy: rgb(0, 29, 70);
+  --color-pink: rgb(245, 182, 211);
+  --color-cyan: #30bbd8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Desktop-first design: minimum width of 1260px */
+html {
+  min-width: 1260px;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #ffffff;
+  color: rgb(51, 51, 51); /* Extracted color */
+  font-family: var(--font-lexend), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; /* Extracted font stack */
+  font-size: 16px;
+  line-height: 24px;
+  min-width: 1260px;
 }
 
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: #30bbd8;
-  padding: 150px 40px;
+h1 {
+  font-family: var(--font-leckerli), cursive;
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+}
+
+h2 {
+  font-family: var(--font-lexend), sans-serif; /* Extracted font */
+  color: #ffffff;
+  font-size: 20.8px;
+  font-weight: 600;
+  line-height: 41.6px;
+  letter-spacing: -0.75px;
+}
+
+h3 {
+  font-family: var(--font-open-sans), sans-serif; /* Extracted font */
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.75px;
+}
+
+p {
+  font-family: var(--font-open-sans), sans-serif; /* Extracted font */
+  color: rgb(71, 2, 2); /* Extracted color */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.75px;
+}
+
+
+/* Wave divider shapes */
+.wave-divider {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .wave-divider svg {
+    height: 120px;
+  }
+}
+
+.wave-divider-top {
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.wave-divider-bottom {
+  bottom: 0;
+}
+
+/* Button hover effects with box-shadows */
+.btn-hover {
+  transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Pink button hover */
+.btn-pink {
+  transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: rgb(240, 165, 200) !important;
+  box-shadow: 0 4px 12px rgba(245, 182, 211, 0.4);
+}
+
+/* Turquoise button hover */
+.btn-turquoise {
+  transition: all 0.3s ease;
+}
+
+.btn-turquoise:hover {
+  background-color: rgb(35, 150, 175) !important;
+  box-shadow: 0 4px 12px rgba(48, 187, 216, 0.4);
+}
+
+/* Hero button hover effect */
+.hero-button {
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Premier section button hover effect */
+.premier-button {
+  transition: all 0.3s ease;
+}
+
+.premier-button:hover {
+  background-color: rgb(35, 150, 175) !important;
+  box-shadow: 0 4px 12px rgba(48, 187, 216, 0.4);
+}
+
+/* Tour card button hover */
+.tour-card a {
+  transition: all 0.3s ease;
+}
+
+.tour-card a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Fade in up animation for montage */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Montage Component Styles */
+.montage-root {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Base grid */
+.montage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 160px;
+  gap: 8px;
+}
+
+/* Layout-specific hooks if you ever want to tweak per layout */
+.montage-grid--layout1 {}
+.montage-grid--layout2 {}
+.montage-grid--layout3 {}
+.montage-grid--layout4 {}
+
+/* Breakpoints */
+@media (max-width: 1024px) {
+  .montage-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .montage-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 140px;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .montage-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 120px;
+    gap: 4px;
+  }
+}
+
+/* Base item */
+.montage-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #050814;
+  opacity: 0;
+  transform: translateY(12px) scale(0.97);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.26);
+}
+
+/* Animate only when mounted */
+.montage-root--mounted .montage-item {
+  animation-name: montageFadeIn;
+  animation-duration: 800ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* Size variants (desktop / tablet) */
+.montage-item--hero {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.montage-item--tall {
+  grid-row: span 2;
+}
+
+.montage-item--wide {
+  grid-column: span 2;
+}
+
+.montage-item--square {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* On smaller screens, keep spans simple so layout doesn't break */
+@media (max-width: 768px) {
+  .montage-item--hero,
+  .montage-item--tall,
+  .montage-item--wide {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+/* Image styling */
+.montage-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* One-shot entrance animation */
+@keyframes montageFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.96);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }

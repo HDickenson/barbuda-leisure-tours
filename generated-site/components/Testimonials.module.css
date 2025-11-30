@@ -1,0 +1,132 @@
+/* Testimonials Component Styles */
+
+.section {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.carouselContainer {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0 var(--spacing-md);
+}
+
+.card {
+  background-color: rgb(249, 250, 251);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.stars {
+  display: flex;
+  color: rgb(250, 204, 21);
+  margin-bottom: var(--spacing-md);
+}
+
+.star {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.text {
+  color: rgb(55, 65, 81);
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-md);
+  font-style: italic;
+}
+
+.author {
+  color: rgb(17, 24, 39);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Navigation */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: var(--border-radius-full);
+  padding: var(--spacing-sm);
+  box-shadow: var(--shadow-lg);
+  transition: background-color var(--transition-base);
+  cursor: pointer;
+  border: none;
+}
+
+.navButton:hover {
+  background-color: rgb(243, 244, 246);
+}
+
+.navButtonLeft {
+  left: 0;
+  transform: translate(-1rem, -50%);
+}
+
+.navButtonRight {
+  right: 0;
+  transform: translate(1rem, -50%);
+}
+
+.navIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-xl);
+  gap: var(--spacing-sm);
+}
+
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: var(--border-radius-full);
+  transition: background-color var(--transition-base);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.dotInactive {
+  background-color: rgb(209, 213, 219);
+}
+
+.dotActive {
+  background-color: rgb(17, 24, 39);
+}

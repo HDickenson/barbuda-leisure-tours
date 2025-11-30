@@ -1,0 +1,137 @@
+/* Why Choose Us Section Styles - Matching WordPress Elementor */
+
+.section {
+  padding: 80px 20px 100px;
+  position: relative;
+  background-color: rgb(245, 182, 211); /* Solid pink background from live site */
+  overflow: hidden;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/why-choose-us-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08; /* Faded effect - 8% opacity */
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(71, 2, 2);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 16px;
+  color: rgb(71, 2, 2);
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 60px 20px 80px;
+  }
+}
+
+.featureCard {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.iconWrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(71, 2, 2);
+  transition: transform 0.3s ease;
+}
+
+
+.iconWrapper svg {
+  width: 48px;
+  height: 48px;
+  color: rgb(71, 2, 2); /* Ensure icon color is dark red */
+}
+
+.icon {
+  font-size: 48px;
+  color: rgb(71, 2, 2); /* Ensure icon color is dark red */
+}
+
+.dividerLine {
+  width: 100%;
+  max-width: 800px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(71, 2, 2, 0.3), transparent);
+  margin: 0 auto 50px;
+}
+
+.featureTitle {
+  font-family: var(--font-lexend-deca), sans-serif;
+  font-size: 16px; /* Updated from extraction */
+  font-weight: 600;
+  color: rgb(71, 2, 2);
+  margin: 8px 0 16px; /* Updated from extraction */
+  line-height: 24px;
+}
+
+.featureDescription {
+  font-family: var(--font-open-sans), sans-serif; /* Updated from extraction */
+  font-size: 14.4px; /* Updated from extraction */
+  font-weight: 600; /* Updated from extraction */
+  color: rgb(71, 2, 2);
+  line-height: 21.6px;
+  margin: 0;
+}
+
+.iconWrapper svg {
+  width: 50px; /* Updated from extraction */
+  height: 50px; /* Updated from extraction */
+  color: rgb(71, 2, 2);
+}
+
+.icon {
+  font-size: 50px; /* Updated from extraction */
+  color: rgb(71, 2, 2);
+}

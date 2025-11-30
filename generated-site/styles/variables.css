@@ -1,0 +1,189 @@
+/**
+ * Barbuda Leisure Day Tours - Design System Variables
+ * Central source of truth for all design tokens
+ */
+
+:root {
+  /* ================================
+     COLOR SYSTEM
+     ================================ */
+
+  /* Primary Colors */
+  --color-primary: #30BBD8;
+  --color-primary-hover: #26A7C4;
+  --color-primary-rgb: 48, 187, 216;
+  --color-primary-hover-rgb: 38, 167, 196;
+
+  --color-secondary: #F5B6D3;
+  --color-secondary-hover: #F0A5C8;
+  --color-secondary-rgb: 245, 182, 211;
+  --color-secondary-hover-rgb: 240, 165, 200;
+
+  /* Text Colors */
+  --color-text-primary: #470202;
+  --color-text-secondary: #7A7A7A;
+  --color-text-tertiary: #54595F;
+  --color-text-white: #FFFFFF;
+
+  /* Background Colors */
+  --color-bg-light-blue: #E6F5FA;
+  --color-bg-light-gray: #F5F5F5;
+  --color-bg-white: #FFFFFF;
+  --color-bg-dark-blue: #001D46;
+
+  /* Gradient Colors */
+  --gradient-hero: linear-gradient(181deg, var(--color-primary) 10%, var(--color-bg-dark-blue) 84%);
+  --gradient-footer: linear-gradient(to bottom, var(--color-primary), var(--color-bg-dark-blue));
+
+  /* Shadow Colors */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-color-lg: rgba(0, 0, 0, 0.15);
+  --shadow-color-xl: rgba(0, 0, 0, 0.2);
+
+  /* Border Colors */
+  --border-color-light: #E5E5E5;
+  --border-color-primary: var(--color-primary);
+
+  /* ================================
+     TYPOGRAPHY
+     ================================ */
+
+  /* Font Families */
+  --font-primary: var(--font-lexend-deca), sans-serif;
+  --font-fallback: var(--font-roboto), -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  /* Font Weight */
+  --font-weight-regular: 400;
+
+  /* Font Sizes */
+  --font-size-xs: 0.813rem;      /* 13px */
+  --font-size-sm: 0.875rem;      /* 14px */
+  --font-size-base: 1rem;        /* 16px */
+  --font-size-lg: 1.125rem;      /* 18px */
+  --font-size-xl: 1.25rem;       /* 20px */
+  --font-size-2xl: 1.5rem;       /* 24px */
+  --font-size-3xl: 2rem;         /* 32px */
+  --font-size-4xl: 2.5rem;       /* 40px */
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ================================
+     SPACING SYSTEM
+     ================================ */
+
+  --spacing-xs: 0.5rem;          /* 8px */
+  --spacing-sm: 1rem;            /* 16px */
+  --spacing-md: 1.5rem;          /* 24px */
+  --spacing-lg: 2rem;            /* 32px */
+  --spacing-xl: 3rem;            /* 48px */
+  --spacing-2xl: 5rem;           /* 80px */
+  --spacing-3xl: 7.5rem;         /* 120px */
+
+  /* Section Padding */
+  --section-padding-y: var(--spacing-2xl);
+  --section-padding-x: var(--spacing-sm);
+
+  /* Component Spacing */
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --gap-lg: 1.5rem;
+  --gap-xl: 2rem;
+
+  /* ================================
+     LAYOUT
+     ================================ */
+
+  --container-max-width: 71.25rem;      /* 1140px */
+  --container-padding: var(--spacing-sm);
+
+  --header-height: 5rem;                /* Adjusted to 80px */
+  --logo-height: 3.5rem;                /* 56px */
+
+  /* ================================
+     BORDERS & RADIUS
+     ================================ */
+
+  /* Border Radius */
+  --border-radius-sm: 3px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+  --border-radius-xl: 12px;
+  --border-radius-full: 9999px;
+
+  /* Border Widths */
+  --border-width: 1px;
+  --border-width-md: 2px;
+  --border-width-lg: 3px;
+
+  /* ================================
+     SHADOWS
+     ================================ */
+
+  --shadow-xs: 0 1px 2px var(--shadow-color);
+  --shadow-sm: 0 2px 4px var(--shadow-color);
+  --shadow-md: 0 4px 8px var(--shadow-color);
+  --shadow-lg: 0 4px 12px var(--shadow-color-lg);
+  --shadow-xl: 0 8px 16px var(--shadow-color-xl);
+
+  /* Button Shadows */
+  --shadow-button-primary: 0 4px 12px rgba(var(--color-primary-rgb), 0.4);
+  --shadow-button-secondary: 0 4px 12px rgba(var(--color-secondary-rgb), 0.4);
+
+  /* ================================
+     TRANSITIONS
+     ================================ */
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  --transition-all: all var(--transition-base);
+  --transition-colors: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base);
+  --transition-transform: transform var(--transition-base);
+  --transition-shadow: box-shadow var(--transition-base);
+
+  /* ================================
+     Z-INDEX SCALE
+     ================================ */
+
+  --z-index-base: 1;
+  --z-index-dropdown: 10;
+  --z-index-sticky: 20;
+  --z-index-fixed: 30;
+  --z-index-modal-backdrop: 40;
+  --z-index-modal: 50;
+  --z-index-popover: 60;
+  --z-index-tooltip: 70;
+}
+
+/* ================================
+   RESPONSIVE BREAKPOINTS
+   ================================ */
+
+@media (max-width: 767px) {
+  :root {
+    /* Adjust font sizes for mobile */
+    --font-size-3xl: 1.5rem;    /* 24px on mobile */
+    --font-size-4xl: 2rem;      /* 32px on mobile */
+
+    /* Adjust section padding for mobile */
+    --section-padding-y: 2.5rem;
+    --spacing-2xl: 2.5rem;      /* 40px on mobile */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    /* Tablet adjustments */
+    --container-max-width: 90%;
+  }
+}
