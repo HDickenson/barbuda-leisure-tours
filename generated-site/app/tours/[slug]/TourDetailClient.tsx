@@ -5,12 +5,23 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { BookingForm } from '@/app/components/booking/BookingForm'
 import { Reveal } from '@/app/components/Reveal'
+import Montage from '@/app/components/Montage'
 import type { TourConfig } from '@/app/components/booking/types'
 import type { Tour } from '@/data/tours-converted'
 
 interface Props {
   tour: Tour
 }
+
+// Default gallery images for tours that don't have gallery data
+const defaultGalleryImages = [
+  '/images/BarbudaLeisureTours-3.webp',
+  '/images/BarbudaLeisureTours-4.webp',
+  '/images/BarbudaLeisureTours-6.webp',
+  '/images/BarbudaLeisureTours-7.webp',
+  '/images/BarbudaLeisureTours-8.webp',
+  '/images/Pink-Beach-North.webp',
+]
 
 export function TourDetailClient({ tour }: Props) {
   const [isBookingOpen, setIsBookingOpen] = useState(false)
@@ -226,7 +237,7 @@ export function TourDetailClient({ tour }: Props) {
               </Reveal>
 
               {/* Important Information */}
-              <Reveal className="bg-blue-50 p-8 rounded-2xl border-l-4 border-[#4DD0E1]" delayMs={150}>
+              <Reveal className="bg-blue-50 p-8 rounded-2xl border-l-4 border-[#4DD0E1] mb-12" delayMs={150}>
                 <h3 className="text-2xl font-bold text-[#263238] mb-4 flex items-center gap-2">
                   <svg className="w-6 h-6 text-[#4DD0E1]" fill="currentColor" viewBox="0 0 20 20">
                     <path
@@ -246,6 +257,89 @@ export function TourDetailClient({ tour }: Props) {
                   ))}
                 </ul>
               </Reveal>
+
+              {/* Meal Upgrades - Only show if tour has meal upgrades */}
+              {tour.mealUpgrades && (
+                <Reveal className="mb-12" delayMs={200}>
+                  <h2 className="text-4xl text-[#263238] mb-6">Meal Upgrades</h2>
+                  <div className="bg-gradient-to-br from-[#FF6B9D]/10 to-white p-8 rounded-2xl border border-[#FF6B9D]/20">
+                    <p className="text-gray-600 mb-6">
+                      Enhance your Barbuda experience with our premium meal options. Each upgrade features locally sourced ingredients prepared fresh.
+                    </p>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {tour.mealUpgrades.lobster && (
+                        <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                          <div className="flex items-center gap-3">
+                            <span className="text-2xl">🦞</span>
+                            <span className="text-gray-700 font-medium">Lobster</span>
+                          </div>
+                          <span className="font-bold text-[#FF6B9D]">+${tour.mealUpgrades.lobster}</span>
+                        </div>
+                      )}
+                      {tour.mealUpgrades.fish && (
+                        <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                          <div className="flex items-center gap-3">
+                            <span className="text-2xl">🐟</span>
+                            <span className="text-gray-700 font-medium">Fresh Fish</span>
+                          </div>
+                          <span className="font-bold text-[#FF6B9D]">+${tour.mealUpgrades.fish}</span>
+                        </div>
+                      )}
+                      {tour.mealUpgrades.conch && (
+                        <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                          <div className="flex items-center gap-3">
+                            <span className="text-2xl">🐚</span>
+                            <span className="text-gray-700 font-medium">Conch</span>
+                          </div>
+                          <span className="font-bold text-[#FF6B9D]">+${tour.mealUpgrades.conch}</span>
+                        </div>
+                      )}
+                      {tour.mealUpgrades.shrimp && (
+                        <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                          <div className="flex items-center gap-3">
+                            <span className="text-2xl">🦐</span>
+                            <span className="text-gray-700 font-medium">Shrimp</span>
+                          </div>
+                          <span className="font-bold text-[#FF6B9D]">+${tour.mealUpgrades.shrimp}</span>
+                        </div>
+                      )}
+                      {tour.mealUpgrades.vegetarian && (
+                        <div className="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                          <div className="flex items-center gap-3">
+                            <span className="text-2xl">🥗</span>
+                            <span className="text-gray-700 font-medium">Vegetarian</span>
+                          </div>
+                          <span className="font-bold text-[#FF6B9D]">+${tour.mealUpgrades.vegetarian}</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </Reveal>
+              )}
+
+              {/* Special Requirements Badges */}
+              {(tour.requiresPassport || tour.requiresBodyWeight) && (
+                <Reveal className="mb-12" delayMs={225}>
+                  <div className="flex flex-wrap gap-4">
+                    {tour.requiresPassport && (
+                      <div className="flex items-center gap-3 bg-amber-50 border border-amber-200 text-amber-800 px-6 py-3 rounded-full">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm3 1h6v4H7V5zm6 6H7v2h6v-2z" clipRule="evenodd" />
+                        </svg>
+                        <span className="font-semibold">Valid Passport Required</span>
+                      </div>
+                    )}
+                    {tour.requiresBodyWeight && (
+                      <div className="flex items-center gap-3 bg-blue-50 border border-blue-200 text-blue-800 px-6 py-3 rounded-full">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM7 10a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1z" clipRule="evenodd" />
+                        </svg>
+                        <span className="font-semibold">Body Weight Info Required</span>
+                      </div>
+                    )}
+                  </div>
+                </Reveal>
+              )}
             </div>
 
             {/* Sidebar - Booking Card */}
@@ -348,11 +442,38 @@ export function TourDetailClient({ tour }: Props) {
         </div>
       </section>
 
+      {/* Photo Gallery Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <Reveal>
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl text-[#263238] mb-4" style={{ fontFamily: "'Leckerli One', cursive" }}>
+                Photo Gallery
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Get a glimpse of the breathtaking experiences awaiting you on this tour
+              </p>
+            </div>
+          </Reveal>
+          <Reveal delayMs={100}>
+            <Montage
+              images={(tour.gallery && tour.gallery.length > 0 ? tour.gallery : defaultGalleryImages).map(
+                (src, index) => ({
+                  src,
+                  alt: `${tour.title} - Photo ${index + 1}`,
+                })
+              )}
+              layout="auto"
+            />
+          </Reveal>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/Pink-Beach-North-scaled.jpg"
+            src="/images/Pink-Beach-North.webp"
             alt="Book Your Adventure"
             fill
             className="object-cover"

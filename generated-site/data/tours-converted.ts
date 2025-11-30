@@ -89,6 +89,14 @@ const tours: Tour[] = [
       shrimp: 10,
       vegetarian: 5,
     },
+    gallery: [
+      '/images/BarbudaLeisureTours-3.webp',
+      '/images/Pink-Beach-North.webp',
+      '/images/BarbudaLeisureTours-4.webp',
+      '/images/Another-View-of-Frigate-Bird-During-their-Mating-Season.webp',
+      '/images/BarbudaLeisureTours-7.webp',
+      '/images/BarbudaLeisureTours-8.webp',
+    ],
   },
   {
     slug: 'discover-barbuda-by-sea',
@@ -135,6 +143,14 @@ const tours: Tour[] = [
     badge: 'Best Value',
     featured: true,
     requiresPassport: true,
+    gallery: [
+      '/images/BarbudaLeisureTours-3-2.webp',
+      '/images/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp',
+      '/images/Pink-Beach-North.webp',
+      '/images/BarbudaLeisureTours-6.webp',
+      '/images/DSC3331.webp',
+      '/images/BarbudaLeisureTours-8.webp',
+    ],
   },
   {
     slug: 'barbuda-sky-sea-adventure',
@@ -181,6 +197,14 @@ const tours: Tour[] = [
     featured: true,
     requiresPassport: true,
     requiresBodyWeight: true,
+    gallery: [
+      '/images/BarbudaLeisureTours-7.webp',
+      '/images/BarbudaLeisureTours-3.webp',
+      '/images/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp',
+      '/images/Pink-Beach-North.webp',
+      '/images/BarbudaLeisureTours-6.webp',
+      '/images/Another-View-of-Frigate-Bird-During-their-Mating-Season.webp',
+    ],
   },
   {
     slug: 'barbuda-beach-escape',
@@ -222,6 +246,14 @@ const tours: Tour[] = [
     ],
     badge: 'Customizable',
     featured: true,
+    gallery: [
+      '/images/Pink-Beach-North.webp',
+      '/images/BarbudaLeisureTours-8.webp',
+      '/images/DSC3331.webp',
+      '/images/DSCF5666-2.webp',
+      '/images/MG_9010.tif.webp',
+      '/images/BarbudaLeisureTours-4.webp',
+    ],
   },
 
   // Local Tours
@@ -262,6 +294,13 @@ const tours: Tour[] = [
       'Flexible start times',
       'Customizable itinerary',
       'Advance booking recommended',
+    ],
+    gallery: [
+      '/images/BarbudaLeisureTours-3.webp',
+      '/images/Another-View-of-Frigate-Bird-During-their-Mating-Season.webp',
+      '/images/BarbudaLeisureTours-7.webp',
+      '/images/Pink-Beach-North.webp',
+      '/images/BarbudaLeisureTours-6.webp',
     ],
   },
 
@@ -306,6 +345,13 @@ const tours: Tour[] = [
       'Weather dependent',
     ],
     badge: 'Seasonal',
+    gallery: [
+      '/images/BarbudaLeisureTours-3-2.webp',
+      '/images/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp',
+      '/images/Pink-Beach-North.webp',
+      '/images/DSC3331.webp',
+      '/images/BarbudaLeisureTours-6.webp',
+    ],
   },
   {
     slug: 'shared-boat-charter',
@@ -344,6 +390,13 @@ const tours: Tour[] = [
       '$20 deposit required',
       'Customizable menu options',
       'Advanced booking required',
+    ],
+    gallery: [
+      '/images/BarbudaLeisureTours-7.webp',
+      '/images/BarbudaLeisureTours-8.webp',
+      '/images/Pink-Beach-North.webp',
+      '/images/DSCF5666-2.webp',
+      '/images/BarbudaLeisureTours-4.webp',
     ],
   },
 
@@ -388,6 +441,13 @@ const tours: Tour[] = [
       'Fully customizable',
     ],
     badge: 'Exclusive',
+    gallery: [
+      '/images/BarbudaLeisureTours-3.webp',
+      '/images/Pink-Beach-North.webp',
+      '/images/Another-View-of-Frigate-Bird-During-their-Mating-Season.webp',
+      '/images/BarbudaLeisureTours-7.webp',
+      '/images/MG_9010.tif.webp',
+    ],
   },
   {
     slug: 'yacht-adventure',
@@ -429,6 +489,14 @@ const tours: Tour[] = [
       'Perfect for groups up to 12',
     ],
     badge: 'Luxury',
+    gallery: [
+      '/images/BarbudaLeisureTours-3-2.webp',
+      '/images/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp',
+      '/images/Pink-Beach-North.webp',
+      '/images/DSC3331.webp',
+      '/images/BarbudaLeisureTours-6.webp',
+      '/images/BarbudaLeisureTours-8.webp',
+    ],
   },
   {
     slug: 'airplane-adventure',
@@ -469,6 +537,13 @@ const tours: Tour[] = [
       'Fully customizable ground itinerary',
     ],
     badge: 'Premium',
+    gallery: [
+      '/images/BarbudaLeisureTours-7.webp',
+      '/images/BarbudaLeisureTours-3.webp',
+      '/images/Pink-Beach-North.webp',
+      '/images/Another-View-of-Frigate-Bird-During-their-Mating-Season.webp',
+      '/images/BarbudaLeisureTours-4.webp',
+    ],
   },
 ]
 
