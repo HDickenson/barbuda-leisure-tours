@@ -66,9 +66,9 @@ function TourCard({ tour }: { tour: Tour }) {
 					{tour.included && tour.included.length > 0 && (
 						<div className="mb-4">
 							<div className="flex flex-wrap gap-2">
-								{tour.included.slice(0, 3).map((item, idx) => (
+								{tour.included.slice(0, 3).map((item) => (
 									<span
-										key={idx}
+										key={item}
 										className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full"
 									>
 										{item.length > 30 ? item.substring(0, 30) + "..." : item}

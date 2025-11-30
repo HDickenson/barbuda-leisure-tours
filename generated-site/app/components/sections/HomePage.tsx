@@ -141,8 +141,8 @@ export function FeaturesSection7f7b4455() {
           Our Features
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, idx) => (
-            <div key={idx} className="text-center">
+          {features.map((feature) => (
+            <div key={feature.title} className="text-center">
               {feature.image && (
                 <img src={feature.image} alt={feature.title} className="mx-auto mb-4 w-20 h-20 object-contain" />
               )}
@@ -180,8 +180,8 @@ export function FeaturesSection1665f76() {
           Our Features
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, idx) => (
-            <div key={idx} className="text-center">
+          {features.map((feature) => (
+            <div key={feature.title} className="text-center">
               {feature.image && (
                 <img src={feature.image} alt={feature.title} className="mx-auto mb-4 w-20 h-20 object-contain" />
               )}

@@ -107,9 +107,9 @@ export default function BlogListingPage() {
                       {article.tags && article.tags.length > 0 && (
                         <div className="mb-4">
                           <div className="flex flex-wrap gap-2">
-                            {article.tags.slice(0, 3).map((tag, idx) => (
+                            {article.tags.slice(0, 3).map((tag) => (
                               <span
-                                key={idx}
+                                key={tag}
                                 className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full"
                               >
                                 #{tag}

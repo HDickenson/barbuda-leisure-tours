@@ -72,9 +72,9 @@ export function TourCard({ tour }: { tour: DisplayTour }) {
           {/* Highlights */}
           <div className="mb-4">
             <div className="flex flex-wrap gap-2">
-              {tour.highlights.slice(0, 4).map((highlight, idx) => (
+              {tour.highlights.slice(0, 4).map((highlight) => (
                 <span
-                  key={idx}
+                  key={highlight}
                   className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full"
                 >
                   {highlight}

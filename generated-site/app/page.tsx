@@ -39,7 +39,7 @@ export default function HomepagePage() {
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((image, index) => (
           <div
-            key={index}
+            key={image}
             className={`absolute inset-0 transition-opacity duration-[${500}ms] ${
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}

@@ -177,8 +177,8 @@ export function TourDetailClient({ tour }: Props) {
               <Reveal className="mb-12">
                 <h2 className="text-4xl text-[#263238] mb-6">Tour Highlights</h2>
                 <div className="grid md:grid-cols-2 gap-4">
-                  {tour.highlights.map((highlight, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
+                  {tour.highlights.map((highlight) => (
+                    <div key={highlight} className="flex items-start gap-3">
                       <div className="flex-shrink-0 w-6 h-6 bg-[#4DD0E1] rounded-full flex items-center justify-center mt-1">
                         <svg
                           className="w-4 h-4 text-white"
@@ -205,8 +205,8 @@ export function TourDetailClient({ tour }: Props) {
                 <h2 className="text-4xl text-[#263238] mb-6">What's Included</h2>
                 <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200">
                   <div className="grid md:grid-cols-2 gap-4">
-                    {tour.included.map((item, idx) => (
-                      <div key={idx} className="flex items-start gap-3">
+                    {tour.included.map((item) => (
+                      <div key={item} className="flex items-start gap-3">
                         <svg
                           className="w-6 h-6 text-[#4DD0E1] flex-shrink-0 mt-1"
                           fill="currentColor"
@@ -238,8 +238,8 @@ export function TourDetailClient({ tour }: Props) {
                   Important Information
                 </h3>
                 <ul className="space-y-2">
-                  {tour.importantInfo.map((info, idx) => (
-                    <li key={idx} className="text-gray-700 flex items-start gap-2">
+                  {tour.importantInfo.map((info) => (
+                    <li key={info} className="text-gray-700 flex items-start gap-2">
                       <span className="text-[#4DD0E1] mt-1">•</span>
                       <span>{info}</span>
                     </li>
