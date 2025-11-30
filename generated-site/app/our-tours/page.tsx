@@ -14,13 +14,13 @@ function TourCard({ tour }: { tour: Tour }) {
 	return (
 		<Link href={`/tours/${tour.slug}`} className="group block">
 			<div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 h-full flex flex-col transform hover:-translate-y-2">
-				{/* Image */}
-				<div className="relative h-72 overflow-hidden">
-					<Image
-						src={tour.heroImage || "/images/BarbudaLeisureTours-3.jpg"}
-						alt={tour.title}
-						fill
-						className="object-cover group-hover:scale-110 transition-transform duration-700"
+			{/* Image */}
+			<div className="relative h-72 overflow-hidden">
+				<Image
+					src={tour.heroImage || "/images/BarbudaLeisureTours-3.webp"}
+					alt={tour.title}
+					fill
+					className="object-cover group-hover:scale-110 transition-transform duration-700"
 					/>
 
 					{/* Overlay Gradient */}
@@ -166,7 +166,7 @@ export default function OurToursPage() {
 			<div className="relative h-[600px] overflow-hidden">
 				<div className="absolute inset-0">
 					<Image
-						src="/images/Pink-Beach-North-scaled.jpg"
+						src="/images/Pink-Beach-North.webp"
 						alt="Barbuda Tours"
 						fill
 						className="object-cover"
@@ -300,7 +300,7 @@ export default function OurToursPage() {
 				<div className="mt-32 relative overflow-hidden rounded-3xl">
 					<div className="absolute inset-0">
 						<Image
-							src="/images/BarbudaLeisureTours-3.jpg"
+							src="/images/BarbudaLeisureTours-3.webp"
 							alt="Book Now"
 							fill
 							className="object-cover"
