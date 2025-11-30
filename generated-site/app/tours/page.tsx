@@ -129,7 +129,8 @@ export default function ToursPage() {
       </div>
 
       {/* Tours Content */}
-      <div className="max-w-[1600px] mx-auto px-6 py-20" id="signature">
+      <main id="main-content" tabIndex={-1} className="max-w-[1600px] mx-auto px-6 py-20">
+        <section id="signature" aria-label="Signature Tours">
         <CategorySection
           title="Signature Tours"
           description="Our most popular and highly rated day trips, perfect for visitors seeking the full Barbuda experience."
@@ -181,6 +182,7 @@ export default function ToursPage() {
             </div>
           }
         />
+        </section>
 
         {/* CTA Section */}
         <div className="mt-32 relative overflow-hidden rounded-3xl">
@@ -223,7 +225,7 @@ export default function ToursPage() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   )
 }

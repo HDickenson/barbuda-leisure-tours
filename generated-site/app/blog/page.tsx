@@ -13,7 +13,7 @@ export default function BlogListingPage() {
   const articles = getAllArticles()
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <main id="main-content" tabIndex={-1} className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <div className="relative h-[500px] overflow-hidden">
         <div className="absolute inset-0">

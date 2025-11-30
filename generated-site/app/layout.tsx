@@ -5,6 +5,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "./components/Footer";
+import { SkipToContent } from "./components/SkipToContent";
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://www.barbudaleisure.com"),
@@ -32,6 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 				/>
 			</head>
 						<body>
+							<SkipToContent />
 							{children}
 							<Footer />
 						</body>

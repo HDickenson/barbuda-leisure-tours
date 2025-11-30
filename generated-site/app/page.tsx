@@ -68,41 +68,44 @@ export default function HomepagePage() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen">
-        <div className="container mx-auto px-4 text-center">
-          <h1
-            className="text-6xl md:text-7xl font-bold text-white mb-6 animate-fadeIn font-['Leckerli_One',cursive]"
-          >
-            Barbuda Leisure Day Tours
-          </h1>
-          <p className="text-2xl md:text-3xl text-white mb-8 font-light">
-            One Day, Endless Memories
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link
-              href="/tours"
-              className="px-8 py-4 rounded-full font-semibold text-white text-lg transition-all hover:scale-105 active:scale-95 bg-[#4DD0E1] shadow-[0_8px_16px_rgba(77,208,225,0.4)]"
+      <main id="main-content" tabIndex={-1}>
+        <div className="relative z-10 flex items-center justify-center min-h-screen">
+          <div className="container mx-auto px-4 text-center">
+            <h1
+              className="text-6xl md:text-7xl font-bold text-white mb-6 animate-fadeIn font-['Leckerli_One',cursive]"
             >
-              Explore Our Tours
-            </Link>
-            <Link
-              href="/about"
-              className="px-8 py-4 rounded-full font-semibold text-lg transition-all hover:scale-105 border-2 border-white text-white hover:bg-white/10"
-            >
-              Learn More
-            </Link>
+              Barbuda Leisure Day Tours
+            </h1>
+            <p className="text-2xl md:text-3xl text-white mb-8 font-light">
+              One Day, Endless Memories
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link
+                href="/tours"
+                className="px-8 py-4 rounded-full font-semibold text-white text-lg transition-all hover:scale-105 active:scale-95 bg-[#4DD0E1] shadow-[0_8px_16px_rgba(77,208,225,0.4)]"
+                aria-label="Explore our Barbuda tours"
+              >
+                Explore Our Tours
+              </Link>
+              <Link
+                href="/about"
+                className="px-8 py-4 rounded-full font-semibold text-lg transition-all hover:scale-105 border-2 border-white text-white hover:bg-white/10"
+                aria-label="Learn more about Barbuda Leisure Tours"
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Wave Divider */}
-      <WaveDivider color="#ffffff" />
+        {/* Wave Divider */}
+        <WaveDivider color="#ffffff" />
 
-      {/* Section: Highlights */}
-      <section className="relative z-10 bg-white">
+        {/* Section: Highlights */}
+        <section className="relative z-10 bg-white" aria-labelledby="highlights-heading">
         <div className="container mx-auto px-4 py-16 grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="text-xl font-semibold mb-2">Pristine Beaches</h3>
+            <h3 id="highlights-heading" className="text-xl font-semibold mb-2">Pristine Beaches</h3>
             <p className="text-gray-600">17 miles of pink sand and crystal waters.</p>
           </div>
           <div>
@@ -115,14 +118,15 @@ export default function HomepagePage() {
           </div>
         </div>
       </section>
+      </main>
 
       {/* Wave Divider (flip) */}
       <WaveDivider color="#f8fafc" flip />
 
       {/* Section: Featured Tours */}
-      <section className="relative z-10 bg-slate-50">
+      <section className="relative z-10 bg-slate-50" aria-labelledby="featured-tours-heading">
         <div className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold mb-6">Featured Tours</h2>
+          <h2 id="featured-tours-heading" className="text-3xl font-bold mb-6">Featured Tours</h2>
           <p className="text-gray-600 mb-6">Discover our most popular experiences on land and sea.</p>
           <div className="flex gap-4 flex-wrap">
             <Link href="/tours/discover-barbuda-by-sea" className="px-6 py-3 bg-white rounded-lg shadow hover:shadow-md">Barbuda by Sea</Link>
@@ -136,9 +140,9 @@ export default function HomepagePage() {
       <WaveDivider color="#ffffff" />
 
       {/* Section: Reviews */}
-      <section className="relative z-10 bg-white">
+      <section className="relative z-10 bg-white" aria-labelledby="reviews-heading">
         <div className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold mb-6">Guest Reviews</h2>
+          <h2 id="reviews-heading" className="text-3xl font-bold mb-6">Guest Reviews</h2>
           <p className="text-gray-600 mb-6">See what travelers say about their day in Barbuda.</p>
           <Link href="/reviews" className="px-6 py-3 bg-teal-400 text-white rounded-full hover:opacity-90">Read Reviews</Link>
         </div>
@@ -148,9 +152,9 @@ export default function HomepagePage() {
       <WaveDivider color="#f8fafc" flip />
 
       {/* Section: FAQ/CTA */}
-      <section className="relative z-10 bg-slate-50">
+      <section className="relative z-10 bg-slate-50" aria-labelledby="faq-heading">
         <div className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold mb-6">Questions?</h2>
+          <h2 id="faq-heading" className="text-3xl font-bold mb-6">Questions?</h2>
           <p className="text-gray-600 mb-6">Find answers about tours, logistics and more.</p>
           <div className="flex gap-4 flex-wrap">
             <Link href="/faq" className="px-6 py-3 bg-white rounded-lg shadow hover:shadow-md">Visit FAQ</Link>
