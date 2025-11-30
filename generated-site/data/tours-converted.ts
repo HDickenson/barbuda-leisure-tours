@@ -42,7 +42,7 @@ const tours: Tour[] = [
     subtitle: 'The Complete Island Experience',
     description:
       'Soar above the stunning Caribbean waters and experience Barbuda from a breathtaking aerial perspective. This premium tour includes round-trip flights, a guided island exploration, beach time at the famous pink sand beaches, and an authentic Caribbean lunch experience. Perfect for those seeking the ultimate convenience and a birds-eye view of paradise.',
-    heroImage: '/images/BarbudaLeisureTours-3.jpg',
+    heroImage: '/images/BarbudaLeisureTours-3.webp',
     duration: 'Full Day (6-7 hours)',
     price: 'From $349',
     priceDetails: {
@@ -96,7 +96,7 @@ const tours: Tour[] = [
     subtitle: 'Sail to Paradise',
     description:
       "Set sail on a luxury catamaran adventure to Barbuda's hidden gems. Enjoy crystal-clear waters, pristine beaches, and the famous Frigate Bird Sanctuary. This full-day cruise combines relaxation with exploration, featuring swimming, snorkeling, and a delicious Caribbean lunch on board.",
-    heroImage: '/images/BarbudaLeisureTours-3-2.jpg',
+    heroImage: '/images/BarbudaLeisureTours-3-2.webp',
     duration: 'Full Day (7-8 hours)',
     price: 'From $249',
     priceDetails: {
@@ -142,7 +142,7 @@ const tours: Tour[] = [
     subtitle: 'The Best of Both Worlds',
     description:
       'Fly to Barbuda in the morning, explore the island, then cruise back on a luxury catamaran. The ultimate combination of convenience and adventure, offering aerial views on the way there and a relaxing sail home. Experience the best of both transportation methods in one incredible day.',
-    heroImage: '/images/BarbudaLeisureTours-7.jpg',
+    heroImage: '/images/BarbudaLeisureTours-7.webp',
     duration: 'Full Day (7-8 hours)',
     price: 'From $299',
     priceDetails: {
@@ -188,7 +188,7 @@ const tours: Tour[] = [
     subtitle: 'Your Choice of Transport',
     description:
       'Escape to pristine pink sand beaches with your preferred mode of transport. This flexible tour allows you to choose from air, ferry, helicopter, or private boat. Focus on pure relaxation with extended beach time, snorkeling in crystal-clear waters, and a delicious lunch on the beach.',
-    heroImage: '/images/Pink-Beach-North-scaled.jpg',
+    heroImage: '/images/Pink-Beach-North.webp',
     duration: 'Half Day or Full Day',
     price: 'From $199',
     priceDetails: {
@@ -231,7 +231,7 @@ const tours: Tour[] = [
     subtitle: 'Already in Barbuda?',
     description:
       "Join our expert local guides for a comprehensive island tour. Perfect for guests staying in Barbuda who want to explore beyond their resort. Discover hidden gems, learn about the island's rich history and culture, and visit all the must-see attractions with an authentic local perspective.",
-    heroImage: '/images/BarbudaLeisureTours-3.jpg',
+    heroImage: '/images/BarbudaLeisureTours-3.webp',
     duration: 'Full Day (5-6 hours)',
     price: 'From $149',
     priceDetails: {
@@ -272,7 +272,7 @@ const tours: Tour[] = [
     subtitle: 'Premium Sailing Experience',
     description:
       'Join us on the Excellence catamaran for a luxurious journey to Barbuda. This premium vessel offers comfort, style, and exceptional service. Available Fridays from May to October, this shared charter provides an upscale experience at a great value. Ages 5 and up only.',
-    heroImage: '/images/BarbudaLeisureTours-3-2.jpg',
+    heroImage: '/images/BarbudaLeisureTours-3-2.webp',
     duration: 'Full Day (7-8 hours)',
     price: 'From $190',
     priceDetails: {
@@ -313,7 +313,7 @@ const tours: Tour[] = [
     subtitle: 'Small Group Adventure',
     description:
       'Share the adventure with fellow travelers on our luxury boat charter. Perfect for solo travelers and small groups seeking a more intimate experience. Limited to 6-10 guests for a semi-private feel at a shared charter price. Enjoy personalized service and gourmet dining options.',
-    heroImage: '/images/BarbudaLeisureTours-7.jpg',
+    heroImage: '/images/BarbudaLeisureTours-7.webp',
     duration: 'Full Day (6-7 hours)',
     price: 'From $310',
     priceDetails: {
@@ -354,7 +354,7 @@ const tours: Tour[] = [
     subtitle: 'Ultimate Luxury Experience',
     description:
       'Experience Barbuda from the sky with our exclusive helicopter charter. Fully customizable itinerary for the ultimate VIP experience. Enjoy breathtaking aerial views, quick transport, and the flexibility to create your perfect day. Ideal for special occasions, photography, or those seeking the ultimate luxury.',
-    heroImage: '/images/BarbudaLeisureTours-3.jpg',
+    heroImage: '/images/BarbudaLeisureTours-3.webp',
     duration: 'Custom (2-8 hours)',
     price: 'From $3,500',
     priceDetails: {
@@ -395,7 +395,7 @@ const tours: Tour[] = [
     subtitle: 'Sail in Style',
     description:
       'Charter your own luxury yacht for the day. Completely customizable experience with gourmet catering options and flexible scheduling. Perfect for families, couples, or groups seeking privacy and personalized service. Your captain and crew will ensure an unforgettable day on the water.',
-    heroImage: '/images/BarbudaLeisureTours-3-2.jpg',
+    heroImage: '/images/BarbudaLeisureTours-3-2.webp',
     duration: 'Custom (4-10 hours)',
     price: 'From $1,800',
     priceDetails: {
@@ -436,7 +436,7 @@ const tours: Tour[] = [
     subtitle: 'Exclusive Island Access',
     description:
       'Book your own private aircraft for ultimate convenience and comfort. Perfect for groups seeking privacy and flexibility. Enjoy quick transport, comfortable seating, and the ability to set your own schedule. Ideal for families, corporate groups, or anyone wanting exclusive access to paradise.',
-    heroImage: '/images/BarbudaLeisureTours-7.jpg',
+    heroImage: '/images/BarbudaLeisureTours-7.webp',
     duration: 'Custom (4-8 hours)',
     price: 'From $2,800',
     priceDetails: {
