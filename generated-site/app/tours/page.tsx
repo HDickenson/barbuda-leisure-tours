@@ -1,18 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import { getAllTours, type Tour as DataTour } from '@/data/tours'
-import { CategorySectionSkeleton } from './components/LoadingSkeleton'
-
-// Dynamic imports with loading states
-const CategorySection = dynamic(
-  () => import('./components/CategorySection').then(mod => ({ default: mod.CategorySection })),
-  {
-    loading: () => <CategorySectionSkeleton />,
-    ssr: true
-  }
-)
+import { CategorySection } from './components/CategorySection'
 
 export const metadata: Metadata = {
   title: 'Tours & Adventures | Barbuda Leisure Day Tours',
@@ -52,7 +42,7 @@ function mapTourForDisplay(tour: DataTour): DisplayTour {
   }
   
   // Use heroImage or first gallery image, or fallback
-  const image = tour.heroImage || tour.gallery?.[0] || '/images/BarbudaLeisureTours-3.jpg'
+  const image = tour.heroImage || tour.gallery?.[0] || '/images/BarbudaLeisureTours-3.webp'
   
   // Strip HTML from description
   const cleanDescription = tour.listingDescription || 
@@ -88,7 +78,7 @@ export default function ToursPage() {
       <div className="relative h-[600px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/Pink-Beach-North-scaled.jpg"
+            src="/images/Pink-Beach-North.webp"
             alt="Barbuda Tours"
             fill
             className="object-cover"
@@ -135,6 +125,7 @@ export default function ToursPage() {
           title="Signature Tours"
           description="Our most popular and highly rated day trips, perfect for visitors seeking the full Barbuda experience."
           tours={signatureTours}
+          category="signature"
           icon={
             <div className="w-16 h-16 bg-gradient-to-br from-[#4DD0E1] to-[#26C6DA] rounded-full flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -148,6 +139,7 @@ export default function ToursPage() {
           title="Already in Barbuda?"
           description="If you're already on the island, join our local excursions for sightseeing, beach relaxation, and cultural exploration."
           tours={localTours}
+          category="local"
           icon={
             <div className="w-16 h-16 bg-gradient-to-br from-[#FF6B9D] to-[#FF5789] rounded-full flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -161,6 +153,7 @@ export default function ToursPage() {
           title="Shared Adventures"
           description="Join fellow travelers on these exceptional shared experiences with trusted local providers."
           tours={sharedTours}
+          category="shared"
           icon={
             <div className="w-16 h-16 bg-gradient-to-br from-[#26C6DA] to-[#00ACC1] rounded-full flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -174,6 +167,7 @@ export default function ToursPage() {
           title="Private Charters"
           description="Experience ultimate luxury and personalized service with our exclusive private charter options."
           tours={privateTours}
+          category="private"
           icon={
             <div className="w-16 h-16 bg-gradient-to-br from-[#263238] to-[#37474F] rounded-full flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -188,7 +182,7 @@ export default function ToursPage() {
         <div className="mt-32 relative overflow-hidden rounded-3xl">
           <div className="absolute inset-0">
             <Image
-              src="/images/BarbudaLeisureTours-3.jpg"
+              src="/images/BarbudaLeisureTours-3.webp"
               alt="Book Now"
               fill
               className="object-cover"

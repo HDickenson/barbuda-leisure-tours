@@ -1,6 +1,3 @@
-'use client'
-
-import { Reveal } from '@/app/components/Reveal'
 import { TourCard } from './TourCard'
 
 interface DisplayTour {
@@ -21,18 +18,25 @@ export function CategorySection({
   title,
   description,
   tours,
-  icon
+  icon,
+  category
 }: {
   title: string
   description: string
   tours: DisplayTour[]
   icon: React.ReactNode
+  category?: 'signature' | 'local' | 'shared' | 'private'
 }) {
   if (tours.length === 0) return null
 
+  // For signature tours, use 2x2 grid, otherwise use default responsive grid
+  const gridClass = category === 'signature' 
+    ? 'grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto'
+    : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'
+
   return (
     <section className="mb-24">
-      <Reveal className="mb-12 text-center max-w-3xl mx-auto">
+      <div className="mb-12 text-center max-w-3xl mx-auto">
         <div className="flex justify-center mb-4">
           {icon}
         </div>
@@ -42,13 +46,13 @@ export function CategorySection({
         <p className="text-xl text-gray-600 leading-relaxed">
           {description}
         </p>
-      </Reveal>
+      </div>
 
-      <Reveal className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className={gridClass}>
         {tours.map((tour) => (
           <TourCard key={tour.slug} tour={tour} />
         ))}
-      </Reveal>
+      </div>
     </section>
   )
 }

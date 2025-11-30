@@ -80,7 +80,7 @@ const tours: Tour[] = [
       <p>Take a flight across the Caribbean Sea and discover Barbuda's unspoiled beauty from a bird's-eye view. In just 20 minutes, you'll arrive on one of the most breathtaking islands in the Caribbean - home to pink-sand beaches, turquoise lagoons, and the world's largest Frigate Bird Sanctuary.</p>
       <p>This signature tour is ideal for those who prefer a comfortable, scenic, and time-efficient way to explore Barbuda.</p>
     `,
-    heroImage: '/images/BarbudaLeisureTours-7.jpg',
+    heroImage: '/images/BarbudaLeisureTours-7.webp',
     duration: 'Approximately 8-9 hours total',
     price: 'From $349 per person',
     groupSize: 'Small groups',
@@ -141,9 +141,9 @@ const tours: Tour[] = [
       'Guests will receive a detailed tour itinerary & weather forecast 24 hours prior to departure'
     ],
     gallery: [
-      '/images/BarbudaLeisureTours-7.jpg',
-      '/images/PFA4070.jpg',
-      '/images/DSC3121.jpg',
+      '/images/BarbudaLeisureTours-7.webp',
+      '/images/PFA4070.webp',
+      '/images/DSC3121-scaled.jpg',
     ],
     featured: true,
   },
@@ -160,7 +160,7 @@ const tours: Tour[] = [
     description: `
       <p>Sail across the Caribbean Sea to discover Barbuda aboard a scenic ferry from Antigua and spend the day exploring one of the Caribbean's most untouched islands. From the world-famous Pink Sand Beach to the breathtaking Frigate Bird Sanctuary, this tour combines adventure, culture, and relaxation - a perfect way to experience Barbuda's natural beauty at an affordable rate.</p>
     `,
-    heroImage: '/images/Pink-Beach-North.jpg',
+    heroImage: '/images/Pink-Beach-North.webp',
     duration: 'Approximately 6-7 hours total',
     price: 'From $249 per person',
     groupSize: 'Groups welcome',
@@ -214,9 +214,9 @@ const tours: Tour[] = [
       'Guests will receive a detailed tour itinerary & weather forecast 24 hours prior to departure'
     ],
     gallery: [
-      '/images/Pink-Beach-North.jpg',
-      '/images/yellow-brest.jpg',
-      '/images/BarbudaLeisureTours-15.jpg',
+      '/images/Pink-Beach-North.webp',
+      '/images/yellow-brest.webp',
+      '/images/BarbudaLeisureTours-15.webp',
     ],
     featured: true,
   },
@@ -233,7 +233,7 @@ const tours: Tour[] = [
     description: `
       <p>This signature tour offers the best of both worlds - a flight to Barbuda in the morning and a return ferry in the afternoon. Enjoy a smooth 20-minute scenic flight over the Caribbean Sea followed by an unforgettable day of exploration, sightseeing, and relaxation before sailing back to Antigua.</p>
     `,
-    heroImage: '/images/BarbudaLeisureTours-3.jpg',
+    heroImage: '/images/BarbudaLeisureTours-3.webp',
     duration: 'Approximately 6-7 hours',
     price: 'From $299 per person',
     groupSize: 'Small groups',
@@ -287,9 +287,9 @@ const tours: Tour[] = [
       'Guests will receive a detailed tour itinerary & weather forecast 24 hours prior to departure'
     ],
     gallery: [
-      '/images/BarbudaLeisureTours-3.jpg',
-      '/images/BarbudaLeisureTours-6.jpg',
-      '/images/DSC3331.jpg',
+      '/images/BarbudaLeisureTours-3.webp',
+      '/images/BarbudaLeisureTours-6.webp',
+      '/images/DSC3331.webp',
     ],
     featured: true,
   },
@@ -306,7 +306,7 @@ const tours: Tour[] = [
     description: `
       <p>If your idea of paradise is sun, sea, and serenity - this is the tour for you. Fly or sail to Barbuda and spend the day on the island's most famous beach, Princess Diana Beach, where turquoise waters and pink sands await.</p>
     `,
-    heroImage: '/images/DSC3331.jpg',
+    heroImage: '/images/DSC3331.webp',
     duration: 'Approximately 6-8 hours',
     price: 'From $199 per person',
     groupSize: 'Flexible',
@@ -336,9 +336,9 @@ const tours: Tour[] = [
       'Bring your own beach towel, sun protection and snorkeling gear'
     ],
     gallery: [
-      '/images/DSC3331.jpg',
-      '/images/Pink-Beach-North.jpg',
-      '/images/BarbudaLeisureTours-4.jpg',
+      '/images/DSC3331.webp',
+      '/images/Pink-Beach-North.webp',
+      '/images/BarbudaLeisureTours-4.webp',
     ],
     featured: true,
   },
@@ -358,7 +358,7 @@ const tours: Tour[] = [
       <p>If you're already on the island, you can still experience Barbuda Leisure's guided tours! Join our local excursions featuring sightseeing, beach relaxation, and cultural exploration - available daily upon request.</p>
       <p>Whether you're staying in a hotel, guesthouse, arriving by your own flight or ferry, or relaxing aboard a private yacht anchored along Barbuda's coastline, you can book a day tour directly with us and enjoy the best of Barbuda in one unforgettable experience.</p>
     `,
-    heroImage: '/images/BarbudaLeisureTours-6.jpg',
+    heroImage: '/images/BarbudaLeisureTours-6.webp',
     duration: 'Approximately 6-7 hours total',
     price: 'From $149 per person',
     groupSize: 'Small groups welcome',
@@ -400,9 +400,9 @@ const tours: Tour[] = [
       'Guests will receive a detailed tour itinerary and weather forecast 24 hours prior to departure'
     ],
     gallery: [
-      '/images/BarbudaLeisureTours-6.jpg',
-      '/images/DSCF5666-2.jpg',
-      '/images/tour1.jpg',
+      '/images/BarbudaLeisureTours-6.webp',
+      '/images/DSCF5666-2.webp',
+      '/images/tour1.webp',
     ],
     featured: false,
   },
@@ -425,7 +425,7 @@ const tours: Tour[] = [
       <p>Cruise along Low Bay's 17-mile beach, marvel at pink-sand pockets, and spot turtle tracks during nesting season. Step ashore via the Excellence's drop-stair gangway and explore the warm, turquoise shallows.</p>
       <p>Your day continues with a Frigate Bird Sanctuary tour guided by local experts, followed by a relaxing lunch onboard before heading to Princess Diana Beach - where you can swim, sunbathe, and savor pure Caribbean tranquility.</p>
     `,
-    heroImage: '/images/excellence/exclnce-25.jpg',
+    heroImage: '/images/excellence/exclnce-25.webp',
     duration: '7 hours',
     price: 'From $190 per person',
     groupSize: 'Group tour',
@@ -463,11 +463,11 @@ const tours: Tour[] = [
       'Available only on Fridays from May to October'
     ],
     gallery: [
-      '/images/excellence/exclnce-25.jpg',
-      '/images/excellence/exclnce-27.jpg',
-      '/images/excellence/exclnce-10.jpg',
-      '/images/excellence/LobsterLunch-3.jpg',
-      '/images/excellence/DJI_0918.jpg'
+      '/images/excellence/exclnce-25.webp',
+      '/images/excellence/exclnce-27.webp',
+      '/images/excellence/exclnce-10.webp',
+      '/images/excellence/LobsterLunch-3.webp',
+      '/images/excellence/DJI_0918.webp'
     ],
     featured: true,
   },
@@ -487,7 +487,7 @@ const tours: Tour[] = [
       <p>Looking for a fun, social, and scenic way to experience Barbuda? Join our Shared Barbuda Charter by our partners - a small-group adventure that combines comfort, breathtaking views, and authentic island hospitality.</p>
       <p>Enjoy a full day exploring Barbuda's pristine beaches, snorkeling in turquoise waters, and savoring a freshly grilled island-style lunch.</p>
     `,
-    heroImage: '/images/BarbudaLeisureTours-4.jpg',
+    heroImage: '/images/BarbudaLeisureTours-4.webp',
     duration: 'Full day (approximately 8 hours)',
     price: 'From $310 per person',
     groupSize: 'Small groups (6-10 guests)',
@@ -525,9 +525,9 @@ const tours: Tour[] = [
       'The exact itinerary and stops may vary depending on weather and sea conditions'
     ],
     gallery: [
-      '/images/BarbudaLeisureTours-4.jpg',
-      '/images/tour2.jpg',
-      '/images/tour3.jpg',
+      '/images/BarbudaLeisureTours-4.webp',
+      '/images/tour2.webp',
+      '/images/tour3.webp',
     ],
     featured: true,
   },
@@ -548,7 +548,7 @@ const tours: Tour[] = [
       <p>Whether you're dreaming of a romantic lunch escape, a sun-kissed beach picnic, or an extended day of exploration among Barbuda's pink-sand shores and natural wonders, we'll design a custom itinerary just for you.</p>
       <p>From the moment you lift off from Antigua, every detail is crafted for comfort, privacy, and unforgettable views of the Caribbean Sea below.</p>
     `,
-    heroImage: '/images/BarbudaLeisureTours-8.jpg',
+    heroImage: '/images/BarbudaLeisureTours-8.webp',
     duration: 'Flexible (customizable)',
     price: 'From $3,500',
     groupSize: 'Private charter',
@@ -571,9 +571,9 @@ const tours: Tour[] = [
       'Contact us to discuss your specific requirements and preferences'
     ],
     gallery: [
-      '/images/BarbudaLeisureTours-8.jpg',
-      '/images/BarbudaLeisureTours-7.jpg',
-      '/images/DSC3121.jpg',
+      '/images/BarbudaLeisureTours-8.webp',
+      '/images/BarbudaLeisureTours-7.webp',
+      '/images/DSC3121-scaled.jpg',
     ],
     featured: false,
   },
@@ -592,7 +592,7 @@ const tours: Tour[] = [
       <p>Your unforgettable day can begin with a scenic departure from Dickenson Bay or Jolly Harbour, followed by an island-hopping escape to Barbuda's most breathtaking coastal gems, including Spanish Point, Coco Point, Princess Diana Beach, and Palmetto Point (time permitting), where you may find shimmering pink sand.</p>
       <p>Relax on deck with a cooler of complimentary drinks - including water, sodas, beer, rum, rosé, and Prosecco - and enjoy the sunshine, sea breeze, and unmatched Caribbean beauty.</p>
     `,
-    heroImage: '/images/Allesandra.jpg',
+    heroImage: '/images/Allesandra.webp',
     duration: 'Full day (flexible)',
     price: 'From $1,800',
     groupSize: 'Private charter',
@@ -615,9 +615,9 @@ const tours: Tour[] = [
       'Contact us to arrange your private yacht adventure'
     ],
     gallery: [
-      '/images/Allesandra.jpg',
-      '/images/BarbudaLeisureTours-3.jpg',
-      '/images/Pink-Beach-North.jpg',
+      '/images/Allesandra.webp',
+      '/images/BarbudaLeisureTours-3.webp',
+      '/images/Pink-Beach-North.webp',
     ],
     featured: false,
   },
@@ -636,7 +636,7 @@ const tours: Tour[] = [
       <p>As you soar across the turquoise Caribbean Sea, enjoy breathtaking aerial views of Antigua's coastline and Barbuda's untouched pink-sand beaches below. Every moment of your journey is tailored to perfection, offering comfort, style, and seamless service from takeoff to touchdown.</p>
       <p>Your Barbuda Exclusive Airplane Adventure is fully customizable - whether you desire a scenic flight, a private beach day, or a private day tour exploring Barbuda's natural wonders and cultural gems. Simply share your preferences, and our team will craft a bespoke itinerary designed precisely to your wishes.</p>
     `,
-    heroImage: '/images/BarbudaLeisureTours-12.jpg',
+    heroImage: '/images/BarbudaLeisureTours-12.webp',
     duration: 'Flexible (half/full day)',
     price: 'From $2,800',
     groupSize: 'Private charter',
@@ -659,9 +659,9 @@ const tours: Tour[] = [
       'Contact us to book your private air adventure'
     ],
     gallery: [
-      '/images/BarbudaLeisureTours-12.jpg',
-      '/images/PFA4070.jpg',
-      '/images/DSC3331.jpg',
+      '/images/BarbudaLeisureTours-12.webp',
+      '/images/PFA4070.webp',
+      '/images/DSC3331.webp',
     ],
     featured: false,
   },
