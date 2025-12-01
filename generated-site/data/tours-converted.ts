@@ -32,6 +32,22 @@ export interface Tour {
     shrimp?: number
     vegetarian?: number
   }
+  whatToBring?: string[]
+  schedule?: {
+    departure?: string
+    arrival?: string
+    returnDeparture?: string
+    returnArrival?: string
+    checkInTime?: string
+    location?: string
+    frequency?: string
+    notes?: string
+  }
+  lunchUpgrades?: {
+    name: string
+    price: number
+  }[]
+  transportDetails?: string[]
 }
 
 const tours: Tour[] = [
@@ -89,6 +105,32 @@ const tours: Tour[] = [
       shrimp: 10,
       vegetarian: 5,
     },
+    whatToBring: [
+      'Valid passport or government-issued ID (same used when booking)',
+      'Sunscreen, hat, and sunglasses',
+      'Swimwear and towel',
+      'Comfortable clothing and footwear',
+      'Camera or smartphone for photos',
+      'Light snacks or preferred beverages',
+      'Reusable water bottle (water also provided)',
+      'Umbrella (recommended)',
+    ],
+    schedule: {
+      departure: '7:15 AM',
+      arrival: '7:35 AM',
+      returnDeparture: '4:30 PM',
+      returnArrival: '4:50 PM',
+      checkInTime: 'One hour and 15 minutes before departure',
+      location: 'V.C. Bird International Airport',
+      notes: 'Flight times may vary slightly depending on weather and operational conditions',
+    },
+    transportDetails: [
+      'J8-VBL Islander',
+      'J8-CRU Twin Otter',
+      'J8-VBK',
+      'Dash-8',
+      'ATR-42',
+    ],
     gallery: [
       '/images/BarbudaLeisureTours-3.webp',
       '/images/Pink-Beach-North.webp',
@@ -143,6 +185,26 @@ const tours: Tour[] = [
     badge: 'Best Value',
     featured: true,
     requiresPassport: true,
+    whatToBring: [
+      'Passport or government-issued ID',
+      'Hat, sunscreen, and sunglasses',
+      'Swimwear and towel',
+      'Comfortable shoes and light clothing',
+      'Camera or smartphone',
+      'Light snacks or preferred beverages',
+      'Seasickness medication (recommended for sensitive travelers)',
+      'Reusable water bottle (water also provided)',
+      'Umbrella (recommended)',
+    ],
+    schedule: {
+      departure: '6:30 AM',
+      arrival: '8:00 AM',
+      returnDeparture: '3:00 PM',
+      returnArrival: '4:30 PM',
+      checkInTime: '6:00 AM',
+      location: 'Heritage Quay Ferry Terminal',
+      notes: '90-minute crossing each way - schedule may vary based on weather and ferry operations',
+    },
     gallery: [
       '/images/BarbudaLeisureTours-3-2.webp',
       '/images/The-Catamaran-As-It-Rests-on-one-of-Barbudas-beachs.webp',
@@ -197,6 +259,23 @@ const tours: Tour[] = [
     featured: true,
     requiresPassport: true,
     requiresBodyWeight: true,
+    whatToBring: [
+      'Passport (required for flight check-in)',
+      'Hat, sunscreen, and sunglasses',
+      'Swimwear and towels',
+      'Comfortable footwear',
+      'Camera or phone',
+      'Light snacks or preferred beverages',
+    ],
+    schedule: {
+      departure: '7:00 AM',
+      arrival: '7:20 AM',
+      returnDeparture: '3:00 PM',
+      returnArrival: '4:30 PM',
+      checkInTime: 'One hour and 15 minutes before departure for flight',
+      location: 'V.C. Bird International Airport',
+      notes: 'Combining flight and ferry return',
+    },
     gallery: [
       '/images/BarbudaLeisureTours-7.webp',
       '/images/BarbudaLeisureTours-3.webp',
@@ -246,6 +325,14 @@ const tours: Tour[] = [
     ],
     badge: 'Customizable',
     featured: true,
+    whatToBring: [
+      'Passport (for air travel) or valid ID',
+      'Hat, sunscreen, and sunglasses',
+      'Swimwear, towel, and beachwear',
+      'Comfortable sandals or flip-flops',
+      'Camera or phone',
+      'Small cash for lunch or souvenirs',
+    ],
     gallery: [
       '/images/Pink-Beach-North.webp',
       '/images/BarbudaLeisureTours-8.webp',
